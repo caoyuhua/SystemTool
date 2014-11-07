@@ -1,0 +1,1297 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDR_BROADCAST	proto.c	/^	ADDR_BROADCAST,$/;"	e	enum:__anon18	file:
+ADDR_CLASS	proto.c	/^	ADDR_CLASS,$/;"	e	enum:__anon18	file:
+ADDR_IPADDR	proto.c	/^	ADDR_IPADDR,$/;"	e	enum:__anon18	file:
+ADDR_MASK	proto.c	/^	ADDR_MASK,$/;"	e	enum:__anon18	file:
+ADDR_OFFLINK	proto.c	/^	ADDR_OFFLINK,$/;"	e	enum:__anon18	file:
+ADDR_PREFERRED	proto.c	/^	ADDR_PREFERRED,$/;"	e	enum:__anon18	file:
+ADDR_PTP	proto.c	/^	ADDR_PTP,$/;"	e	enum:__anon18	file:
+ADDR_VALID	proto.c	/^	ADDR_VALID,$/;"	e	enum:__anon18	file:
+ALIAS_ATTR_ALIAS	ubus.c	/^	ALIAS_ATTR_ALIAS,$/;"	e	enum:__anon15	file:
+ALIAS_ATTR_DEV	ubus.c	/^	ALIAS_ATTR_DEV,$/;"	e	enum:__anon15	file:
+BRIDGE_ATTR_AGEING_TIME	bridge.c	/^	BRIDGE_ATTR_AGEING_TIME,$/;"	e	enum:__anon22	file:
+BRIDGE_ATTR_BRIDGE_EMPTY	bridge.c	/^	BRIDGE_ATTR_BRIDGE_EMPTY,$/;"	e	enum:__anon22	file:
+BRIDGE_ATTR_FORWARD_DELAY	bridge.c	/^	BRIDGE_ATTR_FORWARD_DELAY,$/;"	e	enum:__anon22	file:
+BRIDGE_ATTR_HELLO_TIME	bridge.c	/^	BRIDGE_ATTR_HELLO_TIME,$/;"	e	enum:__anon22	file:
+BRIDGE_ATTR_IFNAME	bridge.c	/^	BRIDGE_ATTR_IFNAME,$/;"	e	enum:__anon22	file:
+BRIDGE_ATTR_IGMP_SNOOP	bridge.c	/^	BRIDGE_ATTR_IGMP_SNOOP,$/;"	e	enum:__anon22	file:
+BRIDGE_ATTR_MAX_AGE	bridge.c	/^	BRIDGE_ATTR_MAX_AGE,$/;"	e	enum:__anon22	file:
+BRIDGE_ATTR_PRIORITY	bridge.c	/^	BRIDGE_ATTR_PRIORITY,$/;"	e	enum:__anon22	file:
+BRIDGE_ATTR_STP	bridge.c	/^	BRIDGE_ATTR_STP,$/;"	e	enum:__anon22	file:
+BRIDGE_OPT_AGEING_TIME	system.h	/^	BRIDGE_OPT_AGEING_TIME = (1 << 0),$/;"	e	enum:bridge_opt
+BRIDGE_OPT_HELLO_TIME	system.h	/^	BRIDGE_OPT_HELLO_TIME  = (1 << 1),$/;"	e	enum:bridge_opt
+BRIDGE_OPT_MAX_AGE	system.h	/^	BRIDGE_OPT_MAX_AGE     = (1 << 2),$/;"	e	enum:bridge_opt
+D	netifd.h	62;"	d
+D	netifd.h	68;"	d
+DEBUG	system-dummy.c	21;"	d	file:
+DEBUG_DEVICE	netifd.h	/^	DEBUG_DEVICE	= 1,$/;"	e	enum:__anon11
+DEBUG_INTERFACE	netifd.h	/^	DEBUG_INTERFACE	= 2,$/;"	e	enum:__anon11
+DEBUG_SYSTEM	netifd.h	/^	DEBUG_SYSTEM	= 0,$/;"	e	enum:__anon11
+DEBUG_WIRELESS	netifd.h	/^	DEBUG_WIRELESS	= 3,$/;"	e	enum:__anon11
+DEFAULT_HOTPLUG_PATH	netifd.h	33;"	d
+DEFAULT_HOTPLUG_PATH	netifd.h	37;"	d
+DEFAULT_LOG_LEVEL	main.c	35;"	d	file:
+DEFAULT_MAIN_PATH	netifd.h	32;"	d
+DEFAULT_MAIN_PATH	netifd.h	36;"	d
+DEFAULT_RESOLV_CONF	netifd.h	34;"	d
+DEFAULT_RESOLV_CONF	netifd.h	38;"	d
+DEVADDR_EXTERNAL	interface-ip.h	/^	DEVADDR_EXTERNAL	= (1 << 2),$/;"	e	enum:device_addr_flags
+DEVADDR_FAMILY	interface-ip.h	/^	DEVADDR_FAMILY		= DEVADDR_INET4 | DEVADDR_INET6,$/;"	e	enum:device_addr_flags
+DEVADDR_INET4	interface-ip.h	/^	DEVADDR_INET4		= (0 << 0),$/;"	e	enum:device_addr_flags
+DEVADDR_INET6	interface-ip.h	/^	DEVADDR_INET6		= (1 << 0),$/;"	e	enum:device_addr_flags
+DEVADDR_KERNEL	interface-ip.h	/^	DEVADDR_KERNEL		= (1 << 5),$/;"	e	enum:device_addr_flags
+DEVADDR_OFFLINK	interface-ip.h	/^	DEVADDR_OFFLINK		= (1 << 6),$/;"	e	enum:device_addr_flags
+DEVROUTE_METRIC	interface-ip.h	/^	DEVROUTE_METRIC		= (1 << 3),$/;"	e	enum:device_addr_flags
+DEVROUTE_MTU	interface-ip.h	/^	DEVROUTE_MTU		= (1 << 4),$/;"	e	enum:device_addr_flags
+DEVROUTE_SRCTABLE	interface-ip.h	/^	DEVROUTE_SRCTABLE	= (1 << 8),$/;"	e	enum:device_addr_flags
+DEVROUTE_TABLE	interface-ip.h	/^	DEVROUTE_TABLE		= (1 << 7),$/;"	e	enum:device_addr_flags
+DEV_ATTR_ENABLED	device.h	/^	DEV_ATTR_ENABLED,$/;"	e	enum:__anon20
+DEV_ATTR_IFNAME	device.h	/^	DEV_ATTR_IFNAME,$/;"	e	enum:__anon20
+DEV_ATTR_MACADDR	device.h	/^	DEV_ATTR_MACADDR,$/;"	e	enum:__anon20
+DEV_ATTR_MTU	device.h	/^	DEV_ATTR_MTU,$/;"	e	enum:__anon20
+DEV_ATTR_TXQUEUELEN	device.h	/^	DEV_ATTR_TXQUEUELEN,$/;"	e	enum:__anon20
+DEV_ATTR_TYPE	device.h	/^	DEV_ATTR_TYPE,$/;"	e	enum:__anon20
+DEV_CONFIG_APPLIED	device.h	/^	DEV_CONFIG_APPLIED,$/;"	e	enum:dev_change_type
+DEV_CONFIG_NO_CHANGE	device.h	/^	DEV_CONFIG_NO_CHANGE,$/;"	e	enum:dev_change_type
+DEV_CONFIG_RECREATE	device.h	/^	DEV_CONFIG_RECREATE,$/;"	e	enum:dev_change_type
+DEV_CONFIG_RESTART	device.h	/^	DEV_CONFIG_RESTART,$/;"	e	enum:dev_change_type
+DEV_EVENT_ADD	device.h	/^	DEV_EVENT_ADD,$/;"	e	enum:device_event
+DEV_EVENT_DOWN	device.h	/^	DEV_EVENT_DOWN,$/;"	e	enum:device_event
+DEV_EVENT_LINK_DOWN	device.h	/^	DEV_EVENT_LINK_DOWN,$/;"	e	enum:device_event
+DEV_EVENT_LINK_UP	device.h	/^	DEV_EVENT_LINK_UP,$/;"	e	enum:device_event
+DEV_EVENT_REMOVE	device.h	/^	DEV_EVENT_REMOVE,$/;"	e	enum:device_event
+DEV_EVENT_SETUP	device.h	/^	DEV_EVENT_SETUP,$/;"	e	enum:device_event
+DEV_EVENT_TEARDOWN	device.h	/^	DEV_EVENT_TEARDOWN,$/;"	e	enum:device_event
+DEV_EVENT_UP	device.h	/^	DEV_EVENT_UP,$/;"	e	enum:device_event
+DEV_EVENT_UPDATE_IFNAME	device.h	/^	DEV_EVENT_UPDATE_IFNAME,$/;"	e	enum:device_event
+DEV_NAME	ubus.c	/^	DEV_NAME,$/;"	e	enum:__anon14	file:
+DEV_OPT_MACADDR	device.h	/^	DEV_OPT_MACADDR		= (1 << 1),$/;"	e	enum:__anon21
+DEV_OPT_MTU	device.h	/^	DEV_OPT_MTU		= (1 << 0),$/;"	e	enum:__anon21
+DEV_OPT_TXQUEUELEN	device.h	/^	DEV_OPT_TXQUEUELEN	= (1 << 2),$/;"	e	enum:__anon21
+DEV_STATE_DEFER	ubus.c	/^	DEV_STATE_DEFER,$/;"	e	enum:__anon16	file:
+DEV_STATE_NAME	ubus.c	/^	DEV_STATE_NAME,$/;"	e	enum:__anon16	file:
+DI_NAME	ubus.c	/^	DI_NAME,$/;"	e	enum:__anon13	file:
+DPRINTF	netifd.h	61;"	d
+DPRINTF	netifd.h	67;"	d
+DUMP_SUFFIX	handler.c	88;"	d	file:
+FIELD_CHANGED_STR	interface.c	872;"	d	file:
+HR_INTERFACE	ubus.c	/^	HR_INTERFACE,$/;"	e	enum:__anon12	file:
+HR_TARGET	ubus.c	/^	HR_TARGET,$/;"	e	enum:__anon12	file:
+HR_V6	ubus.c	/^	HR_V6,$/;"	e	enum:__anon12	file:
+IFACE_ATTR_AUTO	interface.c	/^	IFACE_ATTR_AUTO,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_DEFAULTROUTE	interface.c	/^	IFACE_ATTR_DEFAULTROUTE,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_DELEGATE	interface.c	/^	IFACE_ATTR_DELEGATE,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_DNS	interface.c	/^	IFACE_ATTR_DNS,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_DNS_SEARCH	interface.c	/^	IFACE_ATTR_DNS_SEARCH,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_IFNAME	interface.c	/^	IFACE_ATTR_IFNAME,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_INTERFACE	interface.c	/^	IFACE_ATTR_INTERFACE,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_IP4TABLE	interface.c	/^	IFACE_ATTR_IP4TABLE,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_IP6ASSIGN	interface.c	/^	IFACE_ATTR_IP6ASSIGN,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_IP6CLASS	interface.c	/^	IFACE_ATTR_IP6CLASS,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_IP6HINT	interface.c	/^	IFACE_ATTR_IP6HINT,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_IP6TABLE	interface.c	/^	IFACE_ATTR_IP6TABLE,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_MAX	interface.c	/^	IFACE_ATTR_MAX$/;"	e	enum:__anon3	file:
+IFACE_ATTR_METRIC	interface.c	/^	IFACE_ATTR_METRIC,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_PEERDNS	interface.c	/^	IFACE_ATTR_PEERDNS,$/;"	e	enum:__anon3	file:
+IFACE_ATTR_PROTO	interface.c	/^	IFACE_ATTR_PROTO,$/;"	e	enum:__anon3	file:
+IFC_NORMAL	interface.h	/^	IFC_NORMAL,$/;"	e	enum:interface_config_state
+IFC_RELOAD	interface.h	/^	IFC_RELOAD,$/;"	e	enum:interface_config_state
+IFC_REMOVE	interface.h	/^	IFC_REMOVE$/;"	e	enum:interface_config_state
+IFEV_DOWN	interface.h	/^	IFEV_DOWN,$/;"	e	enum:interface_event
+IFEV_FREE	interface.h	/^	IFEV_FREE,$/;"	e	enum:interface_event
+IFEV_RELOAD	interface.h	/^	IFEV_RELOAD,$/;"	e	enum:interface_event
+IFEV_UP	interface.h	/^	IFEV_UP,$/;"	e	enum:interface_event
+IFEV_UPDATE	interface.h	/^	IFEV_UPDATE,$/;"	e	enum:interface_event
+IFPEV_DOWN	proto.h	/^	IFPEV_DOWN,$/;"	e	enum:interface_proto_event
+IFPEV_LINK_LOST	proto.h	/^	IFPEV_LINK_LOST,$/;"	e	enum:interface_proto_event
+IFPEV_UP	proto.h	/^	IFPEV_UP,$/;"	e	enum:interface_proto_event
+IFS_DOWN	interface.h	/^	IFS_DOWN,$/;"	e	enum:interface_state
+IFS_SETUP	interface.h	/^	IFS_SETUP,$/;"	e	enum:interface_state
+IFS_TEARDOWN	interface.h	/^	IFS_TEARDOWN,$/;"	e	enum:interface_state
+IFS_UP	interface.h	/^	IFS_UP,$/;"	e	enum:interface_state
+IPRULE_ACTION	iprule.h	/^	IPRULE_ACTION		= (1 << 11),$/;"	e	enum:iprule_flags
+IPRULE_DEST	iprule.h	/^	IPRULE_DEST			= (1 << 5),$/;"	e	enum:iprule_flags
+IPRULE_FAMILY	iprule.h	/^	IPRULE_FAMILY		= IPRULE_INET4 | IPRULE_INET6,$/;"	e	enum:iprule_flags
+IPRULE_FWMARK	iprule.h	/^	IPRULE_FWMARK		= (1 << 8),$/;"	e	enum:iprule_flags
+IPRULE_FWMASK	iprule.h	/^	IPRULE_FWMASK		= (1 << 9),$/;"	e	enum:iprule_flags
+IPRULE_GOTO	iprule.h	/^	IPRULE_GOTO			= (1 << 12),$/;"	e	enum:iprule_flags
+IPRULE_IN	iprule.h	/^	IPRULE_IN			= (1 << 2),$/;"	e	enum:iprule_flags
+IPRULE_INET4	iprule.h	/^	IPRULE_INET4		= (0 << 0),$/;"	e	enum:iprule_flags
+IPRULE_INET6	iprule.h	/^	IPRULE_INET6		= (1 << 0),$/;"	e	enum:iprule_flags
+IPRULE_LOOKUP	iprule.h	/^	IPRULE_LOOKUP		= (1 << 10),$/;"	e	enum:iprule_flags
+IPRULE_OUT	iprule.h	/^	IPRULE_OUT			= (1 << 3),$/;"	e	enum:iprule_flags
+IPRULE_PRIORITY	iprule.h	/^	IPRULE_PRIORITY		= (1 << 6),$/;"	e	enum:iprule_flags
+IPRULE_PRIORITY_ADDR	iprule.h	20;"	d
+IPRULE_PRIORITY_NW	iprule.h	21;"	d
+IPRULE_PRIORITY_REJECT	iprule.h	22;"	d
+IPRULE_SRC	iprule.h	/^	IPRULE_SRC			= (1 << 4),$/;"	e	enum:iprule_flags
+IPRULE_TOS	iprule.h	/^	IPRULE_TOS			= (1 << 7),$/;"	e	enum:iprule_flags
+IP_DF	system-linux.c	1381;"	d	file:
+IUF_ADDRESS	interface.h	/^	IUF_ADDRESS	= (1 << 0),$/;"	e	enum:interface_update_flags
+IUF_DATA	interface.h	/^	IUF_DATA	= (1 << 3),$/;"	e	enum:interface_update_flags
+IUF_PREFIX	interface.h	/^	IUF_PREFIX	= (1 << 2),$/;"	e	enum:interface_update_flags
+IUF_ROUTE	interface.h	/^	IUF_ROUTE	= (1 << 1),$/;"	e	enum:interface_update_flags
+LOG_BUF_SIZE	netifd.h	71;"	d
+L_CRIT	netifd.h	/^	L_CRIT,$/;"	e	enum:__anon10
+L_DEBUG	netifd.h	/^	L_DEBUG$/;"	e	enum:__anon10
+L_INFO	netifd.h	/^	L_INFO,$/;"	e	enum:__anon10
+L_NOTICE	netifd.h	/^	L_NOTICE,$/;"	e	enum:__anon10
+L_WARNING	netifd.h	/^	L_WARNING,$/;"	e	enum:__anon10
+MACVLAN_ATTR_IFNAME	macvlan.c	/^	MACVLAN_ATTR_IFNAME,$/;"	e	enum:__anon1	file:
+MACVLAN_ATTR_MACADDR	macvlan.c	/^	MACVLAN_ATTR_MACADDR,$/;"	e	enum:__anon1	file:
+MACVLAN_ATTR_MODE	macvlan.c	/^	MACVLAN_ATTR_MODE,$/;"	e	enum:__anon1	file:
+MACVLAN_OPT_MACADDR	system.h	/^	MACVLAN_OPT_MACADDR = (1 << 0),$/;"	e	enum:macvlan_opt
+NOTIFY_ACTION	proto-shell.c	/^	NOTIFY_ACTION,$/;"	e	enum:__anon19	file:
+NOTIFY_ADDR_EXT	proto-shell.c	/^	NOTIFY_ADDR_EXT,$/;"	e	enum:__anon19	file:
+NOTIFY_AVAILABLE	proto-shell.c	/^	NOTIFY_AVAILABLE,$/;"	e	enum:__anon19	file:
+NOTIFY_CMD_PROCESS_ADD	wireless.c	/^	NOTIFY_CMD_PROCESS_ADD = 2,$/;"	e	enum:__anon6	file:
+NOTIFY_CMD_PROCESS_KILL_ALL	wireless.c	/^	NOTIFY_CMD_PROCESS_KILL_ALL = 3,$/;"	e	enum:__anon6	file:
+NOTIFY_CMD_SET_DATA	wireless.c	/^	NOTIFY_CMD_SET_DATA = 1,$/;"	e	enum:__anon6	file:
+NOTIFY_CMD_SET_RETRY	wireless.c	/^	NOTIFY_CMD_SET_RETRY = 4,$/;"	e	enum:__anon6	file:
+NOTIFY_CMD_UP	wireless.c	/^	NOTIFY_CMD_UP = 0,$/;"	e	enum:__anon6	file:
+NOTIFY_COMMAND	proto-shell.c	/^	NOTIFY_COMMAND,$/;"	e	enum:__anon19	file:
+NOTIFY_DATA	proto-shell.c	/^	NOTIFY_DATA,$/;"	e	enum:__anon19	file:
+NOTIFY_DNS	proto-shell.c	/^	NOTIFY_DNS,$/;"	e	enum:__anon19	file:
+NOTIFY_DNS_SEARCH	proto-shell.c	/^	NOTIFY_DNS_SEARCH,$/;"	e	enum:__anon19	file:
+NOTIFY_ENV	proto-shell.c	/^	NOTIFY_ENV,$/;"	e	enum:__anon19	file:
+NOTIFY_ERROR	proto-shell.c	/^	NOTIFY_ERROR,$/;"	e	enum:__anon19	file:
+NOTIFY_HOST	proto-shell.c	/^	NOTIFY_HOST,$/;"	e	enum:__anon19	file:
+NOTIFY_IFNAME	proto-shell.c	/^	NOTIFY_IFNAME,$/;"	e	enum:__anon19	file:
+NOTIFY_KEEP	proto-shell.c	/^	NOTIFY_KEEP,$/;"	e	enum:__anon19	file:
+NOTIFY_LINK_UP	proto-shell.c	/^	NOTIFY_LINK_UP,$/;"	e	enum:__anon19	file:
+NOTIFY_ROUTES	proto-shell.c	/^	NOTIFY_ROUTES,$/;"	e	enum:__anon19	file:
+NOTIFY_ROUTES6	proto-shell.c	/^	NOTIFY_ROUTES6,$/;"	e	enum:__anon19	file:
+NOTIFY_SIGNAL	proto-shell.c	/^	NOTIFY_SIGNAL,$/;"	e	enum:__anon19	file:
+NOTIFY_TUNNEL	proto-shell.c	/^	NOTIFY_TUNNEL,$/;"	e	enum:__anon19	file:
+OPT_BROADCAST	proto.c	/^	OPT_BROADCAST,$/;"	e	enum:__anon17	file:
+OPT_GATEWAY	proto.c	/^	OPT_GATEWAY,$/;"	e	enum:__anon17	file:
+OPT_IP6ADDR	proto.c	/^	OPT_IP6ADDR,$/;"	e	enum:__anon17	file:
+OPT_IP6GW	proto.c	/^	OPT_IP6GW,$/;"	e	enum:__anon17	file:
+OPT_IP6PREFIX	proto.c	/^	OPT_IP6PREFIX,$/;"	e	enum:__anon17	file:
+OPT_IPADDR	proto.c	/^	OPT_IPADDR,$/;"	e	enum:__anon17	file:
+OPT_NETMASK	proto.c	/^	OPT_NETMASK,$/;"	e	enum:__anon17	file:
+PROTO_CMD_SETUP	proto.h	/^	PROTO_CMD_SETUP,$/;"	e	enum:interface_proto_cmd
+PROTO_CMD_TEARDOWN	proto.h	/^	PROTO_CMD_TEARDOWN,$/;"	e	enum:interface_proto_cmd
+PROTO_FLAG_IMMEDIATE	proto.h	/^	PROTO_FLAG_IMMEDIATE = (1 << 0),$/;"	e	enum:__anon7
+PROTO_FLAG_INIT_AVAILABLE	proto.h	/^	PROTO_FLAG_INIT_AVAILABLE = (1 << 2),$/;"	e	enum:__anon7
+PROTO_FLAG_NODEV	proto.h	/^	PROTO_FLAG_NODEV = (1 << 1),$/;"	e	enum:__anon7
+ROUTE_GATEWAY	interface-ip.c	/^	ROUTE_GATEWAY,$/;"	e	enum:__anon2	file:
+ROUTE_INTERFACE	interface-ip.c	/^	ROUTE_INTERFACE,$/;"	e	enum:__anon2	file:
+ROUTE_MASK	interface-ip.c	/^	ROUTE_MASK,$/;"	e	enum:__anon2	file:
+ROUTE_METRIC	interface-ip.c	/^	ROUTE_METRIC,$/;"	e	enum:__anon2	file:
+ROUTE_MTU	interface-ip.c	/^	ROUTE_MTU,$/;"	e	enum:__anon2	file:
+ROUTE_SOURCE	interface-ip.c	/^	ROUTE_SOURCE,$/;"	e	enum:__anon2	file:
+ROUTE_TABLE	interface-ip.c	/^	ROUTE_TABLE,$/;"	e	enum:__anon2	file:
+ROUTE_TARGET	interface-ip.c	/^	ROUTE_TARGET,$/;"	e	enum:__anon2	file:
+ROUTE_VALID	interface-ip.c	/^	ROUTE_VALID,$/;"	e	enum:__anon2	file:
+RTN_FAILED_POLICY	system-linux.c	41;"	d	file:
+RULE_ACTION	iprule.c	/^	RULE_ACTION,$/;"	e	enum:__anon8	file:
+RULE_DEST	iprule.c	/^	RULE_DEST,$/;"	e	enum:__anon8	file:
+RULE_FWMARK	iprule.c	/^	RULE_FWMARK,$/;"	e	enum:__anon8	file:
+RULE_GOTO	iprule.c	/^	RULE_GOTO,$/;"	e	enum:__anon8	file:
+RULE_INTERFACE_IN	iprule.c	/^	RULE_INTERFACE_IN,$/;"	e	enum:__anon8	file:
+RULE_INTERFACE_OUT	iprule.c	/^	RULE_INTERFACE_OUT,$/;"	e	enum:__anon8	file:
+RULE_INVERT	iprule.c	/^	RULE_INVERT,$/;"	e	enum:__anon8	file:
+RULE_LOOKUP	iprule.c	/^	RULE_LOOKUP,$/;"	e	enum:__anon8	file:
+RULE_PRIORITY	iprule.c	/^	RULE_PRIORITY,$/;"	e	enum:__anon8	file:
+RULE_SRC	iprule.c	/^	RULE_SRC,$/;"	e	enum:__anon8	file:
+RULE_TOS	iprule.c	/^	RULE_TOS,$/;"	e	enum:__anon8	file:
+S_IDLE	proto-shell.c	/^	S_IDLE,$/;"	e	enum:proto_shell_sm	file:
+S_SETUP	proto-shell.c	/^	S_SETUP,$/;"	e	enum:proto_shell_sm	file:
+S_SETUP_ABORT	proto-shell.c	/^	S_SETUP_ABORT,$/;"	e	enum:proto_shell_sm	file:
+S_TEARDOWN	proto-shell.c	/^	S_TEARDOWN,$/;"	e	enum:proto_shell_sm	file:
+TUNNEL_ATTR_6RD_PREFIX	system.h	/^	TUNNEL_ATTR_6RD_PREFIX,$/;"	e	enum:tunnel_param
+TUNNEL_ATTR_6RD_RELAY_PREFIX	system.h	/^	TUNNEL_ATTR_6RD_RELAY_PREFIX,$/;"	e	enum:tunnel_param
+TUNNEL_ATTR_DF	system.h	/^	TUNNEL_ATTR_DF,$/;"	e	enum:tunnel_param
+TUNNEL_ATTR_LINK	system.h	/^	TUNNEL_ATTR_LINK,$/;"	e	enum:tunnel_param
+TUNNEL_ATTR_LOCAL	system.h	/^	TUNNEL_ATTR_LOCAL,$/;"	e	enum:tunnel_param
+TUNNEL_ATTR_MTU	system.h	/^	TUNNEL_ATTR_MTU,$/;"	e	enum:tunnel_param
+TUNNEL_ATTR_REMOTE	system.h	/^	TUNNEL_ATTR_REMOTE,$/;"	e	enum:tunnel_param
+TUNNEL_ATTR_TTL	system.h	/^	TUNNEL_ATTR_TTL,$/;"	e	enum:tunnel_param
+TUNNEL_ATTR_TYPE	system.h	/^	TUNNEL_ATTR_TYPE,$/;"	e	enum:tunnel_param
+UPDATE	interface.c	894;"	d	file:
+UPDATE	interface.c	919;"	d	file:
+VIF_ATTR_DISABLED	wireless.c	/^	VIF_ATTR_DISABLED,$/;"	e	enum:__anon5	file:
+VIF_ATTR_NETWORK	wireless.c	/^	VIF_ATTR_NETWORK,$/;"	e	enum:__anon5	file:
+WIRELESS_SETUP_RETRY	wireless.c	20;"	d	file:
+_GNU_SOURCE	handler.c	15;"	d	file:
+_GNU_SOURCE	proto-shell.c	14;"	d	file:
+_GNU_SOURCE	system-linux.c	16;"	d	file:
+_GNU_SOURCE	ubus.c	14;"	d	file:
+__ADDR_MAX	proto.c	/^	__ADDR_MAX$/;"	e	enum:__anon18	file:
+__ALIAS_ATTR_MAX	ubus.c	/^	__ALIAS_ATTR_MAX,$/;"	e	enum:__anon15	file:
+__BRIDGE_ATTR_MAX	bridge.c	/^	__BRIDGE_ATTR_MAX$/;"	e	enum:__anon22	file:
+__DEV_ATTR_MAX	device.h	/^	__DEV_ATTR_MAX,$/;"	e	enum:__anon20
+__DEV_EVENT_MAX	device.h	/^	__DEV_EVENT_MAX$/;"	e	enum:device_event
+__DEV_MAX	ubus.c	/^	__DEV_MAX,$/;"	e	enum:__anon14	file:
+__DEV_STATE_MAX	ubus.c	/^	__DEV_STATE_MAX,$/;"	e	enum:__anon16	file:
+__DI_MAX	ubus.c	/^	__DI_MAX$/;"	e	enum:__anon13	file:
+__HR_MAX	ubus.c	/^	__HR_MAX$/;"	e	enum:__anon12	file:
+__INTERFACE_IP_H	interface-ip.h	15;"	d
+__IPRULE_H	iprule.h	16;"	d
+__LL_H	device.h	15;"	d
+__MACVLAN_ATTR_MAX	macvlan.c	/^	__MACVLAN_ATTR_MAX$/;"	e	enum:__anon1	file:
+__NETIFD_CONFIG_H	config.h	15;"	d
+__NETIFD_H	netifd.h	15;"	d
+__NETIFD_HANDLER_H	handler.h	15;"	d
+__NETIFD_INTERFACE_H	interface.h	15;"	d
+__NETIFD_PROTO_H	proto.h	15;"	d
+__NETIFD_SYSTEM_H	system.h	15;"	d
+__NETIFD_UBUS_H	ubus.h	15;"	d
+__NETIFD_UTILS_H	utils.h	15;"	d
+__NETIFD_WIRELESS_H	wireless.h	15;"	d
+__NOTIFY_LAST	proto-shell.c	/^	__NOTIFY_LAST$/;"	e	enum:__anon19	file:
+__OPT_MAX	proto.c	/^	__OPT_MAX,$/;"	e	enum:__anon17	file:
+__ROUTE_MAX	interface-ip.c	/^	__ROUTE_MAX$/;"	e	enum:__anon2	file:
+__RULE_MAX	iprule.c	/^	__RULE_MAX$/;"	e	enum:__anon8	file:
+__TUNNEL_ATTR_MAX	system.h	/^	__TUNNEL_ATTR_MAX$/;"	e	enum:tunnel_param
+__VIF_ATTR_MAX	wireless.c	/^	__VIF_ATTR_MAX,$/;"	e	enum:__anon5	file:
+__device_free_unused	device.c	/^__device_free_unused(struct device *dev)$/;"	f	file:
+__device_set_present	device.c	/^static void __device_set_present(struct device *dev, bool state)$/;"	f	file:
+__devlock	device.c	/^static int __devlock = 0;$/;"	v	file:
+__find_ip_addr_target	interface-ip.c	/^__find_ip_addr_target(struct interface_ip_settings *ip, union if_addr *a, bool v6)$/;"	f	file:
+__find_ip_route_target	interface-ip.c	/^__find_ip_route_target(struct interface_ip_settings *ip, union if_addr *a,$/;"	f	file:
+__init	utils.h	34;"	d
+__interface_add	interface.c	/^static bool __interface_add(struct interface *iface, struct blob_attr *config, bool alias)$/;"	f	file:
+__interface_ip_init	interface-ip.c	/^__interface_ip_init(struct interface_ip_settings *ip, struct interface *iface)$/;"	f	file:
+__interface_set_down	interface.c	/^__interface_set_down(struct interface *iface, bool force)$/;"	f
+__vlist_simple_init	utils.c	/^__vlist_simple_init(struct vlist_simple_tree *tree, int offset)$/;"	f
+__wireless_device_set_down	wireless.c	/^__wireless_device_set_down(struct wireless_device *wdev)$/;"	f	file:
+__wireless_device_set_up	wireless.c	/^__wireless_device_set_up(struct wireless_device *wdev)$/;"	f	file:
+_config_add_generic	scripts/utils.sh	/^_config_add_generic() {$/;"	f
+_proto_do_setup	scripts/netifd-proto.sh	/^_proto_do_setup() {$/;"	f
+_proto_do_teardown	scripts/netifd-proto.sh	/^_proto_do_teardown() {$/;"	f
+_proto_notify	scripts/netifd-proto.sh	/^_proto_notify() {$/;"	f
+_proto_push_array	scripts/netifd-proto.sh	/^_proto_push_array() {$/;"	f
+_proto_push_ipv4_addr	scripts/netifd-proto.sh	/^_proto_push_ipv4_addr() {$/;"	f
+_proto_push_ipv6_addr	scripts/netifd-proto.sh	/^_proto_push_ipv6_addr() {$/;"	f
+_proto_push_route	scripts/netifd-proto.sh	/^_proto_push_route() {$/;"	f
+_proto_push_string	scripts/netifd-proto.sh	/^_proto_push_string() {$/;"	f
+_wdev_add_variables	scripts/netifd-wireless.sh	/^_wdev_add_variables() {$/;"	f
+_wdev_common_device_config	scripts/netifd-wireless.sh	/^_wdev_common_device_config() {$/;"	f
+_wdev_common_iface_config	scripts/netifd-wireless.sh	/^_wdev_common_iface_config() {$/;"	f
+_wdev_handler	scripts/netifd-wireless.sh	/^_wdev_handler() {$/;"	f
+_wdev_msg_call	scripts/netifd-wireless.sh	/^_wdev_msg_call() {$/;"	f
+_wdev_notify	scripts/netifd-wireless.sh	/^_wdev_notify() {$/;"	f
+_wdev_notify_init	scripts/netifd-wireless.sh	/^_wdev_notify_init() {$/;"	f
+_wdev_prepare_channel	scripts/netifd-wireless.sh	/^_wdev_prepare_channel() {$/;"	f
+_wdev_wrapper	scripts/netifd-wireless.sh	/^_wdev_wrapper() {$/;"	f
+_wireless_add_process	scripts/netifd-wireless.sh	/^_wireless_add_process() {$/;"	f
+_wireless_add_vif	scripts/netifd-wireless.sh	/^_wireless_add_vif() {$/;"	f
+_wireless_process_kill_all	scripts/netifd-wireless.sh	/^_wireless_process_kill_all() {$/;"	f
+_wireless_set_data	scripts/netifd-wireless.sh	/^_wireless_set_data() {$/;"	f
+_wireless_set_retry	scripts/netifd-wireless.sh	/^_wireless_set_retry() {$/;"	f
+_wireless_set_up	scripts/netifd-wireless.sh	/^_wireless_set_up() {$/;"	f
+action	iprule.h	/^	unsigned int action;$/;"	m	struct:iprule
+active	bridge.c	/^	bool active;$/;"	m	struct:bridge_state	file:
+active	device.h	/^	int active;$/;"	m	struct:device
+add	device.h	/^	int (*add)(struct device *main, struct device *member);$/;"	m	struct:device_hotplug_ops
+add_default_handler	scripts/utils.sh	/^add_default_handler() {$/;"	f
+add_driver	scripts/netifd-wireless.sh	/^			add_driver() {$/;"	f
+add_driver	scripts/netifd-wireless.sh	/^add_driver() {$/;"	f
+add_proto_handler	proto.c	/^void add_proto_handler(struct proto_handler *p)$/;"	f
+add_protocol	scripts/netifd-proto.sh	/^			add_protocol() {$/;"	f
+addr	interface-ip.h	/^	struct in6_addr addr;$/;"	m	struct:device_prefix	typeref:struct:device_prefix::in6_addr
+addr	interface-ip.h	/^	union if_addr addr;$/;"	m	struct:device_addr	typeref:union:device_addr::if_addr
+addr	interface-ip.h	/^	union if_addr addr;$/;"	m	struct:device_route	typeref:union:device_route::if_addr
+addr	interface-ip.h	/^	union if_addr addr;$/;"	m	struct:device_source_table	typeref:union:device_source_table::if_addr
+addr	interface-ip.h	/^	union if_addr addr;$/;"	m	struct:dns_server	typeref:union:dns_server::if_addr
+addr	interface.h	/^	struct vlist_tree addr;$/;"	m	struct:interface_ip_settings	typeref:struct:interface_ip_settings::vlist_tree
+addr_cmp	interface-ip.c	/^addr_cmp(const void *k1, const void *k2, void *ptr)$/;"	f	file:
+af	interface-ip.h	/^	int af;$/;"	m	struct:dns_server
+af	system-linux.c	/^	int af;$/;"	m	struct:clear_data	file:
+ageing_time	system.h	/^	int ageing_time;$/;"	m	struct:bridge_config
+alias	device.h	/^	bool alias;$/;"	m	struct:device_user
+alias_attrs	ubus.c	/^static const struct blobmsg_policy alias_attrs[__ALIAS_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+alias_check_state	alias.c	/^static int alias_check_state(struct device *dev)$/;"	f	file:
+alias_device	alias.c	/^struct alias_device {$/;"	s	file:
+alias_device_cb	alias.c	/^static void alias_device_cb(struct device_user *dep, enum device_event ev)$/;"	f	file:
+alias_device_create	alias.c	/^alias_device_create(const char *name, struct blob_attr *attr)$/;"	f	file:
+alias_device_free	alias.c	/^static void alias_device_free(struct device *dev)$/;"	f	file:
+alias_device_set_state	alias.c	/^alias_device_set_state(struct device *dev, bool state)$/;"	f	file:
+alias_device_type	alias.c	/^static const struct device_type alias_device_type = {$/;"	v	typeref:struct:device_type	file:
+alias_device_type	alias.c	/^static const struct device_type alias_device_type;$/;"	v	typeref:struct:device_type	file:
+alias_init	alias.c	/^static void __init alias_init(void)$/;"	f	file:
+alias_notify_device	alias.c	/^alias_notify_device(const char *name, struct device *dev)$/;"	f
+alias_set_device	alias.c	/^static void alias_set_device(struct alias_device *alias, struct device *dev)$/;"	f	file:
+aliases	alias.c	/^static struct avl_tree aliases;$/;"	v	typeref:struct:avl_tree	file:
+aliases	device.h	/^	struct safe_list aliases;$/;"	m	struct:device	typeref:struct:device::safe_list
+alloc_device_addr	proto.c	/^alloc_device_addr(bool v6, bool ext)$/;"	f	file:
+append	scripts/utils.sh	/^append() {$/;"	f
+assigned	interface-ip.h	/^	int32_t assigned;$/;"	m	struct:device_prefix_assignment
+assignment_classes	interface.h	/^	struct list_head assignment_classes;$/;"	m	struct:interface	typeref:struct:interface::list_head
+assignment_hint	interface.h	/^	int32_t assignment_hint;$/;"	m	struct:interface
+assignment_length	interface.h	/^	uint8_t assignment_length;$/;"	m	struct:interface
+assignments	interface-ip.h	/^	struct list_head assignments;$/;"	m	struct:device_prefix	typeref:struct:device_prefix::list_head
+attach	proto.h	/^	struct interface_proto_state *(*attach)(const struct proto_handler *h,$/;"	m	struct:proto_handler	typeref:struct:proto_handler::attach
+autostart	interface.h	/^	bool autostart;$/;"	m	struct:interface
+autostart	wireless.h	/^	bool autostart;$/;"	m	struct:wireless_device
+available	interface.h	/^	bool available;$/;"	m	struct:interface
+avl	alias.c	/^	struct avl_node avl;$/;"	m	struct:alias_device	typeref:struct:alias_device::avl_node	file:
+avl	device.h	/^	struct avl_node avl;$/;"	m	struct:device	typeref:struct:device::avl_node
+avl	proto.h	/^	struct avl_node avl;$/;"	m	struct:proto_handler	typeref:struct:proto_handler::avl_node
+b	config.c	/^static struct blob_buf b;$/;"	v	typeref:struct:blob_buf	file:
+b	ubus.c	/^static struct blob_buf b;$/;"	v	typeref:struct:blob_buf	file:
+b	wireless.c	/^static struct blob_buf b;$/;"	v	typeref:struct:blob_buf	file:
+blobmsg_get_bool_default	utils.h	/^static inline bool blobmsg_get_bool_default(struct blob_attr *attr, bool val)$/;"	f
+bridge_add_member	bridge.c	/^bridge_add_member(struct bridge_state *bst, const char *name)$/;"	f	file:
+bridge_apply_settings	bridge.c	/^bridge_apply_settings(struct bridge_state *bst, struct blob_attr **tb)$/;"	f	file:
+bridge_attr_info	bridge.c	/^static const struct uci_blob_param_info bridge_attr_info[__BRIDGE_ATTR_MAX] = {$/;"	v	typeref:struct:uci_blob_param_info	file:
+bridge_attr_list	bridge.c	/^static const struct uci_blob_param_list bridge_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list	file:
+bridge_attrs	bridge.c	/^static const struct blobmsg_policy bridge_attrs[__BRIDGE_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+bridge_config	system.h	/^struct bridge_config {$/;"	s
+bridge_config_init	bridge.c	/^bridge_config_init(struct device *dev)$/;"	f	file:
+bridge_create	bridge.c	/^bridge_create(const char *name, struct blob_attr *attr)$/;"	f	file:
+bridge_create_member	bridge.c	/^bridge_create_member(struct bridge_state *bst, struct device *dev, bool hotplug)$/;"	f	file:
+bridge_device_type	bridge.c	/^const struct device_type bridge_device_type = {$/;"	v	typeref:struct:device_type
+bridge_disable_member	bridge.c	/^bridge_disable_member(struct bridge_member *bm)$/;"	f	file:
+bridge_dump_info	bridge.c	/^bridge_dump_info(struct device *dev, struct blob_buf *b)$/;"	f	file:
+bridge_empty	system.h	/^	bool bridge_empty;$/;"	m	struct:bridge_config
+bridge_enable_member	bridge.c	/^bridge_enable_member(struct bridge_member *bm)$/;"	f	file:
+bridge_free	bridge.c	/^bridge_free(struct device *dev)$/;"	f	file:
+bridge_free_member	bridge.c	/^bridge_free_member(struct bridge_member *bm)$/;"	f	file:
+bridge_hotplug_add	bridge.c	/^bridge_hotplug_add(struct device *dev, struct device *member)$/;"	f	file:
+bridge_hotplug_del	bridge.c	/^bridge_hotplug_del(struct device *dev, struct device *member)$/;"	f	file:
+bridge_hotplug_prepare	bridge.c	/^bridge_hotplug_prepare(struct device *dev)$/;"	f	file:
+bridge_member	bridge.c	/^struct bridge_member {$/;"	s	file:
+bridge_member_cb	bridge.c	/^bridge_member_cb(struct device_user *dev, enum device_event ev)$/;"	f	file:
+bridge_member_update	bridge.c	/^bridge_member_update(struct vlist_tree *tree, struct vlist_node *node_new,$/;"	f	file:
+bridge_ops	bridge.c	/^static const struct device_hotplug_ops bridge_ops = {$/;"	v	typeref:struct:device_hotplug_ops	file:
+bridge_opt	system.h	/^enum bridge_opt {$/;"	g
+bridge_reload	bridge.c	/^bridge_reload(struct device *dev, struct blob_attr *attr)$/;"	f
+bridge_remove_member	bridge.c	/^bridge_remove_member(struct bridge_member *bm)$/;"	f	file:
+bridge_reset_primary	bridge.c	/^bridge_reset_primary(struct bridge_state *bst)$/;"	f	file:
+bridge_set_down	bridge.c	/^bridge_set_down(struct bridge_state *bst)$/;"	f	file:
+bridge_set_state	bridge.c	/^bridge_set_state(struct device *dev, bool up)$/;"	f	file:
+bridge_set_up	bridge.c	/^bridge_set_up(struct bridge_state *bst)$/;"	f	file:
+bridge_state	bridge.c	/^struct bridge_state {$/;"	s	file:
+broadcast	interface-ip.h	/^	uint32_t broadcast;$/;"	m	struct:device_addr
+bst	bridge.c	/^	struct bridge_state *bst;$/;"	m	struct:bridge_member	typeref:struct:bridge_member::bridge_state	file:
+buf	wireless.h	/^		char *buf;$/;"	m	struct:wireless_driver::__anon4
+call_hotplug	interface-event.c	/^call_hotplug(void)$/;"	f	file:
+cancel	wireless.h	/^	bool cancel;$/;"	m	struct:wireless_device
+cb	device.h	/^	void (*cb)(struct device_user *, enum device_event);$/;"	m	struct:device_user
+cb	interface.h	/^	void (*cb)(struct interface_user *dep, struct interface *iface, enum interface_event ev);$/;"	m	struct:interface_user
+cb	netifd.h	/^	void (*cb)(struct netifd_process *, int ret);$/;"	m	struct:netifd_process
+cb	proto.h	/^	int (*cb)(struct interface_proto_state *, enum interface_proto_cmd cmd, bool force);$/;"	m	struct:interface_proto_state
+cb	system-linux.c	/^	struct nl_cb *cb;$/;"	m	struct:event_socket	typeref:struct:event_socket::nl_cb	file:
+cb_clear_event	system-linux.c	/^static int cb_clear_event(struct nl_msg *msg, void *arg)$/;"	f	file:
+cb_finish_event	system-linux.c	/^cb_finish_event(struct nl_msg *msg, void *arg)$/;"	f	file:
+cb_rtnl_event	system-linux.c	/^static int cb_rtnl_event(struct nl_msg *msg, void *arg)$/;"	f	file:
+check_ifaddr	system-linux.c	/^static bool check_ifaddr(struct nlmsghdr *hdr, int ifindex)$/;"	f	file:
+check_pid_path	utils.c	/^bool check_pid_path(int pid, const char *exe)$/;"	f
+check_route	system-linux.c	/^static bool check_route(struct nlmsghdr *hdr, int ifindex)$/;"	f	file:
+check_rule	system-linux.c	/^static bool check_rule(struct nlmsghdr *hdr, int ifindex)$/;"	f	file:
+check_state	device.h	/^	int (*check_state)(struct device *);$/;"	m	struct:device_type
+claimed	device.h	/^	bool claimed;$/;"	m	struct:device_user
+clear_data	system-linux.c	/^struct clear_data {$/;"	s	file:
+clear_if_addr	interface-ip.c	/^clear_if_addr(union if_addr *a, int mask)$/;"	f	file:
+code	interface.h	/^	const char *code;$/;"	m	struct:interface_error
+config	bridge.c	/^	struct bridge_config config;$/;"	m	struct:bridge_state	typeref:struct:bridge_state::bridge_config	file:
+config	device.h	/^	struct blob_attr *config;$/;"	m	struct:device	typeref:struct:device::blob_attr
+config	interface.h	/^	struct blob_attr *config;$/;"	m	struct:interface	typeref:struct:interface::blob_attr
+config	macvlan.c	/^	struct macvlan_config config;$/;"	m	struct:macvlan_device	typeref:struct:macvlan_device::macvlan_config	file:
+config	proto-shell.c	/^	struct blob_attr *config;$/;"	m	struct:proto_shell_state	typeref:struct:proto_shell_state::blob_attr	file:
+config	proto-shell.c	/^	struct uci_blob_param_list config;$/;"	m	struct:proto_shell_handler	typeref:struct:proto_shell_handler::uci_blob_param_list	file:
+config	proto-static.c	/^	struct blob_attr *config;$/;"	m	struct:static_proto_state	typeref:struct:static_proto_state::blob_attr	file:
+config	wireless.h	/^		struct uci_blob_param_list *config;$/;"	m	struct:wireless_driver::__anon4	typeref:struct:wireless_driver::__anon4::uci_blob_param_list
+config	wireless.h	/^	struct blob_attr *config;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::blob_attr
+config	wireless.h	/^	struct blob_attr *config;$/;"	m	struct:wireless_interface	typeref:struct:wireless_interface::blob_attr
+config_add_array	scripts/utils.sh	/^config_add_array() {$/;"	f
+config_add_boolean	scripts/utils.sh	/^config_add_boolean() {$/;"	f
+config_add_int	scripts/utils.sh	/^config_add_int() {$/;"	f
+config_add_string	scripts/utils.sh	/^config_add_string() {$/;"	f
+config_autostart	interface.h	/^	bool config_autostart;$/;"	m	struct:interface
+config_autostart	wireless.h	/^	bool config_autostart;$/;"	m	struct:wireless_device
+config_buf	proto-shell.c	/^	char *config_buf;$/;"	m	struct:proto_shell_handler	file:
+config_data	bridge.c	/^	struct blob_attr *config_data;$/;"	m	struct:bridge_state	typeref:struct:bridge_state::blob_attr	file:
+config_data	macvlan.c	/^	struct blob_attr *config_data;$/;"	m	struct:macvlan_device	typeref:struct:macvlan_device::blob_attr	file:
+config_init	config.c	/^bool config_init = false;$/;"	v
+config_init	device.h	/^	void (*config_init)(struct device *);$/;"	m	struct:device_type
+config_init_all	config.c	/^config_init_all(void)$/;"	f
+config_init_devices	config.c	/^config_init_devices(void)$/;"	f	file:
+config_init_globals	config.c	/^config_init_globals(void)$/;"	f	file:
+config_init_interfaces	config.c	/^config_init_interfaces(void)$/;"	f	file:
+config_init_package	config.c	/^config_init_package(const char *config)$/;"	f	file:
+config_init_routes	config.c	/^config_init_routes(void)$/;"	f	file:
+config_init_rules	config.c	/^config_init_rules(void)$/;"	f	file:
+config_init_wireless	config.c	/^config_init_wireless(void)$/;"	f	file:
+config_ip	interface.h	/^	struct interface_ip_settings config_ip;$/;"	m	struct:interface	typeref:struct:interface::interface_ip_settings
+config_params	device.h	/^	const struct uci_blob_param_list *config_params;$/;"	m	struct:device_type	typeref:struct:device_type::uci_blob_param_list
+config_params	proto.h	/^	const struct uci_blob_param_list *config_params;$/;"	m	struct:proto_handler	typeref:struct:proto_handler::uci_blob_param_list
+config_parse_bridge_interface	config.c	/^config_parse_bridge_interface(struct uci_section *s)$/;"	f	file:
+config_parse_interface	config.c	/^config_parse_interface(struct uci_section *s, bool alias)$/;"	f	file:
+config_parse_route	config.c	/^config_parse_route(struct uci_section *s, bool v6)$/;"	f	file:
+config_parse_rule	config.c	/^config_parse_rule(struct uci_section *s, bool v6)$/;"	f	file:
+config_parse_wireless_device	config.c	/^config_parse_wireless_device(struct uci_section *s)$/;"	f	file:
+config_parse_wireless_interface	config.c	/^config_parse_wireless_interface(struct wireless_device *wdev, struct uci_section *s)$/;"	f	file:
+config_pending	device.h	/^	bool config_pending;$/;"	m	struct:device
+config_state	interface.h	/^	enum interface_config_state config_state;$/;"	m	struct:interface	typeref:enum:interface::interface_config_state
+config_state	wireless.h	/^	enum interface_config_state config_state;$/;"	m	struct:wireless_device	typeref:enum:wireless_device::interface_config_state
+crc32_file	utils.c	/^crc32_file(FILE *fp)$/;"	f
+create	device.h	/^	struct device *(*create)(const char *name, struct blob_attr *attr);$/;"	m	struct:device_type	typeref:struct:device_type::create
+create_event_socket	system-linux.c	/^create_event_socket(struct event_socket *ev, int protocol,$/;"	f	file:
+create_raw_event_socket	system-linux.c	/^create_raw_event_socket(struct event_socket *ev, int protocol, int groups,$/;"	f	file:
+create_socket	system-linux.c	/^create_socket(int protocol, int groups)$/;"	f	file:
+current	interface-event.c	/^static struct interface *current;$/;"	v	typeref:struct:interface	file:
+current_config	device.h	/^	bool current_config;$/;"	m	struct:device
+current_ev	interface-event.c	/^static enum interface_event current_ev;$/;"	v	typeref:enum:interface_event	file:
+data	interface.h	/^	const char *data[];$/;"	m	struct:interface_error
+data	interface.h	/^	struct avl_tree data;$/;"	m	struct:interface	typeref:struct:interface::avl_tree
+data	interface.h	/^	struct blob_attr data[];$/;"	m	struct:interface_data	typeref:struct:interface_data::blob_attr
+data	wireless.h	/^	struct blob_attr *data;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::blob_attr
+data	wireless.h	/^	struct blob_attr *data;$/;"	m	struct:wireless_interface	typeref:struct:wireless_interface::blob_attr
+debug_mask	main.c	/^unsigned int debug_mask = 0;$/;"	v
+default_config	device.h	/^	bool default_config;$/;"	m	struct:device
+default_proto_attach	proto.c	/^default_proto_attach(const struct proto_handler *h,$/;"	f	file:
+default_proto_free	proto.c	/^default_proto_free(struct interface_proto_state *proto)$/;"	f	file:
+deferred	device.h	/^	bool deferred;$/;"	m	struct:device
+del	device.h	/^	int (*del)(struct device *main, struct device *member);$/;"	m	struct:device_hotplug_ops
+dep	alias.c	/^	struct device_user dep;$/;"	m	struct:alias_device	typeref:struct:alias_device::device_user	file:
+dep	proto-shell.c	/^	struct interface_user dep;$/;"	m	struct:proto_shell_dependency	typeref:struct:proto_shell_dependency::interface_user	file:
+dep	vlan.c	/^	struct device_user dep;$/;"	m	struct:vlan_device	typeref:struct:vlan_device::device_user	file:
+deps	proto-shell.c	/^	struct list_head deps;$/;"	m	struct:proto_shell_state	typeref:struct:proto_shell_state::list_head	file:
+dest_addr	iprule.h	/^	union if_addr dest_addr;$/;"	m	struct:iprule	typeref:union:iprule::if_addr
+dest_mask	iprule.h	/^	unsigned int dest_mask;$/;"	m	struct:iprule
+dev	alias.c	/^	struct device dev;$/;"	m	struct:alias_device	typeref:struct:alias_device::device	file:
+dev	bridge.c	/^	struct device dev;$/;"	m	struct:bridge_state	typeref:struct:bridge_state::device	file:
+dev	bridge.c	/^	struct device_user dev;$/;"	m	struct:bridge_member	typeref:struct:bridge_member::device_user	file:
+dev	device.h	/^	struct device *dev;$/;"	m	struct:device_user	typeref:struct:device_user::device
+dev	macvlan.c	/^	struct device dev;$/;"	m	struct:macvlan_device	typeref:struct:macvlan_device::device	file:
+dev	system-linux.c	/^	struct device *dev;$/;"	m	struct:clear_data	typeref:struct:clear_data::device	file:
+dev	tunnel.c	/^	struct device dev;$/;"	m	struct:tunnel	typeref:struct:tunnel::device	file:
+dev	vlan.c	/^	struct device dev;$/;"	m	struct:vlan_device	typeref:struct:vlan_device::device	file:
+dev_attrs	device.c	/^static const struct blobmsg_policy dev_attrs[__DEV_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+dev_buf	system-linux.c	/^static char dev_buf[256];$/;"	v	file:
+dev_change_type	device.h	/^enum dev_change_type {$/;"	g
+dev_init	device.c	/^static void __init dev_init(void)$/;"	f	file:
+dev_object	ubus.c	/^static struct ubus_object dev_object = {$/;"	v	typeref:struct:ubus_object	file:
+dev_object_methods	ubus.c	/^static struct ubus_method dev_object_methods[] = {$/;"	v	typeref:struct:ubus_method	file:
+dev_object_type	ubus.c	/^static struct ubus_object_type dev_object_type =$/;"	v	typeref:struct:ubus_object_type	file:
+dev_policy	ubus.c	/^static const struct blobmsg_policy dev_policy[__DEV_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+dev_state_policy	ubus.c	/^static const struct blobmsg_policy dev_state_policy[__DEV_STATE_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+device	device.h	/^struct device {$/;"	s
+device	wireless.h	/^	} device, interface;$/;"	m	struct:wireless_driver	typeref:struct:wireless_driver::__anon4
+device_add_user	device.c	/^void device_add_user(struct device_user *dep, struct device *dev)$/;"	f
+device_addr	interface-ip.h	/^struct device_addr {$/;"	s
+device_addr_flags	interface-ip.h	/^enum device_addr_flags {$/;"	g
+device_alias_get	alias.c	/^device_alias_get(const char *name)$/;"	f
+device_attr_list	device.c	/^const struct uci_blob_param_list device_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list
+device_broadcast_cb	device.c	/^static int device_broadcast_cb(void *ctx, struct safe_list *list)$/;"	f	file:
+device_broadcast_event	device.c	/^void device_broadcast_event(struct device *dev, enum device_event ev)$/;"	f
+device_check_state	device.c	/^int device_check_state(struct device *dev)$/;"	f
+device_claim	device.c	/^int device_claim(struct device_user *dep)$/;"	f
+device_cleanup	device.c	/^void device_cleanup(struct device *dev)$/;"	f
+device_cleanup_cb	device.c	/^static int device_cleanup_cb(void *ctx, struct safe_list *list)$/;"	f	file:
+device_config	interface.h	/^	bool device_config;$/;"	m	struct:interface
+device_create	device.c	/^device_create(const char *name, const struct device_type *type,$/;"	f
+device_create_default	device.c	/^device_create_default(const char *name, bool external)$/;"	f	file:
+device_delete	device.c	/^device_delete(struct device *dev)$/;"	f	file:
+device_dump_status	device.c	/^device_dump_status(struct blob_buf *b, struct device *dev)$/;"	f
+device_event	device.h	/^enum device_event {$/;"	g
+device_free	device.c	/^device_free(struct device *dev)$/;"	f
+device_free_unused	device.c	/^device_free_unused(struct device *dev)$/;"	f
+device_get	device.c	/^device_get(const char *name, int create)$/;"	f
+device_hotplug_ops	device.h	/^struct device_hotplug_ops {$/;"	s
+device_init	device.c	/^int device_init(struct device *dev, const struct device_type *type, const char *ifname)$/;"	f
+device_init_pending	device.c	/^device_init_pending(void)$/;"	f
+device_init_settings	device.c	/^device_init_settings(struct device *dev, struct blob_attr **tb)$/;"	f
+device_init_virtual	device.c	/^void device_init_virtual(struct device *dev, const struct device_type *type, const char *name)$/;"	f
+device_lock	device.c	/^void device_lock(void)$/;"	f
+device_merge_settings	device.c	/^device_merge_settings(struct device *dev, struct device_settings *n)$/;"	f	file:
+device_prefix	interface-ip.h	/^struct device_prefix {$/;"	s
+device_prefix_assignment	interface-ip.h	/^struct device_prefix_assignment {$/;"	s
+device_refcount	device.c	/^static int device_refcount(struct device *dev)$/;"	f	file:
+device_refresh_present	device.c	/^device_refresh_present(struct device *dev)$/;"	f
+device_release	device.c	/^void device_release(struct device_user *dep)$/;"	f
+device_reload_config	device.c	/^device_reload_config(struct device *dev, struct blob_attr *attr)$/;"	f	file:
+device_remove_user	device.c	/^void device_remove_user(struct device_user *dep)$/;"	f
+device_replace	device.c	/^device_replace(struct device *dev, struct device *odev)$/;"	f	file:
+device_reset_config	device.c	/^device_reset_config(void)$/;"	f
+device_reset_old	device.c	/^device_reset_old(void)$/;"	f
+device_route	interface-ip.h	/^struct device_route {$/;"	s
+device_set_config	device.c	/^device_set_config(struct device *dev, const struct device_type *type,$/;"	f
+device_set_deferred	device.h	/^device_set_deferred(struct device *dev, bool value)$/;"	f
+device_set_disabled	device.h	/^device_set_disabled(struct device *dev, bool value)$/;"	f
+device_set_present	device.c	/^void device_set_present(struct device *dev, bool state)$/;"	f
+device_settings	device.h	/^struct device_settings {$/;"	s
+device_source_table	interface-ip.h	/^struct device_source_table {$/;"	s
+device_state_cb	device.h	/^typedef int (*device_state_cb)(struct device *, bool up);$/;"	t
+device_type	device.h	/^struct device_type {$/;"	s
+device_unlock	device.c	/^void device_unlock(void)$/;"	f
+device_user	device.h	/^struct device_user {$/;"	s
+devices	device.c	/^static struct avl_tree devices;$/;"	v	typeref:struct:avl_tree	file:
+dir_fd	netifd.h	/^	int dir_fd;$/;"	m	struct:netifd_process
+disabled	device.h	/^	bool disabled;$/;"	m	struct:device
+dns_search	interface.h	/^	struct vlist_simple_tree dns_search;$/;"	m	struct:interface_ip_settings	typeref:struct:interface_ip_settings::vlist_simple_tree
+dns_search_domain	interface-ip.h	/^struct dns_search_domain {$/;"	s
+dns_server	interface-ip.h	/^struct dns_server {$/;"	s
+dns_servers	interface.h	/^	struct vlist_simple_tree dns_servers;$/;"	m	struct:interface_ip_settings	typeref:struct:interface_ip_settings::vlist_simple_tree
+drv	wireless.h	/^	struct wireless_driver *drv;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::wireless_driver
+drv_fd	wireless.c	/^static int drv_fd;$/;"	v	file:
+drv_mac80211_cleanup	examples/wireless/mac80211.sh	/^drv_mac80211_cleanup() {$/;"	f
+drv_mac80211_init_device_config	examples/wireless/mac80211.sh	/^drv_mac80211_init_device_config() {$/;"	f
+drv_mac80211_init_iface_config	examples/wireless/mac80211.sh	/^drv_mac80211_init_iface_config() {$/;"	f
+drv_mac80211_setup	examples/wireless/mac80211.sh	/^drv_mac80211_setup() {$/;"	f
+drv_mac80211_teardown	examples/wireless/mac80211.sh	/^drv_mac80211_teardown() {$/;"	f
+dump_info	device.h	/^	void (*dump_info)(struct device *, struct blob_buf *buf);$/;"	m	struct:device_type
+dump_stats	device.h	/^	void (*dump_stats)(struct device *, struct blob_buf *buf);$/;"	m	struct:device_type
+dynamic	interface.h	/^	bool dynamic;$/;"	m	struct:interface
+dynamic_policy	ubus.c	/^static const struct blobmsg_policy dynamic_policy[__DI_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+enable_route	interface-ip.c	/^enable_route(struct interface_ip_settings *ip, struct device_route *route)$/;"	f	file:
+enabled	interface-ip.h	/^	bool enabled;$/;"	m	struct:device_addr
+enabled	interface-ip.h	/^	bool enabled;$/;"	m	struct:device_prefix_assignment
+enabled	interface-ip.h	/^	bool enabled;$/;"	m	struct:device_route
+enabled	interface.h	/^	bool enabled;$/;"	m	struct:interface_ip_settings
+error_handler	system-linux.c	/^error_handler(struct sockaddr_nl *nla, struct nlmsgerr *err, void *arg)$/;"	f	file:
+errors	interface.h	/^	struct list_head errors;$/;"	m	struct:interface	typeref:struct:interface::list_head
+ethtool_link_modes	system-linux.c	/^} ethtool_link_modes[] = {$/;"	v	typeref:struct:__anon9	file:
+ev_idx	device.h	/^	uint8_t ev_idx[__DEV_EVENT_MAX];$/;"	m	struct:device_user
+event_socket	system-linux.c	/^struct event_socket {$/;"	s	file:
+event_user	interface-event.c	/^static struct interface_user event_user = {$/;"	v	typeref:struct:interface_user	file:
+excl_addr	interface-ip.h	/^	struct in6_addr excl_addr;$/;"	m	struct:device_prefix	typeref:struct:device_prefix::in6_addr
+excl_length	interface-ip.h	/^	uint8_t excl_length;$/;"	m	struct:device_prefix
+exe	wireless.h	/^	const char *exe;$/;"	m	struct:wireless_process
+external	device.h	/^	bool external;$/;"	m	struct:device
+fill_string_list	proto-shell.c	/^fill_string_list(struct blob_attr *attr, char **argv, int max)$/;"	f	file:
+flags	device.h	/^	unsigned int flags;$/;"	m	struct:device_settings
+flags	interface-ip.h	/^	enum device_addr_flags flags;$/;"	m	struct:device_addr	typeref:enum:device_addr::device_addr_flags
+flags	interface-ip.h	/^	enum device_addr_flags flags;$/;"	m	struct:device_route	typeref:enum:device_route::device_addr_flags
+flags	iprule.h	/^	enum iprule_flags flags;$/;"	m	struct:iprule	typeref:enum:iprule::iprule_flags
+flags	proto.h	/^	unsigned int flags;$/;"	m	struct:proto_handler
+flags	system.h	/^	enum bridge_opt flags;$/;"	m	struct:bridge_config	typeref:enum:bridge_config::bridge_opt
+flags	system.h	/^	enum macvlan_opt flags;$/;"	m	struct:macvlan_config	typeref:enum:macvlan_config::macvlan_opt
+fls	utils.h	/^static inline int fls(int x)$/;"	f
+for_each_interface	scripts/netifd-wireless.sh	/^for_each_interface() {$/;"	f
+force_active	bridge.c	/^	bool force_active;$/;"	m	struct:bridge_state	file:
+format_macaddr	utils.c	/^format_macaddr(uint8_t *mac)$/;"	f
+forward_delay	system.h	/^	int forward_delay;$/;"	m	struct:bridge_config
+free	device.h	/^	void (*free)(struct device *);$/;"	m	struct:device_type
+free	proto.h	/^	void (*free)(struct interface_proto_state *);$/;"	m	struct:interface_proto_state
+free_vlan_if	vlan.c	/^static void free_vlan_if(struct device *iface)$/;"	f	file:
+fwmark	iprule.h	/^	unsigned int fwmark;$/;"	m	struct:iprule
+fwmask	iprule.h	/^	unsigned int fwmask;$/;"	m	struct:iprule
+get_proto_handler	proto.c	/^get_proto_handler(const char *name)$/;"	f	file:
+get_vlan_device	vlan.c	/^static struct device *get_vlan_device(struct device *dev, int id, bool create)$/;"	f	file:
+get_vlan_device_chain	vlan.c	/^struct device *get_vlan_device_chain(const char *ifname, bool create)$/;"	f
+get_wdev	ubus.c	/^get_wdev(struct blob_attr *msg, int *ret)$/;"	f	file:
+global_argv	main.c	/^static char **global_argv;$/;"	v	file:
+gotoid	iprule.h	/^	unsigned int gotoid;$/;"	m	struct:iprule
+handle_hotplug_event	system-linux.c	/^handle_hotplug_event(struct uloop_fd *u, unsigned int events)$/;"	f	file:
+handle_hotplug_msg	system-linux.c	/^handle_hotplug_msg(char *data, int size)$/;"	f	file:
+handler	proto-shell.c	/^	struct proto_shell_handler *handler;$/;"	m	struct:proto_shell_state	typeref:struct:proto_shell_state::proto_shell_handler	file:
+handler	proto.h	/^	const struct proto_handler *handler;$/;"	m	struct:interface_proto_state	typeref:struct:interface_proto_state::proto_handler
+handler_nl_event	system-linux.c	/^handler_nl_event(struct uloop_fd *u, unsigned int events)$/;"	f	file:
+handlers	proto.c	/^static struct avl_tree handlers;$/;"	v	typeref:struct:avl_tree	file:
+head	interface-ip.h	/^	struct list_head head;$/;"	m	struct:device_prefix	typeref:struct:device_prefix::list_head
+head	interface-ip.h	/^	struct list_head head;$/;"	m	struct:device_prefix_assignment	typeref:struct:device_prefix_assignment::list_head
+head	interface-ip.h	/^	struct list_head head;$/;"	m	struct:device_source_table	typeref:struct:device_source_table::list_head
+head	interface.h	/^	struct list_head head;$/;"	m	struct:interface_assignment_class	typeref:struct:interface_assignment_class::list_head
+head_offset	utils.h	/^	int head_offset;$/;"	m	struct:vlist_simple_tree
+hello_time	system.h	/^	int hello_time;$/;"	m	struct:bridge_config
+hidden	device.h	/^	bool hidden;$/;"	m	struct:device
+host	proto-shell.c	/^	union if_addr host;$/;"	m	struct:proto_shell_dependency	typeref:union:proto_shell_dependency::if_addr	file:
+host_routes	interface.h	/^	struct vlist_tree host_routes;$/;"	m	struct:interface	typeref:struct:interface::vlist_tree
+hotplug	device.h	/^	bool hotplug;$/;"	m	struct:device_user
+hotplug_cmd_path	interface-event.c	/^char *hotplug_cmd_path = DEFAULT_HOTPLUG_PATH;$/;"	v
+hotplug_ev	interface.h	/^	enum interface_event hotplug_ev;$/;"	m	struct:interface	typeref:enum:interface::interface_event
+hotplug_list	interface.h	/^	struct list_head hotplug_list;$/;"	m	struct:interface	typeref:struct:interface::list_head
+hotplug_ops	device.h	/^	const struct device_hotplug_ops *hotplug_ops;$/;"	m	struct:device	typeref:struct:device::device_hotplug_ops
+id	vlan.c	/^	int id;$/;"	m	struct:vlan_device	file:
+if_addr	interface-ip.h	/^union if_addr {$/;"	u
+iface	interface-ip.h	/^	struct interface *iface;$/;"	m	struct:device_prefix	typeref:struct:device_prefix::interface
+iface	interface-ip.h	/^	struct interface *iface;$/;"	m	struct:device_route	typeref:struct:device_route::interface
+iface	interface.h	/^	struct interface *iface;$/;"	m	struct:interface_ip_settings	typeref:struct:interface_ip_settings::interface
+iface	interface.h	/^	struct interface *iface;$/;"	m	struct:interface_user	typeref:struct:interface_user::interface
+iface	proto.h	/^	struct interface *iface;$/;"	m	struct:interface_proto_state	typeref:struct:interface_proto_state::interface
+iface_attr_info	interface.c	/^static const struct uci_blob_param_info iface_attr_info[IFACE_ATTR_MAX] = {$/;"	v	typeref:struct:uci_blob_param_info	file:
+iface_attrs	interface.c	/^static const struct blobmsg_policy iface_attrs[IFACE_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+iface_object	ubus.c	/^static struct ubus_object iface_object = {$/;"	v	typeref:struct:ubus_object	file:
+iface_object_methods	ubus.c	/^static struct ubus_method iface_object_methods[] = {$/;"	v	typeref:struct:ubus_method	file:
+iface_object_type	ubus.c	/^static struct ubus_object_type iface_object_type =$/;"	v	typeref:struct:ubus_object_type	file:
+iface_policy	ubus.c	/^static const struct blobmsg_policy iface_policy = {$/;"	v	typeref:struct:blobmsg_policy	file:
+ifindex	device.h	/^	int ifindex;$/;"	m	struct:device
+ifname	device.h	/^	char ifname[IFNAMSIZ + 1];$/;"	m	struct:device
+ifname	interface.h	/^	const char *ifname;$/;"	m	struct:interface
+ifname	macvlan.c	/^	struct blob_attr *ifname;$/;"	m	struct:macvlan_device	typeref:struct:macvlan_device::blob_attr	file:
+ifname	wireless.h	/^	const char *ifname;$/;"	m	struct:wireless_interface
+ifnames	bridge.c	/^	struct blob_attr *ifnames;$/;"	m	struct:bridge_state	typeref:struct:bridge_state::blob_attr	file:
+igmp_snoop	system.h	/^	bool igmp_snoop;$/;"	m	struct:bridge_config
+in	interface-ip.h	/^	struct in_addr in;$/;"	m	union:if_addr	typeref:struct:if_addr::in_addr
+in6	interface-ip.h	/^	struct in6_addr in6;$/;"	m	union:if_addr	typeref:struct:if_addr::in6_addr
+in_dev	iprule.h	/^	char in_dev[IFNAMSIZ + 1];$/;"	m	struct:iprule
+init_available	proto-shell.c	/^	bool init_available;$/;"	m	struct:proto_shell_handler	file:
+init_proto	scripts/netifd-proto.sh	/^init_proto() {$/;"	f
+init_wireless_driver	scripts/netifd-wireless.sh	/^init_wireless_driver() {$/;"	f
+interface	interface.h	/^struct interface {$/;"	s
+interface	proto-shell.c	/^	char *interface;$/;"	m	struct:proto_shell_dependency	file:
+interface	wireless.h	/^	} device, interface;$/;"	m	struct:wireless_driver	typeref:struct:wireless_driver::__anon4
+interface_add	interface.c	/^interface_add(struct interface *iface, struct blob_attr *config)$/;"	f
+interface_add_alias	interface.c	/^interface_add_alias(struct interface *iface, struct blob_attr *config)$/;"	f
+interface_add_assignment_classes	interface.c	/^interface_add_assignment_classes(struct interface *iface, struct blob_attr *list)$/;"	f	file:
+interface_add_data	interface.c	/^interface_add_data(struct interface *iface, const struct blob_attr *data)$/;"	f
+interface_add_dns_search_domain	interface-ip.c	/^interface_add_dns_search_domain(struct interface_ip_settings *ip, const char *str)$/;"	f	file:
+interface_add_dns_search_list	interface-ip.c	/^interface_add_dns_search_list(struct interface_ip_settings *ip, struct blob_attr *list)$/;"	f
+interface_add_dns_server	interface-ip.c	/^interface_add_dns_server(struct interface_ip_settings *ip, const char *str)$/;"	f
+interface_add_dns_server_list	interface-ip.c	/^interface_add_dns_server_list(struct interface_ip_settings *ip, struct blob_attr *list)$/;"	f
+interface_add_error	interface.c	/^void interface_add_error(struct interface *iface, const char *subsystem,$/;"	f
+interface_add_link	interface.c	/^interface_add_link(struct interface *iface, struct device *dev)$/;"	f
+interface_add_user	interface.c	/^interface_add_user(struct interface_user *dep, struct interface *iface)$/;"	f
+interface_alias_cb	interface.c	/^interface_alias_cb(struct interface_user *dep, struct interface *iface, enum interface_event ev)$/;"	f	file:
+interface_alloc	interface.c	/^interface_alloc(const char *name, struct blob_attr *config)$/;"	f
+interface_assignment_class	interface.h	/^struct interface_assignment_class {$/;"	s
+interface_attr_list	interface.c	/^const struct uci_blob_param_list interface_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list
+interface_cb	interface.c	/^interface_cb(struct device_user *dep, enum device_event ev)$/;"	f	file:
+interface_change_config	interface.c	/^interface_change_config(struct interface *if_old, struct interface *if_new)$/;"	f	file:
+interface_claim_device	interface.c	/^interface_claim_device(struct interface *iface)$/;"	f	file:
+interface_cleanup	interface.c	/^interface_cleanup(struct interface *iface)$/;"	f	file:
+interface_cleanup_state	interface.c	/^interface_cleanup_state(struct interface *iface)$/;"	f	file:
+interface_clear_assignment_classes	interface.c	/^interface_clear_assignment_classes(struct interface *iface)$/;"	f	file:
+interface_clear_errors	interface.c	/^interface_clear_errors(struct interface *iface)$/;"	f	file:
+interface_config_state	interface.h	/^enum interface_config_state {$/;"	g
+interface_data	interface.h	/^struct interface_data {$/;"	s
+interface_data_del	interface.c	/^interface_data_del(struct interface *iface, struct interface_data *data)$/;"	f	file:
+interface_data_flush	interface.c	/^interface_data_flush(struct interface *iface)$/;"	f	file:
+interface_dequeue_event	interface-event.c	/^interface_dequeue_event(struct interface *iface)$/;"	f	file:
+interface_do_free	interface.c	/^interface_do_free(struct interface *iface)$/;"	f	file:
+interface_do_reload	interface.c	/^interface_do_reload(struct interface *iface)$/;"	f	file:
+interface_error	interface.h	/^struct interface_error {$/;"	s
+interface_event	interface.c	/^interface_event(struct interface *iface, enum interface_event ev)$/;"	f	file:
+interface_event	interface.h	/^enum interface_event {$/;"	g
+interface_event_cb	interface-event.c	/^static void interface_event_cb(struct interface_user *dep, struct interface *iface,$/;"	f	file:
+interface_event_init	interface-event.c	/^static void __init interface_event_init(void)$/;"	f	file:
+interface_flush_state	interface.c	/^interface_flush_state(struct interface *iface)$/;"	f	file:
+interface_handle_config_change	interface.c	/^interface_handle_config_change(struct interface *iface)$/;"	f	file:
+interface_handle_link	interface.c	/^interface_handle_link(struct interface *iface, const char *name, bool add)$/;"	f
+interface_handle_subnet_route	interface-ip.c	/^interface_handle_subnet_route(struct interface *iface, struct device_addr *addr, bool add)$/;"	f	file:
+interface_init_list	interface.c	/^interface_init_list(void)$/;"	f	file:
+interface_ip_add_device_prefix	interface-ip.c	/^interface_ip_add_device_prefix(struct interface *iface, struct in6_addr *addr,$/;"	f
+interface_ip_add_route	interface-ip.c	/^interface_ip_add_route(struct interface *iface, struct blob_attr *attr, bool v6)$/;"	f
+interface_ip_add_target_route	interface-ip.c	/^interface_ip_add_target_route(union if_addr *addr, bool v6, struct interface *iface)$/;"	f
+interface_ip_dump_address_list	ubus.c	/^interface_ip_dump_address_list(struct interface_ip_settings *ip, bool v6,$/;"	f	file:
+interface_ip_dump_dns_search_list	ubus.c	/^interface_ip_dump_dns_search_list(struct interface_ip_settings *ip,$/;"	f	file:
+interface_ip_dump_dns_server_list	ubus.c	/^interface_ip_dump_dns_server_list(struct interface_ip_settings *ip,$/;"	f	file:
+interface_ip_dump_prefix_assignment_list	ubus.c	/^interface_ip_dump_prefix_assignment_list(struct interface *iface)$/;"	f	file:
+interface_ip_dump_prefix_list	ubus.c	/^interface_ip_dump_prefix_list(struct interface_ip_settings *ip)$/;"	f	file:
+interface_ip_dump_route_list	ubus.c	/^interface_ip_dump_route_list(struct interface_ip_settings *ip, bool enabled)$/;"	f	file:
+interface_ip_find_addr_target	interface-ip.c	/^interface_ip_find_addr_target(struct interface *iface, union if_addr *a, bool v6)$/;"	f	file:
+interface_ip_find_route_target	interface-ip.c	/^interface_ip_find_route_target(struct interface *iface, union if_addr *a,$/;"	f	file:
+interface_ip_flush	interface-ip.c	/^interface_ip_flush(struct interface_ip_settings *ip)$/;"	f
+interface_ip_init	interface-ip.c	/^interface_ip_init(struct interface *iface)$/;"	f
+interface_ip_init_worker	interface-ip.c	/^interface_ip_init_worker(void)$/;"	f	file:
+interface_ip_set_enabled	interface-ip.c	/^void interface_ip_set_enabled(struct interface_ip_settings *ip, bool enabled)$/;"	f
+interface_ip_set_ula_prefix	interface-ip.c	/^interface_ip_set_ula_prefix(const char *prefix)$/;"	f
+interface_ip_settings	interface.h	/^struct interface_ip_settings {$/;"	s
+interface_ip_update_complete	interface-ip.c	/^interface_ip_update_complete(struct interface_ip_settings *ip)$/;"	f
+interface_ip_update_start	interface-ip.c	/^interface_ip_update_start(struct interface_ip_settings *ip)$/;"	f
+interface_ip_valid_until_handler	interface-ip.c	/^interface_ip_valid_until_handler(struct uloop_timeout *t)$/;"	f	file:
+interface_merge_assignment_data	interface.c	/^interface_merge_assignment_data(struct interface *old, struct interface *new)$/;"	f	file:
+interface_prefix_assign	interface-ip.c	/^static bool interface_prefix_assign(struct list_head *list,$/;"	f	file:
+interface_proto_cb	interface.c	/^interface_proto_cb(struct interface_proto_state *state, enum interface_proto_event ev)$/;"	f	file:
+interface_proto_cmd	proto.h	/^enum interface_proto_cmd {$/;"	g
+interface_proto_event	proto.c	/^interface_proto_event(struct interface_proto_state *proto,$/;"	f
+interface_proto_event	proto.h	/^enum interface_proto_event {$/;"	g
+interface_proto_state	proto.h	/^struct interface_proto_state {$/;"	s
+interface_queue_event	interface-event.c	/^interface_queue_event(struct interface *iface, enum interface_event ev)$/;"	f	file:
+interface_refresh_assignments	interface-ip.c	/^void interface_refresh_assignments(bool hint)$/;"	f
+interface_remove_link	interface.c	/^interface_remove_link(struct interface *iface, struct device *dev)$/;"	f
+interface_remove_user	interface.c	/^interface_remove_user(struct interface_user *dep)$/;"	f
+interface_replace_dns	interface.c	/^interface_replace_dns(struct interface_ip_settings *new, struct interface_ip_settings *old)$/;"	f	file:
+interface_set_available	interface.c	/^interface_set_available(struct interface *iface, bool new_state)$/;"	f
+interface_set_down	interface.c	/^interface_set_down(struct interface *iface)$/;"	f
+interface_set_dynamic	interface.c	/^void interface_set_dynamic(struct interface *iface)$/;"	f
+interface_set_l3_dev	interface.c	/^interface_set_l3_dev(struct interface *iface, struct device *dev)$/;"	f
+interface_set_main_dev	interface.c	/^interface_set_main_dev(struct interface *iface, struct device *dev)$/;"	f
+interface_set_prefix_address	interface-ip.c	/^interface_set_prefix_address(struct device_prefix_assignment *assignment,$/;"	f	file:
+interface_set_proto_state	interface.c	/^void interface_set_proto_state(struct interface *iface, struct interface_proto_state *state)$/;"	f
+interface_set_up	interface.c	/^interface_set_up(struct interface *iface)$/;"	f
+interface_start_pending	interface.c	/^interface_start_pending(void)$/;"	f
+interface_state	interface.h	/^enum interface_state {$/;"	g
+interface_update	interface.c	/^interface_update(struct vlist_tree *tree, struct vlist_node *node_new,$/;"	f	file:
+interface_update_complete	interface.c	/^interface_update_complete(struct interface *iface)$/;"	f
+interface_update_flags	interface.h	/^enum interface_update_flags {$/;"	g
+interface_update_host_route	interface-ip.c	/^interface_update_host_route(struct vlist_tree *tree,$/;"	f	file:
+interface_update_prefix	interface-ip.c	/^interface_update_prefix(struct vlist_tree *tree,$/;"	f	file:
+interface_update_prefix_assignments	interface-ip.c	/^static void interface_update_prefix_assignments(struct device_prefix *prefix, bool setup)$/;"	f	file:
+interface_update_proto_addr	interface-ip.c	/^interface_update_proto_addr(struct vlist_tree *tree,$/;"	f	file:
+interface_update_proto_route	interface-ip.c	/^interface_update_proto_route(struct vlist_tree *tree,$/;"	f	file:
+interface_update_start	interface.c	/^interface_update_start(struct interface *iface)$/;"	f
+interface_user	interface.h	/^struct interface_user {$/;"	s
+interface_write_resolv_conf	interface-ip.c	/^interface_write_resolv_conf(void)$/;"	f
+interfaces	interface.c	/^struct vlist_tree interfaces;$/;"	v	typeref:struct:vlist_tree
+interfaces	wireless.h	/^	struct vlist_tree interfaces;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::vlist_tree
+invalid_proto_handler	proto.c	/^invalid_proto_handler(struct interface_proto_state *proto,$/;"	f	file:
+invert	iprule.h	/^	bool invert;$/;"	m	struct:iprule
+ip4table	interface.h	/^	unsigned int ip4table;$/;"	m	struct:interface
+ip6table	interface.h	/^	unsigned int ip6table;$/;"	m	struct:interface
+iprule	iprule.h	/^struct iprule {$/;"	s
+iprule_add	iprule.c	/^iprule_add(struct blob_attr *attr, bool v6)$/;"	f
+iprule_flags	iprule.h	/^enum iprule_flags {$/;"	g
+iprule_init_list	iprule.c	/^iprule_init_list(void)$/;"	f	file:
+iprule_parse_mark	iprule.c	/^iprule_parse_mark(const char *mark, struct iprule *rule)$/;"	f	file:
+iprule_update_complete	iprule.c	/^iprule_update_complete(void)$/;"	f
+iprule_update_rule	iprule.c	/^iprule_update_rule(struct vlist_tree *tree,$/;"	f	file:
+iprule_update_start	iprule.c	/^iprule_update_start(void)$/;"	f
+iprules	iprule.c	/^struct vlist_tree iprules;$/;"	v	typeref:struct:vlist_tree
+iprules_counter	iprule.c	/^static unsigned int iprules_counter[2];$/;"	v	file:
+iprules_flushed	iprule.c	/^static bool iprules_flushed = false;$/;"	v	file:
+json_check_type	handler.h	/^json_check_type(json_object *obj, json_type type)$/;"	f
+json_get_field	handler.h	/^json_get_field(json_object *obj, const char *name, json_type type)$/;"	f
+keep	interface-ip.h	/^	bool keep;$/;"	m	struct:device_route
+kill_request	wireless.h	/^	struct ubus_request_data *kill_request;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::ubus_request_data
+l3_dev	interface.h	/^	struct device_user l3_dev;$/;"	m	struct:interface	typeref:struct:interface::device_user
+last_error	proto-shell.c	/^	int last_error;$/;"	m	struct:proto_shell_state	file:
+length	interface-ip.h	/^	uint8_t length;$/;"	m	struct:device_prefix
+length	interface-ip.h	/^	uint8_t length;$/;"	m	struct:device_prefix_assignment
+list	device.h	/^	struct list_head list;$/;"	m	struct:device_type	typeref:struct:device_type::list_head
+list	device.h	/^	struct safe_list list;$/;"	m	struct:device_user	typeref:struct:device_user::safe_list
+list	interface.h	/^	struct list_head list;$/;"	m	struct:interface_error	typeref:struct:interface_error::list_head
+list	interface.h	/^	struct list_head list;$/;"	m	struct:interface_user	typeref:struct:interface_user::list_head
+list	netifd.h	/^	struct list_head list;$/;"	m	struct:netifd_process	typeref:struct:netifd_process::list_head
+list	proto-shell.c	/^	struct list_head list;$/;"	m	struct:proto_shell_dependency	typeref:struct:proto_shell_dependency::list_head	file:
+list	proto-shell.c	/^	struct list_head list;$/;"	m	struct:proto_shell_handler	typeref:struct:proto_shell_handler::list_head	file:
+list	utils.h	/^	struct list_head list;$/;"	m	struct:vlist_simple_node	typeref:struct:vlist_simple_node::list_head
+list	utils.h	/^	struct list_head list;$/;"	m	struct:vlist_simple_tree	typeref:struct:vlist_simple_tree::list_head
+list	wireless.h	/^	struct list_head list;$/;"	m	struct:wireless_process	typeref:struct:wireless_process::list_head
+log	netifd.h	/^	struct ustream_fd log;$/;"	m	struct:netifd_process	typeref:struct:netifd_process::ustream_fd
+log_class	main.c	/^static const int log_class[] = {$/;"	v	file:
+log_level	main.c	/^static int log_level = DEFAULT_LOG_LEVEL;$/;"	v	file:
+log_overflow	netifd.h	/^	bool log_overflow;$/;"	m	struct:netifd_process
+log_prefix	netifd.h	/^	const char *log_prefix;$/;"	m	struct:netifd_process
+lookup	iprule.h	/^	unsigned int lookup;$/;"	m	struct:iprule
+macaddr	device.h	/^	uint8_t macaddr[6];$/;"	m	struct:device_settings
+macaddr	system.h	/^	unsigned char macaddr[6];$/;"	m	struct:macvlan_config
+macvlan_apply_settings	macvlan.c	/^macvlan_apply_settings(struct macvlan_device *mvdev, struct blob_attr **tb)$/;"	f	file:
+macvlan_attr_list	macvlan.c	/^static const struct uci_blob_param_list macvlan_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list	file:
+macvlan_attrs	macvlan.c	/^static const struct blobmsg_policy macvlan_attrs[__MACVLAN_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+macvlan_base_cb	macvlan.c	/^macvlan_base_cb(struct device_user *dev, enum device_event ev)$/;"	f	file:
+macvlan_config	system.h	/^struct macvlan_config {$/;"	s
+macvlan_config_init	macvlan.c	/^macvlan_config_init(struct device *dev)$/;"	f	file:
+macvlan_create	macvlan.c	/^macvlan_create(const char *name, struct blob_attr *attr)$/;"	f	file:
+macvlan_device	macvlan.c	/^struct macvlan_device {$/;"	s	file:
+macvlan_device_type	macvlan.c	/^const struct device_type macvlan_device_type = {$/;"	v	typeref:struct:device_type
+macvlan_dump_info	macvlan.c	/^macvlan_dump_info(struct device *dev, struct blob_buf *b)$/;"	f	file:
+macvlan_free	macvlan.c	/^macvlan_free(struct device *dev)$/;"	f	file:
+macvlan_opt	system.h	/^enum macvlan_opt {$/;"	g
+macvlan_reload	macvlan.c	/^macvlan_reload(struct device *dev, struct blob_attr *attr)$/;"	f	file:
+macvlan_set_down	macvlan.c	/^macvlan_set_down(struct macvlan_device *mvdev)$/;"	f	file:
+macvlan_set_state	macvlan.c	/^macvlan_set_state(struct device *dev, bool up)$/;"	f	file:
+macvlan_set_up	macvlan.c	/^macvlan_set_up(struct macvlan_device *mvdev)$/;"	f	file:
+main	main.c	/^int main(int argc, char **argv)$/;"	f
+main_dev	interface.h	/^	struct device_user main_dev;$/;"	m	struct:interface	typeref:struct:interface::device_user
+main_object	ubus.c	/^static struct ubus_object main_object = {$/;"	v	typeref:struct:ubus_object	file:
+main_object_methods	ubus.c	/^static struct ubus_method main_object_methods[] = {$/;"	v	typeref:struct:ubus_method	file:
+main_object_type	ubus.c	/^static struct ubus_object_type main_object_type =$/;"	v	typeref:struct:ubus_object_type	file:
+main_path	main.c	/^const char *main_path = DEFAULT_MAIN_PATH;$/;"	v
+main_timer	main.c	/^static struct uloop_timeout main_timer;$/;"	v	typeref:struct:uloop_timeout	file:
+mark_interface_down	interface.c	/^mark_interface_down(struct interface *iface)$/;"	f	file:
+mask	interface-ip.h	/^	uint8_t mask;$/;"	m	struct:device_source_table
+mask	interface-ip.h	/^	unsigned int mask;$/;"	m	struct:device_addr
+mask	interface-ip.h	/^	unsigned int mask;$/;"	m	struct:device_route
+mask	system-linux.c	/^	uint32_t mask;$/;"	m	struct:__anon9	file:
+match_if_addr	interface-ip.c	/^match_if_addr(union if_addr *a1, union if_addr *a2, int mask)$/;"	f	file:
+max_age	system.h	/^	int max_age;$/;"	m	struct:bridge_config
+members	bridge.c	/^	struct vlist_tree members;$/;"	m	struct:bridge_state	typeref:struct:bridge_state::vlist_tree	file:
+metric	interface-ip.h	/^	int metric; \/\/ there can be multiple routes to the same target$/;"	m	struct:device_route
+metric	interface.h	/^	int metric;$/;"	m	struct:interface
+mode	system.h	/^	const char *mode;$/;"	m	struct:macvlan_config
+msg	system-linux.c	/^	struct nl_msg *msg;$/;"	m	struct:clear_data	typeref:struct:clear_data::nl_msg	file:
+mtu	device.h	/^	unsigned int mtu;$/;"	m	struct:device_settings
+mtu	interface-ip.h	/^	int mtu;$/;"	m	struct:device_route
+n_present	bridge.c	/^	int n_present;$/;"	m	struct:bridge_state	file:
+name	alias.c	/^	char name[];$/;"	m	struct:alias_device	file:
+name	bridge.c	/^	char name[];$/;"	m	struct:bridge_member	file:
+name	device.h	/^	const char *name;$/;"	m	struct:device_type
+name	interface-ip.h	/^	char name[];$/;"	m	struct:device_prefix_assignment
+name	interface-ip.h	/^	char name[];$/;"	m	struct:dns_search_domain
+name	interface.h	/^	char name[];$/;"	m	struct:interface_assignment_class
+name	interface.h	/^	const char *name;$/;"	m	struct:interface
+name	proto.h	/^	const char *name;$/;"	m	struct:proto_handler
+name	system-linux.c	/^	const char *name;$/;"	m	struct:__anon9	file:
+name	wireless.h	/^	char *name;$/;"	m	struct:wireless_device
+name	wireless.h	/^	char *name;$/;"	m	struct:wireless_interface
+name	wireless.h	/^	const char *name;$/;"	m	struct:wireless_driver
+netifd_add_dynamic	ubus.c	/^netifd_add_dynamic(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_add_host_route	ubus.c	/^netifd_add_host_route(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_add_iface_object	ubus.c	/^static void netifd_add_iface_object(void)$/;"	f	file:
+netifd_add_interface_errors	ubus.c	/^netifd_add_interface_errors(struct blob_buf *b, struct interface *iface)$/;"	f	file:
+netifd_add_object	ubus.c	/^static void netifd_add_object(struct ubus_object *obj)$/;"	f	file:
+netifd_delete_process	main.c	/^netifd_delete_process(struct netifd_process *proc)$/;"	f	file:
+netifd_dev_status	ubus.c	/^netifd_dev_status(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_dir_pop	handler.c	/^netifd_dir_pop(int prev_fd)$/;"	f	file:
+netifd_dir_push	handler.c	/^netifd_dir_push(int fd)$/;"	f	file:
+netifd_do_reload	main.c	/^static void netifd_do_reload(struct uloop_timeout *timeout)$/;"	f	file:
+netifd_do_restart	main.c	/^static void netifd_do_restart(struct uloop_timeout *timeout)$/;"	f	file:
+netifd_dump_status	ubus.c	/^netifd_dump_status(struct interface *iface)$/;"	f	file:
+netifd_get_proto_handlers	ubus.c	/^netifd_get_proto_handlers(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_alias	ubus.c	/^netifd_handle_alias(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_down	ubus.c	/^netifd_handle_down(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_dump	ubus.c	/^netifd_handle_dump(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_iface	ubus.c	/^netifd_handle_iface(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_iface_prepare	ubus.c	/^netifd_handle_iface_prepare(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_reload	ubus.c	/^netifd_handle_reload(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_restart	ubus.c	/^netifd_handle_restart(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_set_data	ubus.c	/^netifd_handle_set_data(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_set_state	ubus.c	/^netifd_handle_set_state(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_signal	main.c	/^netifd_handle_signal(int signo)$/;"	f	file:
+netifd_handle_status	ubus.c	/^netifd_handle_status(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_up	ubus.c	/^netifd_handle_up(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_wdev_down	ubus.c	/^netifd_handle_wdev_down(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_wdev_notify	ubus.c	/^netifd_handle_wdev_notify(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_wdev_status	ubus.c	/^netifd_handle_wdev_status(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handle_wdev_up	ubus.c	/^netifd_handle_wdev_up(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_handler_parse_config	handler.c	/^netifd_handler_parse_config(struct uci_blob_param_list *config, json_object *obj)$/;"	f
+netifd_iface_do_remove	ubus.c	/^netifd_iface_do_remove(struct uloop_timeout *timeout)$/;"	f	file:
+netifd_iface_handle_device	ubus.c	/^netifd_iface_handle_device(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_iface_notify_proto	ubus.c	/^netifd_iface_notify_proto(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_iface_remove	ubus.c	/^netifd_iface_remove(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+netifd_init_script_handler	handler.c	/^netifd_init_script_handler(const char *script, json_object *obj, script_dump_cb cb)$/;"	f	file:
+netifd_init_script_handlers	handler.c	/^void netifd_init_script_handlers(int dir_fd, script_dump_cb cb)$/;"	f
+netifd_kill_process	main.c	/^netifd_kill_process(struct netifd_process *proc)$/;"	f
+netifd_kill_processes	main.c	/^netifd_kill_processes(void)$/;"	f	file:
+netifd_log_message	main.c	/^netifd_log_message(int priority, const char *format, ...)$/;"	f
+netifd_open_subdir	handler.c	/^int netifd_open_subdir(const char *name)$/;"	f
+netifd_parse_script_handler	handler.c	/^netifd_parse_script_handler(const char *name, script_dump_cb cb)$/;"	f	file:
+netifd_process	netifd.h	/^struct netifd_process {$/;"	s
+netifd_process_cb	main.c	/^netifd_process_cb(struct uloop_process *proc, int ret)$/;"	f	file:
+netifd_process_log_read_cb	main.c	/^netifd_process_log_read_cb(struct ustream *s, int bytes)$/;"	f	file:
+netifd_reload	main.c	/^void netifd_reload(void)$/;"	f
+netifd_restart	main.c	/^void netifd_restart(void)$/;"	f
+netifd_setup_signals	main.c	/^netifd_setup_signals(void)$/;"	f	file:
+netifd_start_process	main.c	/^netifd_start_process(const char **argv, char **env, struct netifd_process *proc)$/;"	f
+netifd_ubus_add_fd	ubus.c	/^netifd_ubus_add_fd(void)$/;"	f	file:
+netifd_ubus_add_interface	ubus.c	/^netifd_ubus_add_interface(struct interface *iface)$/;"	f
+netifd_ubus_connection_lost	ubus.c	/^netifd_ubus_connection_lost(struct ubus_context *ctx)$/;"	f	file:
+netifd_ubus_done	ubus.c	/^netifd_ubus_done(void)$/;"	f
+netifd_ubus_init	ubus.c	/^netifd_ubus_init(const char *path)$/;"	f
+netifd_ubus_interface_event	ubus.c	/^netifd_ubus_interface_event(struct interface *iface, bool up)$/;"	f
+netifd_ubus_interface_notify	ubus.c	/^netifd_ubus_interface_notify(struct interface *iface, bool up)$/;"	f
+netifd_ubus_reconnect_timer	ubus.c	/^netifd_ubus_reconnect_timer(struct uloop_timeout *timeout)$/;"	f	file:
+netifd_ubus_remove_interface	ubus.c	/^netifd_ubus_remove_interface(struct interface *iface)$/;"	f
+network	wireless.h	/^	struct blob_attr *network;$/;"	m	struct:wireless_interface	typeref:struct:wireless_interface::blob_attr
+new_dep	alias.c	/^	struct device_user new_dep;$/;"	m	struct:alias_device	typeref:struct:alias_device::device_user	file:
+nexthop	interface-ip.h	/^	union if_addr nexthop;$/;"	m	struct:device_route	typeref:union:device_route::if_addr
+no_debug	netifd.h	/^static inline void no_debug(int level, const char *fmt, ...)$/;"	f
+no_defaultroute	interface.h	/^	bool no_defaultroute;$/;"	m	struct:interface_ip_settings
+no_delegation	interface.h	/^	bool no_delegation;$/;"	m	struct:interface_ip_settings
+no_dns	interface.h	/^	bool no_dns;$/;"	m	struct:interface_ip_settings
+no_proto	proto.c	/^static const struct proto_handler no_proto = {$/;"	v	typeref:struct:proto_handler	file:
+no_proto_handler	proto.c	/^no_proto_handler(struct interface_proto_state *proto,$/;"	f	file:
+node	bridge.c	/^	struct vlist_node node;$/;"	m	struct:bridge_member	typeref:struct:bridge_member::vlist_node	file:
+node	interface-ip.h	/^	struct vlist_node node;$/;"	m	struct:device_addr	typeref:struct:device_addr::vlist_node
+node	interface-ip.h	/^	struct vlist_node node;$/;"	m	struct:device_prefix	typeref:struct:device_prefix::vlist_node
+node	interface-ip.h	/^	struct vlist_node node;$/;"	m	struct:device_route	typeref:struct:device_route::vlist_node
+node	interface-ip.h	/^	struct vlist_simple_node node;$/;"	m	struct:dns_search_domain	typeref:struct:dns_search_domain::vlist_simple_node
+node	interface-ip.h	/^	struct vlist_simple_node node;$/;"	m	struct:dns_server	typeref:struct:dns_server::vlist_simple_node
+node	interface.h	/^	struct avl_node node;$/;"	m	struct:interface_data	typeref:struct:interface_data::avl_node
+node	interface.h	/^	struct vlist_node node;$/;"	m	struct:interface	typeref:struct:interface::vlist_node
+node	iprule.h	/^	struct vlist_node node;$/;"	m	struct:iprule	typeref:struct:iprule::vlist_node
+node	wireless.h	/^	struct avl_node node;$/;"	m	struct:wireless_driver	typeref:struct:wireless_driver::avl_node
+node	wireless.h	/^	struct vlist_node node;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::vlist_node
+node	wireless.h	/^	struct vlist_node node;$/;"	m	struct:wireless_interface	typeref:struct:wireless_interface::vlist_node
+notify	proto.h	/^	int (*notify)(struct interface_proto_state *, struct blob_attr *data);$/;"	m	struct:interface_proto_state
+notify_attr	proto-shell.c	/^static const struct blobmsg_policy notify_attr[__NOTIFY_LAST] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+order	iprule.h	/^	unsigned int order;$/;"	m	struct:iprule
+orig_settings	device.h	/^	struct device_settings orig_settings;$/;"	m	struct:device	typeref:struct:device::device_settings
+out_dev	iprule.h	/^	char out_dev[IFNAMSIZ + 1];$/;"	m	struct:iprule
+parent	device.h	/^	struct device_user parent;$/;"	m	struct:device	typeref:struct:device::device_user
+parent	macvlan.c	/^	struct device_user parent;$/;"	m	struct:macvlan_device	typeref:struct:macvlan_device::device_user	file:
+parent_iface	interface.h	/^	struct interface_user parent_iface;$/;"	m	struct:interface	typeref:struct:interface::interface_user
+parent_ifname	interface.h	/^	const char *parent_ifname;$/;"	m	struct:interface
+parse_addr	proto.c	/^parse_addr(struct interface *iface, const char *str, bool v6, int mask,$/;"	f	file:
+parse_address_item	proto.c	/^parse_address_item(struct blob_attr *attr, bool v6, bool ext)$/;"	f	file:
+parse_address_list	proto.c	/^parse_address_list(struct interface *iface, struct blob_attr *attr, bool v6,$/;"	f	file:
+parse_gateway_option	proto.c	/^parse_gateway_option(struct interface *iface, struct blob_attr *attr, bool v6)$/;"	f	file:
+parse_ip_and_netmask	utils.c	/^parse_ip_and_netmask(int af, const char *str, void *addr, unsigned int *netmask)$/;"	f
+parse_netmask_string	utils.c	/^parse_netmask_string(const char *str, bool v6)$/;"	f
+parse_prefix_list	proto.c	/^parse_prefix_list(struct interface *iface, struct blob_attr *attr)$/;"	f	file:
+parse_prefix_option	proto.c	/^parse_prefix_option(struct interface *iface, const char *str, size_t len)$/;"	f	file:
+parse_static_address_option	proto.c	/^parse_static_address_option(struct interface *iface, struct blob_attr *attr,$/;"	f	file:
+pclass	interface-ip.h	/^	char *pclass;$/;"	m	struct:device_addr
+pclass	interface-ip.h	/^	char pclass[];$/;"	m	struct:device_prefix
+pending	interface-event.c	/^static struct list_head pending = LIST_HEAD_INIT(pending);$/;"	v	typeref:struct:list_head	file:
+pid	wireless.h	/^	int pid;$/;"	m	struct:wireless_process
+point_to_point	interface-ip.h	/^	uint32_t point_to_point;$/;"	m	struct:device_addr
+poll	wireless.h	/^	struct uloop_timeout poll;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::uloop_timeout
+ppp_generic_init_config	examples/proto/ppp.sh	/^ppp_generic_init_config() {$/;"	f
+preferred_until	interface-ip.h	/^	time_t preferred_until;$/;"	m	struct:device_addr
+preferred_until	interface-ip.h	/^	time_t preferred_until;$/;"	m	struct:device_prefix
+prefix	interface.h	/^	struct vlist_tree prefix;$/;"	m	struct:interface_ip_settings	typeref:struct:interface_ip_settings::vlist_tree
+prefix_cmp	interface-ip.c	/^prefix_cmp(const void *k1, const void *k2, void *ptr)$/;"	f	file:
+prefixes	interface-ip.c	/^struct list_head prefixes = LIST_HEAD_INIT(prefixes);$/;"	v	typeref:struct:list_head
+prepare	device.h	/^	int (*prepare)(struct device *dev);$/;"	m	struct:device_hotplug_ops
+prepare_config	wireless.c	/^prepare_config(struct wireless_device *wdev, struct blob_buf *buf, bool up)$/;"	f	file:
+prepare_key_wep	scripts/netifd-wireless.sh	/^prepare_key_wep() {$/;"	f
+present	bridge.c	/^	bool present;$/;"	m	struct:bridge_member	file:
+present	device.h	/^	bool present;$/;"	m	struct:device
+primary_port	bridge.c	/^	struct bridge_member *primary_port;$/;"	m	struct:bridge_state	typeref:struct:bridge_state::bridge_member	file:
+priority	iprule.h	/^	unsigned int priority;$/;"	m	struct:iprule
+priority	system.h	/^	unsigned short priority;$/;"	m	struct:bridge_config
+process_list	main.c	/^static struct list_head process_list = LIST_HEAD_INIT(process_list);$/;"	v	typeref:struct:list_head	file:
+proto	interface.h	/^	struct interface_proto_state *proto;$/;"	m	struct:interface	typeref:struct:interface::interface_proto_state
+proto	proto-shell.c	/^	struct interface_proto_state proto;$/;"	m	struct:proto_shell_state	typeref:struct:proto_shell_state::interface_proto_state	file:
+proto	proto-shell.c	/^	struct proto_handler proto;$/;"	m	struct:proto_shell_handler	typeref:struct:proto_shell_handler::proto_handler	file:
+proto	proto-shell.c	/^	struct proto_shell_state *proto;$/;"	m	struct:proto_shell_dependency	typeref:struct:proto_shell_dependency::proto_shell_state	file:
+proto	proto-static.c	/^	struct interface_proto_state proto;$/;"	m	struct:static_proto_state	typeref:struct:static_proto_state::interface_proto_state	file:
+proto_add_data	scripts/netifd-proto.sh	/^proto_add_data() {$/;"	f
+proto_add_dns_search	scripts/netifd-proto.sh	/^proto_add_dns_search() {$/;"	f
+proto_add_dns_server	scripts/netifd-proto.sh	/^proto_add_dns_server() {$/;"	f
+proto_add_host_dependency	scripts/netifd-proto.sh	/^proto_add_host_dependency() {$/;"	f
+proto_add_ipv4_address	scripts/netifd-proto.sh	/^proto_add_ipv4_address() {$/;"	f
+proto_add_ipv4_route	scripts/netifd-proto.sh	/^proto_add_ipv4_route() {$/;"	f
+proto_add_ipv6_address	scripts/netifd-proto.sh	/^proto_add_ipv6_address() {$/;"	f
+proto_add_ipv6_prefix	scripts/netifd-proto.sh	/^proto_add_ipv6_prefix() {$/;"	f
+proto_add_ipv6_route	scripts/netifd-proto.sh	/^proto_add_ipv6_route() {$/;"	f
+proto_add_nested	scripts/netifd-proto.sh	/^proto_add_nested() {$/;"	f
+proto_add_tunnel	scripts/netifd-proto.sh	/^proto_add_tunnel() {$/;"	f
+proto_apply_ip_settings	proto.c	/^proto_apply_ip_settings(struct interface *iface, struct blob_attr *attr, bool ext)$/;"	f
+proto_apply_static_ip_settings	proto.c	/^proto_apply_static_ip_settings(struct interface *iface, struct blob_attr *attr)$/;"	f
+proto_attach_interface	proto.c	/^proto_attach_interface(struct interface *iface, const char *proto_name)$/;"	f
+proto_block_restart	scripts/netifd-proto.sh	/^proto_block_restart() {$/;"	f
+proto_close_data	scripts/netifd-proto.sh	/^proto_close_data() {$/;"	f
+proto_close_nested	scripts/netifd-proto.sh	/^proto_close_nested() {$/;"	f
+proto_close_tunnel	scripts/netifd-proto.sh	/^proto_close_tunnel() {$/;"	f
+proto_config_add_boolean	scripts/netifd-proto.sh	/^proto_config_add_boolean() {$/;"	f
+proto_config_add_int	scripts/netifd-proto.sh	/^proto_config_add_int() {$/;"	f
+proto_config_add_string	scripts/netifd-proto.sh	/^proto_config_add_string() {$/;"	f
+proto_dump_handlers	proto.c	/^proto_dump_handlers(struct blob_buf *b)$/;"	f
+proto_event	proto.h	/^	void (*proto_event)(struct interface_proto_state *, enum interface_proto_event ev);$/;"	m	struct:interface_proto_state
+proto_export	scripts/netifd-proto.sh	/^proto_export() {$/;"	f
+proto_fd	proto-shell.c	/^static int proto_fd = -1;$/;"	v	file:
+proto_handler	interface.h	/^	const struct proto_handler *proto_handler;$/;"	m	struct:interface	typeref:struct:interface::proto_handler
+proto_handler	proto.h	/^struct proto_handler {$/;"	s
+proto_init_interface	proto.c	/^proto_init_interface(struct interface *iface, struct blob_attr *attr)$/;"	f
+proto_init_update	scripts/netifd-proto.sh	/^proto_init_update() {$/;"	f
+proto_ip	interface.h	/^	struct interface_ip_settings proto_ip;$/;"	m	struct:interface	typeref:struct:interface::interface_ip_settings
+proto_ip_addr	proto.c	/^static const struct blobmsg_policy proto_ip_addr[__ADDR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+proto_ip_attr	proto.c	/^const struct uci_blob_param_list proto_ip_attr = {$/;"	v	typeref:struct:uci_blob_param_list
+proto_ip_attr_info	proto.c	/^static const struct uci_blob_param_info proto_ip_attr_info[__OPT_MAX] = {$/;"	v	typeref:struct:uci_blob_param_info	file:
+proto_ip_attributes	proto.c	/^static const struct blobmsg_policy proto_ip_attributes[__OPT_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+proto_kill_command	scripts/netifd-proto.sh	/^proto_kill_command() {$/;"	f
+proto_notify_error	scripts/netifd-proto.sh	/^proto_notify_error() {$/;"	f
+proto_ppp_init_config	examples/proto/ppp.sh	/^proto_ppp_init_config() {$/;"	f
+proto_ppp_setup	examples/proto/ppp.sh	/^proto_ppp_setup() {$/;"	f
+proto_ppp_teardown	examples/proto/ppp.sh	/^proto_ppp_teardown() {$/;"	f
+proto_pppoe_init_config	examples/proto/ppp.sh	/^proto_pppoe_init_config() {$/;"	f
+proto_pppoe_setup	examples/proto/ppp.sh	/^proto_pppoe_setup() {$/;"	f
+proto_pppoe_teardown	examples/proto/ppp.sh	/^proto_pppoe_teardown() {$/;"	f
+proto_pptp_init_config	examples/proto/pptp.sh	/^proto_pptp_init_config() {$/;"	f
+proto_pptp_setup	examples/proto/pptp.sh	/^proto_pptp_setup() {$/;"	f
+proto_pptp_teardown	examples/proto/pptp.sh	/^proto_pptp_teardown() {$/;"	f
+proto_run_command	scripts/netifd-proto.sh	/^proto_run_command() {$/;"	f
+proto_send_update	scripts/netifd-proto.sh	/^proto_send_update() {$/;"	f
+proto_set_available	scripts/netifd-proto.sh	/^proto_set_available() {$/;"	f
+proto_set_keep	scripts/netifd-proto.sh	/^proto_set_keep() {$/;"	f
+proto_setup_failed	scripts/netifd-proto.sh	/^proto_setup_failed() {$/;"	f
+proto_shell_add_handler	proto-shell.c	/^proto_shell_add_handler(const char *script, const char *name, json_object *obj)$/;"	f	file:
+proto_shell_add_host_dependency	proto-shell.c	/^proto_shell_add_host_dependency(struct proto_shell_state *state, struct blob_attr **tb)$/;"	f	file:
+proto_shell_attach	proto-shell.c	/^proto_shell_attach(const struct proto_handler *h, struct interface *iface,$/;"	f	file:
+proto_shell_block_restart	proto-shell.c	/^proto_shell_block_restart(struct proto_shell_state *state, struct blob_attr **tb)$/;"	f	file:
+proto_shell_check_dependencies	proto-shell.c	/^proto_shell_check_dependencies(struct proto_shell_state *state)$/;"	f	file:
+proto_shell_clear_host_dep	proto-shell.c	/^proto_shell_clear_host_dep(struct proto_shell_state *state)$/;"	f	file:
+proto_shell_create_tunnel	proto-shell.c	/^proto_shell_create_tunnel(const char *name, struct blob_attr *attr)$/;"	f	file:
+proto_shell_dependency	proto-shell.c	/^struct proto_shell_dependency {$/;"	s	file:
+proto_shell_free	proto-shell.c	/^proto_shell_free(struct interface_proto_state *proto)$/;"	f	file:
+proto_shell_handler	proto-shell.c	/^proto_shell_handler(struct interface_proto_state *proto,$/;"	f	file:
+proto_shell_handler	proto-shell.c	/^struct proto_shell_handler {$/;"	s	file:
+proto_shell_if_down_cb	proto-shell.c	/^proto_shell_if_down_cb(struct interface_user *dep, struct interface *iface,$/;"	f	file:
+proto_shell_if_up_cb	proto-shell.c	/^proto_shell_if_up_cb(struct interface_user *dep, struct interface *iface,$/;"	f	file:
+proto_shell_init	proto-shell.c	/^static void __init proto_shell_init(void)$/;"	f	file:
+proto_shell_kill_command	proto-shell.c	/^proto_shell_kill_command(struct proto_shell_state *state, struct blob_attr **tb)$/;"	f	file:
+proto_shell_notify	proto-shell.c	/^proto_shell_notify(struct interface_proto_state *proto, struct blob_attr *attr)$/;"	f	file:
+proto_shell_notify_error	proto-shell.c	/^proto_shell_notify_error(struct proto_shell_state *state, struct blob_attr **tb)$/;"	f	file:
+proto_shell_parse_data	proto-shell.c	/^proto_shell_parse_data(struct interface *iface, struct blob_attr *attr)$/;"	f	file:
+proto_shell_parse_route_list	proto-shell.c	/^proto_shell_parse_route_list(struct interface *iface, struct blob_attr *attr,$/;"	f	file:
+proto_shell_run_command	proto-shell.c	/^proto_shell_run_command(struct proto_shell_state *state, struct blob_attr **tb)$/;"	f	file:
+proto_shell_script_cb	proto-shell.c	/^proto_shell_script_cb(struct netifd_process *p, int ret)$/;"	f	file:
+proto_shell_set_available	proto-shell.c	/^proto_shell_set_available(struct proto_shell_state *state, struct blob_attr **tb)$/;"	f	file:
+proto_shell_setup_failed	proto-shell.c	/^proto_shell_setup_failed(struct proto_shell_state *state)$/;"	f	file:
+proto_shell_sm	proto-shell.c	/^enum proto_shell_sm {$/;"	g	file:
+proto_shell_state	proto-shell.c	/^struct proto_shell_state {$/;"	s	file:
+proto_shell_task_cb	proto-shell.c	/^proto_shell_task_cb(struct netifd_process *p, int ret)$/;"	f	file:
+proto_shell_task_finish	proto-shell.c	/^proto_shell_task_finish(struct proto_shell_state *state,$/;"	f	file:
+proto_shell_teardown_timeout_cb	proto-shell.c	/^proto_shell_teardown_timeout_cb(struct uloop_timeout *timeout)$/;"	f	file:
+proto_shell_update_host_dep	proto-shell.c	/^proto_shell_update_host_dep(struct proto_shell_dependency *dep)$/;"	f	file:
+proto_shell_update_link	proto-shell.c	/^proto_shell_update_link(struct proto_shell_state *state, struct blob_attr *data, struct blob_attr **tb)$/;"	f	file:
+proto_task	proto-shell.c	/^	struct netifd_process proto_task;$/;"	m	struct:proto_shell_state	typeref:struct:proto_shell_state::netifd_process	file:
+proto_task_killed	proto-shell.c	/^	bool proto_task_killed;$/;"	m	struct:proto_shell_state	file:
+put_container	wireless.c	/^put_container(struct blob_buf *buf, struct blob_attr *attr, const char *name)$/;"	f	file:
+read_string_file	system-linux.c	/^read_string_file(int dir_fd, const char *file, char *buf, int len)$/;"	f	file:
+read_uint64_file	system-linux.c	/^read_uint64_file(int dir_fd, const char *file, uint64_t *val)$/;"	f	file:
+refcount	interface-ip.h	/^	uint16_t refcount;$/;"	m	struct:device_source_table
+reload	device.h	/^	enum dev_change_type (*reload)(struct device *, struct blob_attr *);$/;"	m	struct:device_type	typeref:enum:device_type::reload
+remove_timer	interface.h	/^	struct uloop_timeout remove_timer;$/;"	m	struct:interface	typeref:struct:interface::uloop_timeout
+required	wireless.h	/^	bool required;$/;"	m	struct:wireless_process
+resolv_conf	main.c	/^const char *resolv_conf = DEFAULT_RESOLV_CONF;$/;"	v
+retry	wireless.h	/^	int retry;$/;"	m	struct:wireless_device
+route	interface.h	/^	struct vlist_tree route;$/;"	m	struct:interface_ip_settings	typeref:struct:interface_ip_settings::vlist_tree
+route_attr	interface-ip.c	/^static const struct blobmsg_policy route_attr[__ROUTE_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+route_attr_list	interface-ip.c	/^const struct uci_blob_param_list route_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list
+route_cmp	interface-ip.c	/^route_cmp(const void *k1, const void *k2, void *ptr)$/;"	f	file:
+route_policy	ubus.c	/^static const struct blobmsg_policy route_policy[__HR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+rule_attr	iprule.c	/^static const struct blobmsg_policy rule_attr[__RULE_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+rule_attr_list	iprule.c	/^const struct uci_blob_param_list rule_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list
+rule_cmp	iprule.c	/^rule_cmp(const void *k1, const void *k2, void *ptr)$/;"	f	file:
+run_cmd	interface-event.c	/^run_cmd(const char *ifname, const char *device, enum interface_event event,$/;"	f	file:
+s6_addr32	utils.h	118;"	d
+script	wireless.h	/^	const char *script;$/;"	m	struct:wireless_driver
+script_check	wireless.h	/^	struct uloop_timeout script_check;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::uloop_timeout
+script_dump_cb	handler.h	/^typedef void (*script_dump_cb)(const char *script, const char *name, json_object *obj);$/;"	t
+script_name	proto-shell.c	/^	char *script_name;$/;"	m	struct:proto_shell_handler	file:
+script_proc	wireless.h	/^	struct list_head script_proc;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::list_head
+script_proc_fd	wireless.h	/^	struct uloop_fd script_proc_fd;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::uloop_fd
+script_task	proto-shell.c	/^	struct netifd_process script_task;$/;"	m	struct:proto_shell_state	typeref:struct:proto_shell_state::netifd_process	file:
+script_task	wireless.h	/^	struct netifd_process script_task;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::netifd_process
+sec_to_jiffies	system-linux.c	/^sec_to_jiffies(int val)$/;"	f	file:
+section	wireless.h	/^	const char *section;$/;"	m	struct:wireless_interface
+set_config_state	interface.c	/^set_config_state(struct interface *iface, enum interface_config_state s)$/;"	f	file:
+set_default	scripts/utils.sh	/^set_default() {$/;"	f
+set_device_state	device.c	/^static int set_device_state(struct device *dev, bool state)$/;"	f	file:
+set_ip_lo_policy	interface-ip.c	/^static int set_ip_lo_policy(bool add, bool v6, struct interface *iface)$/;"	f	file:
+set_ip_source_policy	interface-ip.c	/^static int set_ip_source_policy(bool add, bool v6, unsigned int priority,$/;"	f	file:
+set_state	bridge.c	/^	device_state_cb set_state;$/;"	m	struct:bridge_state	file:
+set_state	device.h	/^	device_state_cb set_state;$/;"	m	struct:device
+set_state	macvlan.c	/^	device_state_cb set_state;$/;"	m	struct:macvlan_device	file:
+set_state	tunnel.c	/^	device_state_cb set_state;$/;"	m	struct:tunnel	file:
+set_state	vlan.c	/^	device_state_cb set_state;$/;"	m	struct:vlan_device	file:
+settings	device.h	/^	struct device_settings settings;$/;"	m	struct:device	typeref:struct:device::device_settings
+setup_vif	examples/wireless/mac80211.sh	/^setup_vif() {$/;"	f
+simple_device_create	device.c	/^simple_device_create(const char *name, struct blob_attr *attr)$/;"	f	file:
+simple_device_free	device.c	/^static void simple_device_free(struct device *dev)$/;"	f	file:
+simple_device_set_state	device.c	/^simple_device_set_state(struct device *dev, bool state)$/;"	f	file:
+simple_device_type	device.c	/^const struct device_type simple_device_type = {$/;"	v	typeref:struct:device_type
+size	system-linux.c	/^	int size;$/;"	m	struct:clear_data	file:
+sm	proto-shell.c	/^	enum proto_shell_sm sm;$/;"	m	struct:proto_shell_state	typeref:enum:proto_shell_state::proto_shell_sm	file:
+sock	system-linux.c	/^	struct nl_sock *sock;$/;"	m	struct:event_socket	typeref:struct:event_socket::nl_sock	file:
+sock_ioctl	system-linux.c	/^static int sock_ioctl = -1;$/;"	v	file:
+sock_rtnl	system-linux.c	/^static struct nl_sock *sock_rtnl = NULL;$/;"	v	typeref:struct:nl_sock	file:
+source	interface-ip.h	/^	union if_addr source;$/;"	m	struct:device_route	typeref:union:device_route::if_addr
+sourcemask	interface-ip.h	/^	unsigned int sourcemask;$/;"	m	struct:device_route
+split_netmask	utils.c	/^split_netmask(char *str, unsigned int *netmask, bool v6)$/;"	f
+split_vlan	vlan.c	/^static char *split_vlan(char *s)$/;"	f	file:
+src_addr	iprule.h	/^	union if_addr src_addr;$/;"	m	struct:iprule	typeref:union:iprule::if_addr
+src_mask	iprule.h	/^	unsigned int src_mask;$/;"	m	struct:iprule
+start_time	interface.h	/^	time_t start_time;$/;"	m	struct:interface
+state	interface.h	/^	enum interface_state state;$/;"	m	struct:interface	typeref:enum:interface::interface_state
+state	wireless.h	/^	enum interface_state state;$/;"	m	struct:wireless_device	typeref:enum:wireless_device::interface_state
+static_attach	proto-static.c	/^static_attach(const struct proto_handler *h, struct interface *iface,$/;"	f	file:
+static_free	proto-static.c	/^static_free(struct interface_proto_state *proto)$/;"	f	file:
+static_handler	proto-static.c	/^static_handler(struct interface_proto_state *proto,$/;"	f	file:
+static_proto	proto-static.c	/^static struct proto_handler static_proto = {$/;"	v	typeref:struct:proto_handler	file:
+static_proto_init	proto-static.c	/^static_proto_init(void)$/;"	f	file:
+static_proto_setup	proto-static.c	/^static_proto_setup(struct static_proto_state *state)$/;"	f	file:
+static_proto_state	proto-static.c	/^struct static_proto_state {$/;"	s	file:
+stp	system.h	/^	bool stp;$/;"	m	struct:bridge_config
+subsystem	interface.h	/^	const char *subsystem;$/;"	m	struct:interface_error
+sys_present	device.h	/^	bool sys_present;$/;"	m	struct:device
+system_add_address	system-dummy.c	/^int system_add_address(struct device *dev, struct device_addr *addr)$/;"	f
+system_add_address	system-linux.c	/^int system_add_address(struct device *dev, struct device_addr *addr)$/;"	f
+system_add_ip_tunnel	system-dummy.c	/^int system_add_ip_tunnel(const char *name, struct blob_attr *attr)$/;"	f
+system_add_ip_tunnel	system-linux.c	/^int system_add_ip_tunnel(const char *name, struct blob_attr *attr)$/;"	f
+system_add_iprule	system-dummy.c	/^int system_add_iprule(struct iprule *rule)$/;"	f
+system_add_iprule	system-linux.c	/^int system_add_iprule(struct iprule *rule)$/;"	f
+system_add_link_modes	system-linux.c	/^static void system_add_link_modes(struct blob_buf *b, __u32 mask)$/;"	f	file:
+system_add_route	system-dummy.c	/^int system_add_route(struct device *dev, struct device_route *route)$/;"	f
+system_add_route	system-linux.c	/^int system_add_route(struct device *dev, struct device_route *route)$/;"	f
+system_addr	system-linux.c	/^static int system_addr(struct device *dev, struct device_addr *addr, int cmd)$/;"	f	file:
+system_address_msg	system-dummy.c	/^static int system_address_msg(struct device *dev, struct device_addr *addr, const char *type)$/;"	f	file:
+system_bridge_addbr	system-dummy.c	/^int system_bridge_addbr(struct device *bridge, struct bridge_config *cfg)$/;"	f
+system_bridge_addbr	system-linux.c	/^int system_bridge_addbr(struct device *bridge, struct bridge_config *cfg)$/;"	f
+system_bridge_addif	system-dummy.c	/^int system_bridge_addif(struct device *bridge, struct device *dev)$/;"	f
+system_bridge_addif	system-linux.c	/^int system_bridge_addif(struct device *bridge, struct device *dev)$/;"	f
+system_bridge_delbr	system-dummy.c	/^int system_bridge_delbr(struct device *bridge)$/;"	f
+system_bridge_delbr	system-linux.c	/^int system_bridge_delbr(struct device *bridge)$/;"	f
+system_bridge_delif	system-dummy.c	/^int system_bridge_delif(struct device *bridge, struct device *dev)$/;"	f
+system_bridge_delif	system-linux.c	/^int system_bridge_delif(struct device *bridge, struct device *dev)$/;"	f
+system_bridge_if	system-linux.c	/^static int system_bridge_if(const char *bridge, struct device *dev, int cmd, void *data)$/;"	f	file:
+system_del_address	system-dummy.c	/^int system_del_address(struct device *dev, struct device_addr *addr)$/;"	f
+system_del_address	system-linux.c	/^int system_del_address(struct device *dev, struct device_addr *addr)$/;"	f
+system_del_ip_tunnel	system-dummy.c	/^int system_del_ip_tunnel(const char *name)$/;"	f
+system_del_ip_tunnel	system-linux.c	/^int system_del_ip_tunnel(const char *name)$/;"	f
+system_del_iprule	system-dummy.c	/^int system_del_iprule(struct iprule *rule)$/;"	f
+system_del_iprule	system-linux.c	/^int system_del_iprule(struct iprule *rule)$/;"	f
+system_del_route	system-dummy.c	/^int system_del_route(struct device *dev, struct device_route *route)$/;"	f
+system_del_route	system-linux.c	/^int system_del_route(struct device *dev, struct device_route *route)$/;"	f
+system_fd_set_cloexec	system.c	/^void system_fd_set_cloexec(int fd)$/;"	f
+system_flush_iprules	system-dummy.c	/^int system_flush_iprules(void)$/;"	f
+system_flush_iprules	system-linux.c	/^int system_flush_iprules(void)$/;"	f
+system_flush_routes	system-dummy.c	/^int system_flush_routes(void)$/;"	f
+system_flush_routes	system-linux.c	/^int system_flush_routes(void)$/;"	f
+system_get_addr_family	system.h	/^static inline int system_get_addr_family(unsigned int flags)$/;"	f
+system_get_addr_len	system.h	/^static inline int system_get_addr_len(unsigned int flags)$/;"	f
+system_get_bridge	system-linux.c	/^static char *system_get_bridge(const char *name, char *buf, int buflen)$/;"	f	file:
+system_get_rtime	system-dummy.c	/^time_t system_get_rtime(void)$/;"	f
+system_get_rtime	system-linux.c	/^time_t system_get_rtime(void)$/;"	f
+system_if_apply_settings	system-dummy.c	/^system_if_apply_settings(struct device *dev, struct device_settings *s)$/;"	f
+system_if_apply_settings	system-linux.c	/^system_if_apply_settings(struct device *dev, struct device_settings *s)$/;"	f
+system_if_check	system-dummy.c	/^int system_if_check(struct device *dev)$/;"	f
+system_if_check	system-linux.c	/^int system_if_check(struct device *dev)$/;"	f
+system_if_clear_entries	system-linux.c	/^system_if_clear_entries(struct device *dev, int type, int af)$/;"	f	file:
+system_if_clear_state	system-dummy.c	/^void system_if_clear_state(struct device *dev)$/;"	f
+system_if_clear_state	system-linux.c	/^void system_if_clear_state(struct device *dev)$/;"	f
+system_if_down	system-dummy.c	/^int system_if_down(struct device *dev)$/;"	f
+system_if_down	system-linux.c	/^int system_if_down(struct device *dev)$/;"	f
+system_if_dump_info	system-dummy.c	/^system_if_dump_info(struct device *dev, struct blob_buf *b)$/;"	f
+system_if_dump_info	system-linux.c	/^system_if_dump_info(struct device *dev, struct blob_buf *b)$/;"	f
+system_if_dump_stats	system-dummy.c	/^system_if_dump_stats(struct device *dev, struct blob_buf *b)$/;"	f
+system_if_dump_stats	system-linux.c	/^system_if_dump_stats(struct device *dev, struct blob_buf *b)$/;"	f
+system_if_flags	system-linux.c	/^static int system_if_flags(const char *ifname, unsigned add, unsigned rem)$/;"	f	file:
+system_if_force_external	system-dummy.c	/^bool system_if_force_external(const char *ifname)$/;"	f
+system_if_force_external	system-linux.c	/^system_if_force_external(const char *ifname)$/;"	f
+system_if_get_parent	system-dummy.c	/^system_if_get_parent(struct device *dev)$/;"	f
+system_if_get_parent	system-linux.c	/^system_if_get_parent(struct device *dev)$/;"	f
+system_if_get_settings	system-linux.c	/^system_if_get_settings(struct device *dev, struct device_settings *s)$/;"	f	file:
+system_if_resolve	system-linux.c	/^static int system_if_resolve(struct device *dev)$/;"	f	file:
+system_if_up	system-dummy.c	/^int system_if_up(struct device *dev)$/;"	f
+system_if_up	system-linux.c	/^int system_if_up(struct device *dev)$/;"	f
+system_init	system-dummy.c	/^int system_init(void)$/;"	f
+system_init	system-linux.c	/^int system_init(void)$/;"	f
+system_iprule	system-linux.c	/^static int system_iprule(struct iprule *rule, int cmd)$/;"	f	file:
+system_is_bridge	system-linux.c	/^static bool system_is_bridge(const char *name, char *buf, int buflen)$/;"	f	file:
+system_macvlan_add	system-dummy.c	/^int system_macvlan_add(struct device *macvlan, struct device *dev, struct macvlan_config *cfg)$/;"	f
+system_macvlan_add	system-linux.c	/^int system_macvlan_add(struct device *macvlan, struct device *dev, struct macvlan_config *cfg)$/;"	f
+system_macvlan_del	system-dummy.c	/^int system_macvlan_del(struct device *macvlan)$/;"	f
+system_macvlan_del	system-linux.c	/^int system_macvlan_del(struct device *macvlan)$/;"	f
+system_resolve_iprule_action	system-dummy.c	/^bool system_resolve_iprule_action(const char *action, unsigned int *id)$/;"	f
+system_resolve_iprule_action	system-linux.c	/^bool system_resolve_iprule_action(const char *action, unsigned int *id)$/;"	f
+system_resolve_rt_table	system-dummy.c	/^bool system_resolve_rt_table(const char *name, unsigned int *id)$/;"	f
+system_resolve_rt_table	system-linux.c	/^bool system_resolve_rt_table(const char *name, unsigned int *id)$/;"	f
+system_route_msg	system-dummy.c	/^static int system_route_msg(struct device *dev, struct device_route *route, const char *type)$/;"	f	file:
+system_rt	system-linux.c	/^static int system_rt(struct device *dev, struct device_route *route, int cmd)$/;"	f	file:
+system_rtnl_call	system-linux.c	/^static int system_rtnl_call(struct nl_msg *msg)$/;"	f	file:
+system_set_dev_sysctl	system-linux.c	/^static void system_set_dev_sysctl(const char *path, const char *device, const char *val)$/;"	f	file:
+system_set_disable_ipv6	system-linux.c	/^static void system_set_disable_ipv6(struct device *dev, const char *val)$/;"	f	file:
+system_set_sysctl	system-linux.c	/^static void system_set_sysctl(const char *path, const char *val)$/;"	f	file:
+system_update_ipv6_mtu	system-dummy.c	/^int system_update_ipv6_mtu(struct device *dev, int mtu)$/;"	f
+system_update_ipv6_mtu	system-linux.c	/^int system_update_ipv6_mtu(struct device *dev, int mtu)$/;"	f
+system_vlan	system-linux.c	/^static int system_vlan(struct device *dev, int id)$/;"	f	file:
+system_vlan_add	system-dummy.c	/^int system_vlan_add(struct device *dev, int id)$/;"	f
+system_vlan_add	system-linux.c	/^int system_vlan_add(struct device *dev, int id)$/;"	f
+system_vlan_del	system-dummy.c	/^int system_vlan_del(struct device *dev)$/;"	f
+system_vlan_del	system-linux.c	/^int system_vlan_del(struct device *dev)$/;"	f
+table	interface-ip.h	/^	uint32_t table;$/;"	m	struct:device_source_table
+table	interface-ip.h	/^	unsigned int table;$/;"	m	struct:device_route
+task	interface-event.c	/^static struct uloop_process task = {$/;"	v	typeref:struct:uloop_process	file:
+task_complete	interface-event.c	/^task_complete(struct uloop_process *proc, int ret)$/;"	f	file:
+teardown_timeout	proto-shell.c	/^	struct uloop_timeout teardown_timeout;$/;"	m	struct:proto_shell_state	typeref:struct:proto_shell_state::uloop_timeout	file:
+timeout	wireless.h	/^	struct uloop_timeout timeout;$/;"	m	struct:wireless_device	typeref:struct:wireless_device::uloop_timeout
+tos	iprule.h	/^	unsigned int tos;$/;"	m	struct:iprule
+tunnel	tunnel.c	/^struct tunnel {$/;"	s	file:
+tunnel_attr_list	system.c	/^const struct uci_blob_param_list tunnel_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list
+tunnel_attr_list	system.h	/^const struct uci_blob_param_list tunnel_attr_list;$/;"	v	typeref:struct:uci_blob_param_list
+tunnel_attrs	system.c	/^static const struct blobmsg_policy tunnel_attrs[__TUNNEL_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+tunnel_create	tunnel.c	/^tunnel_create(const char *name, struct blob_attr *attr)$/;"	f	file:
+tunnel_device_type	tunnel.c	/^const struct device_type tunnel_device_type = {$/;"	v	typeref:struct:device_type
+tunnel_free	tunnel.c	/^tunnel_free(struct device *dev)$/;"	f	file:
+tunnel_ioctl	system-linux.c	/^static int tunnel_ioctl(const char *name, int cmd, void *p)$/;"	f	file:
+tunnel_param	system.h	/^enum tunnel_param {$/;"	g
+tunnel_reload	tunnel.c	/^tunnel_reload(struct device *dev, struct blob_attr *attr)$/;"	f	file:
+tunnel_set_state	tunnel.c	/^tunnel_set_state(struct device *dev, bool up)$/;"	f	file:
+txqueuelen	device.h	/^	unsigned int txqueuelen;$/;"	m	struct:device_settings
+type	device.h	/^	const struct device_type *type;$/;"	m	struct:device	typeref:struct:device::device_type
+type	system-linux.c	/^	int type;$/;"	m	struct:clear_data	file:
+ubus	interface.h	/^	struct ubus_object ubus;$/;"	m	struct:interface	typeref:struct:interface::ubus_object
+ubus_ctx	ubus.c	/^struct ubus_context *ubus_ctx = NULL;$/;"	v	typeref:struct:ubus_context
+ubus_path	ubus.c	/^static const char *ubus_path;$/;"	v	file:
+uci_ctx	config.c	/^static struct uci_context *uci_ctx;$/;"	v	typeref:struct:uci_context	file:
+uci_network	config.c	/^static struct uci_package *uci_network;$/;"	v	typeref:struct:uci_package	file:
+uci_wireless	config.c	/^static struct uci_package *uci_wireless;$/;"	v	typeref:struct:uci_package	file:
+ula_prefix	interface-ip.c	/^static struct device_prefix *ula_prefix = NULL;$/;"	v	typeref:struct:device_prefix	file:
+uloop	netifd.h	/^	struct uloop_process uloop;$/;"	m	struct:netifd_process	typeref:struct:netifd_process::uloop_process
+uloop	system-linux.c	/^	struct uloop_fd uloop;$/;"	m	struct:event_socket	typeref:struct:event_socket::uloop_fd	file:
+update	alias.c	/^	bool update;$/;"	m	struct:alias_device	file:
+updated	interface.h	/^	enum interface_update_flags updated;$/;"	m	struct:interface	typeref:enum:interface::interface_update_flags
+usage	main.c	/^static int usage(const char *progname)$/;"	f	file:
+use_syslog	main.c	/^static bool use_syslog = true;$/;"	v	file:
+use_syslog	main.c	47;"	d	file:
+users	device.h	/^	struct safe_list users;$/;"	m	struct:device	typeref:struct:device::safe_list
+users	interface.h	/^	struct list_head users;$/;"	m	struct:interface	typeref:struct:interface::list_head
+v6	interface-ip.h	/^	uint8_t v6;$/;"	m	struct:device_source_table
+v6	proto-shell.c	/^	bool v6;$/;"	m	struct:proto_shell_dependency	file:
+valid_until	interface-ip.h	/^	time_t valid_until;$/;"	m	struct:device_addr
+valid_until	interface-ip.h	/^	time_t valid_until;$/;"	m	struct:device_prefix
+valid_until	interface-ip.h	/^	time_t valid_until;$/;"	m	struct:device_route
+valid_until_timeout	interface-ip.c	/^static struct uloop_timeout valid_until_timeout;$/;"	v	typeref:struct:uloop_timeout	file:
+version	utils.h	/^	int version;$/;"	m	struct:vlist_simple_node
+version	utils.h	/^	int version;$/;"	m	struct:vlist_simple_tree
+vif_config_add_bridge	wireless.c	/^vif_config_add_bridge(struct blob_buf *buf, struct blob_attr *networks, bool prepare)$/;"	f	file:
+vif_idx	wireless.h	/^	int vif_idx;$/;"	m	struct:wireless_device
+vif_param	wireless.c	/^static const struct uci_blob_param_list vif_param = {$/;"	v	typeref:struct:uci_blob_param_list	file:
+vif_policy	wireless.c	/^static const struct blobmsg_policy vif_policy[__VIF_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+vif_update	wireless.c	/^vif_update(struct vlist_tree *tree, struct vlist_node *node_new,$/;"	f	file:
+vlan_dev_cb	vlan.c	/^static void vlan_dev_cb(struct device_user *dep, enum device_event ev)$/;"	f	file:
+vlan_dev_set_name	vlan.c	/^static void vlan_dev_set_name(struct vlan_device *vldev, struct device *dev)$/;"	f	file:
+vlan_device	vlan.c	/^struct vlan_device {$/;"	s	file:
+vlan_set_device_state	vlan.c	/^static int vlan_set_device_state(struct device *dev, bool up)$/;"	f	file:
+vlist_for_each_element_safe	utils.h	47;"	d
+vlist_simple_add	utils.h	/^static inline void vlist_simple_add(struct vlist_simple_tree *tree, struct vlist_simple_node *node)$/;"	f
+vlist_simple_delete	utils.c	/^vlist_simple_delete(struct vlist_simple_tree *tree, struct vlist_simple_node *node)$/;"	f
+vlist_simple_empty	utils.h	73;"	d
+vlist_simple_flush	utils.c	/^vlist_simple_flush(struct vlist_simple_tree *tree)$/;"	f
+vlist_simple_flush_all	utils.c	/^vlist_simple_flush_all(struct vlist_simple_tree *tree)$/;"	f
+vlist_simple_for_each_element	utils.h	70;"	d
+vlist_simple_init	utils.h	50;"	d
+vlist_simple_node	utils.h	/^struct vlist_simple_node {$/;"	s
+vlist_simple_replace	utils.c	/^vlist_simple_replace(struct vlist_simple_tree *dest, struct vlist_simple_tree *old)$/;"	f
+vlist_simple_tree	utils.h	/^struct vlist_simple_tree {$/;"	s
+vlist_simple_update	utils.h	/^static inline void vlist_simple_update(struct vlist_simple_tree *tree)$/;"	f
+wdev	wireless.h	/^	struct wireless_device *wdev;$/;"	m	struct:wireless_interface	typeref:struct:wireless_interface::wireless_device
+wdev_change_config	wireless.c	/^wdev_change_config(struct wireless_device *wdev, struct wireless_device *wd_new)$/;"	f	file:
+wdev_create	wireless.c	/^wdev_create(struct wireless_device *wdev)$/;"	f	file:
+wdev_handle_config_change	wireless.c	/^wdev_handle_config_change(struct wireless_device *wdev)$/;"	f	file:
+wdev_param	wireless.c	/^static const struct uci_blob_param_list wdev_param = {$/;"	v	typeref:struct:uci_blob_param_list	file:
+wdev_policy	wireless.c	/^static const struct blobmsg_policy wdev_policy =$/;"	v	typeref:struct:blobmsg_policy	file:
+wdev_set_config_state	wireless.c	/^wdev_set_config_state(struct wireless_device *wdev, enum interface_config_state s)$/;"	f	file:
+wdev_update	wireless.c	/^wdev_update(struct vlist_tree *tree, struct vlist_node *node_new,$/;"	f	file:
+wireless_add_handler	wireless.c	/^wireless_add_handler(const char *script, const char *name, json_object *obj)$/;"	f	file:
+wireless_close_script_proc_fd	wireless.c	/^wireless_close_script_proc_fd(struct wireless_device *wdev)$/;"	f	file:
+wireless_complete_kill_request	wireless.c	/^wireless_complete_kill_request(struct wireless_device *wdev)$/;"	f	file:
+wireless_device	wireless.h	/^struct wireless_device {$/;"	s
+wireless_device_add_process	wireless.c	/^wireless_device_add_process(struct wireless_device *wdev, struct blob_attr *data)$/;"	f	file:
+wireless_device_check_script_tasks	wireless.c	/^wireless_device_check_script_tasks(struct uloop_timeout *timeout)$/;"	f	file:
+wireless_device_create	wireless.c	/^wireless_device_create(struct wireless_driver *drv, const char *name, struct blob_attr *data)$/;"	f
+wireless_device_free	wireless.c	/^wireless_device_free(struct wireless_device *wdev)$/;"	f	file:
+wireless_device_free_state	wireless.c	/^wireless_device_free_state(struct wireless_device *wdev)$/;"	f	file:
+wireless_device_mark_down	wireless.c	/^wireless_device_mark_down(struct wireless_device *wdev)$/;"	f	file:
+wireless_device_mark_up	wireless.c	/^wireless_device_mark_up(struct wireless_device *wdev)$/;"	f	file:
+wireless_device_notify	wireless.c	/^wireless_device_notify(struct wireless_device *wdev, struct blob_attr *data,$/;"	f
+wireless_device_process_kill_all	wireless.c	/^wireless_device_process_kill_all(struct wireless_device *wdev, struct blob_attr *data,$/;"	f	file:
+wireless_device_retry_setup	wireless.c	/^wireless_device_retry_setup(struct wireless_device *wdev)$/;"	f	file:
+wireless_device_run_handler	wireless.c	/^wireless_device_run_handler(struct wireless_device *wdev, bool up)$/;"	f	file:
+wireless_device_script_task_cb	wireless.c	/^wireless_device_script_task_cb(struct netifd_process *proc, int ret)$/;"	f	file:
+wireless_device_set_down	wireless.c	/^wireless_device_set_down(struct wireless_device *wdev)$/;"	f
+wireless_device_set_retry	wireless.c	/^wireless_device_set_retry(struct wireless_device *wdev, struct blob_attr *data)$/;"	f	file:
+wireless_device_set_up	wireless.c	/^wireless_device_set_up(struct wireless_device *wdev)$/;"	f
+wireless_device_setup_cancel	wireless.c	/^wireless_device_setup_cancel(struct wireless_device *wdev)$/;"	f	file:
+wireless_device_setup_timeout	wireless.c	/^wireless_device_setup_timeout(struct uloop_timeout *timeout)$/;"	f	file:
+wireless_device_status	wireless.c	/^wireless_device_status(struct wireless_device *wdev, struct blob_buf *b)$/;"	f
+wireless_devices	wireless.c	/^struct vlist_tree wireless_devices;$/;"	v	typeref:struct:vlist_tree
+wireless_devices	wireless.h	/^struct vlist_tree wireless_devices;$/;"	v	typeref:struct:vlist_tree
+wireless_driver	wireless.h	/^struct wireless_driver {$/;"	s
+wireless_drivers	wireless.c	/^struct avl_tree wireless_drivers;$/;"	v	typeref:struct:avl_tree
+wireless_drivers	wireless.h	/^struct avl_tree wireless_drivers;$/;"	v	typeref:struct:avl_tree
+wireless_init_list	wireless.c	/^wireless_init_list(void)$/;"	f	file:
+wireless_interface	wireless.h	/^struct wireless_interface {$/;"	s
+wireless_interface_create	wireless.c	/^void wireless_interface_create(struct wireless_device *wdev, struct blob_attr *data, const char *section)$/;"	f
+wireless_interface_handle_link	wireless.c	/^static void wireless_interface_handle_link(struct wireless_interface *vif, bool up)$/;"	f	file:
+wireless_interface_init_config	wireless.c	/^wireless_interface_init_config(struct wireless_interface *vif)$/;"	f	file:
+wireless_interface_set_data	wireless.c	/^wireless_interface_set_data(struct wireless_interface *vif)$/;"	f	file:
+wireless_interface_status	wireless.c	/^wireless_interface_status(struct wireless_interface *iface, struct blob_buf *b)$/;"	f	file:
+wireless_object	ubus.c	/^static struct ubus_object wireless_object = {$/;"	v	typeref:struct:ubus_object	file:
+wireless_object_methods	ubus.c	/^static struct ubus_method wireless_object_methods[] = {$/;"	v	typeref:struct:ubus_method	file:
+wireless_object_type	ubus.c	/^static struct ubus_object_type wireless_object_type =$/;"	v	typeref:struct:ubus_object_type	file:
+wireless_proc_poll_fd	wireless.c	/^wireless_proc_poll_fd(struct uloop_fd *fd, unsigned int events)$/;"	f	file:
+wireless_process	wireless.h	/^struct wireless_process {$/;"	s
+wireless_process_check	wireless.c	/^wireless_process_check(struct wireless_process *proc)$/;"	f	file:
+wireless_process_free	wireless.c	/^wireless_process_free(struct wireless_device *wdev, struct wireless_process *proc)$/;"	f	file:
+wireless_process_kill_all	wireless.c	/^wireless_process_kill_all(struct wireless_device *wdev, int signal, bool free)$/;"	f	file:
+wireless_setup_failed	scripts/netifd-wireless.sh	/^wireless_setup_failed() {$/;"	f
+wireless_setup_vif_failed	scripts/netifd-wireless.sh	/^wireless_setup_vif_failed() {$/;"	f
+wireless_start_pending	wireless.c	/^wireless_start_pending(void)$/;"	f
+wireless_vif_parse_encryption	scripts/netifd-wireless.sh	/^wireless_vif_parse_encryption() {$/;"	f
+write_resolv_conf_entries	interface-ip.c	/^write_resolv_conf_entries(FILE *f, struct interface_ip_settings *ip)$/;"	f	file:

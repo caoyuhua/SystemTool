@@ -1,0 +1,417 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DEBUG	log.h	20;"	d
+ERROR	log.h	31;"	d
+EVENT_DATA	service/service.c	/^	EVENT_DATA,$/;"	e	enum:__anon9	file:
+EVENT_TYPE	service/service.c	/^	EVENT_TYPE,$/;"	e	enum:__anon9	file:
+HOTPLUG_WAIT	plug/hotplug.c	35;"	d	file:
+INSTANCE_ATTR_COMMAND	service/instance.c	/^	INSTANCE_ATTR_COMMAND,$/;"	e	enum:__anon4	file:
+INSTANCE_ATTR_DATA	service/instance.c	/^	INSTANCE_ATTR_DATA,$/;"	e	enum:__anon4	file:
+INSTANCE_ATTR_ENV	service/instance.c	/^	INSTANCE_ATTR_ENV,$/;"	e	enum:__anon4	file:
+INSTANCE_ATTR_FILE	service/instance.c	/^	INSTANCE_ATTR_FILE,$/;"	e	enum:__anon4	file:
+INSTANCE_ATTR_LIMITS	service/instance.c	/^	INSTANCE_ATTR_LIMITS,$/;"	e	enum:__anon4	file:
+INSTANCE_ATTR_NETDEV	service/instance.c	/^	INSTANCE_ATTR_NETDEV,$/;"	e	enum:__anon4	file:
+INSTANCE_ATTR_NICE	service/instance.c	/^	INSTANCE_ATTR_NICE,$/;"	e	enum:__anon4	file:
+INSTANCE_ATTR_RESPAWN	service/instance.c	/^	INSTANCE_ATTR_RESPAWN,$/;"	e	enum:__anon4	file:
+INSTANCE_ATTR_TRIGGER	service/instance.c	/^	INSTANCE_ATTR_TRIGGER,$/;"	e	enum:__anon4	file:
+LINE_LEN	inittab.c	240;"	d	file:
+LOG	log.h	26;"	d
+MAX_ARGS	inittab.c	35;"	d	file:
+PATH_SIZE	plug/udevtrigger.c	35;"	d	file:
+RESPAWN_ERROR	service/instance.h	22;"	d
+SERVICE_ATTR_NAME	service/service.c	/^	SERVICE_ATTR_NAME,$/;"	e	enum:__anon6	file:
+SERVICE_DEL_ATTR_INSTANCE	service/service.c	/^	SERVICE_DEL_ATTR_INSTANCE,$/;"	e	enum:__anon7	file:
+SERVICE_DEL_ATTR_NAME	service/service.c	/^	SERVICE_DEL_ATTR_NAME,$/;"	e	enum:__anon7	file:
+SERVICE_LIST_ATTR_VERBOSE	service/service.c	/^	SERVICE_LIST_ATTR_VERBOSE,$/;"	e	enum:__anon8	file:
+SERVICE_SET_INSTANCES	service/service.c	/^	SERVICE_SET_INSTANCES,$/;"	e	enum:__anon5	file:
+SERVICE_SET_NAME	service/service.c	/^	SERVICE_SET_NAME,$/;"	e	enum:__anon5	file:
+SERVICE_SET_SCRIPT	service/service.c	/^	SERVICE_SET_SCRIPT,$/;"	e	enum:__anon5	file:
+SERVICE_SET_TRIGGER	service/service.c	/^	SERVICE_SET_TRIGGER,$/;"	e	enum:__anon5	file:
+SERVICE_SET_VALIDATE	service/service.c	/^	SERVICE_SET_VALIDATE,$/;"	e	enum:__anon5	file:
+SERVICE_VAL_DATA	service/validate.c	/^	SERVICE_VAL_DATA,$/;"	e	enum:__anon3	file:
+SERVICE_VAL_PACKAGE	service/validate.c	/^	SERVICE_VAL_PACKAGE,$/;"	e	enum:__anon3	file:
+SERVICE_VAL_TYPE	service/validate.c	/^	SERVICE_VAL_TYPE,$/;"	e	enum:__anon3	file:
+SIGNAL_NUM	system.c	/^	SIGNAL_NUM,$/;"	e	enum:__anon2	file:
+SIGNAL_PID	system.c	/^	SIGNAL_PID,$/;"	e	enum:__anon2	file:
+STATE_EARLY	state.c	/^	STATE_EARLY,$/;"	e	enum:__anon11	file:
+STATE_HALT	state.c	/^	STATE_HALT,$/;"	e	enum:__anon11	file:
+STATE_INIT	state.c	/^	STATE_INIT,$/;"	e	enum:__anon11	file:
+STATE_NONE	state.c	/^	STATE_NONE = 0,$/;"	e	enum:__anon11	file:
+STATE_RUNNING	state.c	/^	STATE_RUNNING,$/;"	e	enum:__anon11	file:
+STATE_SHUTDOWN	state.c	/^	STATE_SHUTDOWN,$/;"	e	enum:__anon11	file:
+TAG_ACTION	inittab.c	32;"	d	file:
+TAG_ID	inittab.c	30;"	d	file:
+TAG_PROCESS	inittab.c	33;"	d	file:
+TAG_RUNLVL	inittab.c	31;"	d	file:
+VALIDATE_PACKAGE	service/service.c	/^	VALIDATE_PACKAGE,$/;"	e	enum:__anon10	file:
+VALIDATE_SERVICE	service/service.c	/^	VALIDATE_SERVICE,$/;"	e	enum:__anon10	file:
+VALIDATE_TYPE	service/service.c	/^	VALIDATE_TYPE,$/;"	e	enum:__anon10	file:
+WDT_FREQUENCY	system.c	/^	WDT_FREQUENCY,$/;"	e	enum:__anon1	file:
+WDT_PATH	watchdog.c	29;"	d	file:
+WDT_STOP	system.c	/^	WDT_STOP,$/;"	e	enum:__anon1	file:
+WDT_TIMEOUT	system.c	/^	WDT_TIMEOUT,$/;"	e	enum:__anon1	file:
+_BSD_SOURCE	initd/mkdev.c	15;"	d	file:
+_INIT_H__	initd/init.h	15;"	d
+__EVENT_MAX	service/service.c	/^	__EVENT_MAX$/;"	e	enum:__anon9	file:
+__INSTANCE_ATTR_MAX	service/instance.c	/^	__INSTANCE_ATTR_MAX$/;"	e	enum:__anon4	file:
+__LOG_H	log.h	16;"	d
+__PROCD_H	procd.h	16;"	d
+__PROCD_HOTPLUG_H	plug/hotplug.h	16;"	d
+__PROCD_INSTANCE_H	service/instance.h	16;"	d
+__PROCD_RCS_H	rcS.h	16;"	d
+__PROCD_SERVICE_H	service/service.h	16;"	d
+__PROCD_UTILS_H	utils/utils.h	16;"	d
+__PROCD_WATCHDOG_H	watchdog.h	16;"	d
+__SERVICE_ATTR_MAX	service/service.c	/^	__SERVICE_ATTR_MAX,$/;"	e	enum:__anon6	file:
+__SERVICE_DEL_ATTR_MAX	service/service.c	/^	__SERVICE_DEL_ATTR_MAX,$/;"	e	enum:__anon7	file:
+__SERVICE_LIST_ATTR_MAX	service/service.c	/^	__SERVICE_LIST_ATTR_MAX,$/;"	e	enum:__anon8	file:
+__SERVICE_SET_MAX	service/service.c	/^	__SERVICE_SET_MAX$/;"	e	enum:__anon5	file:
+__SERVICE_VAL_MAX	service/validate.c	/^	__SERVICE_VAL_MAX$/;"	e	enum:__anon3	file:
+__SIGNAL_MAX	system.c	/^	__SIGNAL_MAX$/;"	e	enum:__anon2	file:
+__STATE_MAX	state.c	/^	__STATE_MAX,$/;"	e	enum:__anon11	file:
+__VALIDATE_MAX	service/service.c	/^	__VALIDATE_MAX$/;"	e	enum:__anon10	file:
+__WDT_MAX	system.c	/^	__WDT_MAX$/;"	e	enum:__anon1	file:
+__blobmsg_list_init	utils/utils.c	/^__blobmsg_list_init(struct blobmsg_list *list, int offset, int len, blobmsg_list_cmp cmp)$/;"	f
+__init	procd.h	27;"	d
+_ctx	system.c	/^static struct ubus_context *_ctx;$/;"	v	typeref:struct:ubus_context	file:
+_rc	rcS.c	/^static int _rc(struct runqueue *q, char *path, const char *file, char *pattern, char *param)$/;"	f	file:
+_setenv	service/trigger.c	/^static void _setenv(const char *key, const char *val)$/;"	f	file:
+_trigger_add	service/trigger.c	/^static struct trigger* _trigger_add(char *type, struct blob_attr *rule, int timeout, void *id)$/;"	f	file:
+add_action	inittab.c	/^static int add_action(struct init_action *a, const char *name)$/;"	f	file:
+add_initd	rcS.c	/^static void add_initd(struct runqueue *q, char *file, char *param)$/;"	f	file:
+add_job	service/trigger.c	/^static void add_job(struct trigger *t, struct cmd *cmd, struct blob_attr *exec, struct blob_attr *data)$/;"	f	file:
+add_pattern	initd/mkdev.c	/^static char *add_pattern(const char *name)$/;"	f	file:
+argv	inittab.c	/^	char *argv[MAX_ARGS];$/;"	m	struct:init_action	file:
+ask	inittab.c	/^static char *ask = "\/sbin\/askfirst";$/;"	v	file:
+askconsole	inittab.c	/^static void askconsole(struct init_action *a)$/;"	f	file:
+askfirst	inittab.c	/^static void askfirst(struct init_action *a)$/;"	f	file:
+atomic	plug/hotplug.c	/^	int atomic;$/;"	m	struct:cmd_handler	file:
+avl	service/service.h	/^	struct avl_node avl;$/;"	m	struct:service	typeref:struct:service::avl_node
+avl	service/service.h	/^	struct avl_node avl;$/;"	m	struct:validate	typeref:struct:validate::avl_node
+avl	service/service.h	/^	struct avl_node avl;$/;"	m	struct:vrule	typeref:struct:vrule::avl_node
+avl	utils/utils.h	/^	struct avl_node avl;$/;"	m	struct:blobmsg_list_node	typeref:struct:blobmsg_list_node::avl_node
+avl	utils/utils.h	/^	struct avl_tree avl;$/;"	m	struct:blobmsg_list	typeref:struct:blobmsg_list::avl_tree
+b	plug/hotplug.c	/^static struct blob_buf b;$/;"	v	typeref:struct:blob_buf	file:
+b	service/service.c	/^static struct blob_buf b;$/;"	v	typeref:struct:blob_buf	file:
+b	system.c	/^static struct blob_buf b;$/;"	v	typeref:struct:blob_buf	file:
+blobmsg_list	utils/utils.h	/^struct blobmsg_list {$/;"	s
+blobmsg_list_cmp	utils/utils.h	/^typedef bool (*blobmsg_list_cmp)(struct blobmsg_list_node *l1, struct blobmsg_list_node *l2);$/;"	t
+blobmsg_list_equal	utils/utils.c	/^blobmsg_list_equal(struct blobmsg_list *l1, struct blobmsg_list *l2)$/;"	f
+blobmsg_list_fill	utils/utils.c	/^blobmsg_list_fill(struct blobmsg_list *list, void *data, int len, bool array)$/;"	f
+blobmsg_list_for_each	utils/utils.h	44;"	d
+blobmsg_list_free	utils/utils.c	/^blobmsg_list_free(struct blobmsg_list *list)$/;"	f
+blobmsg_list_init	utils/utils.h	41;"	d
+blobmsg_list_move	utils/utils.c	/^blobmsg_list_move(struct blobmsg_list *list, struct blobmsg_list *src)$/;"	f
+blobmsg_list_node	utils/utils.h	/^struct blobmsg_list_node {$/;"	s
+blobmsg_list_simple_init	utils/utils.h	38;"	d
+blobmsg_update_cb	utils/utils.h	/^typedef void (*blobmsg_update_cb)(struct blobmsg_list_node *n);$/;"	t
+buf	initd/mkdev.c	/^static char buf[PATH_MAX];$/;"	v	file:
+buf2	initd/mkdev.c	/^static char buf2[PATH_MAX];$/;"	v	file:
+cb	inittab.c	/^	void (*cb) (struct init_action *a);$/;"	m	struct:init_handler	file:
+check_dbglvl	initd/preinit.c	/^check_dbglvl(void)$/;"	f	file:
+child_exit	inittab.c	/^static void child_exit(struct uloop_process *proc, int ret)$/;"	f	file:
+cmd	service/trigger.c	/^	struct cmd *cmd;$/;"	m	struct:job	typeref:struct:job::cmd	file:
+cmd	service/trigger.c	/^struct cmd {$/;"	s	file:
+cmd_handler	plug/hotplug.c	/^static struct cmd_handler {$/;"	s	file:
+cmd_queue	plug/hotplug.c	/^struct cmd_queue {$/;"	s	file:
+cmdline	initd/init.c	/^cmdline(void)$/;"	f	file:
+cmp	utils/utils.h	/^	blobmsg_list_cmp cmp;$/;"	m	struct:blobmsg_list
+coldplug_complete	plug/coldplug.c	/^static void coldplug_complete(struct uloop_timeout *t)$/;"	f	file:
+command	service/instance.h	/^	struct blob_attr *command;$/;"	m	struct:service_instance	typeref:struct:service_instance::blob_attr
+config	service/instance.h	/^	struct blob_attr *config;$/;"	m	struct:service_instance	typeref:struct:service_instance::blob_attr
+console	inittab.c	/^const char *console;$/;"	v
+ctx	ubus.c	/^static struct ubus_context *ctx;$/;"	v	typeref:struct:ubus_context	file:
+data	plug/hotplug.c	/^	struct blob_attr *data;$/;"	m	struct:cmd_queue	typeref:struct:cmd_queue::blob_attr	file:
+data	service/instance.h	/^	struct blobmsg_list data;$/;"	m	struct:service_instance	typeref:struct:service_instance::blobmsg_list
+data	service/trigger.c	/^	struct blob_attr *data;$/;"	m	struct:trigger	typeref:struct:trigger::blob_attr	file:
+data	utils/utils.h	/^	struct blob_attr *data;$/;"	m	struct:blobmsg_list_node	typeref:struct:blobmsg_list_node::blob_attr
+dbg	plug/udevtrigger.c	70;"	d	file:
+dbg	plug/udevtrigger.c	71;"	d	file:
+dbg	plug/udevtrigger.c	76;"	d	file:
+debug	initd/init.c	/^unsigned int debug = 0;$/;"	v
+debug	procd.c	/^unsigned int debug;$/;"	v
+delay	service/trigger.c	/^	struct uloop_timeout delay;$/;"	m	struct:trigger	typeref:struct:trigger::uloop_timeout	file:
+device_has_attribute	plug/udevtrigger.c	/^static bool device_has_attribute(const char *path, const char *attr,$/;"	f	file:
+device_list_insert	plug/udevtrigger.c	/^static int device_list_insert(const char *path)$/;"	f	file:
+do_reboot	signal.c	/^static void do_reboot(void)$/;"	f	file:
+dry_run	plug/udevtrigger.c	/^static int dry_run;$/;"	v	file:
+early	initd/early.c	/^early(void)$/;"	f
+early_console	initd/early.c	/^early_console(const char *dev)$/;"	f	file:
+early_dev	initd/early.c	/^early_dev(void)$/;"	f	file:
+early_env	initd/early.c	/^early_env(void)$/;"	f	file:
+early_mounts	initd/early.c	/^early_mounts(void)$/;"	f	file:
+env	service/instance.h	/^	struct blobmsg_list env;$/;"	m	struct:service_instance	typeref:struct:service_instance::blobmsg_list
+env	service/trigger.c	/^	struct blob_attr *env;$/;"	m	struct:job	typeref:struct:job::blob_attr	file:
+err	plug/udevtrigger.c	57;"	d	file:
+err	plug/udevtrigger.c	58;"	d	file:
+event_policy	service/service.c	/^static const struct blobmsg_policy event_policy[__EVENT_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+exec	service/trigger.c	/^	struct blob_attr *exec;$/;"	m	struct:job	typeref:struct:job::blob_attr	file:
+fd	rcS.c	/^	struct ustream_fd fd;$/;"	m	struct:initd	typeref:struct:initd::ustream_fd	file:
+file	rcS.c	/^	char *file;$/;"	m	struct:initd	file:
+file	service/instance.h	/^	struct blobmsg_list file;$/;"	m	struct:service_instance	typeref:struct:service_instance::blobmsg_list
+find_devs	initd/mkdev.c	/^static void find_devs(bool block)$/;"	f	file:
+find_pattern	initd/mkdev.c	/^static bool find_pattern(const char *name)$/;"	f	file:
+fork_worker	inittab.c	/^static void fork_worker(struct init_action *a)$/;"	f	file:
+halt	service/instance.h	/^	bool halt;$/;"	m	struct:service_instance
+handle_exec	plug/hotplug.c	/^static void handle_exec(struct blob_attr *msg, struct blob_attr *data)$/;"	f	file:
+handle_firmware	plug/hotplug.c	/^static void handle_firmware(struct blob_attr *msg, struct blob_attr *data)$/;"	f	file:
+handle_makedev	plug/hotplug.c	/^static void handle_makedev(struct blob_attr *msg, struct blob_attr *data)$/;"	f	file:
+handle_rm	plug/hotplug.c	/^static void handle_rm(struct blob_attr *msg, struct blob_attr *data)$/;"	f	file:
+handle_run_script	service/trigger.c	/^static void handle_run_script(struct job *j, struct blob_attr *exec, struct blob_attr *env)$/;"	f	file:
+handler	inittab.c	/^	struct init_handler *handler;$/;"	m	struct:init_action	typeref:struct:init_action::init_handler	file:
+handler	plug/hotplug.c	/^	void (*handler)(struct blob_attr *msg, struct blob_attr *data);$/;"	m	struct:cmd_handler	file:
+handler	plug/hotplug.c	/^	void (*handler)(struct blob_attr *msg, struct blob_attr *data);$/;"	m	struct:cmd_queue	file:
+handler	service/trigger.c	/^	void (*handler)(struct job *job, struct blob_attr *exec, struct blob_attr *env);$/;"	m	struct:cmd	file:
+handlers	inittab.c	/^static struct init_handler handlers[] = {$/;"	v	typeref:struct:init_handler	file:
+handlers	plug/hotplug.c	/^} handlers[] = {$/;"	v	typeref:struct:cmd_handler	file:
+handlers	service/trigger.c	/^static struct cmd handlers[] = {$/;"	v	typeref:struct:cmd	file:
+hotplug	plug/hotplug.c	/^void hotplug(char *rules)$/;"	f
+hotplug_fd	plug/hotplug.c	/^static struct uloop_fd hotplug_fd = {$/;"	v	typeref:struct:uloop_fd	file:
+hotplug_handler	plug/hotplug.c	/^static void hotplug_handler(struct uloop_fd *u, unsigned int ev)$/;"	f	file:
+hotplug_last_event	plug/hotplug.c	/^void hotplug_last_event(uloop_timeout_handler handler)$/;"	f
+hotplug_msg_find_var	plug/hotplug.c	/^static char *hotplug_msg_find_var(struct blob_attr *msg, const char *name)$/;"	f	file:
+hotplug_run	plug/hotplug.c	/^int hotplug_run(char *rules)$/;"	f
+hotplug_shutdown	plug/hotplug.c	/^void hotplug_shutdown(void)$/;"	f
+id	inittab.c	/^	char *id;$/;"	m	struct:init_action	file:
+id	service/trigger.c	/^	void *id;$/;"	m	struct:trigger	file:
+ifindex	service/instance.c	/^	int ifindex;$/;"	m	struct:instance_netdev	file:
+info	plug/udevtrigger.c	63;"	d	file:
+info	plug/udevtrigger.c	64;"	d	file:
+init_action	inittab.c	/^struct init_action {$/;"	s	file:
+init_handler	inittab.c	/^struct init_handler {$/;"	s	file:
+initd	rcS.c	/^struct initd {$/;"	s	file:
+instance_attr	service/instance.c	/^static const struct blobmsg_policy instance_attr[__INSTANCE_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+instance_config_changed	service/instance.c	/^instance_config_changed(struct service_instance *in, struct service_instance *in_new)$/;"	f	file:
+instance_config_cleanup	service/instance.c	/^instance_config_cleanup(struct service_instance *in)$/;"	f	file:
+instance_config_move	service/instance.c	/^instance_config_move(struct service_instance *in, struct service_instance *in_src)$/;"	f	file:
+instance_config_parse	service/instance.c	/^instance_config_parse(struct service_instance *in)$/;"	f	file:
+instance_dump	service/instance.c	/^void instance_dump(struct blob_buf *b, struct service_instance *in, int verbose)$/;"	f
+instance_exit	service/instance.c	/^instance_exit(struct uloop_process *p, int ret)$/;"	f	file:
+instance_file	service/instance.c	/^struct instance_file {$/;"	s	file:
+instance_file_cmp	service/instance.c	/^instance_file_cmp(struct blobmsg_list_node *l1, struct blobmsg_list_node *l2)$/;"	f	file:
+instance_file_update	service/instance.c	/^instance_file_update(struct blobmsg_list_node *l)$/;"	f	file:
+instance_fill_array	service/instance.c	/^instance_fill_array(struct blobmsg_list *l, struct blob_attr *cur, blobmsg_update_cb cb, bool array)$/;"	f	file:
+instance_free	service/instance.c	/^instance_free(struct service_instance *in)$/;"	f
+instance_init	service/instance.c	/^instance_init(struct service_instance *in, struct service *s, struct blob_attr *config)$/;"	f
+instance_limits	service/instance.c	/^instance_limits(const char *limit, const char *value)$/;"	f	file:
+instance_netdev	service/instance.c	/^struct instance_netdev {$/;"	s	file:
+instance_netdev_cmp	service/instance.c	/^instance_netdev_cmp(struct blobmsg_list_node *l1, struct blobmsg_list_node *l2)$/;"	f	file:
+instance_netdev_update	service/instance.c	/^instance_netdev_update(struct blobmsg_list_node *l)$/;"	f	file:
+instance_restart	service/instance.c	/^instance_restart(struct service_instance *in)$/;"	f	file:
+instance_run	service/instance.c	/^instance_run(struct service_instance *in)$/;"	f	file:
+instance_start	service/instance.c	/^instance_start(struct service_instance *in)$/;"	f
+instance_stop	service/instance.c	/^instance_stop(struct service_instance *in)$/;"	f
+instance_timeout	service/instance.c	/^instance_timeout(struct uloop_timeout *t)$/;"	f	file:
+instance_update	service/instance.c	/^instance_update(struct service_instance *in, struct service_instance *in_new)$/;"	f
+instances	service/service.h	/^	struct vlist_tree instances;$/;"	m	struct:service	typeref:struct:service::vlist_tree
+jctx	plug/hotplug.c	/^static struct json_script_ctx jctx = {$/;"	v	typeref:struct:json_script_ctx	file:
+jctx	service/trigger.c	/^	struct json_script_ctx jctx;$/;"	m	struct:trigger	typeref:struct:trigger::json_script_ctx	file:
+job	service/trigger.c	/^struct job {$/;"	s	file:
+last_event	plug/hotplug.c	/^static struct uloop_timeout last_event;$/;"	v	typeref:struct:uloop_timeout	file:
+limits	service/instance.h	/^	struct blobmsg_list limits;$/;"	m	struct:service_instance	typeref:struct:service_instance::blobmsg_list
+line	inittab.c	/^	char *line;$/;"	m	struct:init_action	file:
+list	inittab.c	/^	struct list_head list;$/;"	m	struct:init_action	typeref:struct:init_action::list_head	file:
+list	plug/hotplug.c	/^	struct list_head list;$/;"	m	struct:cmd_queue	typeref:struct:cmd_queue::list_head	file:
+list	service/service.h	/^	struct list_head list;$/;"	m	struct:validate	typeref:struct:validate::list_head
+list	service/trigger.c	/^	struct list_head list;$/;"	m	struct:trigger	typeref:struct:trigger::list_head	file:
+log_message	plug/udevtrigger.c	/^static void log_message(int priority, const char *format, ...)$/;"	f	file:
+main	initd/init.c	/^main(int argc, char **argv)$/;"	f
+main	plug/udevtrigger.c	/^int main(int argc, char *argv[], char *envp[])$/;"	f
+main	procd.c	/^int main(int argc, char **argv)$/;"	f
+main	utils/askfirst.c	/^int main(int argc, char **argv)$/;"	f
+main_object	service/service.c	/^static struct ubus_object main_object = {$/;"	v	typeref:struct:ubus_object	file:
+main_object_methods	service/service.c	/^static struct ubus_method main_object_methods[] = {$/;"	v	typeref:struct:ubus_method	file:
+main_object_type	service/service.c	/^static struct ubus_object_type main_object_type =$/;"	v	typeref:struct:ubus_object_type	file:
+make_dev	initd/mkdev.c	/^static void make_dev(const char *path, bool block, int major, int minor)$/;"	f	file:
+md5	service/instance.c	/^	uint32_t md5[4];$/;"	m	struct:instance_file	file:
+mkdev	initd/mkdev.c	/^int mkdev(const char *name, int _mode)$/;"	f
+mkdir_p	plug/hotplug.c	/^static void mkdir_p(char *dir)$/;"	f	file:
+mode	initd/mkdev.c	/^static unsigned int mode = 0600;$/;"	v	file:
+msg	plug/hotplug.c	/^	struct blob_attr *msg;$/;"	m	struct:cmd_queue	typeref:struct:cmd_queue::blob_attr	file:
+multi	inittab.c	/^	int multi;$/;"	m	struct:init_handler	file:
+n_patterns	initd/mkdev.c	/^static int n_patterns;$/;"	v	file:
+name	inittab.c	/^	const char *name;$/;"	m	struct:init_handler	file:
+name	plug/hotplug.c	/^	char *name;$/;"	m	struct:cmd_handler	file:
+name	service/instance.c	/^	const char *name;$/;"	m	struct:rlimit_name	file:
+name	service/instance.h	/^	const char *name;$/;"	m	struct:service_instance
+name	service/service.h	/^	const char *name;$/;"	m	struct:service
+name	service/trigger.c	/^	char *name;$/;"	m	struct:cmd	file:
+netdev	service/instance.h	/^	struct blobmsg_list netdev;$/;"	m	struct:service_instance	typeref:struct:service_instance::blobmsg_list
+nice	service/instance.h	/^	int8_t nice;$/;"	m	struct:service_instance
+node	service/instance.c	/^	struct blobmsg_list_node node;$/;"	m	struct:instance_file	typeref:struct:instance_file::blobmsg_list_node	file:
+node	service/instance.c	/^	struct blobmsg_list_node node;$/;"	m	struct:instance_netdev	typeref:struct:instance_netdev::blobmsg_list_node	file:
+node	service/instance.h	/^	struct vlist_node node;$/;"	m	struct:service_instance	typeref:struct:service_instance::vlist_node
+node_len	utils/utils.h	/^	int node_len;$/;"	m	struct:blobmsg_list
+node_offset	utils/utils.h	/^	int node_offset;$/;"	m	struct:blobmsg_list
+notify	system.c	/^static int notify;$/;"	v	file:
+option	service/service.h	/^	char *option;$/;"	m	struct:vrule
+package	service/service.h	/^	char *package;$/;"	m	struct:validate
+param	rcS.c	/^	char *param;$/;"	m	struct:initd	file:
+patterns	initd/mkdev.c	/^static char **patterns;$/;"	v	file:
+pending	service/trigger.c	/^	int pending;$/;"	m	struct:trigger	file:
+pipe_cb	rcS.c	/^static void pipe_cb(struct ustream *s, int bytes)$/;"	f	file:
+plugd_proc	initd/preinit.c	/^static struct uloop_process plugd_proc;$/;"	v	typeref:struct:uloop_process	file:
+plugd_proc_cb	initd/preinit.c	/^plugd_proc_cb(struct uloop_process *proc, int ret)$/;"	f	file:
+preinit	initd/preinit.c	/^preinit(void)$/;"	f
+preinit_proc	initd/preinit.c	/^static struct uloop_process preinit_proc;$/;"	v	typeref:struct:uloop_process	file:
+proc	inittab.c	/^	struct uloop_process proc;$/;"	m	struct:init_action	typeref:struct:init_action::uloop_process	file:
+proc	rcS.c	/^	struct runqueue_process proc;$/;"	m	struct:initd	typeref:struct:initd::runqueue_process	file:
+proc	service/instance.h	/^	struct uloop_process proc;$/;"	m	struct:service_instance	typeref:struct:service_instance::uloop_process
+proc	service/trigger.c	/^	struct runqueue_process proc;$/;"	m	struct:job	typeref:struct:job::runqueue_process	file:
+proc_signal	system.c	/^static int proc_signal(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+procd_bcast_event	system.c	/^procd_bcast_event(char *event, struct blob_attr *msg)$/;"	f
+procd_coldplug	plug/coldplug.c	/^void procd_coldplug(void)$/;"	f
+procd_connect_ubus	ubus.c	/^procd_connect_ubus(void)$/;"	f
+procd_inittab	inittab.c	/^void procd_inittab(void)$/;"	f
+procd_inittab_run	inittab.c	/^void procd_inittab_run(const char *handler)$/;"	f
+procd_shutdown	state.c	/^void procd_shutdown(int event)$/;"	f
+procd_signal	signal.c	/^void procd_signal(void)$/;"	f
+procd_state_next	state.c	/^void procd_state_next(void)$/;"	f
+procd_subscribe_cb	system.c	/^procd_subscribe_cb(struct ubus_context *ctx, struct ubus_object *obj)$/;"	f	file:
+q	rcS.c	/^static struct runqueue q, r;$/;"	v	typeref:struct:runqueue	file:
+q	service/trigger.c	/^static struct runqueue q;$/;"	v	typeref:struct:runqueue	file:
+q_empty	service/trigger.c	/^static void q_empty(struct runqueue *q)$/;"	f	file:
+q_initd_complete	rcS.c	/^static void q_initd_complete(struct runqueue *q, struct runqueue_task *p)$/;"	f	file:
+q_initd_run	rcS.c	/^static void q_initd_run(struct runqueue *q, struct runqueue_task *t)$/;"	f	file:
+q_job_complete	service/trigger.c	/^static void q_job_complete(struct runqueue *q, struct runqueue_task *p)$/;"	f	file:
+q_job_run	service/trigger.c	/^static void q_job_run(struct runqueue *q, struct runqueue_task *t)$/;"	f	file:
+queue_add	plug/hotplug.c	/^static void queue_add(struct cmd_handler *h, struct blob_attr *msg, struct blob_attr *data)$/;"	f	file:
+queue_next	plug/hotplug.c	/^static void queue_next(void)$/;"	f	file:
+queue_proc	plug/hotplug.c	/^static struct uloop_process queue_proc;$/;"	v	typeref:struct:uloop_process	file:
+queue_proc_cb	plug/hotplug.c	/^static void queue_proc_cb(struct uloop_process *c, int ret)$/;"	f	file:
+r	rcS.c	/^static struct runqueue q, r;$/;"	v	typeref:struct:	file:
+r_empty	rcS.c	/^static void r_empty(struct runqueue *q)$/;"	f	file:
+rc	rcS.c	/^int rc(const char *file, char *param)$/;"	f
+rcS	rcS.c	/^int rcS(char *pattern, char *param, void (*q_empty)(struct runqueue *))$/;"	f
+rc_init	rcS.c	/^static void __attribute__((constructor)) rc_init() {$/;"	f	file:
+rcdone	inittab.c	/^static void rcdone(struct runqueue *q)$/;"	f	file:
+rcrespawn	inittab.c	/^static void rcrespawn(struct init_action *a)$/;"	f	file:
+reboot_event	state.c	/^static int reboot_event;$/;"	v	file:
+redirect_output	utils/askfirst.c	/^static int redirect_output(const char *dev)$/;"	f	file:
+remove	service/trigger.c	/^	int remove;$/;"	m	struct:trigger	file:
+resource	service/instance.c	/^	int resource;$/;"	m	struct:rlimit_name	file:
+respawn	inittab.c	/^	int respawn;$/;"	m	struct:init_action	file:
+respawn	inittab.c	/^static void respawn(struct uloop_timeout *tout)$/;"	f	file:
+respawn	service/instance.h	/^	bool respawn;$/;"	m	struct:service_instance
+respawn_count	service/instance.h	/^	int respawn_count;$/;"	m	struct:service_instance
+respawn_retry	service/instance.h	/^	uint32_t respawn_retry;$/;"	m	struct:service_instance
+respawn_threshold	service/instance.h	/^	uint32_t respawn_threshold;$/;"	m	struct:service_instance
+respawn_timeout	service/instance.h	/^	uint32_t respawn_timeout;$/;"	m	struct:service_instance
+restart	service/instance.h	/^	bool restart;$/;"	m	struct:service_instance
+rlimit_name	service/instance.c	/^struct rlimit_name {$/;"	s	file:
+rlimit_names	service/instance.c	/^static const struct rlimit_name rlimit_names[] = {$/;"	v	typeref:struct:rlimit_name	file:
+rule	service/service.h	/^	char *rule;$/;"	m	struct:vrule
+rule	service/trigger.c	/^	struct blob_attr *rule;$/;"	m	struct:trigger	typeref:struct:trigger::blob_attr	file:
+rule_file	plug/hotplug.c	/^static char *rule_file;$/;"	v	file:
+rule_handle_command	plug/hotplug.c	/^static void rule_handle_command(struct json_script_ctx *ctx, const char *name,$/;"	f	file:
+rule_handle_command	service/trigger.c	/^static void rule_handle_command(struct json_script_ctx *ctx, const char *name,$/;"	f	file:
+rule_handle_error	plug/hotplug.c	/^static void rule_handle_error(struct json_script_ctx *ctx, const char *msg,$/;"	f	file:
+rule_handle_error	service/trigger.c	/^static void rule_handle_error(struct json_script_ctx *ctx, const char *msg,$/;"	f	file:
+rule_handle_file	plug/hotplug.c	/^rule_handle_file(struct json_script_ctx *ctx, const char *name)$/;"	f	file:
+rule_handle_var	plug/hotplug.c	/^static const char* rule_handle_var(struct json_script_ctx *ctx, const char *name, struct blob_attr *vars)$/;"	f	file:
+rule_handle_var	service/trigger.c	/^static const char* rule_handle_var(struct json_script_ctx *ctx, const char *name, struct blob_attr *vars)$/;"	f	file:
+rule_load_script	service/trigger.c	/^rule_load_script(struct json_script_ctx *ctx, const char *name)$/;"	f	file:
+rules	service/service.h	/^	struct avl_tree rules;$/;"	m	struct:validate	typeref:struct:validate::avl_tree
+runrc	inittab.c	/^static void runrc(struct init_action *a)$/;"	f	file:
+sa_crash	signal.c	/^struct sigaction sa_crash = {$/;"	v	typeref:struct:sigaction
+sa_dummy	signal.c	/^struct sigaction sa_dummy = {$/;"	v	typeref:struct:sigaction
+sa_shutdown	initd/init.c	/^static struct sigaction sa_shutdown = {$/;"	v	typeref:struct:sigaction	file:
+sa_shutdown	signal.c	/^struct sigaction sa_shutdown = {$/;"	v	typeref:struct:sigaction
+scan_subdir	plug/udevtrigger.c	/^static void scan_subdir(const char *base, const char *subdir,$/;"	f	file:
+script	plug/hotplug.c	/^static struct blob_buf script;$/;"	v	typeref:struct:blob_buf	file:
+service	service/service.h	/^struct service {$/;"	s
+service_alloc	service/service.c	/^service_alloc(const char *name)$/;"	f	file:
+service_attrs	service/service.c	/^static const struct blobmsg_policy service_attrs[__SERVICE_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+service_del_attrs	service/service.c	/^static const struct blobmsg_policy service_del_attrs[__SERVICE_DEL_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+service_delete	service/service.c	/^service_delete(struct service *s)$/;"	f	file:
+service_dump	service/service.c	/^service_dump(struct service *s, int verbose)$/;"	f	file:
+service_handle_delete	service/service.c	/^service_handle_delete(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+service_handle_event	service/service.c	/^service_handle_event(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+service_handle_list	service/service.c	/^service_handle_list(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+service_handle_set	service/service.c	/^service_handle_set(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+service_handle_update	service/service.c	/^service_handle_update(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+service_handle_validate	service/service.c	/^service_handle_validate(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+service_init	service/service.c	/^service_init(void)$/;"	f
+service_instance	service/instance.h	/^struct service_instance {$/;"	s
+service_instance_add	service/service.c	/^service_instance_add(struct service *s, struct blob_attr *attr)$/;"	f	file:
+service_instance_update	service/service.c	/^service_instance_update(struct vlist_tree *tree, struct vlist_node *node_new,$/;"	f	file:
+service_list_attrs	service/service.c	/^static const struct blobmsg_policy service_list_attrs[__SERVICE_LIST_ATTR_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+service_set_attrs	service/service.c	/^static const struct blobmsg_policy service_set_attrs[__SERVICE_SET_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+service_start_early	service/service.c	/^service_start_early(char *name, char *cmdline)$/;"	f
+service_update	service/service.c	/^service_update(struct service *s, struct blob_attr *config, struct blob_attr **tb, bool add)$/;"	f	file:
+service_validate_add	service/validate.c	/^service_validate_add(struct service *s, struct blob_attr *msg)$/;"	f
+service_validate_attrs	service/validate.c	/^static const struct blobmsg_policy service_validate_attrs[__SERVICE_VAL_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+service_validate_del	service/validate.c	/^service_validate_del(struct service *s)$/;"	f
+service_validate_dump	service/validate.c	/^service_validate_dump(struct blob_buf *b, struct service *s)$/;"	f
+service_validate_dump_all	service/validate.c	/^service_validate_dump_all(struct blob_buf *b, char *p, char *s)$/;"	f
+service_validate_init	service/validate.c	/^service_validate_init(void)$/;"	f
+services	service/service.c	/^struct avl_tree services;$/;"	v	typeref:struct:avl_tree
+signal_crash	signal.c	/^static void signal_crash(int signal, siginfo_t *siginfo, void *data)$/;"	f	file:
+signal_dummy	signal.c	/^static void signal_dummy(int signal, siginfo_t *siginfo, void *data)$/;"	f	file:
+signal_policy	system.c	/^static const struct blobmsg_policy signal_policy[__SIGNAL_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+signal_shutdown	initd/init.c	/^signal_shutdown(int signal, siginfo_t *siginfo, void *data)$/;"	f	file:
+signal_shutdown	signal.c	/^static void signal_shutdown(int signal, siginfo_t *siginfo, void *data)$/;"	f	file:
+spawn_procd	initd/preinit.c	/^spawn_procd(struct uloop_process *proc, int ret)$/;"	f	file:
+srv	service/instance.h	/^	struct service *srv;$/;"	m	struct:service_instance	typeref:struct:service_instance::service
+start	service/instance.h	/^	struct timespec start;$/;"	m	struct:service_instance	typeref:struct:service_instance::timespec
+state	state.c	/^static int state = STATE_NONE;$/;"	v	file:
+state_enter	state.c	/^static void state_enter(void)$/;"	f	file:
+strlcat	plug/udevtrigger.c	42;"	d	file:
+strlcpy	plug/udevtrigger.c	38;"	d	file:
+sysfs_resolve_link	plug/udevtrigger.c	/^static int sysfs_resolve_link(char *devpath, size_t size)$/;"	f	file:
+system_board	system.c	/^static int system_board(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+system_info	system.c	/^static int system_info(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+system_methods	system.c	/^static const struct ubus_method system_methods[] = {$/;"	v	typeref:struct:ubus_method	file:
+system_object	system.c	/^static struct ubus_object system_object = {$/;"	v	typeref:struct:ubus_object	file:
+system_object_type	system.c	/^static struct ubus_object_type system_object_type =$/;"	v	typeref:struct:ubus_object_type	file:
+system_upgrade	system.c	/^static int system_upgrade(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+tab	inittab.c	/^static const char *tab = "\/etc\/inittab";$/;"	v	file:
+timeout	service/instance.h	/^	struct uloop_timeout timeout;$/;"	m	struct:service_instance	typeref:struct:service_instance::uloop_timeout
+timeout	service/trigger.c	/^	int timeout;$/;"	m	struct:trigger	file:
+tout	inittab.c	/^	struct uloop_timeout tout;$/;"	m	struct:init_action	typeref:struct:init_action::uloop_timeout	file:
+trigger	service/instance.h	/^	struct blob_attr *trigger;$/;"	m	struct:service_instance	typeref:struct:service_instance::blob_attr
+trigger	service/service.h	/^	struct blob_attr *trigger;$/;"	m	struct:service	typeref:struct:service::blob_attr
+trigger	service/trigger.c	/^	struct trigger *trigger;$/;"	m	struct:job	typeref:struct:job::trigger	file:
+trigger	service/trigger.c	/^struct trigger {$/;"	s	file:
+trigger_add	service/trigger.c	/^void trigger_add(struct blob_attr *rule, void *id)$/;"	f
+trigger_del	service/trigger.c	/^void trigger_del(void *id)$/;"	f
+trigger_delay_cb	service/trigger.c	/^static void trigger_delay_cb(struct uloop_timeout *tout)$/;"	f	file:
+trigger_event	service/trigger.c	/^void trigger_event(char *type, struct blob_attr *data)$/;"	f
+trigger_init	service/trigger.c	/^void trigger_init(void)$/;"	f
+trigger_uevent	plug/udevtrigger.c	/^static void trigger_uevent(const char *devpath)$/;"	f	file:
+type	service/service.h	/^	char *type;$/;"	m	struct:validate
+type	service/trigger.c	/^	char *type;$/;"	m	struct:trigger	file:
+ubus_connect_cb	ubus.c	/^ubus_connect_cb(struct uloop_timeout *timeout)$/;"	f	file:
+ubus_disconnect_cb	ubus.c	/^ubus_disconnect_cb(struct ubus_context *ctx)$/;"	f	file:
+ubus_init_service	service/service.c	/^void ubus_init_service(struct ubus_context *ctx)$/;"	f
+ubus_init_system	system.c	/^void ubus_init_system(struct ubus_context *ctx)$/;"	f
+ubus_reconnect_cb	ubus.c	/^ubus_reconnect_cb(struct uloop_timeout *timeout)$/;"	f	file:
+ubus_socket	ubus.c	/^char *ubus_socket = NULL;$/;"	v
+ubus_timer	ubus.c	/^static struct uloop_timeout ubus_timer;$/;"	v	typeref:struct:uloop_timeout	file:
+udevtrigger	plug/coldplug.c	/^static struct uloop_process udevtrigger;$/;"	v	typeref:struct:uloop_process	file:
+udevtrigger_complete	plug/coldplug.c	/^static void udevtrigger_complete(struct uloop_process *proc, int ret)$/;"	f	file:
+upgrade_running	system.c	/^int upgrade_running = 0;$/;"	v
+usage	procd.c	/^static int usage(const char *prog)$/;"	f	file:
+valid	service/instance.h	/^	bool valid;$/;"	m	struct:service_instance
+validate	service/service.h	/^struct validate {$/;"	s
+validate_policy	service/service.c	/^static const struct blobmsg_policy validate_policy[__VALIDATE_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+validators	service/service.h	/^	struct list_head validators;$/;"	m	struct:service	typeref:struct:service::list_head
+validators	service/validate.c	/^static struct avl_tree validators;$/;"	v	typeref:struct:avl_tree	file:
+verbose	plug/udevtrigger.c	/^static int verbose;$/;"	v	file:
+vrule	service/service.h	/^struct vrule {$/;"	s
+watchdog_fd	watchdog.c	/^char* watchdog_fd(void)$/;"	f
+watchdog_frequency	watchdog.c	/^int watchdog_frequency(int frequency)$/;"	f
+watchdog_get_stopped	watchdog.c	/^bool watchdog_get_stopped(void)$/;"	f
+watchdog_init	watchdog.c	/^void watchdog_init(int preinit)$/;"	f
+watchdog_policy	system.c	/^static const struct blobmsg_policy watchdog_policy[__WDT_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+watchdog_set	system.c	/^static int watchdog_set(struct ubus_context *ctx, struct ubus_object *obj,$/;"	f	file:
+watchdog_set_stopped	watchdog.c	/^void watchdog_set_stopped(bool val)$/;"	f
+watchdog_timeout	watchdog.c	/^int watchdog_timeout(int timeout)$/;"	f
+watchdog_timeout_cb	watchdog.c	/^static void watchdog_timeout_cb(struct uloop_timeout *t)$/;"	f	file:
+wdt_fd	watchdog.c	/^static int wdt_fd = -1;$/;"	v	file:
+wdt_frequency	watchdog.c	/^static int wdt_frequency = 5;$/;"	v	file:
+wdt_timeout	watchdog.c	/^static struct uloop_timeout wdt_timeout;$/;"	v	typeref:struct:uloop_timeout	file:
