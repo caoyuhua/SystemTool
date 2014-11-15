@@ -1,0 +1,6 @@
+/lib/wifi/mt7612.sh
+/etc/Wireless/mt7612/mt7612.dat.orig
+/etc/Wireless/mt7612/mt7612.eeprom.bin
+/etc/modules.d/91-mt76x2e
+/lib/modules/3.10.14/mt76x2e.ko
+/etc/Wireless/mt7612/mt7612.dat

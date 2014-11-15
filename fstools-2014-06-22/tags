@@ -1,0 +1,1276 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AI_ADDRCONFIG	libblkid-tiny/c.h	218;"	d
+ARRAY_SIZE	libblkid-tiny/c.h	77;"	d
+BITOPS_H	libblkid-tiny/bitops.h	2;"	d
+BLKALIGNOFF	libblkid-tiny/blkdev.h	50;"	d
+BLKBSZGET	libblkid-tiny/blkdev.h	38;"	d
+BLKBSZSET	libblkid-tiny/blkdev.h	39;"	d
+BLKDEV_H	libblkid-tiny/blkdev.h	2;"	d
+BLKDISCARDZEROES	libblkid-tiny/blkdev.h	56;"	d
+BLKELVGET	libblkid-tiny/blkdev.h	35;"	d
+BLKELVSET	libblkid-tiny/blkdev.h	36;"	d
+BLKFLSBUF	libblkid-tiny/blkdev.h	25;"	d
+BLKFRAGET	libblkid-tiny/blkdev.h	29;"	d
+BLKFRASET	libblkid-tiny/blkdev.h	28;"	d
+BLKGETSIZE	libblkid-tiny/blkdev.h	24;"	d
+BLKGETSIZE	libblkid-tiny/blkdev.h	68;"	d
+BLKGETSIZE64	libblkid-tiny/blkdev.h	43;"	d
+BLKID_BIC_FL_CHANGED	libblkid-tiny/blkidP.h	228;"	d
+BLKID_BIC_FL_PROBED	libblkid-tiny/blkidP.h	227;"	d
+BLKID_BID_FL_INVALID	libblkid-tiny/blkidP.h	56;"	d
+BLKID_BID_FL_REMOVABLE	libblkid-tiny/blkidP.h	57;"	d
+BLKID_BID_FL_VERIFIED	libblkid-tiny/blkidP.h	55;"	d
+BLKID_CACHE_FILE	libblkid-tiny/blkidP.h	240;"	d
+BLKID_CACHE_FILE_OLD	libblkid-tiny/blkidP.h	243;"	d
+BLKID_CHAIN_PARTS	libblkid-tiny/blkidP.h	/^	BLKID_CHAIN_PARTS,	\/* Partition tables *\/$/;"	e	enum:__anon1
+BLKID_CHAIN_SUBLKS	libblkid-tiny/blkidP.h	/^	BLKID_CHAIN_SUBLKS,	\/* FS\/RAID superblocks (enabled by default) *\/$/;"	e	enum:__anon1
+BLKID_CHAIN_TOPLGY	libblkid-tiny/blkidP.h	/^	BLKID_CHAIN_TOPLGY,	\/* Block device topology *\/$/;"	e	enum:__anon1
+BLKID_CONFIG_FILE	libblkid-tiny/blkidP.h	235;"	d
+BLKID_DATE	libblkid-tiny/blkid.h	36;"	d
+BLKID_DEV_CREATE	libblkid-tiny/blkid.h	121;"	d
+BLKID_DEV_FIND	libblkid-tiny/blkid.h	120;"	d
+BLKID_DEV_NORMAL	libblkid-tiny/blkid.h	123;"	d
+BLKID_DEV_VERIFY	libblkid-tiny/blkid.h	122;"	d
+BLKID_ENC_UTF16BE	libblkid-tiny/blkidP.h	418;"	d
+BLKID_ENC_UTF16LE	libblkid-tiny/blkidP.h	419;"	d
+BLKID_ERR_BIG	libblkid-tiny/blkidP.h	251;"	d
+BLKID_ERR_CACHE	libblkid-tiny/blkidP.h	248;"	d
+BLKID_ERR_DEV	libblkid-tiny/blkidP.h	249;"	d
+BLKID_ERR_IO	libblkid-tiny/blkidP.h	245;"	d
+BLKID_ERR_MEM	libblkid-tiny/blkidP.h	247;"	d
+BLKID_ERR_PARAM	libblkid-tiny/blkidP.h	250;"	d
+BLKID_ERR_PROC	libblkid-tiny/blkidP.h	246;"	d
+BLKID_EVAL_SCAN	libblkid-tiny/blkidP.h	/^	BLKID_EVAL_SCAN,$/;"	e	enum:__anon2
+BLKID_EVAL_UDEV	libblkid-tiny/blkidP.h	/^	BLKID_EVAL_UDEV = 0,$/;"	e	enum:__anon2
+BLKID_EXT_MAGICS	libblkid-tiny/ext.c	481;"	d	file:
+BLKID_FLTR_NOTIN	libblkid-tiny/blkid.h	242;"	d
+BLKID_FLTR_ONLYIN	libblkid-tiny/blkid.h	246;"	d
+BLKID_FL_CDROM_DEV	libblkid-tiny/blkidP.h	165;"	d
+BLKID_FL_PRIVATE_FD	libblkid-tiny/blkidP.h	163;"	d
+BLKID_FL_TINY_DEV	libblkid-tiny/blkidP.h	164;"	d
+BLKID_IDINFO_TOLERANT	libblkid-tiny/blkidP.h	153;"	d
+BLKID_NCHAINS	libblkid-tiny/blkidP.h	/^	BLKID_NCHAINS		\/* number of chains *\/$/;"	e	enum:__anon1
+BLKID_NONE_MAGIC	libblkid-tiny/blkidP.h	146;"	d
+BLKID_NVALS	libblkid-tiny/blkidP.h	127;"	d
+BLKID_NVALS_PARTS	libblkid-tiny/blkidP.h	124;"	d
+BLKID_NVALS_SUBLKS	libblkid-tiny/blkidP.h	122;"	d
+BLKID_NVALS_TOPLGY	libblkid-tiny/blkidP.h	123;"	d
+BLKID_PARTS_ENTRY_DETAILS	libblkid-tiny/blkid.h	282;"	d
+BLKID_PARTS_FORCE_GPT	libblkid-tiny/blkid.h	281;"	d
+BLKID_PARTS_MAGIC	libblkid-tiny/blkid.h	283;"	d
+BLKID_PRI_DM	libblkid-tiny/blkidP.h	257;"	d
+BLKID_PRI_EVMS	libblkid-tiny/blkidP.h	258;"	d
+BLKID_PRI_LVM	libblkid-tiny/blkidP.h	259;"	d
+BLKID_PRI_MD	libblkid-tiny/blkidP.h	260;"	d
+BLKID_PRI_UBI	libblkid-tiny/blkidP.h	256;"	d
+BLKID_PROBE_FL_IGNORE_PT	libblkid-tiny/blkidP.h	168;"	d
+BLKID_PROBE_INTERVAL	libblkid-tiny/blkidP.h	208;"	d
+BLKID_PROBE_MIN	libblkid-tiny/blkidP.h	201;"	d
+BLKID_PROBREQ_LABEL	libblkid-tiny/blkid.h	332;"	d
+BLKID_PROBREQ_LABELRAW	libblkid-tiny/blkid.h	333;"	d
+BLKID_PROBREQ_SECTYPE	libblkid-tiny/blkid.h	337;"	d
+BLKID_PROBREQ_TYPE	libblkid-tiny/blkid.h	336;"	d
+BLKID_PROBREQ_USAGE	libblkid-tiny/blkid.h	338;"	d
+BLKID_PROBREQ_UUID	libblkid-tiny/blkid.h	334;"	d
+BLKID_PROBREQ_UUIDRAW	libblkid-tiny/blkid.h	335;"	d
+BLKID_PROBREQ_VERSION	libblkid-tiny/blkid.h	339;"	d
+BLKID_PROBVAL_BUFSIZ	libblkid-tiny/blkidP.h	120;"	d
+BLKID_RUNTIME_DIR	libblkid-tiny/blkidP.h	239;"	d
+BLKID_RUNTIME_TOPDIR	libblkid-tiny/blkidP.h	238;"	d
+BLKID_SUBLKS_DEFAULT	libblkid-tiny/blkid.h	231;"	d
+BLKID_SUBLKS_LABEL	libblkid-tiny/blkid.h	221;"	d
+BLKID_SUBLKS_LABELRAW	libblkid-tiny/blkid.h	222;"	d
+BLKID_SUBLKS_MAGIC	libblkid-tiny/blkid.h	229;"	d
+BLKID_SUBLKS_SECTYPE	libblkid-tiny/blkid.h	226;"	d
+BLKID_SUBLKS_TYPE	libblkid-tiny/blkid.h	225;"	d
+BLKID_SUBLKS_USAGE	libblkid-tiny/blkid.h	227;"	d
+BLKID_SUBLKS_UUID	libblkid-tiny/blkid.h	223;"	d
+BLKID_SUBLKS_UUIDRAW	libblkid-tiny/blkid.h	224;"	d
+BLKID_SUBLKS_VERSION	libblkid-tiny/blkid.h	228;"	d
+BLKID_USAGE_CRYPTO	libblkid-tiny/blkid.h	251;"	d
+BLKID_USAGE_FILESYSTEM	libblkid-tiny/blkid.h	249;"	d
+BLKID_USAGE_OTHER	libblkid-tiny/blkid.h	252;"	d
+BLKID_USAGE_RAID	libblkid-tiny/blkid.h	250;"	d
+BLKID_VERSION	libblkid-tiny/blkid.h	35;"	d
+BLKIOMIN	libblkid-tiny/blkdev.h	48;"	d
+BLKIOOPT	libblkid-tiny/blkdev.h	49;"	d
+BLKPBSZGET	libblkid-tiny/blkdev.h	51;"	d
+BLKRAGET	libblkid-tiny/blkdev.h	27;"	d
+BLKRASET	libblkid-tiny/blkdev.h	26;"	d
+BLKROGET	libblkid-tiny/blkdev.h	22;"	d
+BLKROSET	libblkid-tiny/blkdev.h	21;"	d
+BLKRRPART	libblkid-tiny/blkdev.h	23;"	d
+BLKSECTGET	libblkid-tiny/blkdev.h	31;"	d
+BLKSECTSET	libblkid-tiny/blkdev.h	30;"	d
+BLKSSZGET	libblkid-tiny/blkdev.h	32;"	d
+BUFLEN	libfstools/ubi.c	23;"	d	file:
+BUILD_BUG_ON_NULL	libblkid-tiny/c.h	74;"	d
+CDROM_GET_CAPABILITY	libblkid-tiny/blkdev.h	78;"	d
+CFG_ANON_MOUNT	block.c	/^	CFG_ANON_MOUNT,$/;"	e	enum:__anon4	file:
+CFG_ANON_SWAP	block.c	/^	CFG_ANON_SWAP,$/;"	e	enum:__anon4	file:
+CFG_AUTO_MOUNT	block.c	/^	CFG_AUTO_MOUNT,$/;"	e	enum:__anon4	file:
+CFG_AUTO_SWAP	block.c	/^	CFG_AUTO_SWAP,$/;"	e	enum:__anon4	file:
+CFG_CHECK_FS	block.c	/^	CFG_CHECK_FS,$/;"	e	enum:__anon4	file:
+CFG_DELAY_ROOT	block.c	/^	CFG_DELAY_ROOT,$/;"	e	enum:__anon4	file:
+CONF	libfstools/snapshot.h	20;"	d
+CONFIG_BLKID_DEBUG	libblkid-tiny/blkidP.h	17;"	d
+CONFIG_BLKID_DEBUG	libblkid-tiny/blkidP.h	263;"	d
+CTRL_DEV	libubi/libubi_int.h	42;"	d
+DATA	libfstools/snapshot.h	19;"	d
+DBG	libblkid-tiny/blkidP.h	288;"	d
+DBG	libblkid-tiny/blkidP.h	291;"	d
+DEBUG	libblkid-tiny/libblkid-tiny.c	10;"	d	file:
+DEBUG_ALL	libblkid-tiny/blkidP.h	280;"	d
+DEBUG_CACHE	libblkid-tiny/blkidP.h	266;"	d
+DEBUG_CONFIG	libblkid-tiny/blkidP.h	277;"	d
+DEBUG_DEV	libblkid-tiny/blkidP.h	268;"	d
+DEBUG_DEVNAME	libblkid-tiny/blkidP.h	269;"	d
+DEBUG_DEVNO	libblkid-tiny/blkidP.h	270;"	d
+DEBUG_DUMP	libblkid-tiny/blkidP.h	267;"	d
+DEBUG_EVALUATE	libblkid-tiny/blkidP.h	278;"	d
+DEBUG_INIT	libblkid-tiny/blkidP.h	279;"	d
+DEBUG_LOWPROBE	libblkid-tiny/blkidP.h	276;"	d
+DEBUG_PROBE	libblkid-tiny/blkidP.h	271;"	d
+DEBUG_READ	libblkid-tiny/blkidP.h	272;"	d
+DEBUG_RESOLVE	libblkid-tiny/blkidP.h	273;"	d
+DEBUG_SAVE	libblkid-tiny/blkidP.h	274;"	d
+DEBUG_TAG	libblkid-tiny/blkidP.h	275;"	d
+DEFAULT_CTRL_DEV	libubi/libubi-tiny.c	39;"	d	file:
+DEFAULT_SECTOR_SIZE	libblkid-tiny/blkdev.h	16;"	d
+DEV_AVAIL_EBS	libubi/libubi_int.h	48;"	d
+DEV_BAD_COUNT	libubi/libubi_int.h	50;"	d
+DEV_DEV	libubi/libubi_int.h	47;"	d
+DEV_EB_SIZE	libubi/libubi_int.h	51;"	d
+DEV_MAX_EC	libubi/libubi_int.h	52;"	d
+DEV_MAX_RSVD	libubi/libubi_int.h	53;"	d
+DEV_MAX_VOLS	libubi/libubi_int.h	54;"	d
+DEV_MIN_IO_SIZE	libubi/libubi_int.h	55;"	d
+DEV_MTD_NUM	libubi/libubi_int.h	56;"	d
+DEV_TOTAL_EBS	libubi/libubi_int.h	49;"	d
+DRIVER	libfstools/volume.h	108;"	d
+ERROR	block.c	39;"	d	file:
+EXT2_FEATURE_INCOMPAT_FILETYPE	libblkid-tiny/ext.c	108;"	d	file:
+EXT2_FEATURE_INCOMPAT_META_BG	libblkid-tiny/ext.c	111;"	d	file:
+EXT2_FEATURE_INCOMPAT_SUPP	libblkid-tiny/ext.c	120;"	d	file:
+EXT2_FEATURE_INCOMPAT_UNSUPPORTED	libblkid-tiny/ext.c	122;"	d	file:
+EXT2_FEATURE_RO_COMPAT_BTREE_DIR	libblkid-tiny/ext.c	101;"	d	file:
+EXT2_FEATURE_RO_COMPAT_LARGE_FILE	libblkid-tiny/ext.c	100;"	d	file:
+EXT2_FEATURE_RO_COMPAT_SPARSE_SUPER	libblkid-tiny/ext.c	99;"	d	file:
+EXT2_FEATURE_RO_COMPAT_SUPP	libblkid-tiny/ext.c	117;"	d	file:
+EXT2_FEATURE_RO_COMPAT_UNSUPPORTED	libblkid-tiny/ext.c	123;"	d	file:
+EXT2_FLAGS_TEST_FILESYS	libblkid-tiny/ext.c	93;"	d	file:
+EXT3_FEATURE_COMPAT_HAS_JOURNAL	libblkid-tiny/ext.c	96;"	d	file:
+EXT3_FEATURE_INCOMPAT_JOURNAL_DEV	libblkid-tiny/ext.c	110;"	d	file:
+EXT3_FEATURE_INCOMPAT_RECOVER	libblkid-tiny/ext.c	109;"	d	file:
+EXT3_FEATURE_INCOMPAT_SUPP	libblkid-tiny/ext.c	128;"	d	file:
+EXT3_FEATURE_INCOMPAT_UNSUPPORTED	libblkid-tiny/ext.c	131;"	d	file:
+EXT3_FEATURE_RO_COMPAT_SUPP	libblkid-tiny/ext.c	125;"	d	file:
+EXT3_FEATURE_RO_COMPAT_UNSUPPORTED	libblkid-tiny/ext.c	132;"	d	file:
+EXT4_FEATURE_INCOMPAT_64BIT	libblkid-tiny/ext.c	113;"	d	file:
+EXT4_FEATURE_INCOMPAT_EXTENTS	libblkid-tiny/ext.c	112;"	d	file:
+EXT4_FEATURE_INCOMPAT_FLEX_BG	libblkid-tiny/ext.c	115;"	d	file:
+EXT4_FEATURE_INCOMPAT_MMP	libblkid-tiny/ext.c	114;"	d	file:
+EXT4_FEATURE_RO_COMPAT_DIR_NLINK	libblkid-tiny/ext.c	104;"	d	file:
+EXT4_FEATURE_RO_COMPAT_EXTRA_ISIZE	libblkid-tiny/ext.c	105;"	d	file:
+EXT4_FEATURE_RO_COMPAT_GDT_CSUM	libblkid-tiny/ext.c	103;"	d	file:
+EXT4_FEATURE_RO_COMPAT_HUGE_FILE	libblkid-tiny/ext.c	102;"	d	file:
+EXT4_SUPPORTS_EXT2	libblkid-tiny/ext.c	220;"	d	file:
+EXT_MAG_OFF	libblkid-tiny/ext.c	88;"	d	file:
+EXT_SB_KBOFF	libblkid-tiny/ext.c	86;"	d	file:
+EXT_SB_MAGIC	libblkid-tiny/ext.c	82;"	d	file:
+EXT_SB_OFF	libblkid-tiny/ext.c	84;"	d	file:
+FALSE	libblkid-tiny/c.h	89;"	d
+FAT12_MAX	libblkid-tiny/vfat.c	102;"	d	file:
+FAT16_MAX	libblkid-tiny/vfat.c	103;"	d	file:
+FAT32_MAX	libblkid-tiny/vfat.c	104;"	d	file:
+FAT_ATTR_DIR	libblkid-tiny/vfat.c	107;"	d	file:
+FAT_ATTR_LONG_NAME	libblkid-tiny/vfat.c	108;"	d	file:
+FAT_ATTR_MASK	libblkid-tiny/vfat.c	109;"	d	file:
+FAT_ATTR_VOLUME_ID	libblkid-tiny/vfat.c	106;"	d	file:
+FAT_ENTRY_FREE	libblkid-tiny/vfat.c	110;"	d	file:
+FIFREEZE	libblkid-tiny/blkdev.h	61;"	d
+FITHAW	libblkid-tiny/blkdev.h	62;"	d
+FLASH_NAND	libfstools/volume.c	/^	FLASH_NAND,$/;"	e	enum:__anon14	file:
+FLASH_NOR	libfstools/volume.c	/^	FLASH_NOR,$/;"	e	enum:__anon14	file:
+FS_DEADCODE	libfstools/libfstools.h	/^	FS_DEADCODE,$/;"	e	enum:__anon13
+FS_JFFS2	libfstools/libfstools.h	/^	FS_JFFS2,$/;"	e	enum:__anon13
+FS_NONE	libfstools/libfstools.h	/^	FS_NONE,$/;"	e	enum:__anon13
+FS_SNAPSHOT	libfstools/libfstools.h	/^	FS_SNAPSHOT,$/;"	e	enum:__anon13
+FS_UBIFS	libfstools/libfstools.h	/^	FS_UBIFS,$/;"	e	enum:__anon13
+HDIO_GETGEO	libblkid-tiny/blkdev.h	73;"	d
+HFSPLUS_EXTENT_COUNT	libblkid-tiny/hfs.c	92;"	d	file:
+HFSPLUS_POR_CNID	libblkid-tiny/hfs.c	60;"	d	file:
+HFSPLUS_SECTOR_SIZE	libblkid-tiny/hfs.c	129;"	d	file:
+HFS_NODE_LEAF	libblkid-tiny/hfs.c	59;"	d	file:
+IUTF8	libblkid-tiny/c.h	222;"	d
+KERNEL_VERSION	libblkid-tiny/linux_version.h	9;"	d
+LIBUBI_UBI_VERSION	libubi/libubi.h	38;"	d
+LINUX_VERSION_H	libblkid-tiny/linux_version.h	2;"	d
+MAX_UBI_MTD_NAME_LEN	libubi/ubi-user.h	192;"	d
+MOUNT_DEVICE	block.c	/^	MOUNT_DEVICE,$/;"	e	enum:__anon5	file:
+MOUNT_ENABLE	block.c	/^	MOUNT_ENABLE,$/;"	e	enum:__anon5	file:
+MOUNT_LABEL	block.c	/^	MOUNT_LABEL,$/;"	e	enum:__anon5	file:
+MOUNT_OPTIONS	block.c	/^	MOUNT_OPTIONS,$/;"	e	enum:__anon5	file:
+MOUNT_TARGET	block.c	/^	MOUNT_TARGET,$/;"	e	enum:__anon5	file:
+MOUNT_UUID	block.c	/^	MOUNT_UUID,$/;"	e	enum:__anon5	file:
+MS_DIRSYNC	block.c	148;"	d	file:
+MS_MOVE	libfstools/mount.c	32;"	d	file:
+MS_RELATIME	block.c	152;"	d	file:
+MS_STRICTATIME	block.c	156;"	d	file:
+MTD_CHAR_MAJOR	libubi/libubi.c	725;"	d	file:
+NANDFLASH	libfstools/volume.h	/^	NANDFLASH,$/;"	e	enum:__anon15
+NBBY	libblkid-tiny/bitops.h	12;"	d
+NORFLASH	libfstools/volume.h	/^	NORFLASH,$/;"	e	enum:__anon15
+OWRT	libfstools/snapshot.h	18;"	d
+O_CLOEXEC	libblkid-tiny/c.h	214;"	d
+PAGESIZE_MAX	libblkid-tiny/swap.c	34;"	d	file:
+PAGESIZE_MIN	libblkid-tiny/swap.c	33;"	d	file:
+PATH_MAX	libblkid-tiny/c.h	81;"	d
+PATH_MAX	libfstools/mtd.c	28;"	d	file:
+PATH_MAX	libfstools/snapshot.h	17;"	d
+PROGRAM_NAME	libubi/libubi-tiny.c	24;"	d	file:
+PROGRAM_NAME	libubi/libubi.c	23;"	d	file:
+PROGRAM_NAME	libubi/ubiutils-common.c	26;"	d	file:
+SWAP_DEVICE	block.c	/^	SWAP_DEVICE,$/;"	e	enum:__anon6	file:
+SWAP_ENABLE	block.c	/^	SWAP_ENABLE,$/;"	e	enum:__anon6	file:
+SWAP_LABEL	block.c	/^	SWAP_LABEL,$/;"	e	enum:__anon6	file:
+SWAP_PRIO	block.c	/^	SWAP_PRIO,$/;"	e	enum:__anon6	file:
+SWAP_UUID	block.c	/^	SWAP_UUID,$/;"	e	enum:__anon6	file:
+SWITCH_JFFS2	libfstools/jffs2.c	33;"	d	file:
+SWITCH_JFFS2	libfstools/overlay.c	33;"	d	file:
+SYSFS_CTRL	libubi/libubi_int.h	40;"	d
+SYSFS_UBI	libubi/libubi_int.h	39;"	d
+TOI_MAGIC_STRING	libblkid-tiny/swap.c	36;"	d	file:
+TOI_MAGIC_STRLEN	libblkid-tiny/swap.c	37;"	d	file:
+TRUE	libblkid-tiny/c.h	85;"	d
+TYPE_MOUNT	block.c	/^	TYPE_MOUNT,$/;"	e	enum:__anon3	file:
+TYPE_SWAP	block.c	/^	TYPE_SWAP,$/;"	e	enum:__anon3	file:
+UBIVOLUME	libfstools/volume.h	/^	UBIVOLUME,$/;"	e	enum:__anon15
+UBI_COMPAT_DELETE	libubi/ubi-media.h	/^	UBI_COMPAT_DELETE   = 1,$/;"	e	enum:__anon12
+UBI_COMPAT_PRESERVE	libubi/ubi-media.h	/^	UBI_COMPAT_PRESERVE = 4,$/;"	e	enum:__anon12
+UBI_COMPAT_REJECT	libubi/ubi-media.h	/^	UBI_COMPAT_REJECT   = 5$/;"	e	enum:__anon12
+UBI_COMPAT_RO	libubi/ubi-media.h	/^	UBI_COMPAT_RO       = 2,$/;"	e	enum:__anon12
+UBI_CRC32_INIT	libubi/ubi-media.h	42;"	d
+UBI_CTRL_IOC_MAGIC	libubi/ubi-user.h	163;"	d
+UBI_DEV_NAME_PATT	libubi/libubi_int.h	45;"	d
+UBI_DEV_NUM_AUTO	libubi/ubi-user.h	143;"	d
+UBI_DYNAMIC_VOLUME	libubi/ubi-user.h	/^	UBI_DYNAMIC_VOLUME = 3,$/;"	e	enum:__anon7
+UBI_EC_HDR_MAGIC	libubi/ubi-media.h	45;"	d
+UBI_EC_HDR_SIZE	libubi/ubi-media.h	116;"	d
+UBI_EC_HDR_SIZE_CRC	libubi/ubi-media.h	120;"	d
+UBI_INTERNAL_VOL_START	libubi/ubi-media.h	304;"	d
+UBI_INT_VOL_COUNT	libubi/ubi-media.h	298;"	d
+UBI_IOCATT	libubi/ubi-user.h	166;"	d
+UBI_IOCDET	libubi/ubi-user.h	168;"	d
+UBI_IOCEBCH	libubi/ubi-user.h	180;"	d
+UBI_IOCEBER	libubi/ubi-user.h	178;"	d
+UBI_IOCEBISMAP	libubi/ubi-user.h	186;"	d
+UBI_IOCEBMAP	libubi/ubi-user.h	182;"	d
+UBI_IOCEBUNMAP	libubi/ubi-user.h	184;"	d
+UBI_IOCFDET	libubi/ubi-user.h	169;"	d
+UBI_IOCMKVOL	libubi/ubi-user.h	153;"	d
+UBI_IOCRMVOL	libubi/ubi-user.h	155;"	d
+UBI_IOCRNVOL	libubi/ubi-user.h	159;"	d
+UBI_IOCRSVOL	libubi/ubi-user.h	157;"	d
+UBI_IOCSETVOLPROP	libubi/ubi-user.h	188;"	d
+UBI_IOCVOLUP	libubi/ubi-user.h	176;"	d
+UBI_IOC_MAGIC	libubi/ubi-user.h	150;"	d
+UBI_LAYOUT_VOLUME_ALIGN	libubi/ubi-media.h	310;"	d
+UBI_LAYOUT_VOLUME_COMPAT	libubi/ubi-media.h	313;"	d
+UBI_LAYOUT_VOLUME_EBS	libubi/ubi-media.h	311;"	d
+UBI_LAYOUT_VOLUME_ID	libubi/ubi-media.h	308;"	d
+UBI_LAYOUT_VOLUME_NAME	libubi/ubi-media.h	312;"	d
+UBI_LAYOUT_VOLUME_TYPE	libubi/ubi-media.h	309;"	d
+UBI_MAX_ERASECOUNTER	libubi/ubi-media.h	39;"	d
+UBI_MAX_PEB_SZ	libubi/libubi.h	41;"	d
+UBI_MAX_RNVOL	libubi/ubi-user.h	195;"	d
+UBI_MAX_VOLUMES	libubi/ubi-media.h	316;"	d
+UBI_MAX_VOLUME_NAME	libubi/ubi-user.h	146;"	d
+UBI_STATIC_VOLUME	libubi/ubi-user.h	/^	UBI_STATIC_VOLUME  = 4,$/;"	e	enum:__anon7
+UBI_VER	libubi/libubi_int.h	44;"	d
+UBI_VERSION	libubi/ubi-media.h	36;"	d
+UBI_VID_DYNAMIC	libubi/ubi-media.h	/^	UBI_VID_DYNAMIC = 1,$/;"	e	enum:__anon10
+UBI_VID_HDR_MAGIC	libubi/ubi-media.h	47;"	d
+UBI_VID_HDR_SIZE	libubi/ubi-media.h	117;"	d
+UBI_VID_HDR_SIZE_CRC	libubi/ubi-media.h	121;"	d
+UBI_VID_STATIC	libubi/ubi-media.h	/^	UBI_VID_STATIC  = 2$/;"	e	enum:__anon10
+UBI_VOL_IOC_MAGIC	libubi/ubi-user.h	173;"	d
+UBI_VOL_NAME_MAX	libubi/ubi-media.h	319;"	d
+UBI_VOL_NAME_PATT	libubi/libubi_int.h	58;"	d
+UBI_VOL_NUM_AUTO	libubi/ubi-user.h	142;"	d
+UBI_VOL_PROP_DIRECT_WRITE	libubi/ubi-user.h	/^	UBI_VOL_PROP_DIRECT_WRITE = 1,$/;"	e	enum:__anon8
+UBI_VTBL_AUTORESIZE_FLG	libubi/ubi-media.h	/^	UBI_VTBL_AUTORESIZE_FLG = 0x01,$/;"	e	enum:__anon11
+UBI_VTBL_RECORD_SIZE	libubi/ubi-media.h	322;"	d
+UBI_VTBL_RECORD_SIZE_CRC	libubi/ubi-media.h	325;"	d
+UL_BUILD_BUG_ON_ZERO	libblkid-tiny/c.h	73;"	d
+UL_SCNsA	libblkid-tiny/c.h	242;"	d
+UL_SCNsA	libblkid-tiny/c.h	244;"	d
+UNKNOWN_TYPE	libfstools/volume.h	/^	UNKNOWN_TYPE,$/;"	e	enum:__anon15
+USAGE_HEADER	libblkid-tiny/c.h	229;"	d
+USAGE_HELP	libblkid-tiny/c.h	232;"	d
+USAGE_MAN_TAIL	libblkid-tiny/c.h	234;"	d
+USAGE_OPTIONS	libblkid-tiny/c.h	230;"	d
+USAGE_SEPARATOR	libblkid-tiny/c.h	231;"	d
+USAGE_VERSION	libblkid-tiny/c.h	233;"	d
+UTIL_LINUX_C_H	libblkid-tiny/c.h	6;"	d
+UTIL_LINUX_VERSION	libblkid-tiny/c.h	236;"	d
+VERSION	libubi/libubi-tiny.c	25;"	d	file:
+VOL_ALIGNMENT	libubi/libubi_int.h	61;"	d
+VOL_CORRUPTED	libubi/libubi_int.h	65;"	d
+VOL_DATA_BYTES	libubi/libubi_int.h	62;"	d
+VOL_DEV	libubi/libubi_int.h	60;"	d
+VOL_EB_SIZE	libubi/libubi_int.h	64;"	d
+VOL_NAME	libubi/libubi_int.h	66;"	d
+VOL_RSVD_EBS	libubi/libubi_int.h	63;"	d
+VOL_TYPE	libubi/libubi_int.h	59;"	d
+_BLKID_BLKIDP_H	libblkid-tiny/blkidP.h	14;"	d
+_BLKID_BLKID_H	libblkid-tiny/blkid.h	24;"	d
+_BLKID_SUPERBLOCKS_H	libblkid-tiny/superblocks.h	8;"	d
+_BSD_SOURCE	libblkid-tiny/mkdev.c	15;"	d	file:
+_FS_STATE_H__	libfstools/libfstools.h	15;"	d
+_GNU_SOURCE	block.c	15;"	d	file:
+_LIBUBI_TINY_H__	libubi/libubi-tiny.h	15;"	d
+_SNAPSHOT_H__	libfstools/snapshot.h	15;"	d
+_VOLUME_H__	libfstools/volume.h	15;"	d
+__BLKID_EVAL_LAST	libblkid-tiny/blkidP.h	/^	__BLKID_EVAL_LAST$/;"	e	enum:__anon2
+__CFG_MAX	block.c	/^	__CFG_MAX$/;"	e	enum:__anon4	file:
+__GNUC_PREREQ	libblkid-tiny/c.h	26;"	d
+__GNUC_PREREQ	libblkid-tiny/c.h	29;"	d
+__LIBUBI_H__	libubi/libubi.h	24;"	d
+__LIBUBI_INT_H__	libubi/libubi_int.h	24;"	d
+__MOUNT_MAX	block.c	/^	__MOUNT_MAX$/;"	e	enum:__anon5	file:
+__SWAP_MAX	block.c	/^	__SWAP_MAX$/;"	e	enum:__anon6	file:
+__UBI_MEDIA_H__	libubi/ubi-media.h	31;"	d
+__UBI_USER_H__	libubi/ubi-user.h	22;"	d
+__attribute__	libblkid-tiny/c.h	45;"	d
+__must_be_array	libblkid-tiny/c.h	36;"	d
+__must_be_array	libblkid-tiny/c.h	44;"	d
+__ul_alloc_size	libblkid-tiny/c.h	54;"	d
+__ul_alloc_size	libblkid-tiny/c.h	56;"	d
+__ul_calloc_size	libblkid-tiny/c.h	62;"	d
+__ul_calloc_size	libblkid-tiny/c.h	64;"	d
+_cache_load	block.c	/^static int _cache_load(const char *path)$/;"	f	file:
+_probe_path	block.c	/^static struct blkid_struct_probe* _probe_path(char *path)$/;"	f	file:
+_ramoverlay	libfstools/snapshot.c	/^_ramoverlay(char *rom, char *overlay)$/;"	f	file:
+al_bl_st	libblkid-tiny/hfs.c	/^        uint16_t        al_bl_st;$/;"	m	struct:hfs_mdb	file:
+al_blk_size	libblkid-tiny/hfs.c	/^        uint32_t        al_blk_size;$/;"	m	struct:hfs_mdb	file:
+alignment	libubi/libubi.h	/^	int alignment;$/;"	m	struct:ubi_mkvol_request
+alignment	libubi/libubi.h	/^	int alignment;$/;"	m	struct:ubi_vol_info
+alignment	libubi/ubi-media.h	/^	__be32  alignment;$/;"	m	struct:ubi_vtbl_record
+alignment	libubi/ubi-user.h	/^	int32_t alignment;$/;"	m	struct:ubi_mkvol_req
+alloc_file	libblkid-tiny/hfs.c	/^	struct hfsplus_fork alloc_file;$/;"	m	struct:hfsplus_vol_header	typeref:struct:hfsplus_vol_header::hfsplus_fork	file:
+alloc_ptr	libblkid-tiny/hfs.c	/^        uint16_t        alloc_ptr;$/;"	m	struct:hfs_mdb	file:
+anon_mount	block.c	/^static int anon_mount, anon_swap, auto_mount, auto_swap, check_fs;$/;"	v	file:
+anon_swap	block.c	/^static int anon_mount, anon_swap, auto_mount, auto_swap, check_fs;$/;"	v	file:
+ask_user	jffs2reset.c	/^ask_user(int argc, char **argv)$/;"	f	file:
+atrb	libblkid-tiny/hfs.c	/^        uint16_t        atrb;$/;"	m	struct:hfs_mdb	file:
+attr	libblkid-tiny/vfat.c	/^	uint8_t		attr;$/;"	m	struct:vfat_dir_entry	file:
+attr_file	libblkid-tiny/hfs.c	/^	struct hfsplus_fork attr_file;$/;"	m	struct:hfsplus_vol_header	typeref:struct:hfsplus_vol_header::hfsplus_fork	file:
+attributes	libblkid-tiny/hfs.c	/^	uint32_t		attributes;$/;"	m	struct:hfsplus_vol_header	file:
+auto_mount	block.c	/^static int anon_mount, anon_swap, auto_mount, auto_swap, check_fs;$/;"	v	file:
+auto_swap	block.c	/^static int anon_mount, anon_swap, auto_mount, auto_swap, check_fs;$/;"	v	file:
+avail_bytes	libubi/libubi.h	/^	long long avail_bytes;$/;"	m	struct:ubi_dev_info
+avail_lebs	libubi/libubi.h	/^	int avail_lebs;$/;"	m	struct:ubi_dev_info
+b	block.c	/^static struct blob_buf b;$/;"	v	typeref:struct:blob_buf	file:
+backup_date	libblkid-tiny/hfs.c	/^	uint32_t		backup_date;$/;"	m	struct:hfsplus_vol_header	file:
+bad_count	libubi/libubi.h	/^	int bad_count;$/;"	m	struct:ubi_dev_info
+bad_rsvd	libubi/libubi.h	/^	int bad_rsvd;$/;"	m	struct:ubi_dev_info
+badpages	libblkid-tiny/swap.c	/^	uint32_t	badpages[1];$/;"	m	struct:swap_header_v1_2	file:
+be16_to_cpu	libblkid-tiny/bitops.h	61;"	d
+be16_to_cpu	libblkid-tiny/bitops.h	77;"	d
+be32_to_cpu	libblkid-tiny/bitops.h	62;"	d
+be32_to_cpu	libblkid-tiny/bitops.h	78;"	d
+be32_to_hdr	libfstools/snapshot.h	/^be32_to_hdr(struct file_header *hdr)$/;"	f
+be64_to_cpu	libblkid-tiny/bitops.h	63;"	d
+be64_to_cpu	libblkid-tiny/bitops.h	79;"	d
+bic_devs	libblkid-tiny/blkidP.h	/^	struct list_head	bic_devs;	\/* List head of all devices *\/$/;"	m	struct:blkid_struct_cache	typeref:struct:blkid_struct_cache::list_head
+bic_filename	libblkid-tiny/blkidP.h	/^	char			*bic_filename;	\/* filename of cache *\/$/;"	m	struct:blkid_struct_cache
+bic_flags	libblkid-tiny/blkidP.h	/^	unsigned int		bic_flags;	\/* Status flags of the cache *\/$/;"	m	struct:blkid_struct_cache
+bic_ftime	libblkid-tiny/blkidP.h	/^	time_t			bic_ftime;	\/* Mod time of the cachefile *\/$/;"	m	struct:blkid_struct_cache
+bic_tags	libblkid-tiny/blkidP.h	/^	struct list_head	bic_tags;	\/* List head of all tag types *\/$/;"	m	struct:blkid_struct_cache	typeref:struct:blkid_struct_cache::list_head
+bic_time	libblkid-tiny/blkidP.h	/^	time_t			bic_time;	\/* Last probe time *\/$/;"	m	struct:blkid_struct_cache
+bid_cache	libblkid-tiny/blkidP.h	/^	blkid_cache		bid_cache;	\/* Dev belongs to this cache *\/$/;"	m	struct:blkid_struct_dev
+bid_devno	libblkid-tiny/blkidP.h	/^	dev_t			bid_devno;	\/* Device major\/minor number *\/$/;"	m	struct:blkid_struct_dev
+bid_devs	libblkid-tiny/blkidP.h	/^	struct list_head	bid_devs;	\/* All devices in the cache *\/$/;"	m	struct:blkid_struct_dev	typeref:struct:blkid_struct_dev::list_head
+bid_flags	libblkid-tiny/blkidP.h	/^	unsigned int		bid_flags;	\/* Device status bitflags *\/$/;"	m	struct:blkid_struct_dev
+bid_label	libblkid-tiny/blkidP.h	/^	char			*bid_label;	\/* Shortcut to device LABEL *\/$/;"	m	struct:blkid_struct_dev
+bid_name	libblkid-tiny/blkidP.h	/^	char			*bid_name;	\/* Device inode pathname *\/$/;"	m	struct:blkid_struct_dev
+bid_pri	libblkid-tiny/blkidP.h	/^	int			bid_pri;	\/* Device priority *\/$/;"	m	struct:blkid_struct_dev
+bid_tags	libblkid-tiny/blkidP.h	/^	struct list_head	bid_tags;	\/* All tags for this device *\/$/;"	m	struct:blkid_struct_dev	typeref:struct:blkid_struct_dev::list_head
+bid_time	libblkid-tiny/blkidP.h	/^	time_t			bid_time;	\/* Last update time of device *\/$/;"	m	struct:blkid_struct_dev
+bid_type	libblkid-tiny/blkidP.h	/^	char			*bid_type;	\/* Preferred device TYPE *\/$/;"	m	struct:blkid_struct_dev
+bid_utime	libblkid-tiny/blkidP.h	/^	suseconds_t		bid_utime;	\/* Last update time (microseconds) *\/$/;"	m	struct:blkid_struct_dev
+bid_uuid	libblkid-tiny/blkidP.h	/^	char			*bid_uuid;	\/* Shortcut to binary UUID *\/$/;"	m	struct:blkid_struct_dev
+binary	libblkid-tiny/blkidP.h	/^	int		binary;		\/* boolean *\/$/;"	m	struct:blkid_chain
+bit_dev	libblkid-tiny/blkidP.h	/^	blkid_dev		bit_dev;	\/* pointer to device *\/$/;"	m	struct:blkid_struct_tag
+bit_name	libblkid-tiny/blkidP.h	/^	char			*bit_name;	\/* NAME of tag (shared) *\/$/;"	m	struct:blkid_struct_tag
+bit_names	libblkid-tiny/blkidP.h	/^	struct list_head	bit_names;	\/* All tags with given NAME *\/$/;"	m	struct:blkid_struct_tag	typeref:struct:blkid_struct_tag::list_head
+bit_tags	libblkid-tiny/blkidP.h	/^	struct list_head	bit_tags;	\/* All tags for this device *\/$/;"	m	struct:blkid_struct_tag	typeref:struct:blkid_struct_tag::list_head
+bit_val	libblkid-tiny/blkidP.h	/^	char			*bit_val;	\/* value of tag *\/$/;"	m	struct:blkid_struct_tag
+blk	libfstools/volume.h	/^	char		*blk;$/;"	m	struct:volume
+blkid_bmp_get_item	libblkid-tiny/blkidP.h	405;"	d
+blkid_bmp_idx_bit	libblkid-tiny/blkidP.h	396;"	d
+blkid_bmp_idx_byte	libblkid-tiny/blkidP.h	397;"	d
+blkid_bmp_nbytes	libblkid-tiny/blkidP.h	411;"	d
+blkid_bmp_nwords	libblkid-tiny/blkidP.h	408;"	d
+blkid_bmp_set_item	libblkid-tiny/blkidP.h	399;"	d
+blkid_bmp_unset_item	libblkid-tiny/blkidP.h	402;"	d
+blkid_bmp_wordsize	libblkid-tiny/blkidP.h	395;"	d
+blkid_bufinfo	libblkid-tiny/blkidP.h	/^struct blkid_bufinfo {$/;"	s
+blkid_cache	libblkid-tiny/blkid.h	/^typedef struct blkid_struct_cache *blkid_cache;$/;"	t	typeref:struct:blkid_struct_cache
+blkid_chain	libblkid-tiny/blkidP.h	/^struct blkid_chain {$/;"	s
+blkid_chaindrv	libblkid-tiny/blkidP.h	/^struct blkid_chaindrv {$/;"	s
+blkid_config	libblkid-tiny/blkidP.h	/^struct blkid_config {$/;"	s
+blkid_debug_mask	libblkid-tiny/libblkid-tiny.c	/^int blkid_debug_mask = 0;$/;"	v
+blkid_dev	libblkid-tiny/blkid.h	/^typedef struct blkid_struct_dev *blkid_dev;$/;"	t	typeref:struct:blkid_struct_dev
+blkid_dev_iterate	libblkid-tiny/blkid.h	/^typedef struct blkid_struct_dev_iterate *blkid_dev_iterate;$/;"	t	typeref:struct:blkid_struct_dev_iterate
+blkid_idinfo	libblkid-tiny/libblkid-tiny.h	/^struct blkid_idinfo$/;"	s
+blkid_idmag	libblkid-tiny/libblkid-tiny.h	/^struct blkid_idmag$/;"	s
+blkid_init_debug	libblkid-tiny/blkidP.h	292;"	d
+blkid_loff_t	libblkid-tiny/blkid.h	/^typedef int64_t blkid_loff_t;$/;"	t
+blkid_partition	libblkid-tiny/blkid.h	/^typedef struct blkid_struct_partition *blkid_partition;$/;"	t	typeref:struct:blkid_struct_partition
+blkid_partlist	libblkid-tiny/blkid.h	/^typedef struct blkid_struct_partlist *blkid_partlist;$/;"	t	typeref:struct:blkid_struct_partlist
+blkid_parttable	libblkid-tiny/blkid.h	/^typedef struct blkid_struct_parttable *blkid_parttable;$/;"	t	typeref:struct:blkid_struct_parttable
+blkid_probe	libblkid-tiny/blkid.h	/^typedef struct blkid_struct_probe *blkid_probe;$/;"	t	typeref:struct:blkid_struct_probe
+blkid_probe_get_buffer	libblkid-tiny/libblkid-tiny.c	/^unsigned char *blkid_probe_get_buffer(blkid_probe pr,$/;"	f
+blkid_probe_get_sb	libblkid-tiny/blkidP.h	348;"	d
+blkid_probe_is_tiny	libblkid-tiny/libblkid-tiny.c	/^int blkid_probe_is_tiny(blkid_probe pr)$/;"	f
+blkid_probe_set_label	libblkid-tiny/libblkid-tiny.c	/^int blkid_probe_set_label(blkid_probe pr, unsigned char *label, size_t len)$/;"	f
+blkid_probe_set_uuid	libblkid-tiny/libblkid-tiny.c	/^int blkid_probe_set_uuid(blkid_probe pr, unsigned char *uuid)$/;"	f
+blkid_probe_set_uuid_as	libblkid-tiny/libblkid-tiny.c	/^int blkid_probe_set_uuid_as(blkid_probe pr, unsigned char *uuid, const char *name)$/;"	f
+blkid_probe_set_value	libblkid-tiny/libblkid-tiny.c	/^int blkid_probe_set_value(blkid_probe pr, const char *name,$/;"	f
+blkid_probe_set_version	libblkid-tiny/libblkid-tiny.c	/^int blkid_probe_set_version(blkid_probe pr, const char *version)$/;"	f
+blkid_probe_sprintf_uuid	libblkid-tiny/libblkid-tiny.c	/^int blkid_probe_sprintf_uuid(blkid_probe pr, unsigned char *uuid,$/;"	f
+blkid_probe_sprintf_version	libblkid-tiny/libblkid-tiny.c	/^int blkid_probe_sprintf_version(blkid_probe pr, const char *fmt, ...)$/;"	f
+blkid_prval	libblkid-tiny/blkidP.h	/^struct blkid_prval$/;"	s
+blkid_struct_cache	libblkid-tiny/blkidP.h	/^struct blkid_struct_cache$/;"	s
+blkid_struct_dev	libblkid-tiny/blkidP.h	/^struct blkid_struct_dev$/;"	s
+blkid_struct_probe	libblkid-tiny/libblkid-tiny.h	/^struct blkid_struct_probe$/;"	s
+blkid_struct_tag	libblkid-tiny/blkidP.h	/^struct blkid_struct_tag$/;"	s
+blkid_tag	libblkid-tiny/blkidP.h	/^typedef struct blkid_struct_tag *blkid_tag;$/;"	t	typeref:struct:blkid_struct_tag
+blkid_tag_iterate	libblkid-tiny/blkid.h	/^typedef struct blkid_struct_tag_iterate *blkid_tag_iterate;$/;"	t	typeref:struct:blkid_struct_tag_iterate
+blkid_topology	libblkid-tiny/blkid.h	/^typedef struct blkid_struct_topology *blkid_topology;$/;"	t	typeref:struct:blkid_struct_topology
+blobmsg_get_basename	block.c	/^static char *blobmsg_get_basename(struct blob_attr *attr)$/;"	f	file:
+blobmsg_get_strdup	block.c	/^static char *blobmsg_get_strdup(struct blob_attr *attr)$/;"	f	file:
+block_count	libblkid-tiny/hfs.c	/^	uint32_t		block_count;$/;"	m	struct:hfsplus_extent	file:
+block_log	libblkid-tiny/squashfs.c	/^	uint16_t block_log;$/;"	m	struct:squashfs_super_block	file:
+block_size	libblkid-tiny/squashfs.c	/^	uint32_t block_size;$/;"	m	struct:squashfs_super_block	file:
+block_size	libfstools/volume.h	/^	__u32		block_size;$/;"	m	struct:volume
+blocksize	libblkid-tiny/hfs.c	/^	uint32_t		blocksize;$/;"	m	struct:hfsplus_vol_header	file:
+boot_folder	libblkid-tiny/hfs.c	/^        uint32_t        boot_folder;$/;"	m	struct:hfs_finder_info	file:
+buf	libblkid-tiny/mkdev.c	/^static char buf[PATH_MAX];$/;"	v	file:
+buf2	libblkid-tiny/mkdev.c	/^static char buf2[PATH_MAX];$/;"	v	file:
+bufs	libblkid-tiny/blkidP.h	/^	struct list_head	bufs;	\/* list of buffers *\/$/;"	m	struct:blkid_bufinfo	typeref:struct:blkid_bufinfo::list_head
+bytes	libubi/libubi.h	/^	long long bytes;$/;"	m	struct:ubi_mkvol_request
+bytes	libubi/ubi-user.h	/^	int32_t bytes;$/;"	m	struct:ubi_leb_change_req
+bytes	libubi/ubi-user.h	/^	int64_t bytes;$/;"	m	struct:ubi_mkvol_req
+bytes	libubi/ubi-user.h	/^	int64_t bytes;$/;"	m	struct:ubi_rsvol_req
+bytes_used	libblkid-tiny/squashfs.c	/^	uint64_t bytes_used;$/;"	m	struct:squashfs_super_block	file:
+cache_load	block.c	/^static void cache_load(int mtd)$/;"	f	file:
+cachefile	libblkid-tiny/blkidP.h	/^	char *cachefile;		\/* CACHE_FILE=<path> option *\/$/;"	m	struct:blkid_config
+cat_file	libblkid-tiny/hfs.c	/^	struct hfsplus_fork cat_file;$/;"	m	struct:hfsplus_vol_header	typeref:struct:hfsplus_vol_header::hfsplus_fork	file:
+ch	libblkid-tiny/ubifs.c	/^	struct ubifs_ch ch;$/;"	m	struct:ubifs_sb_node	typeref:struct:ubifs_sb_node::ubifs_ch	file:
+chain	libblkid-tiny/blkidP.h	/^	struct blkid_chain	*chain;		\/* owner *\/$/;"	m	struct:blkid_prval	typeref:struct:blkid_prval::blkid_chain
+check_extroot	block.c	/^static int check_extroot(char *path)$/;"	f	file:
+check_filesystem	block.c	/^static void check_filesystem(struct blkid_struct_probe *pr)$/;"	f	file:
+check_for_modules	libblkid-tiny/ext.c	/^static int check_for_modules(const char *fs_name)$/;"	f	file:
+check_fs	block.c	/^static int anon_mount, anon_swap, auto_mount, auto_swap, check_fs;$/;"	v	file:
+checked_date	libblkid-tiny/hfs.c	/^	uint32_t		checked_date;$/;"	m	struct:hfsplus_vol_header	file:
+chr	libfstools/mtd.c	/^	char	*chr;$/;"	m	struct:mtd_priv	file:
+clp_size	libblkid-tiny/hfs.c	/^        uint32_t        clp_size;$/;"	m	struct:hfs_mdb	file:
+clrbit	libblkid-tiny/bitops.h	17;"	d
+clump_size	libblkid-tiny/hfs.c	/^	uint32_t		clump_size;$/;"	m	struct:hfsplus_fork	file:
+cluster_high	libblkid-tiny/vfat.c	/^	uint16_t	cluster_high;$/;"	m	struct:vfat_dir_entry	file:
+cluster_low	libblkid-tiny/vfat.c	/^	uint16_t	cluster_low;$/;"	m	struct:vfat_dir_entry	file:
+compat	libubi/ubi-media.h	/^	__u8    compat;$/;"	m	struct:ubi_vid_hdr
+compression	libblkid-tiny/squashfs.c	/^	uint16_t compression;$/;"	m	struct:squashfs_super_block	file:
+config_attr_list	block.c	/^static const struct uci_blob_param_list config_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list	file:
+config_find	libfstools/snapshot.c	/^config_find(struct volume *v, struct file_header *conf, struct file_header *sentinel)$/;"	f
+config_load	block.c	/^static int config_load(char *cfg)$/;"	f	file:
+config_policy	block.c	/^static const struct blobmsg_policy config_policy[__CFG_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+config_read	snapshot.c	/^config_read(int argc, char **argv)$/;"	f	file:
+config_write	snapshot.c	/^config_write(int argc, char **argv)$/;"	f	file:
+container_of	libblkid-tiny/c.h	113;"	d
+copy_flag	libubi/ubi-media.h	/^	__u8    copy_flag;$/;"	m	struct:ubi_vid_hdr
+corrupted	libubi/libubi.h	/^	int corrupted;$/;"	m	struct:ubi_vol_info
+count	libubi/ubi-user.h	/^	int32_t count;$/;"	m	struct:ubi_rnvol_req
+cpu_to_be16	libblkid-tiny/bitops.h	54;"	d
+cpu_to_be16	libblkid-tiny/bitops.h	70;"	d
+cpu_to_be32	libblkid-tiny/bitops.h	55;"	d
+cpu_to_be32	libblkid-tiny/bitops.h	71;"	d
+cpu_to_be64	libblkid-tiny/bitops.h	56;"	d
+cpu_to_be64	libblkid-tiny/bitops.h	72;"	d
+cpu_to_le16	libblkid-tiny/bitops.h	51;"	d
+cpu_to_le16	libblkid-tiny/bitops.h	67;"	d
+cpu_to_le32	libblkid-tiny/bitops.h	52;"	d
+cpu_to_le32	libblkid-tiny/bitops.h	68;"	d
+cpu_to_le64	libblkid-tiny/bitops.h	53;"	d
+cpu_to_le64	libblkid-tiny/bitops.h	69;"	d
+cr_date	libblkid-tiny/hfs.c	/^        uint32_t        cr_date;$/;"	m	struct:hfs_mdb	file:
+crc	libblkid-tiny/ubifs.c	/^	uint32_t crc;$/;"	m	struct:ubifs_ch	file:
+crc	libubi/ubi-media.h	/^	__be32  crc;$/;"	m	struct:ubi_vtbl_record
+create_date	libblkid-tiny/hfs.c	/^	uint32_t		create_date;$/;"	m	struct:hfsplus_vol_header	file:
+ct_clump_size	libblkid-tiny/hfs.c	/^        uint32_t        ct_clump_size;$/;"	m	struct:hfs_mdb	file:
+ctrl_dev	libubi/libubi_int.h	/^	char *ctrl_dev;$/;"	m	struct:libubi
+ctrl_major	libubi/libubi.h	/^	int ctrl_major;$/;"	m	struct:ubi_info
+ctrl_minor	libubi/libubi.h	/^	int ctrl_minor;$/;"	m	struct:ubi_info
+cylinders	libblkid-tiny/blkdev.h	/^	unsigned short cylinders;	\/* truncated *\/$/;"	m	struct:hd_geometry
+data	libblkid-tiny/blkidP.h	/^	unsigned char		*data;$/;"	m	struct:blkid_bufinfo
+data	libblkid-tiny/blkidP.h	/^	unsigned char	data[BLKID_PROBVAL_BUFSIZ]; \/* value data *\/$/;"	m	struct:blkid_prval
+data	libblkid-tiny/blkidP.h	/^	void		*data;		\/* private chain data or NULL *\/$/;"	m	struct:blkid_chain
+data_bytes	libubi/libubi.h	/^	long long data_bytes;$/;"	m	struct:ubi_vol_info
+data_clump_sz	libblkid-tiny/hfs.c	/^	uint32_t		data_clump_sz;$/;"	m	struct:hfsplus_vol_header	file:
+data_crc	libubi/ubi-media.h	/^	__be32  data_crc;$/;"	m	struct:ubi_vid_hdr
+data_offset	libubi/ubi-media.h	/^	__be32  data_offset;$/;"	m	struct:ubi_ec_hdr
+data_pad	libubi/ubi-media.h	/^	__be32  data_pad;$/;"	m	struct:ubi_vid_hdr
+data_pad	libubi/ubi-media.h	/^	__be32  data_pad;$/;"	m	struct:ubi_vtbl_record
+data_size	libubi/ubi-media.h	/^	__be32  data_size;$/;"	m	struct:ubi_vid_hdr
+date_acc	libblkid-tiny/vfat.c	/^	uint16_t	date_acc;$/;"	m	struct:vfat_dir_entry	file:
+date_creat	libblkid-tiny/vfat.c	/^	uint16_t	date_creat;$/;"	m	struct:vfat_dir_entry	file:
+date_write	libblkid-tiny/vfat.c	/^	uint16_t	date_write;$/;"	m	struct:vfat_dir_entry	file:
+default_compr	libblkid-tiny/ubifs.c	/^	uint16_t default_compr;$/;"	m	struct:ubifs_sb_node	file:
+delay_root	block.c	/^static unsigned int delay_root;$/;"	v	file:
+depth	libblkid-tiny/hfs.c	/^	uint16_t		depth;$/;"	m	struct:hfsplus_bheader_record	file:
+dev	libblkid-tiny/libblkid-tiny.h	/^	char	dev[32];$/;"	m	struct:blkid_struct_probe
+dev_avail_ebs	libubi/libubi_int.h	/^	char *dev_avail_ebs;$/;"	m	struct:libubi
+dev_bad_count	libubi/libubi_int.h	/^	char *dev_bad_count;$/;"	m	struct:libubi
+dev_bad_rsvd	libubi/libubi_int.h	/^	char *dev_bad_rsvd;$/;"	m	struct:libubi
+dev_count	libubi/libubi.h	/^	int dev_count;$/;"	m	struct:ubi_info
+dev_dev	libubi/libubi_int.h	/^	char *dev_dev;$/;"	m	struct:libubi
+dev_eb_size	libubi/libubi_int.h	/^	char *dev_eb_size;$/;"	m	struct:libubi
+dev_get_major	libubi/libubi.c	/^static int dev_get_major(struct libubi *lib, int dev_num, int *major, int *minor)$/;"	f	file:
+dev_max_ec	libubi/libubi_int.h	/^	char *dev_max_ec;$/;"	m	struct:libubi
+dev_max_vols	libubi/libubi_int.h	/^	char *dev_max_vols;$/;"	m	struct:libubi
+dev_min_io_size	libubi/libubi_int.h	/^	char *dev_min_io_size;$/;"	m	struct:libubi
+dev_mtd_num	libubi/libubi_int.h	/^	char *dev_mtd_num;$/;"	m	struct:libubi
+dev_node2num	libubi/libubi.c	/^static int dev_node2num(struct libubi *lib, const char *node, int *dev_num)$/;"	f	file:
+dev_num	libubi/libubi.h	/^	int dev_num;$/;"	m	struct:ubi_attach_request
+dev_num	libubi/libubi.h	/^	int dev_num;$/;"	m	struct:ubi_dev_info
+dev_num	libubi/libubi.h	/^	int dev_num;$/;"	m	struct:ubi_vol_info
+dev_read_int	libubi/libubi.c	/^static int dev_read_int(const char *patt, int dev_num, int *value)$/;"	f	file:
+dev_read_ll	libubi/libubi.c	/^static int dev_read_ll(const char *patt, int dev_num, long long *value)$/;"	f	file:
+dev_total_ebs	libubi/libubi_int.h	/^	char *dev_total_ebs;$/;"	m	struct:libubi
+device	block.c	/^	char *device;$/;"	m	struct:mount	file:
+dflt_enabled	libblkid-tiny/blkidP.h	/^	const int	dflt_enabled;	\/* default enabled boolean *\/$/;"	m	struct:blkid_chaindrv
+dflt_flags	libblkid-tiny/blkidP.h	/^	const int	dflt_flags;	\/* default chain flags *\/$/;"	m	struct:blkid_chaindrv
+dir_count	libblkid-tiny/hfs.c	/^        uint32_t        dir_count;$/;"	m	struct:hfs_mdb	file:
+dir_list	libblkid-tiny/blkidP.h	/^struct dir_list {$/;"	s
+directory_table_start	libblkid-tiny/squashfs.c	/^	uint64_t directory_table_start;$/;"	m	struct:squashfs_super_block	file:
+dirfd	libblkid-tiny/c.h	/^static inline int dirfd(DIR *d)$/;"	f
+disabled_fsck	block.c	/^	int disabled_fsck;$/;"	m	struct:mount	file:
+do_attach	libubi/libubi.c	/^static int do_attach(const char *node, const struct ubi_attach_req *r)$/;"	f	file:
+done	mount_root.c	/^done(int argc, char *argv[1])$/;"	f	file:
+driver	libblkid-tiny/blkidP.h	/^	const struct blkid_chaindrv *driver;	\/* chain driver *\/$/;"	m	struct:blkid_chain	typeref:struct:blkid_chain::blkid_chaindrv
+driver	libfstools/volume.h	/^struct driver {$/;"	s
+drv	libfstools/volume.h	/^	struct driver	*drv;$/;"	m	struct:volume	typeref:struct:volume::driver
+dtype	libubi/ubi-user.h	/^	int8_t  dtype; \/* obsolete, do not use! *\/$/;"	m	struct:ubi_leb_change_req
+dtype	libubi/ubi-user.h	/^	int8_t  dtype; \/* obsolete, do not use! *\/$/;"	m	struct:ubi_map_req
+ec	libubi/ubi-media.h	/^	__be64  ec; \/* Warning: the current limit is 31-bit anyway! *\/$/;"	m	struct:ubi_ec_hdr
+embed_blockcount	libblkid-tiny/hfs.c	/^        uint16_t        embed_blockcount;$/;"	m	struct:hfs_mdb	file:
+embed_sig	libblkid-tiny/hfs.c	/^        uint8_t         embed_sig[2];$/;"	m	struct:hfs_mdb	file:
+embed_startblock	libblkid-tiny/hfs.c	/^        uint16_t        embed_startblock;$/;"	m	struct:hfs_mdb	file:
+enabled	libblkid-tiny/blkidP.h	/^	int		enabled;	\/* boolean *\/$/;"	m	struct:blkid_chain
+encodings_bmp	libblkid-tiny/hfs.c	/^	uint64_t		encodings_bmp;$/;"	m	struct:hfsplus_vol_header	file:
+ents	libubi/ubi-user.h	/^	} ents[UBI_MAX_RNVOL];$/;"	m	struct:ubi_rnvol_req	typeref:struct:ubi_rnvol_req::__anon9
+erase	libfstools/volume.h	/^	volume_erase_t		erase;$/;"	m	struct:driver
+erase_all	libfstools/volume.h	/^	volume_erase_all_t	erase_all;$/;"	m	struct:driver
+err	libblkid-tiny/c.h	174;"	d
+err	libblkid-tiny/libblkid-tiny.h	/^	int	err;$/;"	m	struct:blkid_struct_probe
+errmsg	libblkid-tiny/c.h	/^errmsg(char doexit, int excode, char adderr, const char *fmt, ...)$/;"	f
+errmsg	libubi/libubi.h	43;"	d
+errx	libblkid-tiny/c.h	178;"	d
+eval	libblkid-tiny/blkidP.h	/^	int eval[__BLKID_EVAL_LAST];	\/* array with EVALUATION=<udev,cache> options *\/$/;"	m	struct:blkid_config
+ext2_idinfo	libblkid-tiny/ext.c	/^const struct blkid_idinfo ext2_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+ext2_super_block	libblkid-tiny/ext.c	/^struct ext2_super_block {$/;"	s	file:
+ext3_idinfo	libblkid-tiny/ext.c	/^const struct blkid_idinfo ext3_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+ext4_idinfo	libblkid-tiny/ext.c	/^const struct blkid_idinfo ext4_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+ext4dev_idinfo	libblkid-tiny/ext.c	/^const struct blkid_idinfo ext4dev_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+ext_file	libblkid-tiny/hfs.c	/^	struct hfsplus_fork ext_file;$/;"	m	struct:hfsplus_vol_header	typeref:struct:hfsplus_vol_header::hfsplus_fork	file:
+ext_get_info	libblkid-tiny/ext.c	/^static void ext_get_info(blkid_probe pr, int ver, struct ext2_super_block *es)$/;"	f	file:
+ext_get_super	libblkid-tiny/ext.c	/^static struct ext2_super_block *ext_get_super($/;"	f	file:
+extents	libblkid-tiny/hfs.c	/^	struct hfsplus_extent extents[HFSPLUS_EXTENT_COUNT];$/;"	m	struct:hfsplus_fork	typeref:struct:hfsplus_fork::hfsplus_extent	file:
+extroot	block.c	/^	int extroot;$/;"	m	struct:mount	file:
+extroot_prefix	libfstools/extroot.c	/^char const *extroot_prefix = NULL;$/;"	v
+fanout	libblkid-tiny/ubifs.c	/^	uint32_t fanout;$/;"	m	struct:ubifs_sb_node	file:
+fat32_fsinfo	libblkid-tiny/vfat.c	/^struct fat32_fsinfo {$/;"	s	file:
+fat_valid_superblock	libblkid-tiny/vfat.c	/^static int fat_valid_superblock(const struct blkid_idmag *mag,$/;"	f	file:
+fd	libblkid-tiny/libblkid-tiny.h	/^	int	fd;$/;"	m	struct:blkid_struct_probe
+fd	libfstools/mtd.c	/^	int	fd;$/;"	m	struct:mtd_priv	file:
+file_count	libblkid-tiny/hfs.c	/^	uint32_t		file_count;$/;"	m	struct:hfsplus_vol_header	file:
+file_count	libblkid-tiny/hfs.c	/^        uint32_t        file_count;$/;"	m	struct:hfs_mdb	file:
+file_header	libfstools/snapshot.h	/^struct file_header {$/;"	s
+find	libfstools/volume.h	/^	volume_find_t		find;$/;"	m	struct:driver
+find_block	block.c	/^static struct mount* find_block(const char *uuid, const char *label, const char *device,$/;"	f	file:
+find_block_info	block.c	/^static struct blkid_struct_probe* find_block_info(char *uuid, char *label, char *path)$/;"	f	file:
+find_block_mtd	block.c	/^static int find_block_mtd(char *name, char *part, int plen)$/;"	f	file:
+find_devs	libblkid-tiny/mkdev.c	/^static void find_devs(bool block)$/;"	f	file:
+find_filesystem	libfstools/find.c	/^find_filesystem(char *fs)$/;"	f
+find_mount	libfstools/find.c	/^find_mount(char *mp)$/;"	f
+find_mount_point	block.c	/^static char* find_mount_point(char *block)$/;"	f	file:
+find_mount_point	libfstools/find.c	/^find_mount_point(char *block, int mtd_only)$/;"	f
+find_overlay_mount	libfstools/find.c	/^find_overlay_mount(char *overlay)$/;"	f
+find_swap	block.c	/^static struct mount* find_swap(const char *uuid, const char *label, const char *device)$/;"	f	file:
+finder_info	libblkid-tiny/hfs.c	/^	struct hfs_finder_info finder_info;$/;"	m	struct:hfsplus_vol_header	typeref:struct:hfsplus_vol_header::hfs_finder_info	file:
+finder_info	libblkid-tiny/hfs.c	/^        struct hfs_finder_info finder_info;$/;"	m	struct:hfs_mdb	typeref:struct:hfs_mdb::hfs_finder_info	file:
+flag	block.c	/^	int32_t flag;$/;"	m	struct:mount_flag	file:
+flags	block.c	/^	uint32_t flags;$/;"	m	struct:mount	file:
+flags	libblkid-tiny/blkidP.h	/^	int		flags;		\/* BLKID_<chain>_* *\/$/;"	m	struct:blkid_chain
+flags	libblkid-tiny/libblkid-tiny.h	/^	int		flags;$/;"	m	struct:blkid_idinfo
+flags	libblkid-tiny/squashfs.c	/^	uint16_t flags;$/;"	m	struct:squashfs_super_block	file:
+flags	libblkid-tiny/ubifs.c	/^	uint32_t flags;$/;"	m	struct:ubifs_sb_node	file:
+flags	libubi/ubi-media.h	/^	__u8    flags;$/;"	m	struct:ubi_vtbl_record
+fltr	libblkid-tiny/blkidP.h	/^	unsigned long	*fltr;		\/* filter or NULL *\/$/;"	m	struct:blkid_chain
+fmt_version	libblkid-tiny/ubifs.c	/^	uint32_t fmt_version;$/;"	m	struct:ubifs_sb_node	file:
+folder_count	libblkid-tiny/hfs.c	/^	uint32_t		folder_count;$/;"	m	struct:hfsplus_vol_header	file:
+fopivot	libfstools/mount.c	/^fopivot(char *rw_root, char *ro_root)$/;"	f
+foreachdir	libfstools/jffs2.c	/^foreachdir(const char *dir, int (*cb)(const char*))$/;"	f
+foreachdir	libfstools/overlay.c	/^foreachdir(const char *dir, int (*cb)(const char*))$/;"	f
+fragment_table_start	libblkid-tiny/squashfs.c	/^	uint64_t fragment_table_start;$/;"	m	struct:squashfs_super_block	file:
+fragments	libblkid-tiny/squashfs.c	/^	uint32_t fragments;$/;"	m	struct:squashfs_super_block	file:
+free_bks	libblkid-tiny/hfs.c	/^        uint16_t        free_bks;$/;"	m	struct:hfs_mdb	file:
+free_blocks	libblkid-tiny/hfs.c	/^	uint32_t		free_blocks;$/;"	m	struct:hfsplus_vol_header	file:
+free_clusters	libblkid-tiny/vfat.c	/^	uint32_t free_clusters;$/;"	m	struct:fat32_fsinfo	file:
+free_data	libblkid-tiny/blkidP.h	/^	void		(*free_data)(blkid_probe, void *);$/;"	m	struct:blkid_chaindrv
+fs_proc_check	libblkid-tiny/ext.c	/^static int fs_proc_check(const char *fs_name)$/;"	f	file:
+get_linux_version	libblkid-tiny/libblkid-tiny.c	/^int get_linux_version (void)$/;"	f
+get_multiplier	libubi/ubiutils-common.c	/^static int get_multiplier(const char *str)$/;"	f	file:
+global_add	block.c	/^static int global_add(struct uci_section *s)$/;"	f	file:
+group_type	libblkid-tiny/ubifs.c	/^	uint8_t group_type;$/;"	m	struct:ubifs_ch	file:
+handle_rmdir	jffs2reset.c	/^handle_rmdir(const char *dir)$/;"	f	file:
+handle_swapfiles	block.c	/^static void handle_swapfiles(bool on)$/;"	f	file:
+handle_whiteout	libfstools/jffs2.c	/^handle_whiteout(const char *dir)$/;"	f
+handle_whiteout	libfstools/overlay.c	/^handle_whiteout(const char *dir)$/;"	f
+has_fltr	libblkid-tiny/blkidP.h	/^	int		has_fltr;	\/* boolean *\/$/;"	m	struct:blkid_chaindrv
+hd_geometry	libblkid-tiny/blkdev.h	/^struct hd_geometry {$/;"	s
+hdr_crc	libubi/ubi-media.h	/^	__be32  hdr_crc;$/;"	m	struct:ubi_ec_hdr
+hdr_crc	libubi/ubi-media.h	/^	__be32  hdr_crc;$/;"	m	struct:ubi_vid_hdr
+hdr_to_be32	libfstools/snapshot.h	/^hdr_to_be32(struct file_header *hdr)$/;"	f
+heads	libblkid-tiny/blkdev.h	/^	unsigned char heads;$/;"	m	struct:hd_geometry
+height	libblkid-tiny/hfs.c	/^	uint8_t		height;$/;"	m	struct:hfsplus_bnode_descriptor	file:
+hfs_finder_info	libblkid-tiny/hfs.c	/^struct hfs_finder_info {$/;"	s	file:
+hfs_idinfo	libblkid-tiny/hfs.c	/^const struct blkid_idinfo hfs_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+hfs_mdb	libblkid-tiny/hfs.c	/^struct hfs_mdb {$/;"	s	file:
+hfs_set_uuid	libblkid-tiny/hfs.c	/^static int hfs_set_uuid(blkid_probe pr, unsigned char const *hfs_info, size_t len)$/;"	f	file:
+hfsplus_bheader_record	libblkid-tiny/hfs.c	/^struct hfsplus_bheader_record {$/;"	s	file:
+hfsplus_bnode_descriptor	libblkid-tiny/hfs.c	/^struct hfsplus_bnode_descriptor {$/;"	s	file:
+hfsplus_catalog_key	libblkid-tiny/hfs.c	/^struct hfsplus_catalog_key {$/;"	s	file:
+hfsplus_extent	libblkid-tiny/hfs.c	/^struct hfsplus_extent {$/;"	s	file:
+hfsplus_fork	libblkid-tiny/hfs.c	/^struct hfsplus_fork {$/;"	s	file:
+hfsplus_idinfo	libblkid-tiny/hfs.c	/^const struct blkid_idinfo hfsplus_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+hfsplus_vol_header	libblkid-tiny/hfs.c	/^struct hfsplus_vol_header {$/;"	s	file:
+highest_dev_num	libubi/libubi.h	/^	int highest_dev_num;$/;"	m	struct:ubi_info
+highest_vol_id	libubi/libubi.h	/^	int highest_vol_id;$/;"	m	struct:ubi_dev_info
+id	libblkid-tiny/blkidP.h	/^	const size_t	id;		\/* BLKID_CHAIN_* *\/$/;"	m	struct:blkid_chaindrv
+id	libblkid-tiny/hfs.c	/^        uint8_t         id[8];$/;"	m	struct:hfs_finder_info	file:
+id	libblkid-tiny/libblkid-tiny.h	/^	const struct blkid_idinfo	*id;$/;"	m	struct:blkid_struct_probe	typeref:struct:blkid_struct_probe::blkid_idinfo
+id_table_start	libblkid-tiny/squashfs.c	/^	uint64_t id_table_start;$/;"	m	struct:squashfs_super_block	file:
+identify	libfstools/volume.h	/^	volume_identify_t	identify;$/;"	m	struct:driver
+idinfos	libblkid-tiny/blkidP.h	/^	const struct blkid_idinfo **idinfos; \/* description of probing functions *\/$/;"	m	struct:blkid_chaindrv	typeref:struct:blkid_chaindrv::blkid_idinfo
+idinfos	libblkid-tiny/libblkid-tiny.c	/^static const struct blkid_idinfo *idinfos[] =$/;"	v	typeref:struct:blkid_idinfo	file:
+idx	libblkid-tiny/blkidP.h	/^	int		idx;		\/* index of the current prober (or -1) *\/$/;"	m	struct:blkid_chain
+idx	libfstools/mtd.c	/^	int	idx;$/;"	m	struct:mtd_priv	file:
+ignore_result	libblkid-tiny/c.h	39;"	d
+ignore_result	libblkid-tiny/c.h	46;"	d
+image_seq	libubi/ubi-media.h	/^	__be32  image_seq;$/;"	m	struct:ubi_ec_hdr
+init	libfstools/volume.h	/^	volume_init_t		init;$/;"	m	struct:driver
+inode_table_start	libblkid-tiny/squashfs.c	/^	uint64_t inode_table_start;$/;"	m	struct:squashfs_super_block	file:
+inodes	libblkid-tiny/squashfs.c	/^	uint32_t inodes;$/;"	m	struct:squashfs_super_block	file:
+is_config	libfstools/snapshot.h	/^is_config(struct file_header *h)$/;"	f
+is_power_of_2	libblkid-tiny/c.h	/^static inline __attribute__((const)) int is_power_of_2(unsigned long num)$/;"	f
+isclr	libblkid-tiny/bitops.h	19;"	d
+isset	libblkid-tiny/bitops.h	18;"	d
+jbd_idinfo	libblkid-tiny/ext.c	/^const struct blkid_idinfo jbd_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+jffs2_idinfo	libblkid-tiny/jffs2.c	/^const struct blkid_idinfo jffs2_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+jffs2_mark	jffs2reset.c	/^jffs2_mark(int argc, char **argv)$/;"	f	file:
+jffs2_mount	libfstools/jffs2.c	/^jffs2_mount(void)$/;"	f	file:
+jffs2_reset	jffs2reset.c	/^jffs2_reset(int argc, char **argv)$/;"	f	file:
+jffs2_switch	libfstools/jffs2.c	/^jffs2_switch(int argc, char **argv)$/;"	f
+jffs2_switch	libfstools/overlay.c	/^jffs2_switch(int argc, char **argv)$/;"	f
+jhead_cnt	libblkid-tiny/ubifs.c	/^	uint32_t jhead_cnt;$/;"	m	struct:ubifs_sb_node	file:
+kboff	libblkid-tiny/libblkid-tiny.h	/^	long		kboff;$/;"	m	struct:blkid_idmag
+key_fmt	libblkid-tiny/ubifs.c	/^	uint8_t key_fmt;$/;"	m	struct:ubifs_sb_node	file:
+key_hash	libblkid-tiny/ubifs.c	/^	uint8_t key_hash;$/;"	m	struct:ubifs_sb_node	file:
+key_len	libblkid-tiny/hfs.c	/^	uint16_t	key_len;$/;"	m	struct:hfsplus_catalog_key	file:
+label	block.c	/^	char *label;$/;"	m	struct:mount	file:
+label	libblkid-tiny/hfs.c	/^        uint8_t         label[27];$/;"	m	struct:hfs_mdb	file:
+label	libblkid-tiny/libblkid-tiny.h	/^	char	label[64];$/;"	m	struct:blkid_struct_probe
+label_len	libblkid-tiny/hfs.c	/^        uint8_t         label_len;$/;"	m	struct:hfs_mdb	file:
+last_mount_vers	libblkid-tiny/hfs.c	/^	uint32_t		last_mount_vers;$/;"	m	struct:hfsplus_vol_header	file:
+lastpage	libblkid-tiny/swap.c	/^	uint32_t	lastpage;$/;"	m	struct:swap_header_v1_2	file:
+le16_to_cpu	libblkid-tiny/bitops.h	58;"	d
+le16_to_cpu	libblkid-tiny/bitops.h	74;"	d
+le32_to_cpu	libblkid-tiny/bitops.h	59;"	d
+le32_to_cpu	libblkid-tiny/bitops.h	75;"	d
+le64_to_cpu	libblkid-tiny/bitops.h	60;"	d
+le64_to_cpu	libblkid-tiny/bitops.h	76;"	d
+leaf_count	libblkid-tiny/hfs.c	/^	uint32_t		leaf_count;$/;"	m	struct:hfsplus_bheader_record	file:
+leaf_head	libblkid-tiny/hfs.c	/^	uint32_t		leaf_head;$/;"	m	struct:hfsplus_bheader_record	file:
+leaf_tail	libblkid-tiny/hfs.c	/^	uint32_t		leaf_tail;$/;"	m	struct:hfsplus_bheader_record	file:
+leb_cnt	libblkid-tiny/ubifs.c	/^	uint32_t leb_cnt;$/;"	m	struct:ubifs_sb_node	file:
+leb_size	libblkid-tiny/ubifs.c	/^	uint32_t leb_size;$/;"	m	struct:ubifs_sb_node	file:
+leb_size	libubi/libubi.h	/^	int leb_size;$/;"	m	struct:ubi_dev_info
+leb_size	libubi/libubi.h	/^	int leb_size;$/;"	m	struct:ubi_vol_info
+leb_ver	libubi/ubi-media.h	/^	__be32  leb_ver;$/;"	m	struct:ubi_vid_hdr
+len	libblkid-tiny/blkidP.h	/^	blkid_loff_t		len;$/;"	m	struct:blkid_bufinfo
+len	libblkid-tiny/blkidP.h	/^	size_t		len;			\/* length of value data *\/$/;"	m	struct:blkid_prval
+len	libblkid-tiny/libblkid-tiny.h	/^	unsigned int	len;$/;"	m	struct:blkid_idmag
+len	libblkid-tiny/ubifs.c	/^	uint32_t len;$/;"	m	struct:ubifs_ch	file:
+length	libfstools/snapshot.h	/^	uint32_t length;$/;"	m	struct:file_header
+libubi	libubi/libubi_int.h	/^struct libubi$/;"	s
+libubi_close	libubi/libubi.c	/^void libubi_close(libubi_t desc)$/;"	f
+libubi_open	libubi/libubi.c	/^libubi_t libubi_open(void)$/;"	f
+libubi_t	libubi/libubi.h	/^typedef void * libubi_t;$/;"	t
+list	libblkid-tiny/libblkid-tiny.h	/^	struct list_head		list;$/;"	m	struct:blkid_struct_probe	typeref:struct:blkid_struct_probe::list_head
+list	libfstools/volume.h	/^	struct list_head	list;$/;"	m	struct:driver	typeref:struct:driver::list_head
+lnum	libubi/ubi-media.h	/^	__be32  lnum;$/;"	m	struct:ubi_vid_hdr
+lnum	libubi/ubi-user.h	/^	int32_t lnum;$/;"	m	struct:ubi_leb_change_req
+lnum	libubi/ubi-user.h	/^	int32_t lnum;$/;"	m	struct:ubi_map_req
+loff_t	libblkid-tiny/c.h	/^typedef int64_t loff_t;$/;"	t
+log_lebs	libblkid-tiny/ubifs.c	/^	uint32_t log_lebs;$/;"	m	struct:ubifs_sb_node	file:
+lookup_table_start	libblkid-tiny/squashfs.c	/^	uint64_t lookup_table_start;$/;"	m	struct:squashfs_super_block	file:
+lowest_dev_num	libubi/libubi.h	/^	int lowest_dev_num;$/;"	m	struct:ubi_info
+lowest_vol_id	libubi/libubi.h	/^	int lowest_vol_id;$/;"	m	struct:ubi_dev_info
+lpt_lebs	libblkid-tiny/ubifs.c	/^	uint32_t lpt_lebs;$/;"	m	struct:ubifs_sb_node	file:
+ls_Mod	libblkid-tiny/hfs.c	/^        uint32_t        ls_Mod;$/;"	m	struct:hfs_mdb	file:
+lsave_cnt	libblkid-tiny/ubifs.c	/^	uint32_t lsave_cnt;$/;"	m	struct:ubifs_sb_node	file:
+magic	libblkid-tiny/libblkid-tiny.h	/^	const char	*magic;$/;"	m	struct:blkid_idmag
+magic	libblkid-tiny/ubifs.c	/^	uint32_t magic;$/;"	m	struct:ubifs_ch	file:
+magic	libfstools/snapshot.h	/^	uint32_t magic;$/;"	m	struct:file_header
+magic	libubi/ubi-media.h	/^	__be32  magic;$/;"	m	struct:ubi_ec_hdr
+magic	libubi/ubi-media.h	/^	__be32  magic;$/;"	m	struct:ubi_vid_hdr
+magics	libblkid-tiny/libblkid-tiny.h	/^	struct blkid_idmag	magics[];$/;"	m	struct:blkid_idinfo	typeref:struct:blkid_idinfo::blkid_idmag
+main	block.c	/^int main(int argc, char **argv)$/;"	f
+main	jffs2reset.c	/^int main(int argc, char **argv)$/;"	f
+main	mount_root.c	/^int main(int argc, char **argv)$/;"	f
+main	snapshot.c	/^int main(int argc, char **argv)$/;"	f
+main	ubi.c	/^int main(int argc, char **argv)$/;"	f
+main_detach	ubi.c	/^static int main_detach(char *type)$/;"	f	file:
+main_detect	block.c	/^static int main_detect(int argc, char **argv)$/;"	f	file:
+main_extroot	block.c	/^static int main_extroot(int argc, char **argv)$/;"	f	file:
+main_hotplug	block.c	/^static int main_hotplug(int argc, char **argv)$/;"	f	file:
+main_image	ubi.c	/^static int main_image(char *partition, char *image, char *overlay)$/;"	f	file:
+main_info	block.c	/^static int main_info(int argc, char **argv)$/;"	f	file:
+main_info	ubi.c	/^static int main_info(void)$/;"	f	file:
+main_mount	block.c	/^static int main_mount(int argc, char **argv)$/;"	f	file:
+main_swapoff	block.c	/^static int main_swapoff(int argc, char **argv)$/;"	f	file:
+main_swapon	block.c	/^static int main_swapon(int argc, char **argv)$/;"	f	file:
+main_umount	block.c	/^static int main_umount(int argc, char **argv)$/;"	f	file:
+major	libubi/libubi.h	/^	int major;$/;"	m	struct:ubi_dev_info
+major	libubi/libubi.h	/^	int major;$/;"	m	struct:ubi_vol_info
+make_dev	libblkid-tiny/mkdev.c	/^static void make_dev(const char *path, bool block, int major, int minor)$/;"	f	file:
+max	libblkid-tiny/c.h	101;"	d
+max_beb_per1024	libubi/libubi.h	/^	int max_beb_per1024;$/;"	m	struct:ubi_attach_request
+max_beb_per1024	libubi/ubi-user.h	/^	int16_t max_beb_per1024;$/;"	m	struct:ubi_attach_req
+max_bud_bytes	libblkid-tiny/ubifs.c	/^	uint64_t max_bud_bytes;$/;"	m	struct:ubifs_sb_node	file:
+max_ec	libubi/libubi.h	/^	long long max_ec;$/;"	m	struct:ubi_dev_info
+max_leb_cnt	libblkid-tiny/ubifs.c	/^	uint32_t max_leb_cnt;$/;"	m	struct:ubifs_sb_node	file:
+max_vol_count	libubi/libubi.h	/^	int max_vol_count;$/;"	m	struct:ubi_dev_info
+md5	libfstools/snapshot.h	/^	uint32_t md5[4];$/;"	m	struct:file_header
+min	libblkid-tiny/c.h	93;"	d
+min_io_size	libblkid-tiny/ubifs.c	/^	uint32_t min_io_size;$/;"	m	struct:ubifs_sb_node	file:
+min_io_size	libubi/libubi.h	/^	int min_io_size;$/;"	m	struct:ubi_dev_info
+minor	libubi/libubi.h	/^	int minor;$/;"	m	struct:ubi_dev_info
+minor	libubi/libubi.h	/^	int minor;$/;"	m	struct:ubi_vol_info
+minsz	libblkid-tiny/libblkid-tiny.h	/^	int		minsz;$/;"	m	struct:blkid_idinfo
+mkblkdev	libblkid-tiny/mkdev.c	/^int mkblkdev(void)$/;"	f
+mkdir_p	block.c	/^static void mkdir_p(char *dir)$/;"	f	file:
+mkfs_time	libblkid-tiny/squashfs.c	/^	uint32_t mkfs_time;$/;"	m	struct:squashfs_super_block	file:
+mkpath	libubi/libubi.c	/^static char *mkpath(const char *path, const char *name)$/;"	f	file:
+mode	libblkid-tiny/mkdev.c	/^static unsigned int mode = 0600;$/;"	v	file:
+modify_date	libblkid-tiny/hfs.c	/^	uint32_t		modify_date;$/;"	m	struct:hfsplus_vol_header	file:
+mount	block.c	/^struct mount {$/;"	s	file:
+mount_add	block.c	/^static int mount_add(struct uci_section *s)$/;"	f	file:
+mount_attr_list	block.c	/^static const struct uci_blob_param_list mount_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list	file:
+mount_device	block.c	/^static int mount_device(struct blkid_struct_probe *pr, int hotplug)$/;"	f	file:
+mount_extroot	block.c	/^static int mount_extroot(char *cfg)$/;"	f	file:
+mount_extroot	libfstools/extroot.c	/^int mount_extroot(void)$/;"	f
+mount_flag	block.c	/^struct mount_flag {$/;"	s	file:
+mount_flags	block.c	/^static const struct mount_flag mount_flags[] = {$/;"	v	typeref:struct:mount_flag	file:
+mount_move	libfstools/mount.c	/^mount_move(char *oldroot, char *newroot, char *dir)$/;"	f
+mount_overlay	libfstools/jffs2.c	/^int mount_overlay(void)$/;"	f
+mount_overlay	libfstools/overlay.c	/^int mount_overlay(void)$/;"	f
+mount_overlay_fs	libfstools/jffs2.c	/^static int mount_overlay_fs(void)$/;"	f	file:
+mount_policy	block.c	/^static const struct blobmsg_policy mount_policy[__MOUNT_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+mount_snapshot	libfstools/snapshot.c	/^mount_snapshot(void)$/;"	f
+mounts	block.c	/^static struct vlist_tree mounts;$/;"	v	typeref:struct:vlist_tree	file:
+mounts_update	block.c	/^static void mounts_update(struct vlist_tree *tree, struct vlist_node *node_new,$/;"	f	file:
+ms	libblkid-tiny/vfat.c	/^static struct msdos_super_block ms;$/;"	v	typeref:struct:msdos_super_block	file:
+ms_cluster_size	libblkid-tiny/vfat.c	/^\/* 0d*\/	uint8_t		ms_cluster_size;$/;"	m	struct:msdos_super_block	file:
+ms_dir_entries	libblkid-tiny/vfat.c	/^\/* 11*\/	unsigned char	ms_dir_entries[2];$/;"	m	struct:msdos_super_block	file:
+ms_dummy2	libblkid-tiny/vfat.c	/^\/* 3e*\/	unsigned char	ms_dummy2[0x1fe - 0x3e];$/;"	m	struct:msdos_super_block	file:
+ms_fat_length	libblkid-tiny/vfat.c	/^\/* 16*\/	uint16_t	ms_fat_length; \/* Sectors per FAT *\/$/;"	m	struct:msdos_super_block	file:
+ms_fats	libblkid-tiny/vfat.c	/^\/* 10*\/	uint8_t		ms_fats;$/;"	m	struct:msdos_super_block	file:
+ms_heads	libblkid-tiny/vfat.c	/^\/* 1a*\/	uint16_t	ms_heads;$/;"	m	struct:msdos_super_block	file:
+ms_hidden	libblkid-tiny/vfat.c	/^\/* 1c*\/	uint32_t	ms_hidden;$/;"	m	struct:msdos_super_block	file:
+ms_ignored	libblkid-tiny/vfat.c	/^\/* 00*\/	unsigned char	ms_ignored[3];$/;"	m	struct:msdos_super_block	file:
+ms_label	libblkid-tiny/vfat.c	/^\/* 2b*\/	unsigned char	ms_label[11];$/;"	m	struct:msdos_super_block	file:
+ms_magic	libblkid-tiny/vfat.c	/^\/* 36*\/	unsigned char   ms_magic[8];$/;"	m	struct:msdos_super_block	file:
+ms_media	libblkid-tiny/vfat.c	/^\/* 15*\/	unsigned char	ms_media;$/;"	m	struct:msdos_super_block	file:
+ms_pmagic	libblkid-tiny/vfat.c	/^\/*1fe*\/	unsigned char	ms_pmagic[2];$/;"	m	struct:msdos_super_block	file:
+ms_reserved	libblkid-tiny/vfat.c	/^\/* 0e*\/	uint16_t	ms_reserved;$/;"	m	struct:msdos_super_block	file:
+ms_secs_track	libblkid-tiny/vfat.c	/^\/* 18*\/	uint16_t	ms_secs_track;$/;"	m	struct:msdos_super_block	file:
+ms_sector_size	libblkid-tiny/vfat.c	/^\/* 0b*\/	unsigned char	ms_sector_size[2];$/;"	m	struct:msdos_super_block	file:
+ms_sectors	libblkid-tiny/vfat.c	/^\/* 13*\/	unsigned char	ms_sectors[2]; \/* =0 iff V3 or later *\/$/;"	m	struct:msdos_super_block	file:
+ms_serno	libblkid-tiny/vfat.c	/^\/* 27*\/	unsigned char	ms_serno[4];$/;"	m	struct:msdos_super_block	file:
+ms_sysid	libblkid-tiny/vfat.c	/^\/* 03*\/	unsigned char	ms_sysid[8];$/;"	m	struct:msdos_super_block	file:
+ms_total_sect	libblkid-tiny/vfat.c	/^\/* 20*\/	uint32_t	ms_total_sect; \/* iff ms_sectors == 0 *\/$/;"	m	struct:msdos_super_block	file:
+ms_unknown	libblkid-tiny/vfat.c	/^\/* 24*\/	unsigned char	ms_unknown[3]; \/* Phys drive no., resvd, V4 sig (0x29) *\/$/;"	m	struct:msdos_super_block	file:
+msdos_super_block	libblkid-tiny/vfat.c	/^struct msdos_super_block {$/;"	s	file:
+mtd_dev_node	libubi/libubi.h	/^	const char *mtd_dev_node;$/;"	m	struct:ubi_attach_request
+mtd_driver	libfstools/mtd.c	/^DRIVER(mtd_driver);$/;"	v
+mtd_driver	libfstools/mtd.c	/^static struct driver mtd_driver = {$/;"	v	typeref:struct:driver	file:
+mtd_driver	libfstools/mtd.c	/^static struct driver mtd_driver;$/;"	v	typeref:struct:driver	file:
+mtd_find	ubi.c	/^static int mtd_find(char *name, char *ret)$/;"	f	file:
+mtd_find_index	libfstools/mtd.c	/^static char* mtd_find_index(char *name)$/;"	f	file:
+mtd_find_index	ubi.c	/^static int mtd_find_index(char *name)$/;"	f	file:
+mtd_node_to_num	libubi/libubi.c	/^static int mtd_node_to_num(const char *mtd_dev_node)$/;"	f	file:
+mtd_num	libubi/libubi.h	/^	int mtd_num;$/;"	m	struct:ubi_attach_request
+mtd_num	libubi/libubi.h	/^	int mtd_num;$/;"	m	struct:ubi_dev_info
+mtd_num	libubi/ubi-user.h	/^	int32_t mtd_num;$/;"	m	struct:ubi_attach_req
+mtd_num2ubi_dev	libubi/libubi.c	/^int mtd_num2ubi_dev(libubi_t desc, int mtd_num, int *dev_num)$/;"	f
+mtd_open	libfstools/mtd.c	/^static int mtd_open(const char *mtd, int block)$/;"	f	file:
+mtd_priv	libfstools/mtd.c	/^struct mtd_priv {$/;"	s	file:
+mtd_volume_close	libfstools/mtd.c	/^static void mtd_volume_close(struct volume *v)$/;"	f	file:
+mtd_volume_erase	libfstools/mtd.c	/^static int mtd_volume_erase(struct volume *v, int offset, int len)$/;"	f	file:
+mtd_volume_erase_all	libfstools/mtd.c	/^static int mtd_volume_erase_all(struct volume *v)$/;"	f	file:
+mtd_volume_find	libfstools/mtd.c	/^static int mtd_volume_find(struct volume *v, char *name)$/;"	f	file:
+mtd_volume_identify	libfstools/mtd.c	/^static int mtd_volume_identify(struct volume *v)$/;"	f	file:
+mtd_volume_init	libfstools/mtd.c	/^static int mtd_volume_init(struct volume *v)$/;"	f	file:
+mtd_volume_load	libfstools/mtd.c	/^static int mtd_volume_load(struct volume *v)$/;"	f	file:
+mtd_volume_read	libfstools/mtd.c	/^static int mtd_volume_read(struct volume *v, void *buf, int offset, int length)$/;"	f	file:
+mtd_volume_write	libfstools/mtd.c	/^static int mtd_volume_write(struct volume *v, void *buf, int offset, int length)$/;"	f	file:
+name	block.c	/^	const char *name;$/;"	m	struct:mount_flag	file:
+name	libblkid-tiny/blkidP.h	/^	char	*name;$/;"	m	struct:dir_list
+name	libblkid-tiny/blkidP.h	/^	const char	*name;			\/* value name *\/$/;"	m	struct:blkid_prval
+name	libblkid-tiny/blkidP.h	/^	const char	*name;		\/* name of chain (for debug purpose) *\/$/;"	m	struct:blkid_chaindrv
+name	libblkid-tiny/libblkid-tiny.h	/^	char	name[64];$/;"	m	struct:blkid_struct_probe
+name	libblkid-tiny/libblkid-tiny.h	/^	const char	*name;$/;"	m	struct:blkid_idinfo
+name	libblkid-tiny/vfat.c	/^	uint8_t		name[11];$/;"	m	struct:vfat_dir_entry	file:
+name	libfstools/volume.h	/^	char			*name;$/;"	m	struct:driver
+name	libfstools/volume.h	/^	char		*name;$/;"	m	struct:volume
+name	libubi/libubi.h	/^	char name[UBI_VOL_NAME_MAX + 1];$/;"	m	struct:ubi_vol_info
+name	libubi/libubi.h	/^	const char *name;$/;"	m	struct:ubi_mkvol_request
+name	libubi/ubi-media.h	/^	__u8    name[UBI_VOL_NAME_MAX+1];$/;"	m	struct:ubi_vtbl_record
+name	libubi/ubi-user.h	/^		char    name[UBI_MAX_VOLUME_NAME + 1];$/;"	m	struct:ubi_rnvol_req::__anon9
+name	libubi/ubi-user.h	/^	char name[UBI_MAX_VOLUME_NAME + 1];$/;"	m	struct:ubi_mkvol_req
+name_len	libubi/ubi-media.h	/^	__be16  name_len;$/;"	m	struct:ubi_vtbl_record
+name_len	libubi/ubi-user.h	/^		int16_t name_len;$/;"	m	struct:ubi_rnvol_req::__anon9
+name_len	libubi/ubi-user.h	/^	int16_t name_len;$/;"	m	struct:ubi_mkvol_req
+nevals	libblkid-tiny/blkidP.h	/^	int nevals;			\/* number of elems in eval array *\/$/;"	m	struct:blkid_config
+next	libblkid-tiny/blkidP.h	/^	struct dir_list *next;$/;"	m	struct:dir_list	typeref:struct:dir_list::dir_list
+next	libblkid-tiny/hfs.c	/^	uint32_t		next;$/;"	m	struct:hfsplus_bnode_descriptor	file:
+next_alloc	libblkid-tiny/hfs.c	/^	uint32_t		next_alloc;$/;"	m	struct:hfsplus_vol_header	file:
+next_cluster	libblkid-tiny/vfat.c	/^	uint32_t next_cluster;$/;"	m	struct:fat32_fsinfo	file:
+next_cnid	libblkid-tiny/hfs.c	/^	uint32_t		next_cnid;$/;"	m	struct:hfsplus_vol_header	file:
+nidinfos	libblkid-tiny/blkidP.h	/^	const size_t	nidinfos;	\/* number of idinfos *\/$/;"	m	struct:blkid_chaindrv
+nm_al_blks	libblkid-tiny/hfs.c	/^        uint16_t        nm_al_blks;$/;"	m	struct:hfs_mdb	file:
+nm_fls	libblkid-tiny/hfs.c	/^        uint16_t        nm_fls;$/;"	m	struct:hfs_mdb	file:
+no_ids	libblkid-tiny/squashfs.c	/^	uint16_t no_ids;$/;"	m	struct:squashfs_super_block	file:
+no_name	libblkid-tiny/vfat.c	/^static const char *no_name = "NO NAME    ";$/;"	v	file:
+node	block.c	/^	struct vlist_node node;$/;"	m	struct:mount	typeref:struct:mount::vlist_node	file:
+node_size	libblkid-tiny/hfs.c	/^	uint16_t		node_size;$/;"	m	struct:hfsplus_bheader_record	file:
+node_type	libblkid-tiny/ubifs.c	/^	uint8_t node_type;$/;"	m	struct:ubifs_ch	file:
+nr_badpages	libblkid-tiny/swap.c	/^	uint32_t	nr_badpages;$/;"	m	struct:swap_header_v1_2	file:
+num_recs	libblkid-tiny/hfs.c	/^	uint16_t		num_recs;$/;"	m	struct:hfsplus_bnode_descriptor	file:
+num_root_dirs	libblkid-tiny/hfs.c	/^        uint16_t        num_root_dirs;$/;"	m	struct:hfs_mdb	file:
+nxt_cnid	libblkid-tiny/hfs.c	/^        uint32_t        nxt_cnid;$/;"	m	struct:hfs_mdb	file:
+off	libblkid-tiny/blkidP.h	/^	blkid_loff_t		off;$/;"	m	struct:blkid_bufinfo
+offsetof	libblkid-tiny/c.h	109;"	d
+open_folder	libblkid-tiny/hfs.c	/^        uint32_t        open_folder;$/;"	m	struct:hfs_finder_info	file:
+options	block.c	/^	char *options;$/;"	m	struct:mount	file:
+orph_lebs	libblkid-tiny/ubifs.c	/^	uint32_t orph_lebs;$/;"	m	struct:ubifs_sb_node	file:
+os9_folder	libblkid-tiny/hfs.c	/^        uint32_t        os9_folder;$/;"	m	struct:hfs_finder_info	file:
+osx_folder	libblkid-tiny/hfs.c	/^        uint32_t        osx_folder;$/;"	m	struct:hfs_finder_info	file:
+overlay	block.c	/^	int overlay;$/;"	m	struct:mount	file:
+overlay_mount	libfstools/overlay.c	/^overlay_mount(struct volume *v, char *fs)$/;"	f	file:
+overlay_mount_fs	libfstools/overlay.c	/^static int overlay_mount_fs(void)$/;"	f	file:
+pad_file_size	libfstools/snapshot.h	/^pad_file_size(struct volume *v, int size)$/;"	f
+padding	libblkid-tiny/swap.c	/^	uint32_t	padding[117];$/;"	m	struct:swap_header_v1_2	file:
+padding	libblkid-tiny/ubifs.c	/^	uint8_t padding[2];$/;"	m	struct:ubifs_ch	file:
+padding	libblkid-tiny/ubifs.c	/^	uint8_t padding[2];$/;"	m	struct:ubifs_sb_node	file:
+padding	libubi/ubi-media.h	/^	__u8    padding[23];$/;"	m	struct:ubi_vtbl_record
+padding	libubi/ubi-user.h	/^	int8_t  padding[10];$/;"	m	struct:ubi_attach_req
+padding	libubi/ubi-user.h	/^	int8_t  padding[3];$/;"	m	struct:ubi_map_req
+padding	libubi/ubi-user.h	/^	int8_t  padding[7];$/;"	m	struct:ubi_leb_change_req
+padding	libubi/ubi-user.h	/^	uint8_t  padding[7];$/;"	m	struct:ubi_set_vol_prop_req
+padding1	libblkid-tiny/ubifs.c	/^	uint8_t padding1[2];$/;"	m	struct:ubifs_sb_node	file:
+padding1	libubi/ubi-media.h	/^	__u8    padding1[3];$/;"	m	struct:ubi_ec_hdr
+padding1	libubi/ubi-user.h	/^	int8_t padding1;$/;"	m	struct:ubi_mkvol_req
+padding1	libubi/ubi-user.h	/^	int8_t padding1[12];$/;"	m	struct:ubi_rnvol_req
+padding2	libblkid-tiny/ubifs.c	/^	uint8_t padding2[3968];$/;"	m	struct:ubifs_sb_node	file:
+padding2	libubi/ubi-media.h	/^	__u8    padding2[32];$/;"	m	struct:ubi_ec_hdr
+padding2	libubi/ubi-media.h	/^	__u8    padding2[4];$/;"	m	struct:ubi_vid_hdr
+padding2	libubi/ubi-user.h	/^		int8_t  padding2[2];$/;"	m	struct:ubi_rnvol_req::__anon9
+padding2	libubi/ubi-user.h	/^	int8_t padding2[4];$/;"	m	struct:ubi_mkvol_req
+padding3	libubi/ubi-media.h	/^	__u8    padding3[12];$/;"	m	struct:ubi_vid_hdr
+parent_id	libblkid-tiny/hfs.c	/^	uint32_t	parent_id;$/;"	m	struct:hfsplus_catalog_key	file:
+parse_mount_options	block.c	/^static void parse_mount_options(struct mount *m, char *optstr)$/;"	f	file:
+path	block.c	/^	char *path;$/;"	m	struct:mount	file:
+pivot	libfstools/mount.c	/^pivot(char *new, char *old)$/;"	f
+prev	libblkid-tiny/hfs.c	/^	uint32_t		prev;$/;"	m	struct:hfsplus_bnode_descriptor	file:
+print_block_info	block.c	/^static int print_block_info(struct blkid_struct_probe *pr)$/;"	f	file:
+print_block_uci	block.c	/^static int print_block_uci(struct blkid_struct_probe *pr)$/;"	f	file:
+print_usage	ubi.c	/^static int print_usage(void)$/;"	f	file:
+prio	block.c	/^	unsigned int prio;$/;"	m	struct:mount	file:
+priv	libfstools/volume.h	/^	void		*priv;$/;"	m	struct:volume
+probe	libblkid-tiny/blkidP.h	/^	blkid_probe		probe;		\/* low-level probing stuff *\/$/;"	m	struct:blkid_struct_cache
+probe	libblkid-tiny/blkidP.h	/^	int		(*probe)(blkid_probe, struct blkid_chain *);$/;"	m	struct:blkid_chaindrv
+probe	libfstools/volume.h	/^	volume_probe_t		probe;$/;"	m	struct:driver
+probe_block	libblkid-tiny/libblkid-tiny.c	/^int probe_block(char *block, struct blkid_struct_probe *pr)$/;"	f
+probe_buffer	libblkid-tiny/libblkid-tiny.c	/^static unsigned char *probe_buffer;$/;"	v	file:
+probe_buffer_size	libblkid-tiny/libblkid-tiny.c	/^static unsigned int probe_buffer_size = 0;$/;"	v	file:
+probe_ext2	libblkid-tiny/ext.c	/^static int probe_ext2(blkid_probe pr,$/;"	f	file:
+probe_ext3	libblkid-tiny/ext.c	/^static int probe_ext3(blkid_probe pr,$/;"	f	file:
+probe_ext4	libblkid-tiny/ext.c	/^static int probe_ext4(blkid_probe pr,$/;"	f	file:
+probe_ext4dev	libblkid-tiny/ext.c	/^static int probe_ext4dev(blkid_probe pr,$/;"	f	file:
+probe_hfs	libblkid-tiny/hfs.c	/^static int probe_hfs(blkid_probe pr, const struct blkid_idmag *mag)$/;"	f	file:
+probe_hfsplus	libblkid-tiny/hfs.c	/^static int probe_hfsplus(blkid_probe pr, const struct blkid_idmag *mag)$/;"	f	file:
+probe_jbd	libblkid-tiny/ext.c	/^static int probe_jbd(blkid_probe pr,$/;"	f	file:
+probe_jffs2	libblkid-tiny/jffs2.c	/^static int probe_jffs2(blkid_probe pr, const struct blkid_idmag *mag)$/;"	f	file:
+probe_squashfs	libblkid-tiny/squashfs.c	/^static int probe_squashfs(blkid_probe pr, const struct blkid_idmag *mag)$/;"	f	file:
+probe_swap	libblkid-tiny/swap.c	/^static int probe_swap(blkid_probe pr, const struct blkid_idmag *mag)$/;"	f	file:
+probe_swsuspend	libblkid-tiny/swap.c	/^static int probe_swsuspend(blkid_probe pr, const struct blkid_idmag *mag)$/;"	f	file:
+probe_ubifs	libblkid-tiny/ubifs.c	/^static int probe_ubifs(blkid_probe pr, const struct blkid_idmag *mag)$/;"	f	file:
+probe_vfat	libblkid-tiny/vfat.c	/^static int probe_vfat(blkid_probe pr, const struct blkid_idmag *mag)$/;"	f	file:
+probefunc	libblkid-tiny/libblkid-tiny.h	/^	int (*probefunc)(struct blkid_struct_probe *pr, const struct blkid_idmag *mag);$/;"	m	struct:blkid_idinfo
+prog_inv_sh_nm_buf	libblkid-tiny/c.h	/^static char prog_inv_sh_nm_buf[256];$/;"	v
+prog_inv_sh_nm_from_file	libblkid-tiny/c.h	/^prog_inv_sh_nm_from_file(char *f, char stripext)$/;"	f
+program_invocation_short_name	libblkid-tiny/c.h	121;"	d
+program_invocation_short_name	libblkid-tiny/c.h	124;"	d
+program_invocation_short_name	libblkid-tiny/c.h	127;"	d
+property	libubi/ubi-user.h	/^	uint8_t  property;$/;"	m	struct:ubi_set_vol_prop_req
+ramoverlay	libfstools/mount.c	/^ramoverlay(void)$/;"	f
+read	libfstools/volume.h	/^	volume_read_t		read;$/;"	m	struct:driver
+read_data	libubi/libubi.c	/^static int read_data(const char *file, void *buf, int buf_len)$/;"	f	file:
+read_major	libubi/libubi.c	/^static int read_major(const char *file, int *major, int *minor)$/;"	f	file:
+read_positive_int	libubi/libubi.c	/^static int read_positive_int(const char *file, int *value)$/;"	f	file:
+read_positive_ll	libubi/libubi.c	/^static int read_positive_ll(const char *file, long long *value)$/;"	f	file:
+read_string_from_file	libfstools/ubi.c	/^*read_string_from_file(char *dirname, char *filename)$/;"	f	file:
+read_uint_from_file	libfstools/ubi.c	/^read_uint_from_file(char *dirname, char *filename, unsigned int *i)$/;"	f	file:
+reserved	libblkid-tiny/hfs.c	/^	uint16_t		reserved;$/;"	m	struct:hfsplus_bnode_descriptor	file:
+reserved	libblkid-tiny/hfs.c	/^	uint32_t		reserved;$/;"	m	struct:hfsplus_vol_header	file:
+reserved	libblkid-tiny/hfs.c	/^        uint32_t        reserved;$/;"	m	struct:hfs_finder_info	file:
+reserved1	libblkid-tiny/vfat.c	/^	uint32_t reserved1[120];$/;"	m	struct:fat32_fsinfo	file:
+reserved2	libblkid-tiny/vfat.c	/^	uint32_t reserved2[4];$/;"	m	struct:fat32_fsinfo	file:
+reserved_pebs	libubi/ubi-media.h	/^	__be32  reserved_pebs;$/;"	m	struct:ubi_vtbl_record
+ro_compat_version	libblkid-tiny/ubifs.c	/^	uint32_t ro_compat_version;$/;"	m	struct:ubifs_sb_node	file:
+root	libblkid-tiny/hfs.c	/^	uint32_t		root;$/;"	m	struct:hfsplus_bheader_record	file:
+root_inode	libblkid-tiny/squashfs.c	/^	uint64_t root_inode;$/;"	m	struct:squashfs_super_block	file:
+rp_gid	libblkid-tiny/ubifs.c	/^	uint32_t rp_gid;$/;"	m	struct:ubifs_sb_node	file:
+rp_size	libblkid-tiny/ubifs.c	/^	uint64_t rp_size;$/;"	m	struct:ubifs_sb_node	file:
+rp_uid	libblkid-tiny/ubifs.c	/^	uint32_t rp_uid;$/;"	m	struct:ubifs_sb_node	file:
+rsrc_clump_sz	libblkid-tiny/hfs.c	/^	uint32_t		rsrc_clump_sz;$/;"	m	struct:hfsplus_vol_header	file:
+rsvd_bytes	libubi/libubi.h	/^	long long rsvd_bytes;$/;"	m	struct:ubi_vol_info
+rsvd_lebs	libubi/libubi.h	/^	int rsvd_lebs;$/;"	m	struct:ubi_vol_info
+s_algorithm_usage_bitmap	libblkid-tiny/ext.c	/^	uint32_t		s_algorithm_usage_bitmap;$/;"	m	struct:ext2_super_block	file:
+s_block_group_nr	libblkid-tiny/ext.c	/^	uint16_t		s_block_group_nr;$/;"	m	struct:ext2_super_block	file:
+s_blocks_count	libblkid-tiny/ext.c	/^	uint32_t		s_blocks_count;$/;"	m	struct:ext2_super_block	file:
+s_blocks_count_hi	libblkid-tiny/ext.c	/^	uint32_t		s_blocks_count_hi;$/;"	m	struct:ext2_super_block	file:
+s_checkinterval	libblkid-tiny/ext.c	/^	uint32_t		s_checkinterval;$/;"	m	struct:ext2_super_block	file:
+s_creator_os	libblkid-tiny/ext.c	/^	uint32_t		s_creator_os;$/;"	m	struct:ext2_super_block	file:
+s_def_hash_version	libblkid-tiny/ext.c	/^	uint8_t			s_def_hash_version;$/;"	m	struct:ext2_super_block	file:
+s_def_resgid	libblkid-tiny/ext.c	/^	uint16_t		s_def_resgid;$/;"	m	struct:ext2_super_block	file:
+s_def_resuid	libblkid-tiny/ext.c	/^	uint16_t		s_def_resuid;$/;"	m	struct:ext2_super_block	file:
+s_default_mount_opts	libblkid-tiny/ext.c	/^	uint32_t		s_default_mount_opts;$/;"	m	struct:ext2_super_block	file:
+s_dummy3	libblkid-tiny/ext.c	/^	uint32_t		s_dummy3[7];$/;"	m	struct:ext2_super_block	file:
+s_errors	libblkid-tiny/ext.c	/^	uint16_t		s_errors;$/;"	m	struct:ext2_super_block	file:
+s_feature_compat	libblkid-tiny/ext.c	/^	uint32_t		s_feature_compat;$/;"	m	struct:ext2_super_block	file:
+s_feature_incompat	libblkid-tiny/ext.c	/^	uint32_t		s_feature_incompat;$/;"	m	struct:ext2_super_block	file:
+s_feature_ro_compat	libblkid-tiny/ext.c	/^	uint32_t		s_feature_ro_compat;$/;"	m	struct:ext2_super_block	file:
+s_first_data_block	libblkid-tiny/ext.c	/^	uint32_t		s_first_data_block;$/;"	m	struct:ext2_super_block	file:
+s_first_ino	libblkid-tiny/ext.c	/^	uint32_t		s_first_ino;$/;"	m	struct:ext2_super_block	file:
+s_first_meta_bg	libblkid-tiny/ext.c	/^	uint32_t		s_first_meta_bg;$/;"	m	struct:ext2_super_block	file:
+s_flags	libblkid-tiny/ext.c	/^	uint32_t		s_flags;$/;"	m	struct:ext2_super_block	file:
+s_free_blocks_count	libblkid-tiny/ext.c	/^	uint32_t		s_free_blocks_count;$/;"	m	struct:ext2_super_block	file:
+s_free_blocks_hi	libblkid-tiny/ext.c	/^	uint32_t		s_free_blocks_hi;$/;"	m	struct:ext2_super_block	file:
+s_free_inodes_count	libblkid-tiny/ext.c	/^	uint32_t		s_free_inodes_count;$/;"	m	struct:ext2_super_block	file:
+s_hash_seed	libblkid-tiny/ext.c	/^	uint32_t		s_hash_seed[4];$/;"	m	struct:ext2_super_block	file:
+s_inode_size	libblkid-tiny/ext.c	/^	uint16_t		s_inode_size;$/;"	m	struct:ext2_super_block	file:
+s_inodes_count	libblkid-tiny/ext.c	/^	uint32_t		s_inodes_count;$/;"	m	struct:ext2_super_block	file:
+s_jnl_backup_type	libblkid-tiny/ext.c	/^	uint8_t			s_jnl_backup_type;$/;"	m	struct:ext2_super_block	file:
+s_jnl_blocks	libblkid-tiny/ext.c	/^	uint32_t		s_jnl_blocks[17];$/;"	m	struct:ext2_super_block	file:
+s_journal_dev	libblkid-tiny/ext.c	/^	uint32_t		s_journal_dev;$/;"	m	struct:ext2_super_block	file:
+s_journal_inum	libblkid-tiny/ext.c	/^	uint32_t		s_journal_inum;$/;"	m	struct:ext2_super_block	file:
+s_journal_uuid	libblkid-tiny/ext.c	/^	uint8_t			s_journal_uuid[16];$/;"	m	struct:ext2_super_block	file:
+s_last_mounted	libblkid-tiny/ext.c	/^	char			s_last_mounted[64];$/;"	m	struct:ext2_super_block	file:
+s_last_orphan	libblkid-tiny/ext.c	/^	uint32_t		s_last_orphan;$/;"	m	struct:ext2_super_block	file:
+s_lastcheck	libblkid-tiny/ext.c	/^	uint32_t		s_lastcheck;$/;"	m	struct:ext2_super_block	file:
+s_log_block_size	libblkid-tiny/ext.c	/^	uint32_t		s_log_block_size;$/;"	m	struct:ext2_super_block	file:
+s_magic	libblkid-tiny/ext.c	/^	unsigned char		s_magic[2];$/;"	m	struct:ext2_super_block	file:
+s_magic	libblkid-tiny/squashfs.c	/^	uint32_t s_magic;$/;"	m	struct:squashfs_super_block	file:
+s_major	libblkid-tiny/squashfs.c	/^	uint16_t s_major;$/;"	m	struct:squashfs_super_block	file:
+s_min_extra_isize	libblkid-tiny/ext.c	/^	uint16_t		s_min_extra_isize;$/;"	m	struct:ext2_super_block	file:
+s_minor	libblkid-tiny/squashfs.c	/^	uint16_t s_minor;$/;"	m	struct:squashfs_super_block	file:
+s_minor_rev_level	libblkid-tiny/ext.c	/^	uint16_t		s_minor_rev_level;$/;"	m	struct:ext2_super_block	file:
+s_mkfs_time	libblkid-tiny/ext.c	/^	uint32_t		s_mkfs_time;$/;"	m	struct:ext2_super_block	file:
+s_mmp_block	libblkid-tiny/ext.c	/^	uint64_t		s_mmp_block;$/;"	m	struct:ext2_super_block	file:
+s_mmp_interval	libblkid-tiny/ext.c	/^	uint16_t		s_mmp_interval;$/;"	m	struct:ext2_super_block	file:
+s_prealloc_blocks	libblkid-tiny/ext.c	/^	uint8_t			s_prealloc_blocks;$/;"	m	struct:ext2_super_block	file:
+s_prealloc_dir_blocks	libblkid-tiny/ext.c	/^	uint8_t			s_prealloc_dir_blocks;$/;"	m	struct:ext2_super_block	file:
+s_r_blocks_count	libblkid-tiny/ext.c	/^	uint32_t		s_r_blocks_count;$/;"	m	struct:ext2_super_block	file:
+s_r_blocks_count_hi	libblkid-tiny/ext.c	/^	uint32_t		s_r_blocks_count_hi;$/;"	m	struct:ext2_super_block	file:
+s_raid_stride	libblkid-tiny/ext.c	/^	uint16_t		s_raid_stride;$/;"	m	struct:ext2_super_block	file:
+s_raid_stripe_width	libblkid-tiny/ext.c	/^	uint32_t		s_raid_stripe_width;$/;"	m	struct:ext2_super_block	file:
+s_reserved	libblkid-tiny/ext.c	/^	uint32_t		s_reserved[163];$/;"	m	struct:ext2_super_block	file:
+s_reserved_gdt_blocks	libblkid-tiny/ext.c	/^	uint16_t		s_reserved_gdt_blocks;$/;"	m	struct:ext2_super_block	file:
+s_reserved_word_pad	libblkid-tiny/ext.c	/^	uint16_t		s_reserved_word_pad;$/;"	m	struct:ext2_super_block	file:
+s_rev_level	libblkid-tiny/ext.c	/^	uint32_t		s_rev_level;$/;"	m	struct:ext2_super_block	file:
+s_state	libblkid-tiny/ext.c	/^	uint16_t		s_state;$/;"	m	struct:ext2_super_block	file:
+s_uuid	libblkid-tiny/ext.c	/^	unsigned char		s_uuid[16];$/;"	m	struct:ext2_super_block	file:
+s_volume_name	libblkid-tiny/ext.c	/^	char			s_volume_name[16];$/;"	m	struct:ext2_super_block	file:
+s_want_extra_isize	libblkid-tiny/ext.c	/^	uint16_t		s_want_extra_isize;$/;"	m	struct:ext2_super_block	file:
+safeprobe	libblkid-tiny/blkidP.h	/^	int		(*safeprobe)(blkid_probe, struct blkid_chain *);$/;"	m	struct:blkid_chaindrv
+sboff	libblkid-tiny/libblkid-tiny.h	/^	unsigned int	sboff;$/;"	m	struct:blkid_idmag
+search_fat_label	libblkid-tiny/vfat.c	/^static unsigned char *search_fat_label(blkid_probe pr,$/;"	f	file:
+sectors	libblkid-tiny/blkdev.h	/^	unsigned char sectors;$/;"	m	struct:hd_geometry
+sentinel_write	libfstools/snapshot.c	/^sentinel_write(struct volume *v, uint32_t _seq)$/;"	f
+seq	libfstools/snapshot.h	/^	uint32_t seq;$/;"	m	struct:file_header
+set_label	libblkid-tiny/vfat.c	/^static int set_label(blkid_probe pr, unsigned char *vol_label)$/;"	f	file:
+setbit	libblkid-tiny/bitops.h	16;"	d
+signature	libblkid-tiny/hfs.c	/^	uint8_t		signature[2];$/;"	m	struct:hfsplus_vol_header	file:
+signature	libblkid-tiny/hfs.c	/^        uint8_t         signature[2];$/;"	m	struct:hfs_mdb	file:
+signature1	libblkid-tiny/vfat.c	/^	uint8_t signature1[4];$/;"	m	struct:fat32_fsinfo	file:
+signature2	libblkid-tiny/vfat.c	/^	uint8_t signature2[4];$/;"	m	struct:fat32_fsinfo	file:
+simple_strtoX	libubi/libubi.h	52;"	d
+size	libblkid-tiny/vfat.c	/^	uint32_t	size;$/;"	m	struct:vfat_dir_entry	file:
+size	libfstools/volume.h	/^	__u64		size;$/;"	m	struct:volume
+snapshot_info	snapshot.c	/^snapshot_info(void)$/;"	f	file:
+snapshot_mark	snapshot.c	/^snapshot_mark(int argc, char **argv)$/;"	f	file:
+snapshot_next_free	libfstools/snapshot.c	/^snapshot_next_free(struct volume *v, uint32_t *seq)$/;"	f
+snapshot_read	snapshot.c	/^snapshot_read(int argc, char **argv)$/;"	f	file:
+snapshot_read_file	libfstools/snapshot.c	/^snapshot_read_file(struct volume *v, int block, char *file, uint32_t type)$/;"	f
+snapshot_sync	libfstools/snapshot.c	/^snapshot_sync(void)$/;"	f	file:
+snapshot_write	snapshot.c	/^snapshot_write(int argc, char **argv)$/;"	f	file:
+snapshot_write_file	libfstools/snapshot.c	/^snapshot_write_file(struct volume *v, int block, char *file, uint32_t seq, uint32_t type)$/;"	f
+sqnum	libblkid-tiny/ubifs.c	/^	uint64_t sqnum;$/;"	m	struct:ubifs_ch	file:
+sqnum	libubi/ubi-media.h	/^	__be64  sqnum;$/;"	m	struct:ubi_vid_hdr
+squashfs_idinfo	libblkid-tiny/squashfs.c	/^const struct blkid_idinfo squashfs_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+squashfs_super_block	libblkid-tiny/squashfs.c	/^struct squashfs_super_block {$/;"	s	file:
+start	libblkid-tiny/blkdev.h	/^	unsigned long start;$/;"	m	struct:hd_geometry
+start	mount_root.c	/^start(int argc, char *argv[1])$/;"	f	file:
+start_app	libblkid-tiny/hfs.c	/^        uint32_t        start_app;$/;"	m	struct:hfs_finder_info	file:
+start_block	libblkid-tiny/hfs.c	/^	uint32_t		start_block;$/;"	m	struct:hfsplus_extent	file:
+start_file	libblkid-tiny/hfs.c	/^	struct hfsplus_fork start_file;$/;"	m	struct:hfsplus_vol_header	typeref:struct:hfsplus_vol_header::hfsplus_fork	file:
+stop	libfstools/volume.h	/^	volume_stop_t		stop;$/;"	m	struct:driver
+stop	mount_root.c	/^stop(int argc, char *argv[1])$/;"	f	file:
+swab16	libblkid-tiny/bitops.h	25;"	d
+swab32	libblkid-tiny/bitops.h	30;"	d
+swab64	libblkid-tiny/bitops.h	37;"	d
+swap_add	block.c	/^static int swap_add(struct uci_section *s)$/;"	f	file:
+swap_attr_list	block.c	/^static const struct uci_blob_param_list swap_attr_list = {$/;"	v	typeref:struct:uci_blob_param_list	file:
+swap_header_v1_2	libblkid-tiny/swap.c	/^struct swap_header_v1_2 {$/;"	s	file:
+swap_idinfo	libblkid-tiny/swap.c	/^const struct blkid_idinfo swap_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+swap_policy	block.c	/^static const struct blobmsg_policy swap_policy[__SWAP_MAX] = {$/;"	v	typeref:struct:blobmsg_policy	file:
+swap_set_info	libblkid-tiny/swap.c	/^static int swap_set_info(blkid_probe pr, const char *version)$/;"	f	file:
+swapon_usage	block.c	/^static int swapon_usage(void)$/;"	f	file:
+switch2jffs	libfstools/jffs2.c	/^switch2jffs(void)$/;"	f	file:
+switch2jffs	libfstools/overlay.c	/^switch2jffs(struct volume *v)$/;"	f	file:
+swsuspend_idinfo	libblkid-tiny/swap.c	/^const struct blkid_idinfo swsuspend_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+sys_errmsg	libubi/libubi.h	44;"	d
+sysfs	libubi/libubi_int.h	/^	char *sysfs;$/;"	m	struct:libubi
+sysfs_ctrl	libubi/libubi_int.h	/^	char *sysfs_ctrl;$/;"	m	struct:libubi
+sysfs_ubi	libubi/libubi_int.h	/^	char *sysfs_ubi;$/;"	m	struct:libubi
+system_supports_ext2	libblkid-tiny/ext.c	/^static int system_supports_ext2(void)$/;"	f	file:
+system_supports_ext4	libblkid-tiny/ext.c	/^static int system_supports_ext4(void)$/;"	f	file:
+system_supports_ext4dev	libblkid-tiny/ext.c	/^static int system_supports_ext4dev(void)$/;"	f	file:
+target	block.c	/^	char *target;$/;"	m	struct:mount	file:
+test_open	libfstools/ubi.c	/^test_open(char *filename)$/;"	f	file:
+time_acc	libblkid-tiny/vfat.c	/^	uint16_t	time_acc;$/;"	m	struct:vfat_dir_entry	file:
+time_creat	libblkid-tiny/vfat.c	/^	uint16_t	time_creat;$/;"	m	struct:vfat_dir_entry	file:
+time_gran	libblkid-tiny/ubifs.c	/^	uint32_t time_gran;$/;"	m	struct:ubifs_sb_node	file:
+time_write	libblkid-tiny/vfat.c	/^	uint16_t	time_write;$/;"	m	struct:vfat_dir_entry	file:
+total_blocks	libblkid-tiny/hfs.c	/^	uint32_t		total_blocks;$/;"	m	struct:hfsplus_fork	file:
+total_blocks	libblkid-tiny/hfs.c	/^	uint32_t		total_blocks;$/;"	m	struct:hfsplus_vol_header	file:
+total_bytes	libubi/libubi.h	/^	long long total_bytes;$/;"	m	struct:ubi_dev_info
+total_lebs	libubi/libubi.h	/^	int total_lebs;$/;"	m	struct:ubi_dev_info
+total_size	libblkid-tiny/hfs.c	/^	uint64_t		total_size;$/;"	m	struct:hfsplus_fork	file:
+type	block.c	/^	int type;$/;"	m	struct:mount	file:
+type	libblkid-tiny/hfs.c	/^	uint8_t		type;$/;"	m	struct:hfsplus_bnode_descriptor	file:
+type	libfstools/snapshot.h	/^	uint32_t type;$/;"	m	struct:file_header
+type	libfstools/volume.h	/^	int		type;$/;"	m	struct:volume
+type	libubi/libubi.h	/^	int type;$/;"	m	struct:ubi_vol_info
+ubi_attach	libubi/libubi.c	/^int ubi_attach(libubi_t desc, const char *node, struct ubi_attach_request *req)$/;"	f
+ubi_attach_req	libubi/ubi-user.h	/^struct ubi_attach_req {$/;"	s
+ubi_attach_request	libubi/libubi.h	/^struct ubi_attach_request$/;"	s
+ubi_detach	libubi/libubi.c	/^int ubi_detach(libubi_t desc, const char *node, const char *mtd_dev_node)$/;"	f
+ubi_detach_mtd	libubi/libubi.c	/^int ubi_detach_mtd(libubi_t desc, const char *node, int mtd_num)$/;"	f
+ubi_dev	libubi/libubi_int.h	/^	char *ubi_dev;$/;"	m	struct:libubi
+ubi_dev_info	libubi/libubi.h	/^struct ubi_dev_info$/;"	s
+ubi_dev_present	libubi/libubi.c	/^int ubi_dev_present(libubi_t desc, int dev_num)$/;"	f
+ubi_dir_name	libfstools/ubi.c	/^const char *const ubi_dir_name = "\/sys\/devices\/virtual\/ubi";$/;"	v
+ubi_driver	libfstools/ubi.c	/^DRIVER(ubi_driver);$/;"	v
+ubi_driver	libfstools/ubi.c	/^static struct driver ubi_driver = {$/;"	v	typeref:struct:driver	file:
+ubi_driver	libfstools/ubi.c	/^static struct driver ubi_driver;$/;"	v	typeref:struct:driver	file:
+ubi_ec_hdr	libubi/ubi-media.h	/^struct ubi_ec_hdr {$/;"	s
+ubi_find	ubi.c	/^static int ubi_find(libubi_t libubi, char *name, char *ret)$/;"	f	file:
+ubi_get_dev_info	libubi/libubi.c	/^int ubi_get_dev_info(libubi_t desc, const char *node, struct ubi_dev_info *info)$/;"	f
+ubi_get_dev_info1	libubi/libubi.c	/^int ubi_get_dev_info1(libubi_t desc, int dev_num, struct ubi_dev_info *info)$/;"	f
+ubi_get_info	libubi/libubi.c	/^int ubi_get_info(libubi_t desc, struct ubi_info *info)$/;"	f
+ubi_get_vol_info	libubi/libubi.c	/^int ubi_get_vol_info(libubi_t desc, const char *node, struct ubi_vol_info *info)$/;"	f
+ubi_get_vol_info1	libubi/libubi.c	/^int ubi_get_vol_info1(libubi_t desc, int dev_num, int vol_id,$/;"	f
+ubi_get_vol_info1_nm	libubi/libubi.c	/^int ubi_get_vol_info1_nm(libubi_t desc, int dev_num, const char *name,$/;"	f
+ubi_info	libubi/libubi.h	/^struct ubi_info$/;"	s
+ubi_is_mapped	libubi/libubi.c	/^int ubi_is_mapped(int fd, int lnum)$/;"	f
+ubi_leb_change_req	libubi/ubi-user.h	/^struct ubi_leb_change_req {$/;"	s
+ubi_leb_change_start	libubi/libubi.c	/^int ubi_leb_change_start(libubi_t desc, int fd, int lnum, int bytes)$/;"	f
+ubi_leb_unmap	libubi/libubi.c	/^int ubi_leb_unmap(int fd, int lnum)$/;"	f
+ubi_map_req	libubi/ubi-user.h	/^struct ubi_map_req {$/;"	s
+ubi_mkvol	libubi/libubi.c	/^int ubi_mkvol(libubi_t desc, const char *node, struct ubi_mkvol_request *req)$/;"	f
+ubi_mkvol_req	libubi/ubi-user.h	/^struct ubi_mkvol_req {$/;"	s
+ubi_mkvol_request	libubi/libubi.h	/^struct ubi_mkvol_request$/;"	s
+ubi_num	libfstools/ubi.c	/^	int		ubi_num;$/;"	m	struct:ubi_priv	file:
+ubi_num	libubi/ubi-user.h	/^	int32_t ubi_num;$/;"	m	struct:ubi_attach_req
+ubi_part_match	libfstools/ubi.c	/^static int ubi_part_match(struct volume *v, char *name, unsigned int ubi_num)$/;"	f	file:
+ubi_priv	libfstools/ubi.c	/^struct ubi_priv {$/;"	s	file:
+ubi_probe_node	libubi/libubi.c	/^int ubi_probe_node(libubi_t desc, const char *node)$/;"	f
+ubi_remove_dev	libubi/libubi.c	/^int ubi_remove_dev(libubi_t desc, const char *node, int ubi_dev)$/;"	f
+ubi_rmvol	libubi/libubi.c	/^int ubi_rmvol(libubi_t desc, const char *node, int vol_id)$/;"	f
+ubi_rnvol_req	libubi/ubi-user.h	/^struct ubi_rnvol_req {$/;"	s
+ubi_rnvols	libubi/libubi.c	/^int ubi_rnvols(libubi_t desc, const char *node, struct ubi_rnvol_req *rnvol)$/;"	f
+ubi_rsvol	libubi/libubi.c	/^int ubi_rsvol(libubi_t desc, const char *node, int vol_id, long long bytes)$/;"	f
+ubi_rsvol_req	libubi/ubi-user.h	/^struct ubi_rsvol_req {$/;"	s
+ubi_set_property	libubi/libubi.c	/^int ubi_set_property(int fd, uint8_t property, uint64_t value)$/;"	f
+ubi_set_vol_prop_req	libubi/ubi-user.h	/^struct ubi_set_vol_prop_req {$/;"	s
+ubi_update_start	libubi/libubi.c	/^int ubi_update_start(libubi_t desc, int fd, long long bytes)$/;"	f
+ubi_version	libubi/libubi_int.h	/^	char *ubi_version;$/;"	m	struct:libubi
+ubi_vid_hdr	libubi/ubi-media.h	/^struct ubi_vid_hdr {$/;"	s
+ubi_vol	libubi/libubi_int.h	/^	char *ubi_vol;$/;"	m	struct:libubi
+ubi_vol_info	libubi/libubi.h	/^struct ubi_vol_info$/;"	s
+ubi_volid	libfstools/ubi.c	/^	int		ubi_volid;$/;"	m	struct:ubi_priv	file:
+ubi_volume_find	libfstools/ubi.c	/^static int ubi_volume_find(struct volume *v, char *name)$/;"	f	file:
+ubi_volume_identify	libfstools/ubi.c	/^static int ubi_volume_identify(struct volume *v)$/;"	f	file:
+ubi_volume_init	libfstools/ubi.c	/^static int ubi_volume_init(struct volume *v)$/;"	f	file:
+ubi_volume_match	libfstools/ubi.c	/^static int ubi_volume_match(struct volume *v, char *name, int ubi_num, int volid)$/;"	f	file:
+ubi_vtbl_record	libubi/ubi-media.h	/^struct ubi_vtbl_record {$/;"	s
+ubi_write	libubi/libubi-tiny.c	/^static int ubi_write(char *node, int fd, const void *buf, int len)$/;"	f	file:
+ubiattach	libubi/libubi-tiny.c	/^int ubiattach(libubi_t libubi, char *mtd)$/;"	f
+ubidetach	libubi/libubi-tiny.c	/^int ubidetach(libubi_t libubi, char *mtd)$/;"	f
+ubifs_ch	libblkid-tiny/ubifs.c	/^struct ubifs_ch {$/;"	s	file:
+ubifs_idinfo	libblkid-tiny/ubifs.c	/^const struct blkid_idinfo ubifs_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+ubifs_sb_node	libblkid-tiny/ubifs.c	/^struct ubifs_sb_node {$/;"	s	file:
+ubimkvol	libubi/libubi-tiny.c	/^int ubimkvol(libubi_t libubi, char *node, char *name, int maxavs)$/;"	f
+ubirmvol	libubi/libubi-tiny.c	/^int ubirmvol(libubi_t libubi, char *node, char *name)$/;"	f
+ubirsvol	libubi/libubi-tiny.c	/^int ubirsvol(libubi_t libubi, char *node, char *name, int bytes)$/;"	f
+ubitruncatevol	libubi/libubi-tiny.c	/^int ubitruncatevol(libubi_t libubi, char *node)$/;"	f
+ubiupdatevol	libubi/libubi-tiny.c	/^int ubiupdatevol(libubi_t libubi, char *node, char *file)$/;"	f
+ubiutils_get_bytes	libubi/ubiutils-common.c	/^long long ubiutils_get_bytes(const char *str)$/;"	f
+ubiutils_print_bytes	libubi/ubiutils-common.c	/^void ubiutils_print_bytes(long long bytes, int bracket)$/;"	f
+ubiutils_print_text	libubi/ubiutils-common.c	/^void ubiutils_print_text(FILE *stream, const char *text, int width)$/;"	f
+ubiutils_srand	libubi/ubiutils-common.c	/^int ubiutils_srand(void)$/;"	f
+uevent	libblkid-tiny/blkidP.h	/^	int uevent;			\/* SEND_UEVENT=<yes|not> option *\/$/;"	m	struct:blkid_config
+umount_device	block.c	/^static int umount_device(struct blkid_struct_probe *pr)$/;"	f	file:
+unaligned_le16	libblkid-tiny/vfat.c	114;"	d	file:
+unicode	libblkid-tiny/hfs.c	/^	uint8_t		unicode[255 * 2];$/;"	m	struct:hfsplus_catalog_key	file:
+unicode_len	libblkid-tiny/hfs.c	/^	uint16_t	unicode_len;$/;"	m	struct:hfsplus_catalog_key	file:
+upd_marker	libubi/ubi-media.h	/^	__u8    upd_marker;$/;"	m	struct:ubi_vtbl_record
+update_volume	libubi/libubi-tiny.c	/^static int update_volume(libubi_t libubi, struct ubi_vol_info *vol_info, char *node, char *img, int skip)$/;"	f	file:
+usage	libblkid-tiny/libblkid-tiny.h	/^	int		usage;$/;"	m	struct:blkid_idinfo
+used_ebs	libubi/ubi-media.h	/^	__be32  used_ebs;$/;"	m	struct:ubi_vid_hdr
+uuid	block.c	/^	char *uuid;$/;"	m	struct:mount	file:
+uuid	libblkid-tiny/libblkid-tiny.h	/^	char	uuid[64];$/;"	m	struct:blkid_struct_probe
+uuid	libblkid-tiny/swap.c	/^	unsigned char	uuid[16];$/;"	m	struct:swap_header_v1_2	file:
+uuid	libblkid-tiny/ubifs.c	/^	uint8_t uuid[16];$/;"	m	struct:ubifs_sb_node	file:
+valid_file_size	libfstools/snapshot.h	/^valid_file_size(int fs)$/;"	f
+value	libubi/ubi-user.h	/^	uint64_t value;$/;"	m	struct:ubi_set_vol_prop_req
+vbm_st	libblkid-tiny/hfs.c	/^        uint16_t        vbm_st;$/;"	m	struct:hfs_mdb	file:
+verify_file_hash	libfstools/snapshot.c	/^verify_file_hash(char *file, uint32_t *hash)$/;"	f
+version	libblkid-tiny/hfs.c	/^	uint16_t		version;$/;"	m	struct:hfsplus_vol_header	file:
+version	libblkid-tiny/libblkid-tiny.h	/^	char	version[64];$/;"	m	struct:blkid_struct_probe
+version	libblkid-tiny/swap.c	/^	uint32_t	version;$/;"	m	struct:swap_header_v1_2	file:
+version	libubi/libubi.h	/^	int version;$/;"	m	struct:ubi_info
+version	libubi/ubi-media.h	/^	__u8    version;$/;"	m	struct:ubi_ec_hdr
+version	libubi/ubi-media.h	/^	__u8    version;$/;"	m	struct:ubi_vid_hdr
+vfat_dir_entry	libblkid-tiny/vfat.c	/^struct vfat_dir_entry {$/;"	s	file:
+vfat_idinfo	libblkid-tiny/vfat.c	/^const struct blkid_idinfo vfat_idinfo =$/;"	v	typeref:struct:blkid_idinfo
+vfat_super_block	libblkid-tiny/vfat.c	/^struct vfat_super_block {$/;"	s	file:
+vid_hdr_offset	libubi/libubi.h	/^	int vid_hdr_offset;$/;"	m	struct:ubi_attach_request
+vid_hdr_offset	libubi/ubi-media.h	/^	__be32  vid_hdr_offset;$/;"	m	struct:ubi_ec_hdr
+vid_hdr_offset	libubi/ubi-user.h	/^	int32_t vid_hdr_offset;$/;"	m	struct:ubi_attach_req
+vol_alignment	libubi/libubi_int.h	/^	char *vol_alignment;$/;"	m	struct:libubi
+vol_bkup	libblkid-tiny/hfs.c	/^        uint32_t        vol_bkup;$/;"	m	struct:hfs_mdb	file:
+vol_corrupted	libubi/libubi_int.h	/^	char *vol_corrupted;$/;"	m	struct:libubi
+vol_count	libubi/libubi.h	/^	int vol_count;$/;"	m	struct:ubi_dev_info
+vol_data_bytes	libubi/libubi_int.h	/^	char *vol_data_bytes;$/;"	m	struct:libubi
+vol_dev	libubi/libubi_int.h	/^	char *vol_dev;$/;"	m	struct:libubi
+vol_eb_size	libubi/libubi_int.h	/^	char *vol_eb_size;$/;"	m	struct:libubi
+vol_get_major	libubi/libubi.c	/^static int vol_get_major(struct libubi *lib, int dev_num, int vol_id,$/;"	f	file:
+vol_id	libubi/libubi.h	/^	int vol_id;$/;"	m	struct:ubi_mkvol_request
+vol_id	libubi/libubi.h	/^	int vol_id;$/;"	m	struct:ubi_vol_info
+vol_id	libubi/ubi-media.h	/^	__be32  vol_id;$/;"	m	struct:ubi_vid_hdr
+vol_id	libubi/ubi-user.h	/^		int32_t vol_id;$/;"	m	struct:ubi_rnvol_req::__anon9
+vol_id	libubi/ubi-user.h	/^	int32_t vol_id;$/;"	m	struct:ubi_mkvol_req
+vol_id	libubi/ubi-user.h	/^	int32_t vol_id;$/;"	m	struct:ubi_rsvol_req
+vol_max_count	libubi/libubi_int.h	/^	char *vol_max_count;$/;"	m	struct:libubi
+vol_name	libubi/libubi_int.h	/^	char *vol_name;$/;"	m	struct:libubi
+vol_node2nums	libubi/libubi.c	/^static int vol_node2nums(struct libubi *lib, const char *node, int *dev_num,$/;"	f	file:
+vol_read_data	libubi/libubi.c	/^static int vol_read_data(const char *patt, int dev_num, int vol_id, void *buf,$/;"	f	file:
+vol_read_int	libubi/libubi.c	/^static int vol_read_int(const char *patt, int dev_num, int vol_id, int *value)$/;"	f	file:
+vol_read_ll	libubi/libubi.c	/^static int vol_read_ll(const char *patt, int dev_num, int vol_id,$/;"	f	file:
+vol_rsvd_ebs	libubi/libubi_int.h	/^	char *vol_rsvd_ebs;$/;"	m	struct:libubi
+vol_seq_num	libblkid-tiny/hfs.c	/^        uint16_t        vol_seq_num;$/;"	m	struct:hfs_mdb	file:
+vol_type	libubi/libubi.h	/^	int vol_type;$/;"	m	struct:ubi_mkvol_request
+vol_type	libubi/libubi_int.h	/^	char *vol_type;$/;"	m	struct:libubi
+vol_type	libubi/ubi-media.h	/^	__u8    vol_type;$/;"	m	struct:ubi_vid_hdr
+vol_type	libubi/ubi-media.h	/^	__u8    vol_type;$/;"	m	struct:ubi_vtbl_record
+vol_type	libubi/ubi-user.h	/^	int8_t vol_type;$/;"	m	struct:ubi_mkvol_req
+volatile_write	libfstools/snapshot.c	/^volatile_write(struct volume *v, uint32_t _seq)$/;"	f
+volume	libblkid-tiny/swap.c	/^	unsigned char	volume[16];$/;"	m	struct:swap_header_v1_2	file:
+volume	libfstools/volume.h	/^struct volume {$/;"	s
+volume_erase	libfstools/volume.h	/^static inline int volume_erase(struct volume *v, int offset, int len)$/;"	f
+volume_erase_all	libfstools/volume.h	/^static inline int volume_erase_all(struct volume *v)$/;"	f
+volume_erase_all_t	libfstools/volume.h	/^typedef int (*volume_erase_all_t)(struct volume *v);$/;"	t
+volume_erase_t	libfstools/volume.h	/^typedef int (*volume_erase_t)(struct volume *v, int start, int len);$/;"	t
+volume_find	libfstools/volume.c	/^struct volume* volume_find(char *name)$/;"	f
+volume_find	ubi.c	/^static int volume_find(libubi_t libubi, char *name, char *ret)$/;"	f	file:
+volume_find_t	libfstools/volume.h	/^typedef int (*volume_find_t)(struct volume *v, char *name);$/;"	t
+volume_identify	libfstools/volume.h	/^static inline int volume_identify(struct volume *v)$/;"	f
+volume_identify_t	libfstools/volume.h	/^typedef int (*volume_identify_t)(struct volume *v);$/;"	t
+volume_init	libfstools/volume.h	/^static inline int volume_init(struct volume *v)$/;"	f
+volume_init_t	libfstools/volume.h	/^typedef int (*volume_init_t)(struct volume *v);$/;"	t
+volume_probe_t	libfstools/volume.h	/^typedef int (*volume_probe_t)(void);$/;"	t
+volume_read	libfstools/volume.h	/^static inline int volume_read(struct volume *v, void *buf, int offset, int length)$/;"	f
+volume_read_t	libfstools/volume.h	/^typedef int (*volume_read_t)(struct volume *v, void *buf, int offset, int length);$/;"	t
+volume_register_driver	libfstools/volume.c	/^volume_register_driver(struct driver *d)$/;"	f
+volume_stop_t	libfstools/volume.h	/^typedef void (*volume_stop_t)(struct volume *v);$/;"	t
+volume_write	libfstools/volume.h	/^static inline int volume_write(struct volume *v, void *buf, int offset, int length)$/;"	f
+volume_write_t	libfstools/volume.h	/^typedef int (*volume_write_t)(struct volume *v, void *buf, int offset, int length);$/;"	t
+vs	libblkid-tiny/vfat.c	/^static struct vfat_super_block vs;$/;"	v	typeref:struct:vfat_super_block	file:
+vs_backup_boot	libblkid-tiny/vfat.c	/^\/* 32*\/	uint16_t	vs_backup_boot;$/;"	m	struct:vfat_super_block	file:
+vs_cluster_size	libblkid-tiny/vfat.c	/^\/* 0d*\/	uint8_t		vs_cluster_size;$/;"	m	struct:vfat_super_block	file:
+vs_dir_entries	libblkid-tiny/vfat.c	/^\/* 11*\/	unsigned char	vs_dir_entries[2];$/;"	m	struct:vfat_super_block	file:
+vs_dummy2	libblkid-tiny/vfat.c	/^\/* 5a*\/	unsigned char	vs_dummy2[0x1fe - 0x5a];$/;"	m	struct:vfat_super_block	file:
+vs_fat32_length	libblkid-tiny/vfat.c	/^\/* 24*\/	uint32_t	vs_fat32_length;$/;"	m	struct:vfat_super_block	file:
+vs_fat_length	libblkid-tiny/vfat.c	/^\/* 16*\/	uint16_t	vs_fat_length;$/;"	m	struct:vfat_super_block	file:
+vs_fats	libblkid-tiny/vfat.c	/^\/* 10*\/	uint8_t		vs_fats;$/;"	m	struct:vfat_super_block	file:
+vs_flags	libblkid-tiny/vfat.c	/^\/* 28*\/	uint16_t	vs_flags;$/;"	m	struct:vfat_super_block	file:
+vs_fsinfo_sector	libblkid-tiny/vfat.c	/^\/* 30*\/	uint16_t	vs_fsinfo_sector;$/;"	m	struct:vfat_super_block	file:
+vs_heads	libblkid-tiny/vfat.c	/^\/* 1a*\/	uint16_t	vs_heads;$/;"	m	struct:vfat_super_block	file:
+vs_hidden	libblkid-tiny/vfat.c	/^\/* 1c*\/	uint32_t	vs_hidden;$/;"	m	struct:vfat_super_block	file:
+vs_ignored	libblkid-tiny/vfat.c	/^\/* 00*\/	unsigned char	vs_ignored[3];$/;"	m	struct:vfat_super_block	file:
+vs_label	libblkid-tiny/vfat.c	/^\/* 47*\/	unsigned char	vs_label[11];$/;"	m	struct:vfat_super_block	file:
+vs_magic	libblkid-tiny/vfat.c	/^\/* 52*\/	unsigned char   vs_magic[8];$/;"	m	struct:vfat_super_block	file:
+vs_media	libblkid-tiny/vfat.c	/^\/* 15*\/	unsigned char	vs_media;$/;"	m	struct:vfat_super_block	file:
+vs_pmagic	libblkid-tiny/vfat.c	/^\/*1fe*\/	unsigned char	vs_pmagic[2];$/;"	m	struct:vfat_super_block	file:
+vs_reserved	libblkid-tiny/vfat.c	/^\/* 0e*\/	uint16_t	vs_reserved;$/;"	m	struct:vfat_super_block	file:
+vs_reserved2	libblkid-tiny/vfat.c	/^\/* 34*\/	uint16_t	vs_reserved2[6];$/;"	m	struct:vfat_super_block	file:
+vs_root_cluster	libblkid-tiny/vfat.c	/^\/* 2c*\/	uint32_t	vs_root_cluster;$/;"	m	struct:vfat_super_block	file:
+vs_secs_track	libblkid-tiny/vfat.c	/^\/* 18*\/	uint16_t	vs_secs_track;$/;"	m	struct:vfat_super_block	file:
+vs_sector_size	libblkid-tiny/vfat.c	/^\/* 0b*\/	unsigned char	vs_sector_size[2];$/;"	m	struct:vfat_super_block	file:
+vs_sectors	libblkid-tiny/vfat.c	/^\/* 13*\/	unsigned char	vs_sectors[2];$/;"	m	struct:vfat_super_block	file:
+vs_serno	libblkid-tiny/vfat.c	/^\/* 43*\/	unsigned char	vs_serno[4];$/;"	m	struct:vfat_super_block	file:
+vs_sysid	libblkid-tiny/vfat.c	/^\/* 03*\/	unsigned char	vs_sysid[8];$/;"	m	struct:vfat_super_block	file:
+vs_total_sect	libblkid-tiny/vfat.c	/^\/* 20*\/	uint32_t	vs_total_sect;$/;"	m	struct:vfat_super_block	file:
+vs_unknown	libblkid-tiny/vfat.c	/^\/* 40*\/	unsigned char	vs_unknown[3];$/;"	m	struct:vfat_super_block	file:
+vs_version	libblkid-tiny/vfat.c	/^\/* 2a*\/	uint8_t		vs_version[2];$/;"	m	struct:vfat_super_block	file:
+warn	libblkid-tiny/c.h	182;"	d
+warnx	libblkid-tiny/c.h	186;"	d
+wr_cnt	libblkid-tiny/hfs.c	/^        uint32_t        wr_cnt;$/;"	m	struct:hfs_mdb	file:
+write	libfstools/volume.h	/^	volume_write_t		write;$/;"	m	struct:driver
+write_count	libblkid-tiny/hfs.c	/^	uint32_t		write_count;$/;"	m	struct:hfsplus_vol_header	file:
+xattr_id_table_start	libblkid-tiny/squashfs.c	/^	uint64_t xattr_id_table_start;$/;"	m	struct:squashfs_super_block	file:
+xt_clump_size	libblkid-tiny/hfs.c	/^        uint32_t        xt_clump_size;$/;"	m	struct:hfs_mdb	file:

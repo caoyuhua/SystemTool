@@ -1,0 +1,14 @@
+Package: kmod-ipt-nathelper
+Version: 3.10.14-1
+Depends: kernel (=3.10.14-1-a20d0171ecad86746b8b6323ab90fe05), kmod-ipt-core, kmod-ipt-nat
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: ramips_24kec
+Installed-Size: 8789
+Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - ftp
+ - irc
+ - tftp

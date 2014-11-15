@@ -1,0 +1,10 @@
+Package: ubus
+Version: 2014-05-24-3869e0ca0774e8f17597db5b60bee97d21b5b1fa
+Depends: libc, libubus, libblobmsg-json, ubusd
+Source: package/system/ubus
+License: LGPLv2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 4084
+Description:  OpenWrt RPC client utility

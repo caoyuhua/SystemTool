@@ -1,0 +1,16 @@
+config samba
+	option 'name'			'Wulian'
+	option 'workgroup'		'WORKGROUP'
+	option 'description'		'Share From Router'
+	option 'homes'			'1'
+
+config 'sambashare'
+	option 'read_only'       'no'
+	option 'create_mask'     '0777'
+	option 'dir_mask'        '0777'
+	option 'name'            'Wulian'
+	option 'path'             '/userdata'
+	option 'guest_ok'        'yes'
+	option 'force_user'        'root'
+	option 'privacy'     'no'
+	option 'browseable'     'yes'

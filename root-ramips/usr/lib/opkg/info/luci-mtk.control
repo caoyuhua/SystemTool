@@ -1,0 +1,9 @@
+Package: luci-mtk
+Version: 1
+Depends: libc, uhttpd, uhttpd-mod-ubus, lua, libuci-lua, libubus-lua, libiwinfo-lua
+Source: package/ralink/ui/luci-mtk
+Section: opt
+Maintainer: Hua Shao <hua.shao@mediatek.com>
+Architecture: ramips_24kec
+Installed-Size: 254456
+Description:  LuCI (Customized by MediaTek)

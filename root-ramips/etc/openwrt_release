@@ -1,0 +1,7 @@
+DISTRIB_ID="OpenWrt"
+DISTRIB_RELEASE="Bleeding Edge"
+DISTRIB_REVISION="unknown"
+DISTRIB_CODENAME="barrier_breaker"
+DISTRIB_TARGET="ramips/generic"
+DISTRIB_DESCRIPTION="OpenWrt Barrier Breaker unknown"
+DISTRIB_TAINTS="no-all"

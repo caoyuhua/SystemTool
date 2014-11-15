@@ -1,0 +1,8 @@
+Package: kmod-mt7620
+Version: 3.10.14+wifi2716_all_dpa_20130426-1
+Depends: kernel (=3.10.14-1-a20d0171ecad86746b8b6323ab90fe05)
+Source: package/ralink/drivers/mt7620
+Section: kernel
+Architecture: ramips_24kec
+Installed-Size: 828209
+Description:  Ralink MT7620 wifi AP driver

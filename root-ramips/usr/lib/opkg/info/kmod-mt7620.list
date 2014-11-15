@@ -1,0 +1,6 @@
+/lib/modules/3.10.14/mt7620.ko
+/etc/Wireless/mt7620/mt7620.dat.orig
+/etc/Wireless/mt7620/mt7620.dat
+/etc/Wireless/mt7620/mt7620.eeprom.bin
+/etc/modules.d/90-mt7620
+/lib/wifi/mt7620.sh

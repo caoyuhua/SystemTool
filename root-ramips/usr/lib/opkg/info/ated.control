@@ -1,0 +1,8 @@
+Package: ated
+Version: 1
+Depends: libc
+Source: package/ralink/applications/ated
+Section: Ralink Properties
+Architecture: ramips_24kec
+Installed-Size: 3277
+Description:  ATE Daemon

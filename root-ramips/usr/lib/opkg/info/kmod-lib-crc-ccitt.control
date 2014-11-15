@@ -1,0 +1,10 @@
+Package: kmod-lib-crc-ccitt
+Version: 3.10.14-1
+Depends: kernel (=3.10.14-1-a20d0171ecad86746b8b6323ab90fe05)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: ramips_24kec
+Installed-Size: 1375
+Description:  Kernel module for CRC-CCITT support

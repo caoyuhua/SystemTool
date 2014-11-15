@@ -1,0 +1,10 @@
+Package: kernel
+Version: 3.10.14-1-a20d0171ecad86746b8b6323ab90fe05
+Depends: libc
+Source: package/kernel/linux
+License: GPLv2
+Section: sys
+Status: unknown hold not-installed
+Architecture: ramips_24kec
+Installed-Size: 104
+Description:  Virtual kernel package
