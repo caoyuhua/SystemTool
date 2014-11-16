@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name[]=Hotplug Monitor
+Comment[]=Monitors the MMC/SD/USB Plug in/out.
+X-QPE-Library=libhotplugapplet.so
+[Translation]
+File=QtopiaPlugins
+Context=Applets

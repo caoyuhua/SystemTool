@@ -1,0 +1,21 @@
+#!/bin/sh
+
+case $1 in
+  -r)
+	eeprog /dev/i2c/0 80 -r 0:256 -f | hexdump -Cv
+	;;
+  -w)
+  	if [ ${#2} = 0 ]; then
+  		echo Need string to write
+  		exit 1
+  	fi
+	echo -n $2 | eeprog /dev/i2c/0 80 -w 0 -f
+	echo to read to verify:
+	eeprog /dev/i2c/0 80 -r 0:${#2} -f | hexdump -Cv
+	;;
+  *)
+	echo "Usage: $0 -r  or"
+	echo "       $0 -w \"string\""
+
+	;;
+esac

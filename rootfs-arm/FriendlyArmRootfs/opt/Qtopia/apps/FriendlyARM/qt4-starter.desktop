@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=qt4-starter
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=qt4-starter
+Icon=qt4-starter
+Type=Application
+Name[]=Start Qt4.6.3
+CanFastload=0

@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=wifi
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=wifi
+Icon=wifi
+Type=Application
+Name[]=无线网络设置
+CanFastload=0

@@ -1,0 +1,5 @@
+# KDE Cookie File
+#
+# Host               Domain               Path         Exp.date  Prot Name       Value Secure
+[.google.cn]
+www.google.cn        ".google.cn"         "/"          1301139405   100 PREF       ID=8c0477c6c9164d79:NW=1:TM=1238067405:LM=1238067405:S=a2XRvEa5tzQK1oAp 0   

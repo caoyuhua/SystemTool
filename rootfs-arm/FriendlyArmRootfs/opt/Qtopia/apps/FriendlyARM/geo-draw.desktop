@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=geo-draw
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=geo-draw
+Icon=geo-draw
+Type=Application
+Name[]=神奇几何
+CanFastload=0

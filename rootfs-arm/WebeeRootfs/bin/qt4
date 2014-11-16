@@ -1,0 +1,51 @@
+#!/bin/sh
+export QTDIR=/usr/local/Trolltech/QtEmbedded-4.6.3-arm
+export QPEDIR=/usr/local/Trolltech/QtEmbedded-4.6.3-arm
+export LD_LIBRARY_PATH=$QTDIR/lib:/usr/local/lib:$LD_LIBRARY_PATH
+export QT_PLUGIN_PATH=$QTDIR/plugins/
+export T_ROOT=/usr/local 
+export PATH=$QTDIR/bin:$PATH
+
+#export TSLIB_TSDEVICE=/dev/event0 
+export TSLIB_CALIBFILE=/outfile/etc/pointercal
+export TSLIB_CONFFILE=/outfile/etc/ts.conf
+export TSLIB_PLUGINDIR=/outfile/lib/ts
+export LD_LIBRARY_PATH=/usr/local/lib
+export TSLIB_CONSOLEDEVICE=none
+export TSLIB_FBDEVICE=/dev/fb0
+
+#export TSLIB_TSDEVICE=/dev/event0 
+#export TSLIB_CALIBFILE=/etc/pointercal
+#export TSLIB_CONFFILE=/usr/bin/etc/ts.conf
+#export TSLIB_PLUGINDIR=/out/bin/lib/ts
+##export LD_LIBRARY_PATH=/usr/local/lib
+#export TSLIB_CONSOLEDEVICE=none
+#export TSLIB_FBDEVICE=/dev/fb0
+
+export PATH=/bin:/sbin:/usr/bin/:/usr/sbin:/usr/local/bin
+export QWS_SIZE=800x480
+export QWS_DISPLAY="LinuxFB:mmWidth95:0"
+#export QWS_DISPLAY="LinuxFB:mmmWidth180:0"
+export QWS_DISPLAY="LinuxFB:/dev/fb0"
+#export QWS_KEYBOARD="TTY:/dev/tty1"
+export QWS_MOUSE_PROTO="TSLIB:/dev/event0"
+export QT_QWS_FONTDIR=/usr/local/Trolltech/QtEmbedded-4.6.3-arm/lib/fonts
+
+#TS_INFO_FILE=/sys/devices/virtual/input/input0/uevent
+#if [ -e $TS_INFO_FILE -a "/bin/grep -q TouchScreen < $TS_INFO_FILE" ]; then
+#	export QWS_MOUSE_PROTO="Tslib:/dev/input/event0 MouseMan:/dev/input/mice"
+#	if [ ! -s /outfile/etc/pointercal ] ; then
+#		rm /etc/pointercal
+#		/usr/local/bin/ts_calibrate
+#	fi
+#else
+#	export QWS_MOUSE_PROTO="MouseMan:/dev/input/mice"
+#fi
+#unset TS_INFO_FILE
+
+#export QWS_KEYBOARD=TTY:/dev/tty1
+
+export HOME=/root
+
+cd /webee_qt
+./qt -qws

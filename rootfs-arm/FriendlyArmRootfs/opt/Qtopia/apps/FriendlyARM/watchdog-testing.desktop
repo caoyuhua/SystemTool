@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=watchdog-testing
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=watchdog-testing
+Icon=watchdog-testing
+Type=Application
+Name[]=看门狗
+CanFastload=0

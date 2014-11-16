@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=adc-testing
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=adc-testing
+Icon=adc-testing
+Type=Application
+Name[]=A/D转换
+CanFastload=0

@@ -1,0 +1,7 @@
+QMAKE_PRL_BUILD_DIR = /home/izobs/workspace/webee/qt/qt-everywhere-opensource-src-4.8.5/./tools/assistant/lib/fulltextsearch
+QMAKE_PRO_INPUT = fulltextsearch.pro
+QMAKE_PRL_TARGET = libQtCLucene.so.4.8.5
+QMAKE_PRL_DEFINES = QT_SHARED
+QMAKE_PRL_CONFIG = lex yacc uic resources qt release incremental link_prl cross_compile shared def_files_disabled no_mocdepend release stl qt_no_framework cross_compile release embedded stl dylib create_prl link_prl depend_includepath QTDIR_build qt_install_headers qt depend_includepath qmake_cache target_qt hide_symbols create_pc create_libtool explicitlib qt warn_off hide_symbols exceptions moc thread dll shared
+QMAKE_PRL_VERSION = 4.8.5
+QMAKE_PRL_LIBS = -L/home/izobs/workspace/opt/tslib/lib -L/home/izobs/workspace/opt/qt-4.8.5-arm/lib  -lQtNetwork -L/home/izobs/workspace/opt/tslib/lib -L/home/izobs/workspace/opt/qt-4.8.5-arm/lib -lQtCore -lpthread 

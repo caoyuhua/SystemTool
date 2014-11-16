@@ -1,0 +1,9 @@
+[Translation]
+File=QtopiaApplications
+Context=tracer
+Comment[Desktop Entry/Name]=tracer from FriendlyARM
+[Desktop Entry]
+Exec=tracer
+Icon=tracer
+Type=Application
+Name[]=USB 摄像头

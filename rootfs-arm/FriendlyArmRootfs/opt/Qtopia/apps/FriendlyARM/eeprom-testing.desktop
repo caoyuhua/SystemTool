@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=eeprom-testing
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=eeprom-testing
+Icon=eeprom-testing
+Type=Application
+Name[]=EEPROM
+CanFastload=0

@@ -1,0 +1,39 @@
+HOSTNAME='/bin/hostname'
+PS1='[Webee210]\# '
+export PS1 HOSTNAME
+insmod ko/cfbimgblt.ko 
+insmod ko/cfbfillrect.ko 
+insmod ko/cfbcopyarea.ko
+insmod ko/webee210_lcd.ko
+
+#ft5306
+#insmod ko/ft5306/i2c-s3c2410.ko
+#insmod ko/ft5306/dev-s3c.ko
+#insmod ko/ft5306/drv-5306.ko
+
+#ft5206
+insmod ko/ft5206/i2c-s3c2410.ko
+insmod ko/ft5206/dev-s3c.ko
+insmod ko/ft5206/drv-5206.ko
+
+
+
+export TSLIB_ROOT=/usr/local/tslib 
+export SDLROOT=/usr/local/SDL
+export TSLIB_TSDEVICE=/dev/event0
+export TSLIB_CONFFILE=$TSLIB_ROOT/etc/ts.conf
+export TSLIB_PLUGINDIR=$TSLIB_ROOT/lib/ts
+export TSLIB_CALIBFILE=/etc/pointeral
+export TSLIB_FBDEVICE=/dev/fb0
+export QWS_MOUSE_PROTO=tslib:/dev/event0
+export QWS_SIZE=800*480
+export QTDIR=/usr/local/qt4.8
+export QT_QWS_FONTDIR=$QTDIR/lib/fonts
+export LD_LIBRARY_PATH=$TSLIB_ROOT/lib:$SDLROOT/lib:$QTDIR/lib:/usr/local/lib:$LD_LIBRARY_PATH
+export QT_PLUGIN_PATH=$QTDIR/plugins/
+
+export SDL_NOMOUSE=1
+
+/webee_qt/qt -qws &
+
+

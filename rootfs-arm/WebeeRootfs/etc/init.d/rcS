@@ -1,0 +1,16 @@
+mount -a
+mkdir /dev/pts
+mount -t devpts devpts /dev/pts
+echo /sbin/mdev > /proc/sys/kernel/hotplug
+mdev -s
+/bin/hostname simon210
+
+#export TSLIB_TSDEVICE=/dev/event0
+#export TSLIB_CALIBFILE=/outfile/etc/pointercal
+#export TSLIB_CONFFILE=/outfile/etc/ts.conf
+#export TSLIB_PLUGINDIR=/outfile/lib/ts
+#export LD_LIBRARY_PATH=/usr/local/lib
+#export TSLIB_CONSOLEDEVICE=none
+#export TSLIB_FBDEVICE=/dev/fb0
+
+#qt4
