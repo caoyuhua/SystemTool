@@ -74,21 +74,21 @@ cmdline(void)
 }
 
 int
-main(int argc, char **argv)
+main(int argc, char **argv)//1.启动第一阶段：openwrt的init程序
 {
 	pid_t pid;
 
 	sigaction(SIGTERM, &sa_shutdown, NULL);
 	sigaction(SIGUSR1, &sa_shutdown, NULL);
-	sigaction(SIGUSR2, &sa_shutdown, NULL);
+	sigaction(SIGUSR2, &sa_shutdown, NULL);//sigaction，设置SIGUSR1等三个信号的处理函数为sa_shutdown(一旦捕获到这三个信号便会执行处理函数).
 
-	early();
+	early();//early.c中，主要挂载proc sys和tmpfs文件系统并将STDIN STDOUT文件句柄设置为/dev/console
 	cmdline();
 	watchdog_init(1);
 
 	pid = fork();
 	if (!pid) {
-		char *kmod[] = { "/sbin/kmodloader", "/etc/modules-boot.d/", NULL };
+		char *kmod[] = { "/sbin/kmodloader", "/etc/modules-boot.d/", NULL };//kmodloader命令由ubox源码编译出来。
 
 		if (debug < 3) {
 			int fd = open("/dev/null", O_RDWR);
@@ -101,14 +101,14 @@ main(int argc, char **argv)
 					close(fd);
 			}
 		}
-		execvp(kmod[0], kmod);
+		execvp(kmod[0], kmod);//execvp(),执行应用程序，第二个参数作为应用程序的入参(/etc/modules-boot.d/只有部分，还有/etc/modules.d在何处加载??)
 		ERROR("Failed to start kmodloader\n");
 		exit(-1);
 	}
 	if (pid <= 0)
 		ERROR("Failed to start kmodloader instance\n");
 	uloop_init();
-	preinit();
+	preinit();//内核先执行/sbin/init(/sbin/init即是本init.c编译而来)并在此处调preinit()(执行了/etc/preinit脚本；最后启动/sbin/procd)
 	uloop_run();
 
 	return 0;

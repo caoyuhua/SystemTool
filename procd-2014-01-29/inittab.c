@@ -238,7 +238,7 @@ void procd_inittab_run(const char *handler)
 void procd_inittab(void)
 {
 #define LINE_LEN	128
-	FILE *fp = fopen(tab, "r");
+	FILE *fp = fopen(tab, "r");//打开/etc/inittab文件，解析并保存文件每行中的action和对应的process字段(action<-->process,如procd中执行sysinit其对应的action就是依次执行/etc/init.d/rcs或boot脚本-->有的inittab定义sysinit字段的process为rcs有的为boot)。
 	struct init_action *a;
 	regex_t pat_inittab;
 	regmatch_t matches[5];

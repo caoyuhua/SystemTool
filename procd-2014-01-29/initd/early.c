@@ -27,14 +27,14 @@
 static void
 early_mounts(void)
 {
-	mount("proc", "/proc", "proc", MS_NOATIME, 0);
+	mount("proc", "/proc", "proc", MS_NOATIME, 0);//内核proc设备；挂载到/proc目录下；文件系统类型为proc;挂载模式；文件系统权限及读写标志。
 	mount("sysfs", "/sys", "sysfs", MS_NOATIME, 0);
 
 	mount("tmpfs", "/tmp", "tmpfs", MS_NOSUID | MS_NODEV | MS_NOATIME, NULL);
 	mkdir("/tmp/run", 0777);
 	mkdir("/tmp/lock", 0777);
 	mkdir("/tmp/state", 0777);
-	symlink("/tmp", "/var");
+	symlink("/tmp", "/var");//为/tmp目录建立一符号链接到/var目录，访问/tmp目录即是访问/var目录。
 
 	mount("tmpfs", "/dev", "tmpfs", MS_NOATIME, "mode=0755,size=512K");
 	mkdir("/dev/shm", 0755);
@@ -46,8 +46,8 @@ static void
 early_dev(void)
 {
 	mkdev("*", 0600);
-	mknod("/dev/null", 0666, makedev(1, 3));
-}
+	mknod("/dev/null", 0666, makedev(1, 3));//参数1:设备节点的完整路径及名称；访问权限；makedev在内核中创建设备文件(主设备号，次设备号)
+}///dev/null这一设备文件在此处创建，/dev/console这一设备文件在何处创建??
 
 static void
 early_console(const char *dev)
@@ -64,7 +64,7 @@ early_console(const char *dev)
 	if (dd < 0)
 		dd = open("/dev/null", O_RDWR);
 
-	dup2(dd, STDIN_FILENO);
+	dup2(dd, STDIN_FILENO);//dup2()，为文件句柄赋值(此处将linux的标准输入标准输出都设置成/dev/console文件)
 	dup2(dd, STDOUT_FILENO);
 	dup2(dd, STDERR_FILENO);
 
@@ -83,7 +83,7 @@ early_env(void)
 void
 early(void)
 {
-	if (getpid() != 1)
+	if (getpid() != 1)//getpid()获取当前进程的pid号，1为procd进程的pid号。
 		return;
 
 	early_mounts();

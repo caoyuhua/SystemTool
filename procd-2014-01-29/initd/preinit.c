@@ -72,7 +72,7 @@ spawn_procd(struct uloop_process *proc, int ret)
 		setenv("DBGLVL", dbg, 1);
 	}
 
-	execvp(argv[0], argv);
+	execvp(argv[0], argv);//启动/sbin/procd进程
 }
 
 static void
@@ -107,7 +107,7 @@ preinit(void)
 	preinit_proc.cb = spawn_procd;
 	preinit_proc.pid = fork();
 	if (!preinit_proc.pid) {
-		execvp(init[0], init);
+		execvp(init[0], init);//执行/etc/preinit脚本
 		ERROR("Failed to start preinit\n");
 		exit(-1);
 	}
@@ -115,7 +115,21 @@ preinit(void)
 		ERROR("Failed to start new preinit instance\n");
 		return;
 	}
-	uloop_process_add(&preinit_proc);
+	uloop_process_add(&preinit_proc);//注册preinit_proc进程(即/sbin/procd程序)到uloop事件处理函数
 
-	DEBUG(4, "Launched preinit instance, pid=%d\n", (int) preinit_proc.pid);
+	DEBUG(4, "Launched preinit instance, pid=%d\n", (int) preinit_proc.pid);//执行完etc/preinit脚本后开始执行procd??
 }
+//如下信息是执行preinit脚本打印出来的，preinit脚本打印且只会打印如下几条信息(sbin/preinit及/lib/preinit目录下各脚本??)
+/*
+procd: - preinit -
+Press the [f] key and hit [enter] to enter failsafe mode
+Press the [1], [2], [3] or [4] key and hit [enter] to select the debug level
+kmod: ran 1 iterations
+[    8.460000] jffs2: notice: (268) jffs2_build_xattr_subsystem: complete building xattr subsystem, 1 of xdatum (1 unchecked, 0 orphan) and 13 of xref (0 dead, 2 orphan) found.
+block: extroot: no root or overlay mount defined
+jffs2 is ready
+jffs2 is ready
+[    8.536000] jffs2: notice: (265) jffs2_build_xattr_subsystem: complete building xattr subsystem, 1 of xdatum (1 unchecked, 0 orphan) and 13 of xref (0 dead, 2 orphan) found.
+switching to overlay
+
+*/

@@ -67,7 +67,7 @@ int main(int argc, char **argv)
 	if (getpid() != 1)
 		procd_connect_ubus();
 	else
-		procd_state_next();
+		procd_state_next();//进程pid=1才执行procd_state_next，这才是开机启动流程中的procd，负责解析/etc/inittab文件并据此依次启动系统。
 	uloop_run();
 
 	return 0;

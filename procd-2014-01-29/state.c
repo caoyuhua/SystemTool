@@ -44,7 +44,7 @@ static void state_enter(void)
 		LOG("- early -\n");
 		watchdog_init(0);
 		hotplug("/etc/hotplug.json");
-		procd_coldplug();
+		procd_coldplug();//执行完毕后在udevtrigger_complete()中再次调procd_state_next。
 		break;
 
 	case STATE_INIT:
@@ -55,13 +55,14 @@ static void state_enter(void)
 
 		LOG("- init -\n");
 		service_init();
-		service_start_early("ubus", ubus_cmd);
+		service_start_early("ubus", ubus_cmd);//将/etc/init.d/ubus脚本（启动ubusd的脚步）加入启动队列init_action中。
 
-		procd_inittab();
+		procd_inittab();//打开/etc/inittab文件，解析并保存每行中的action和process字段内容(各action是procd中自行定义，并由procd调用procd_inittab_run启动action对应process字段定义的应用)
+//busybox的处理:若打开/etc/inittab失败无法获取各action对应process的路径，则执行new_init_action(SYSINIT,INIT_SCRIPT,"")--->执行sysinit及对应process路径INIT_SCRIPT(etc/init.d/rcs)
 		procd_inittab_run("respawn");
-		procd_inittab_run("askconsole");
+		procd_inittab_run("askconsole");//procd_inittab_run，此函数类似busybox的new_init_action
 		procd_inittab_run("askfirst");
-		procd_inittab_run("sysinit");
+		procd_inittab_run("sysinit");//执行启动队列init_action中的sysinit；在runrc()中再次调用procd_state_next。
 		break;
 
 	case STATE_RUNNING:

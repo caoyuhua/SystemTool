@@ -137,7 +137,7 @@ static int _rc(struct runqueue *q, char *path, const char *file, char *pattern, 
 	}
 
 	for (j = 0; j < gl.gl_pathc; j++)
-		add_initd(q, gl.gl_pathv[j], param);
+		add_initd(q, gl.gl_pathv[j], param);//将/etc/init.d目录下名称为file(file被包含在gl结构体)的各脚本加入启动队列，后续依次启动系统各服务
 
 	globfree(&gl);
 
@@ -150,7 +150,7 @@ int rcS(char *pattern, char *param, void (*q_empty)(struct runqueue *))
 	q.empty_cb = q_empty;
 	q.max_running_tasks = 1;
 
-	return _rc(&q, "/etc/rc.d", pattern, "*", param);
+	return _rc(&q, "/etc/rc.d", pattern, "*", param);//该目录下均是指向/etc/init.d的软连接。
 }
 
 int rc(const char *file, char *param)

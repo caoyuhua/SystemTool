@@ -139,7 +139,7 @@ service_update(struct service *s, struct blob_attr *config, struct blob_attr **t
 			vlist_flush(&s->instances);
 	}
 
-	rc(s->name, "running");
+	rc(s->name, "running");//将/etc/init.d目录下名称为s->name脚本加入启动队列，并在procd_inittab_run("sysinit")中启动该脚本。
 
 	return 0;
 }
@@ -230,7 +230,7 @@ service_handle_set(struct ubus_context *ctx, struct ubus_object *obj,
 	s = avl_find_element(&services, name, s, avl);
 	if (s) {
 		DEBUG(2, "Update service %s\n", name);
-		return service_update(s, msg, tb, add);
+		return service_update(s, msg, tb, add);//将/etc/init.d目录下某个脚本加入init_action启动队列。
 	}
 
 	DEBUG(2, "Create service %s\n", name);
