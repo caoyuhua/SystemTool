@@ -47,10 +47,10 @@ start(int argc, char *argv[1])
 
 	case FS_JFFS2:
 	case FS_UBIFS:
-		mount_overlay();
+		mount_overlay();//将/dev/root挂载到/下，将rootfs_data分区挂载到/overlay下。
 		break;
 
-	case FS_SNAPSHOT:
+	case FS_SNAPSHOT://snapshot文件系统??
 		mount_snapshot();
 		break;
 	}
