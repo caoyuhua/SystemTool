@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include <uci.h>
+#include <uci.h>//调用libuci.so库中的函数，uci源码包编译出libuci.so。
 
 #include "netifd.h"
 #include "interface.h"
@@ -149,7 +149,7 @@ config_init_devices(void)
 {
 	struct uci_element *e;
 
-	uci_foreach_element(&uci_network->sections, e) {
+	uci_foreach_element(&uci_network->sections, e) {//遍历配置文件中的每个config节点
 		struct uci_section *s = uci_to_section(e);
 		const struct device_type *devtype = NULL;
 		const char *type, *name;
@@ -157,17 +157,17 @@ config_init_devices(void)
 		if (strcmp(s->type, "device") != 0)
 			continue;
 
-		name = uci_lookup_option_string(uci_ctx, s, "name");
+		name = uci_lookup_option_string(uci_ctx, s, "name");//获取每个config节点name字段的值
 		if (!name)
 			continue;
 
-		type = uci_lookup_option_string(uci_ctx, s, "type");
+		type = uci_lookup_option_string(uci_ctx, s, "type");//获取每个config节点type字段的值
 		if (type) {
-			if (!strcmp(type, "bridge"))
+			if (!strcmp(type, "bridge"))//该config节点的name字段为网桥
 				devtype = &bridge_device_type;
-			else if (!strcmp(type, "tunnel"))
+			else if (!strcmp(type, "tunnel"))//该config节点的name字段为IP_tunnel
 				devtype = &tunnel_device_type;
-			else if (!strcmp(type, "macvlan"))
+			else if (!strcmp(type, "macvlan"))//该config节点的name字段为mac_vlan
 				devtype = &macvlan_device_type;
 		}
 
@@ -362,21 +362,21 @@ config_init_wireless(void)
 void
 config_init_all(void)
 {
-	uci_network = config_init_package("network");
+	uci_network = config_init_package("network");//uci_load(),从etc/config/network载入配置文件
 	if (!uci_network) {
-		fprintf(stderr, "Failed to load network config\n");
+		fprintf(stderr, "Failed to load network config\n");//载入配置文件失败
 		return;
 	}
 
-	uci_wireless = config_init_package("wireless");
+	uci_wireless = config_init_package("wireless");//载入etc/config/wireless配置文件
 
 	vlist_update(&interfaces);
 	config_init = true;
 	device_lock();
 
 	device_reset_config();
-	config_init_devices();
-	config_init_interfaces();
+	config_init_devices();//设备:/etc/config/wireless中每个config配置节点的device字段
+	config_init_interfaces();//接口:/etc/config/network中每个config配置节点的interface字段
 	config_init_routes();
 	config_init_rules();
 	config_init_globals();

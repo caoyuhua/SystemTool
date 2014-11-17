@@ -106,7 +106,7 @@ ${INIT_TRACE:+set -x}
 		"$@"
 		procd_close_service
 	}
-
+#/etc/init.d/network restart中调用的start stop函数就是如下定义：
 	start() {
 		rc_procd start_service "$@"
 		if eval "type service_started" 2>/dev/null >/dev/null; then

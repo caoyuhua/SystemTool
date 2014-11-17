@@ -224,7 +224,8 @@ void netifd_reload(void)
 void netifd_restart(void)
 {
 	main_timer.cb = netifd_do_restart;
-	interface_set_down(NULL);
+	interface_set_down(NULL);//无论wan口 lan口 br-lan网桥口还是wireless ra0口，均可通过ifconfig up/down改变接口状态。
+//netifd也有ifconfig工具的功能:另ifconfig这一busybox应用工具如何作用于内核网络接口驱动的(看busybox源码)?
 	uloop_timeout_set(&main_timer, 1000);
 }
 
@@ -234,10 +235,10 @@ static int usage(const char *progname)
 		"Options:\n"
 		" -d <mask>:		Mask for debug messages\n"
 		" -s <path>:		Path to the ubus socket\n"
-		" -p <path>:		Path to netifd addons (default: %s)\n"
-		" -h <path>:		Path to the hotplug script\n"
-		" -r <path>:		Path to resolv.conf\n"
-		" -l <level>:		Log output level (default: %d)\n"
+		" -p <path>:		Path to netifd addons (default: %s)\n"//指定netifd组件路径/lib/netifd
+		" -h <path>:		Path to the hotplug script\n"//指定网口热插拔事件发生时调用的脚本路径/sbin/hotplug-call
+		" -r <path>:		Path to resolv.conf\n" 
+		" -l <level>:		Log output level (default: %d)\n"//设置输出到/var/log/syslog消息的最低级别。
 		" -S:			Use stderr instead of syslog for log messages\n"
 		"			(default: "DEFAULT_HOTPLUG_PATH")\n"
 		"\n", progname, main_path, DEFAULT_LOG_LEVEL);
@@ -259,13 +260,13 @@ netifd_setup_signals(void)
 	memset(&s, 0, sizeof(s));
 	s.sa_handler = netifd_handle_signal;
 	s.sa_flags = 0;
-	sigaction(SIGINT, &s, NULL);
-	sigaction(SIGTERM, &s, NULL);
+	sigaction(SIGINT, &s, NULL);//来自键盘的中断信号，如crtl+c
+	sigaction(SIGTERM, &s, NULL);//软件中断信号，signal(SIGTERM,)来产生该信号。
 	sigaction(SIGUSR1, &s, NULL);
 	sigaction(SIGUSR2, &s, NULL);
 
-	s.sa_handler = SIG_IGN;
-	sigaction(SIGPIPE, &s, NULL);
+	s.sa_handler = SIG_IGN;//不做任何处理(即忽略SIGPIPE信号)
+	sigaction(SIGPIPE, &s, NULL);//往已disconnected管道或socket文件中写入数据，内核便会产生SIGPIPE信号。
 }
 
 static void
@@ -277,7 +278,7 @@ netifd_kill_processes(void)
 		netifd_kill_process(proc);
 }
 
-int main(int argc, char **argv)
+int main(int argc, char **argv)//netifd主进程
 {
 	const char *socket = NULL;
 	int ch;
@@ -290,7 +291,7 @@ int main(int argc, char **argv)
 			debug_mask = strtoul(optarg, NULL, 0);
 			break;
 		case 's':
-			socket = optarg;
+			socket = optarg;//将-s后设置的参数赋值给socket
 			break;
 		case 'p':
 			main_path = optarg;
@@ -317,7 +318,7 @@ int main(int argc, char **argv)
 	}
 
 	if (use_syslog)
-		openlog("netifd", 0, LOG_DAEMON);
+		openlog("netifd", 0, LOG_DAEMON);//<syslog.h>中的openlog函数:每条日志信息开头必有‘netifd’字段，cat /var/log/syslog可查看到日志.
 
 	netifd_setup_signals();
 	if (netifd_ubus_init(socket) < 0) {
@@ -325,14 +326,15 @@ int main(int argc, char **argv)
 		return 1;
 	}
 
-	if (system_init()) {
+	if (system_init()) {//netlink套接字创建
 		fprintf(stderr, "Failed to initialize system control\n");
 		return 1;
 	}
 
-	config_init_all();
+	config_init_all();//获取/etc/config/network wireless配置文件中各字段内容
 
-	uloop_run();
+	uloop_run();//uloop_run()后netifd进程一般将不会退出--->监听netlink套接字获取ubusd发来的请求
+	//(ubus call network.interface.wan down后执行ifconfig会发现wan口设备eth0.2消失，说明已经被down掉--->netifd源码中实现ifconfig xx up/down功能)。
 	netifd_kill_processes();
 
 	netifd_ubus_done();

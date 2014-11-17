@@ -11,7 +11,9 @@ init_switch() {
 	include /lib/network
 	setup_switch
 }
-
+#/etc/init.d/network start--->调用父shell rc.common中的start()--->start_service()，启动netifd进程-->在netifd中调用config_init_all()获取/etc/config/network或wireless配置文件，
+#据配置up/down端口(netifd自身函数实现类似ifconfig eth0 up功能)
+#/lib/netifd下dhcp.sh/ppp.sh等脚本启动udhcpd进程(dhcp.sh：启动udhcp进程的同时通过参数指定该进程的配置文件路径)。
 start_service() {
 #	init_switch
 
@@ -156,7 +158,9 @@ service_triggers()
 restart() {
 	ifdown -a
 	sleep 1
+#忽略kill发来的中断信号：TERM为系统中断信号，‘ ’为空命令，trap命令为收到某个系统信号后执行其后的命令。	
 	trap '' TERM
+#本shell无stop 和start函数的定义，但由本shell头部#!/bin/sh /etc/rc.common可知stop start函数可能定义在父shell rc.common中。	
 	stop "$@"
 	start "$@"
 }
