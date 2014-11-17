@@ -124,15 +124,15 @@ static int test_watch(struct ubus_context *ctx, struct ubus_object *obj,
 }
 
 static const struct ubus_method test_methods[] = {
-	UBUS_METHOD("hello", test_hello, hello_policy),
-	UBUS_METHOD("watch", test_watch, watch_policy),
+	UBUS_METHOD("hello", test_hello, hello_policy),//当ubusd发来hello服务请求时(RPC方法为hello)，直接调用test_hello中注册的hello_reply
+	UBUS_METHOD("watch", test_watch, watch_policy),//当ubusd发来watch服务请求时(RPC方法为watch)，直接调用test_watch中注册的test_handle_remove
 };
 
 static struct ubus_object_type test_object_type =
 	UBUS_OBJECT_TYPE("test", test_methods);
 
 static struct ubus_object test_object = {
-	.name = "test",
+	.name = "test",//该应用程序注册名称为test的object，对应ubus的RPC方法为test_hello和test_watch
 	.type = &test_object_type,
 	.methods = test_methods,
 	.n_methods = ARRAY_SIZE(test_methods),
@@ -142,15 +142,15 @@ static void server_main(void)
 {
 	int ret;
 
-	ret = ubus_add_object(ctx, &test_object);
-	if (ret)
+	ret = ubus_add_object(ctx, &test_object);//将该object的patch=test及hello watch方法写入blob_message
+	if (ret)//---->将blob_message写入ctx中的套接字var/run/ubus.sock中(相当于将该消息注册到了ubusd后台进程??)。
 		fprintf(stderr, "Failed to add object: %s\n", ubus_strerror(ret));
 
 	ret = ubus_register_subscriber(ctx, &test_event);
 	if (ret)
 		fprintf(stderr, "Failed to add watch handler: %s\n", ubus_strerror(ret));
 
-	uloop_run();
+	uloop_run();//该服务例程类似netifd进程，调用uloop_run会一直监听ubusd的套接字(var/run/ubus.sock)不会退出。
 }
 
 int main(int argc, char **argv)

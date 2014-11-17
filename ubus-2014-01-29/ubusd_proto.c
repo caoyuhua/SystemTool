@@ -396,8 +396,8 @@ static const ubus_cmd_cb handlers[__UBUS_MSG_LAST] = {
 	[UBUS_MSG_SUBSCRIBE] = ubusd_handle_add_watch,
 	[UBUS_MSG_UNSUBSCRIBE] = ubusd_handle_remove_watch,
 	[UBUS_MSG_NOTIFY] = ubusd_handle_notify,
-};
-
+};//ubusd收到来自server(服务提供者如netifd)及client(请求服务者如ubus命令)的各种服务请求类型
+//如netifd可以发送一UBUS_MSG_ADD_OBJECT类型请求，这样其他应用就可通过ubus调用新添加object的RPC方法。
 void ubusd_proto_receive_message(struct ubus_client *cl, struct ubus_msg_buf *ub)
 {
 	ubus_cmd_cb cb = NULL;
@@ -407,7 +407,7 @@ void ubusd_proto_receive_message(struct ubus_client *cl, struct ubus_msg_buf *ub
 	retmsg->hdr.peer = ub->hdr.peer;
 
 	if (ub->hdr.type < __UBUS_MSG_LAST)
-		cb = handlers[ub->hdr.type];
+		cb = handlers[ub->hdr.type];//不同的服务请求类型分别调用不同的处理函数
 
 	if (cb)
 		ret = cb(cl, ub, ubus_parse_msg(ub->data));
