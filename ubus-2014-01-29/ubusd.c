@@ -303,11 +303,11 @@ static int usage(const char *progname)
 
 int main(int argc, char **argv)
 {
-	const char *ubus_socket = UBUS_UNIX_SOCKET;
+	const char *ubus_socket = UBUS_UNIX_SOCKET;//定义在cmake中，UBUS_UNIX_SOCKET="/var/run/ubus.sock"
 	int ret = 0;
 	int ch;
 
-	signal(SIGPIPE, SIG_IGN);
+	signal(SIGPIPE, SIG_IGN);//入参:信号类型；处理函数handler。
 
 	uloop_init();
 
@@ -321,17 +321,17 @@ int main(int argc, char **argv)
 		}
 	}
 
-	unlink(ubus_socket);
-	umask(0177);
+	unlink(ubus_socket);//unlink，删除/var/run/ubus.sock文件
+	umask(0177);//umask,设置用户创建新文件时文件的默认权限。
 	server_fd.fd = usock(USOCK_UNIX | USOCK_SERVER | USOCK_NONBLOCK, ubus_socket, NULL);
-	if (server_fd.fd < 0) {
+	if (server_fd.fd < 0) {//usock,首参为套接字类型，ubus_socket可为"127.0.0.1"或var/run/ubus.sock,最后一个为服务端口号"22"或NULL
 		perror("usock");
 		ret = -1;
 		goto out;
 	}
 	uloop_fd_add(&server_fd, ULOOP_READ | ULOOP_EDGE_TRIGGER);
 
-	uloop_run();
+	uloop_run();//调用uloop_run()，ubusd进程不会再退出--->ubusd通过select方法监听套接字/var/run/ubus.sock，接收ubus发出的服务查询/请求，并将服务请求转发给netifd等提供服务的进程。
 	unlink(ubus_socket);
 
 out:
