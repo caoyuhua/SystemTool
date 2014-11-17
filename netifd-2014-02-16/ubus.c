@@ -178,7 +178,7 @@ static struct ubus_object_type main_object_type =
 	UBUS_OBJECT_TYPE("netifd", main_object_methods);
 
 static struct ubus_object main_object = {
-	.name = "network",
+	.name = "network",//netifd注册名称为network的object，ubus的RPC方法为restart、reload、add_host_route、get_proto_handlers
 	.type = &main_object_type,
 	.methods = main_object_methods,
 	.n_methods = ARRAY_SIZE(main_object_methods),
@@ -311,7 +311,7 @@ static struct ubus_object_type dev_object_type =
 	UBUS_OBJECT_TYPE("device", dev_object_methods);
 
 static struct ubus_object dev_object = {
-	.name = "network.device",
+	.name = "network.device",//netifd注册名称为network.device的object，ubus的RPC方法为status、set_state等
 	.type = &dev_object_type,
 	.methods = dev_object_methods,
 	.n_methods = ARRAY_SIZE(dev_object_methods),
@@ -901,14 +901,14 @@ static struct ubus_object_type iface_object_type =
 
 
 static struct ubus_object iface_object = {
-	.name = "network.interface",
+	.name = "network.interface",//netifd注册名称为network.interface的object，ubus的RPC方法为up down add_device等。
 	.type = &iface_object_type,
 	.n_methods = ARRAY_SIZE(iface_object_methods),
 };
 
 static void netifd_add_object(struct ubus_object *obj)
 {
-	int ret = ubus_add_object(ubus_ctx, obj);
+	int ret = ubus_add_object(ubus_ctx, obj);//ubus_add_object在ubus/libubus_obj.c中，将应用程序定义的object及对应RPC方法注册到ubusd。
 
 	if (ret != 0)
 		fprintf(stderr, "Failed to publish object '%s': %s\n", obj->name, ubus_strerror(ret));

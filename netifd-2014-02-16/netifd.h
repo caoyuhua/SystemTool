@@ -32,9 +32,9 @@
 #define DEFAULT_MAIN_PATH	"./examples"
 #define DEFAULT_HOTPLUG_PATH	"./examples/hotplug-cmd"
 #define DEFAULT_RESOLV_CONF	"./tmp/resolv.conf"
-#else
-#define DEFAULT_MAIN_PATH	"/lib/netifd"
-#define DEFAULT_HOTPLUG_PATH	"/sbin/hotplug-call"
+#else//dhcp.sh启动udhcp进程:启动udhcpc进程时dhcp.script的路径可-s指定。
+#define DEFAULT_MAIN_PATH	"/lib/netifd"//定义netifd组件路径:dhcp.sh dhcp.script ppp.sh ppp-up/down netifd_wireless.sh
+#define DEFAULT_HOTPLUG_PATH	"/sbin/hotplug-call"//网口插拔时调用hotplug-call脚本-->间接调/etc/hotplug.d目录下各脚本。
 #define DEFAULT_RESOLV_CONF	"/tmp/resolv.conf.auto"
 #endif
 

@@ -49,7 +49,7 @@ run_cmd(const char *ifname, const char *device, enum interface_event event,
 	}
 
 	char *eventnames[] = {"ifdown", "ifup", "ifupdate"};
-	setenv("ACTION", eventnames[event], 1);
+	setenv("ACTION", eventnames[event], 1);//设置linux系统环境变量ACTION DEVICE 及INTERFACE的值
 	setenv("INTERFACE", ifname, 1);
 	if (device)
 		setenv("DEVICE", device, 1);
