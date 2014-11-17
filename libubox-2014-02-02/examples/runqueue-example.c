@@ -33,10 +33,10 @@ struct sleeper {
 static void q_empty(struct runqueue *q)
 {
 	fprintf(stderr, "All done!\n");
-	uloop_end();
+	uloop_end();//将uloop_canneled赋值为true，进而退出uloop_run()
 }
 
-static void q_sleep_run(struct runqueue *q, struct runqueue_task *t)
+static void q_sleep_run(struct runqueue *q, struct runqueue_task *t)//入参为运行队列、该运行队列中某个待执行的任务(含该任务id等信息)。
 {
 	struct sleeper *s = container_of(t, struct sleeper, proc.task);
 	char str[32];
@@ -44,7 +44,7 @@ static void q_sleep_run(struct runqueue *q, struct runqueue_task *t)
 
 	fprintf(stderr, "[%d/%d] start 'sleep %d'\n", q->running_tasks, q->max_running_tasks, s->val);
 
-	pid = fork();
+	pid = fork();//新建一个进程
 	if (pid < 0)
 		return;
 

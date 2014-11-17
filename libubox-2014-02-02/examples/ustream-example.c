@@ -111,7 +111,7 @@ static int run_server(void)
 
 	server.cb = server_cb;
 	server.fd = usock(USOCK_TCP | USOCK_SERVER | USOCK_IPV4ONLY | USOCK_NUMERIC, "127.0.0.1", port);
-	if (server.fd < 0) {
+	if (server.fd < 0) {//usock,首参为套接字类型，ubus_socket可为"127.0.0.1"或var/run/ubus.sock,最后一个为服务端口号"22"或NULL
 		perror("usock");
 		return 1;
 	}

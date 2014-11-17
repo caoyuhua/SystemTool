@@ -213,8 +213,8 @@ int uloop_init(void)
 	if (poll_fd >= 0)
 		return 0;
 
-	poll_fd = epoll_create(32);
-	if (poll_fd < 0)
+	poll_fd = epoll_create(32);//在内核空间创建一epoll文件描述符(入参为所能关注的套接字个数)。
+	if (poll_fd < 0)//用来存放你想关注的socket fd是否发生了以及发生了什么事件。
 		return -1;
 
 	fcntl(poll_fd, F_SETFD, fcntl(poll_fd, F_GETFD) | FD_CLOEXEC);
