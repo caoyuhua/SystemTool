@@ -14,7 +14,7 @@ static const char *indent_str = "\t\t\t\t\t\t\t\t\t\t\t\t\t";
 static void dump_attr_data(void *data, int len, int type, int indent, int next_indent);
 
 static void
-dump_table(struct blob_attr *head, int len, int indent, bool array)
+dump_table(struct blob_attr *head, int len, int indent, bool array)//打印出table和list型消息
 {
 	struct blob_attr *attr, *last_attr;
 	struct blobmsg_hdr *hdr;
@@ -63,7 +63,7 @@ enum {
 	FOO_TESTDATA
 };
 
-static const struct blobmsg_policy pol[] = {
+static const struct blobmsg_policy pol[] = {//定义blob_buf中存储的消息格式
 	[FOO_MESSAGE] = {
 		.name = "message",
 		.type = BLOBMSG_TYPE_STRING,
@@ -91,14 +91,14 @@ static void dump_message(struct blob_buf *buf)
 		return;
 	}
 	if (tb[FOO_MESSAGE])
-		fprintf(stderr, "Message: %s\n", (char *) blobmsg_data(tb[FOO_MESSAGE]));
+		fprintf(stderr, "Message: %s\n", (char *) blobmsg_data(tb[FOO_MESSAGE]));//打印字符串型消息
 
 	if (tb[FOO_LIST]) {
-		fprintf(stderr, "List: ");
+		fprintf(stderr, "List: ");//打印list型消息
 		dump_table(blobmsg_data(tb[FOO_LIST]), blobmsg_data_len(tb[FOO_LIST]), 0, true);
 	}
 	if (tb[FOO_TESTDATA]) {
-		fprintf(stderr, "Testdata: ");
+		fprintf(stderr, "Testdata: ");//打印table型消息
 		dump_table(blobmsg_data(tb[FOO_TESTDATA]), blobmsg_data_len(tb[FOO_TESTDATA]), 0, false);
 	}
 }
@@ -108,28 +108,28 @@ fill_message(struct blob_buf *buf)
 {
 	void *tbl;
 
-	blobmsg_add_string(buf, "message", "Hello, world!");
+	blobmsg_add_string(buf, "message", "Hello, world!");//添加名称为message，内容为Hello, world!的消息
 
-	tbl = blobmsg_open_table(buf, "testdata");
-	blobmsg_add_u32(buf, "hello", 1);
-	blobmsg_add_string(buf, "world", "2");
+	tbl = blobmsg_open_table(buf, "testdata");//添加数据表需先新建(testdata)并打开table
+	blobmsg_add_u32(buf, "hello", 1);//hello字段赋值为1
+	blobmsg_add_string(buf, "world", "2");//world字段值为字符串"2"
 	blobmsg_close_table(buf, tbl);
 
-	tbl = blobmsg_open_array(buf, "list");
+	tbl = blobmsg_open_array(buf, "list");//新建数据阵列需先新建并打开list
 	blobmsg_add_u32(buf, NULL, 0);
 	blobmsg_add_u32(buf, NULL, 1);
 	blobmsg_add_u32(buf, NULL, 2);
 	blobmsg_close_table(buf, tbl);
 }
 
-int main(int argc, char **argv)
+int main(int argc, char **argv)//实现往blob_buf类型缓冲区中添加各种类型消息，并用json格式打印缓冲区所有类型消息。
 {
 	static struct blob_buf buf;
 
 	blobmsg_buf_init(&buf);
 	fill_message(&buf);
 	dump_message(&buf);
-	fprintf(stderr, "json: %s\n", blobmsg_format_json(buf.head, false));
+	fprintf(stderr, "json: %s\n", blobmsg_format_json(buf.head, false));//json格式打印出缓冲区中所有类型消息。
 
 	if (buf.buf)
 		free(buf.buf);

@@ -23,7 +23,7 @@ blob_buffer_grow(struct blob_buf *buf, int minlen)
 {
 	int delta = ((minlen / 256) + 1) * 256;
 	buf->buflen += delta;
-	buf->buf = realloc(buf->buf, buf->buflen);
+	buf->buf = realloc(buf->buf, buf->buflen);//在原有blob_buf内存的基础上，重新为新blob_buf消息分配一块新内存(扩充原有blog_buf内存)
 	if (buf->buf)
 		memset(buf->buf + buf->buflen - delta, 0, delta);
 	return !!buf->buf;
