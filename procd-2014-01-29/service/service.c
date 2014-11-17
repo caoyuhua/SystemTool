@@ -422,7 +422,7 @@ static struct ubus_object_type main_object_type =
 	UBUS_OBJECT_TYPE("service", main_object_methods);
 
 static struct ubus_object main_object = {
-	.name = "service",
+	.name = "service",//procd注册名称为service的object，ubus的RPC方法为set，add，event等
 	.type = &main_object_type,
 	.methods = main_object_methods,
 	.n_methods = ARRAY_SIZE(main_object_methods),
@@ -453,7 +453,7 @@ service_start_early(char *name, char *cmdline)
 	blobmsg_close_table(&b, instance);
 	blobmsg_close_table(&b, instances);
 
-	return service_handle_set(NULL, NULL, NULL, "add", b.head);
+	return service_handle_set(NULL, NULL, NULL, "add", b.head);//等同于ubus call add ...(每次启动/etc/init.d中的一个系统服务)
 }
 
 void ubus_init_service(struct ubus_context *ctx)
