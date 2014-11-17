@@ -1,1 +1,11 @@
 /sbin/block hotplug
+echo "................../sbin/block hotplug" > /dev/console
+#此脚本不是shell脚本，因为文件开头无#!/bin/sh
+#echo "................../sbin/block hotplug"串口控制台不会有任何信息，必须加> /dev/console。
+
+
+
+
+#/dev/sda1挂载到/mnt/extdisk后，若进入/mnt/extdisk直行ls命令看不到sda1中的文件----->
+#且插入U盘时提示FAT-fs (mmcblk0p4): codepage cp437 not found------>
+#对openwrt来说menuconfig-->kernel modules-->Native language suppot-->选中cp437即可。

@@ -665,7 +665,7 @@ static int mount_device(struct blkid_struct_probe *pr, int hotplug)
 		return 0;
 	}
 
-	if (hotplug && !auto_mount)
+	if (hotplug && !auto_mount)//etc/config/fstab中auto_mount选项用于配置是否自动挂载(若不自动挂载只在/dev目录下有设备,因为此处直接返回未调用mount()函数)
 		return -1;
 
 	if (find_mount_point(pr->dev)) {
@@ -683,12 +683,12 @@ static int mount_device(struct blkid_struct_probe *pr, int hotplug)
 		int err = 0;
 
 		if (!target) {
-			snprintf(_target, sizeof(_target), "/mnt/%s", device);
+			snprintf(_target, sizeof(_target), "/mnt/%s", device);//默认挂载在/mnt/sd*目录下??
 			target = _target;
 		}
-		mkdir_p(target);
+		mkdir_p(target);//创建用于挂载的目录
 
-		if (check_fs)
+		if (check_fs)//etc/config/fstab中check_fs用于配置是否检测新设备的文件系统。
 			check_filesystem(pr);
 
 		err = mount(pr->dev, target, pr->id->name, m->flags,
@@ -760,16 +760,16 @@ static int main_hotplug(int argc, char **argv)
 	char path[32];
 	char *action, *device, *mount_point;
 
-	action = getenv("ACTION");
-	device = getenv("DEVNAME");
+	action = getenv("ACTION");//获取环境变量ACTION的值
+	device = getenv("DEVNAME");//获取环境变量DEVNAME的值
 
 	if (!action || !device)
 		return -1;
-	snprintf(path, sizeof(path), "/dev/%s", device);
+	snprintf(path, sizeof(path), "/dev/%s", device);//利用环境变量DEVNAME获取新设备的完整路径
 
 	if (!strcmp(action, "remove")) {
 		int err = 0;
-		mount_point = find_mount_point(path);
+		mount_point = find_mount_point(path);//cat /proc/mounts查看系统已挂载信息中是否有该移出的新设备。
 		if (mount_point)
 			err = umount2(mount_point, MNT_DETACH);
 
@@ -784,11 +784,11 @@ static int main_hotplug(int argc, char **argv)
 		return -1;
 	}
 
-	if (config_load(NULL))
+	if (config_load(NULL))//通过uci获取/etc/config/fstab中的配置内容
 		return -1;
 	cache_load(0);
 
-	return mount_device(find_block_info(NULL, NULL, path), 1);
+	return mount_device(find_block_info(NULL, NULL, path), 1);//根据/etc/config/fstab中配置的挂载模式挂载设备
 }
 
 static int find_block_mtd(char *name, char *part, int plen)
@@ -981,12 +981,12 @@ static int main_mount(int argc, char **argv)
 {
 	struct blkid_struct_probe *pr;
 
-	if (config_load(NULL))
+	if (config_load(NULL))//先加载获取/etc/config/fstab中的配置数据
 		return -1;
 
 	cache_load(1);
 	list_for_each_entry(pr, &devices, list)
-		mount_device(pr, 0);
+		mount_device(pr, 0);//然后根据获取的配置数据执行挂载命令
 
 	handle_swapfiles(true);
 
@@ -1195,19 +1195,19 @@ int main(int argc, char **argv)
 
 	if ((argc > 1) && !strcmp(base, "block")) {
 		if (!strcmp(argv[1], "info"))
-			return main_info(argc, argv);
+			return main_info(argc, argv);//block info命令的执行，此外还有block detect ，block mount，block unmount 
 
 		if (!strcmp(argv[1], "detect"))
 			return main_detect(argc, argv);
 
-		if (!strcmp(argv[1], "hotplug"))
+		if (!strcmp(argv[1], "hotplug"))//block hotplug命令的执行
 			return main_hotplug(argc, argv);
 
 		if (!strcmp(argv[1], "extroot"))
 			return main_extroot(argc, argv);
 
 		if (!strcmp(argv[1], "mount"))
-			return main_mount(argc, argv);
+			return main_mount(argc, argv);//修改完etc/config/fstab配置后/etc/init.d/fstab中为使配置生效而执行的block mount命令。
 
 		if (!strcmp(argv[1], "umount"))
 			return main_umount(argc, argv);
