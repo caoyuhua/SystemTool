@@ -1,3 +1,4 @@
+#smb.conf.template
 [global]
 	netbios name = |NAME| 
 	display charset = |CHARSET|

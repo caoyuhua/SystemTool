@@ -35,8 +35,11 @@ list_contains() {
 }
 
 config_load() {
+#由[ -f "${IPKG_INSTROOT}/etc/passwd" ]可猜测知，IPKG_INSTROOT表示rootfs根目录
 	[ -n "$IPKG_INSTROOT" ] && return 0
 	uci_load "$@"
+#config_load samba：加载/etc/config/samba配置文件。
+#config_load /usr/share/xx/version:加载/usr/share/xx目录下的version配置文件--->可指定所加载uci配置文件的路径，默认路径是/etc/config/	
 }
 
 reset_cb() {
@@ -90,6 +93,7 @@ config_unset() {
 
 # config_get <variable> <section> <option> [<default>]
 # config_get <section> <option>
+#config_get path sambashare path:获取/etc/config/samba中sambashare配置段中path字段的值
 config_get() {
 	case "$3" in
 		"") eval echo "\${CONFIG_${1}_${2}:-\${4}}";;
@@ -132,6 +136,7 @@ config_foreach() {
 		config_get cfgtype "$section" TYPE
 		[ -n "$___type" -a "x$cfgtype" != "x$___type" ] && continue
 		eval "$___function \"\$section\" \"\$@\""
+#config_foreach smb_add_share sambashare：运行smb_add_share这个函数，并将sambashare等参数作为smb_add_share函数的入参。		
 	done
 }
 

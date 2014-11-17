@@ -4,6 +4,7 @@ config samba
 	option 'description'		'Share From Router'
 	option 'homes'			'1'
 
+#/etc/config/samba
 config 'sambashare'
 	option 'read_only'       'no'
 	option 'create_mask'     '0777'

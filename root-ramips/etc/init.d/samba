@@ -1,10 +1,11 @@
 #!/bin/sh /etc/rc.common
 # Copyright (C) 2008-2012 OpenWrt.org
-
+#由此可知本脚本的父shell为/etc/rc.common
 START=60
 
 smb_header() {
 	local interface
+#获取/etc/config/samba中interface字段的值	
 	config_get interface $1 interface "loopback lan"
 
 	# resolve interfaces
@@ -39,7 +40,7 @@ smb_header() {
 	    -e "s#|INTERFACES|#$interfaces#g" \
 	    -e "s#|CHARSET|#$charset#g" \
 	    /etc/samba/smb.conf.template > /var/etc/smb.conf
-
+#将etc/config/samba中解析的各字段的值与smb.conf.template合并生成samba自身的配置文件smb.conf
 	local homes
 	config_get_bool homes $1 homes 0
 	[ $homes -gt 0 ] && {
@@ -54,6 +55,7 @@ EOT
 	}
 
 	[ -L /etc/samba/smb.conf ] || ln -nsf /var/etc/smb.conf /etc/samba/smb.conf
+#创建软连接：samba自身配置文件smb.conf的默认路径是/etc/samba/smb.conf	
 }
 
 smb_add_share() {
@@ -67,6 +69,7 @@ smb_add_share() {
 	local browseable
 
 	config_get name $1 name
+#获取/etc/config/samba中name字段的值	
 	config_get path $1 path
 	config_get users $1 users
 	config_get read_only $1 read_only
@@ -80,6 +83,7 @@ smb_add_share() {
 	[ -z "$name" -o -z "$path" ] && return
 
 	echo -e "\n[$name]\n\tpath = $path" >> /var/etc/smb.conf
+#将/etc/config/samba中解析的各字段值导出到smb.conf中	
 	[ -n "$users" ] && echo -e "\tvalid users = $users" >> /var/etc/smb.conf
 	[ -n "$read_only" ] && echo -e "\tread only = $read_only" >> /var/etc/smb.conf
 	[ -n "$guest_ok" ] && echo -e "\tguest ok = $guest_ok" >> /var/etc/smb.conf
@@ -89,12 +93,14 @@ smb_add_share() {
 	[ -n "$force_user" ] && echo -e "\tforce user = $force_user" >> /var/etc/smb.conf
 	[ -n "$privacy" ] && echo -e "\tprivacy = $privacy" >> /var/etc/smb.conf
 }
-
+#启动samba进程：/etc/init.d/samba start
 start() {
 	config_load samba
+#加载uci配置文件/etc/config/samba	
 	config_foreach smb_header samba
 	config_foreach smb_add_share sambashare
 	service_start /usr/sbin/smbd -D
+#启动samba进程(执行/usr/sbin/smbd时可使用-s选项指定samba自身配置文件smb.conf的路径)	
 	service_start /usr/sbin/nmbd -D
 }
 
