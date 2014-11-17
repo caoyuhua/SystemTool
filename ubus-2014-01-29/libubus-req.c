@@ -226,7 +226,7 @@ int ubus_invoke(struct ubus_context *ctx, uint32_t obj, const char *method,
 	ubus_invoke_async(ctx, obj, method, msg, &req);
 	req.data_cb = cb;
 	req.priv = priv;
-	return ubus_complete_request(ctx, &req, timeout);
+	return ubus_complete_request(ctx, &req, timeout);//ubus_complete_request，通过netlink发送消息(函数入参ctx中含socket套接字描述符)
 }
 
 static void

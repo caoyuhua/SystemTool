@@ -110,8 +110,8 @@ static int ubus_cli_call(struct ubus_context *ctx, int argc, char **argv)
 	if (argc < 2 || argc > 3)
 		return -2;
 
-	blob_buf_init(&b, 0);
-	if (argc == 3 && !blobmsg_add_json_from_string(&b, argv[2])) {
+	blob_buf_init(&b, 0);//b定义在本文件开头处，static struct blob_buf b;
+	if (argc == 3 && !blobmsg_add_json_from_string(&b, argv[2])) {//解析字符串argv[2]，生成json格式数据。
 		if (!simple_output)
 			fprintf(stderr, "Failed to parse message data\n");
 		return -1;
@@ -122,7 +122,7 @@ static int ubus_cli_call(struct ubus_context *ctx, int argc, char **argv)
 		return ret;
 
 	return ubus_invoke(ctx, id, argv[1], b.head, receive_call_result_data, NULL, timeout * 1000);
-}
+}//通过netlink将消息发送出去，并监听netlink套接字将对方回复的消息通过receive_call_result_data显示出来。
 
 static int ubus_cli_listen(struct ubus_context *ctx, int argc, char **argv)
 {
@@ -209,12 +209,12 @@ struct {
 	int (*cb)(struct ubus_context *ctx, int argc, char **argv);
 } commands[] = {
 	{ "list", ubus_cli_list },
-	{ "call", ubus_cli_call },
+	{ "call", ubus_cli_call },//ubus call network.device status(network.device为object，status为方法)
 	{ "listen", ubus_cli_listen },
-	{ "send", ubus_cli_send },
+	{ "send", ubus_cli_send },//只负责向ubusd进程发送network.device status服务请求，并不负责监听对方的回复及显示。
 };
 
-int main(int argc, char **argv)
+int main(int argc, char **argv)//ubus命令，不是ubusd哦。
 {
 	const char *progname, *ubus_socket = NULL;
 	static struct ubus_context *ctx;
@@ -227,10 +227,10 @@ int main(int argc, char **argv)
 	while ((ch = getopt(argc, argv, "vs:t:S")) != -1) {
 		switch (ch) {
 		case 's':
-			ubus_socket = optarg;
+			ubus_socket = optarg;//optarg为选项后跟的参数，设置套接字所在路径
 			break;
 		case 't':
-			timeout = atoi(optarg);
+			timeout = atoi(optarg);//设置ubus命令执行的超时时间，超时则退出ubus。
 			break;
 		case 'S':
 			simple_output = true;
@@ -243,7 +243,7 @@ int main(int argc, char **argv)
 		}
 	}
 
-	argc -= optind;
+	argc -= optind;//optind为选项序号
 	argv += optind;
 
 	cmd = argv[0];
@@ -266,7 +266,7 @@ int main(int argc, char **argv)
 			continue;
 
 		ret = commands[i].cb(ctx, argc, argv);
-		break;
+		break;//ubus命令相当于client，netifd等进程相当于server(详见ubus/examples/server.c与client.c)。
 	}
 
 	if (ret > 0 && !simple_output)
