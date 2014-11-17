@@ -55,7 +55,7 @@ early_console(const char *dev)
 	struct stat s;
 	int dd;
 
-	if (stat(dev, &s)) {
+	if (stat(dev, &s)) {//stat()，获取文件的状态信息(linux的ls命令源码使用stat函数较多)
 		ERROR("Failed to stat %s\n", dev);
 		return;
 	}
@@ -77,7 +77,7 @@ early_console(const char *dev)
 static void
 early_env(void)
 {
-	setenv("PATH", "/bin:/sbin:/usr/bin:/usr/sbin", 1);
+	setenv("PATH", "/bin:/sbin:/usr/bin:/usr/sbin", 1);//setenv,设置环境变量$PATH的值。
 }
 
 void

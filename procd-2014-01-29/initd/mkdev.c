@@ -66,12 +66,12 @@ static void find_devs(bool block)
 	struct dirent *dp;
 	DIR *dir;
 
-	dir = opendir(path);
+	dir = opendir(path);//打开/sys/dev/char目录
 	if (!dir)
 		return;
 
 	path = buf2 + sprintf(buf2, "%s/", path);
-	while ((dp = readdir(dir)) != NULL) {
+	while ((dp = readdir(dir)) != NULL) {//依次读取/sys/dev/char目录下的各个文件
 		char *c;
 		int major = 0, minor = 0;
 		int len;
@@ -83,7 +83,7 @@ static void find_devs(bool block)
 			continue;
 
 		strcpy(path, dp->d_name);
-		len = readlink(buf2, buf, sizeof(buf));
+		len = readlink(buf2, buf, sizeof(buf));//读取/sys/dev/char/符号链接内容并存储到buf指向的内存空间。
 		if (len <= 0)
 			continue;
 
@@ -91,7 +91,7 @@ static void find_devs(bool block)
 		if (!find_pattern(buf))
 			continue;
 
-		c = strrchr(buf, '/');
+		c = strrchr(buf, '/');//strrchr，查找第一次出现某字符串的位置。
 		if (!c)
 			continue;
 
@@ -114,7 +114,7 @@ int mkdev(const char *name, int _mode)
 {
 	char *pattern;
 
-	if (chdir("/dev"))
+	if (chdir("/dev"))//chdir，改变当前工作目录，类似cd命令。
 		return 1;
 
 	pattern = add_pattern(name);

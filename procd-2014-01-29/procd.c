@@ -37,8 +37,8 @@ static int usage(const char *prog)
 	return 1;
 }
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv)//内核发生热插拔时会执行一次/proc/sys/kernel/hotplug。
+{///sbin/mdev > /proc/sys/kernel/hotplug，本质上内核发生一次热插拔时执行一次/sbin/mdev
 	int ch;
 	char *dbglvl = getenv("DBGLVL");
 
@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 	while ((ch = getopt(argc, argv, "d:s:h:")) != -1) {
 		switch (ch) {
 		case 'h':
-			return hotplug_run(optarg);
+			return hotplug_run(optarg);//执行hotplug_run(/etc/hotplug-preinit.json):
 		case 's':
 			ubus_socket = optarg;
 			break;

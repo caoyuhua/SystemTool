@@ -90,9 +90,9 @@ preinit(void)
 	LOG("- preinit -\n");
 
 	plugd_proc.cb = plugd_proc_cb;
-	plugd_proc.pid = fork();
+	plugd_proc.pid = fork();//创建一个子进程，只有子进程pid=0.
 	if (!plugd_proc.pid) {
-		execvp(plug[0], plug);
+		execvp(plug[0], plug);//此时的procd本质是执行hotplug_run(/etc/hotplug-preinit.json):
 		ERROR("Failed to start plugd\n");
 		exit(-1);
 	}
@@ -100,7 +100,7 @@ preinit(void)
 		ERROR("Failed to start new plugd instance\n");
 		return;
 	}
-	uloop_process_add(&plugd_proc);
+	uloop_process_add(&plugd_proc);//注册plugd_proc进程到uloop事件处理函数
 
 	setenv("PREINIT", "1", 1);
 

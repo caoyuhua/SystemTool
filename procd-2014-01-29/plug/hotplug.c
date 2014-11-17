@@ -151,7 +151,7 @@ static void handle_exec(struct blob_attr *msg, struct blob_attr *data)
 
 	if (i > 0) {
 		argv[i] = NULL;
-		execvp(argv[0], &argv[0]);
+		execvp(argv[0], &argv[0]);//对exec的服务请求，直接执行传过来的应用程序即可(/etc/hotplug.d及/etc/rc.button)
 	}
 	exit(-1);
 }
@@ -371,7 +371,7 @@ static void rule_handle_command(struct json_script_ctx *ctx, const char *name,
 
 	for (i = 0; i < ARRAY_SIZE(handlers); i++)
 		if (!strcmp(handlers[i].name, name)) {
-			if (handlers[i].atomic)
+			if (handlers[i].atomic)//分别处理来自makedev rm exec的服务请求
 				handlers[i].handler(vars, data);
 			else
 				queue_add(&handlers[i], vars, data);
@@ -403,7 +403,7 @@ static void hotplug_handler(struct uloop_fd *u, unsigned int ev)
 {
 	int i = 0;
 	static char buf[4096];
-	int len = recv(u->fd, buf, sizeof(buf), MSG_DONTWAIT);
+	int len = recv(u->fd, buf, sizeof(buf), MSG_DONTWAIT);//接收套接字消息
 	void *index;
 	if (len < 1)
 		return;
@@ -422,8 +422,8 @@ static void hotplug_handler(struct uloop_fd *u, unsigned int ev)
 	}
 	blobmsg_close_table(&b, index);
 	DEBUG(3, "%s\n", blobmsg_format_json(b.head, true));
-	json_script_run(&jctx, rule_file, blob_data(b.head));
-}
+	json_script_run(&jctx, rule_file, blob_data(b.head));//执行makedev rm exec服务请求对应的处理函数(jctx中定义各处理函数)。
+}//根据netlink发来的消息及/etc/hotplug.json:获取执行/etc/hotplug.d及/etc/rc.button目录下的某个具体脚本。
 
 static struct uloop_fd hotplug_fd = {
 	.cb = hotplug_handler,
@@ -449,23 +449,23 @@ void hotplug(char *rules)
 	nls.nl_groups = -1;
 
 	if ((hotplug_fd.fd = socket(PF_NETLINK, SOCK_DGRAM | SOCK_CLOEXEC, NETLINK_KOBJECT_UEVENT)) == -1) {
-		ERROR("Failed to open hotplug socket: %s\n", strerror(errno));
+		ERROR("Failed to open hotplug socket: %s\n", strerror(errno));//创建netlink套接字
 		exit(1);
 	}
 	if (bind(hotplug_fd.fd, (void *)&nls, sizeof(struct sockaddr_nl))) {
-		ERROR("Failed to bind hotplug socket: %s\n", strerror(errno));
+		ERROR("Failed to bind hotplug socket: %s\n", strerror(errno));//绑定netlink套接字
 		exit(1);
 	}
 
-	json_script_init(&jctx);
+	json_script_init(&jctx);//jctx中含处理makedev rm exec各服务请求的处理函数
 	queue_proc.cb = queue_proc_cb;
-	uloop_fd_add(&hotplug_fd, ULOOP_READ);
+	uloop_fd_add(&hotplug_fd, ULOOP_READ);//向uloop注册刚刚创建的netlink套接字hotplug_fd.fd，当uloop提示所注册的套接字有消息时调用hotplug_fd.hotplug_handler(接收消息并执行相应的脚本文件??)。
 }
 
 int hotplug_run(char *rules)
 {
 	uloop_init();
-	hotplug(rules);
+	hotplug(rules);//rules为/etc/hotplug-preinit.json
 	uloop_run();
 
 	return 0;
