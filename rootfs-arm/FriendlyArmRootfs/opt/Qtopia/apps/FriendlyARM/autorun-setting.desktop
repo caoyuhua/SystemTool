@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=autorun-setting
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=autorun-setting
+Icon=autorun-setting
+Type=Application
+Name[]=自动启动设置
+CanFastload=0

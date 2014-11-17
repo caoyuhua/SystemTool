@@ -1,0 +1,30 @@
+#!/bin/sh
+
+export TSLIB_TSDEVICE=/dev/input/event0 
+export TSLIB_CONFFILE=/usr/local/etc/ts.conf
+export TSLIB_PLUGINDIR=/usr/local/lib/ts
+export TSLIB_CALIBFILE=/etc/pointercal
+export LD_LIBRARY_PATH=/usr/local/lib
+export PATH=/bin:/sbin:/usr/bin/:/usr/sbin:/usr/local/bin
+
+export QWS_DISPLAY=:1
+
+TS_INFO_FILE=/sys/devices/virtual/input/input0/uevent
+if [ -e $TS_INFO_FILE -a "/bin/grep -q TouchScreen < $TS_INFO_FILE" ]; then
+	export QWS_MOUSE_PROTO="Tslib:/dev/input/event0 MouseMan:/dev/input/mice"
+	if [ ! -s /etc/pointercal ] ; then
+		rm /etc/pointercal
+		/usr/local/bin/ts_calibrate
+	fi
+else
+	export QWS_MOUSE_PROTO="MouseMan:/dev/input/mice"
+fi
+unset TS_INFO_FILE
+
+export QWS_KEYBOARD=TTY:/dev/tty1
+
+export HOME=/root
+
+cd /usr/local/Trolltech/QtEmbedded-4.6.3-arm/demos/embedded/fluidlauncher
+./fluidlauncher -qws
+hotplug

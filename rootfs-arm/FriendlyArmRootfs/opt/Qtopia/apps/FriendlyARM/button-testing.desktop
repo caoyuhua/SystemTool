@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=button-testing
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=button-testing
+Icon=button-testing
+Type=Application
+Name[]=Buttons
+CanFastload=0

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rm /etc/ppp/connect-errors
+mv /etc/resolv.conf /etc/resolv.conf.orig
+mv /etc/ppp/resolv.conf /etc/
+
+echo $IPLOCAL $DNS1 $DNS2 > /var/run/ppp0-tmp
+mv /var/run/ppp0-tmp /var/run/ppp0-ok

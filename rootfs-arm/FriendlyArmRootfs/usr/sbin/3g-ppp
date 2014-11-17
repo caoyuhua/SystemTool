@@ -1,0 +1,44 @@
+#!/bin/sh
+[ -e /var/run/ppp0.pid ] && exit 1
+rm /var/run/ppp0-ok 2>/dev/null
+
+#---------------------------------------------- 
+ 
+if [ ! -e /var/run/initusb ]; then 
+    rm /dev/ttyUSB0 -f
+    rm /dev/ttyUSB1 -f
+    rm /dev/ttyUSB2 -f
+    rm /dev/ttyUSB3 -f
+
+    mknod /dev/ttyUSB0 c 188 0
+    mknod /dev/ttyUSB1 c 188 1
+    mknod /dev/ttyUSB2 c 188 2
+    mknod /dev/ttyUSB3 c 188 3
+
+    touch /var/run/initusb
+    echo "1" > /var/run/initusb
+fi
+
+CONFIGFILE=$2
+
+SWITCHMODEM=0
+
+chat -v TIMEOUT 3 -f /etc/ppp/peers/chat-testmodem < /dev/ttyUSB0 > /dev/ttyUSB0
+if [ $? -ne 0 ]; then
+    3g-modem -c $2 -W
+    SWITCHMODEM=1
+else
+    echo ">>> The usb device in modem mode. <<<"
+#   strlen( /etc/3g-modem/xxxx.xxxx.xxxx.xxxx ) = 33
+    if [ ${#CONFIGFILE} -lt "33" ]; then
+    	echo ">>> this modem no target vid and target pid <<<"
+	3g-modem -c $2 -W    	
+	SWITCHMODEM=1
+    fi
+fi
+
+
+#----------------------------------------------
+
+>/var/run/ppp0.pid
+( [ ${SWITCHMODEM} -ne 0 ] && sleep 8; pppd call $1; rm /var/run/ppp0.pid; )&

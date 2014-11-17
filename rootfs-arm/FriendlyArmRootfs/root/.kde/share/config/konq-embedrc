@@ -1,0 +1,10 @@
+[<default>]
+DefaultRadioButton=2
+ShowCookieDetails=false
+[Cookie Policy]
+CookieDomainAdvice=
+CookieGlobalAdvice=Accept
+[General]
+ShowLocationBar=true
+ShowStatusBar=true
+ZoomFactor=100

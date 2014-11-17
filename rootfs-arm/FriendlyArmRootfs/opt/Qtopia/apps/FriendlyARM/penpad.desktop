@@ -1,0 +1,9 @@
+[Translation]
+File=QtopiaApplications
+Context=penpad
+Comment[Desktop Entry/Name]=penpad from FriendlyARM
+[Desktop Entry]
+Exec=penpad
+Icon=penpad
+Type=Application
+Name[]=随手写

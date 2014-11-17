@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=serialport
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=serialport
+Icon=serialport
+Type=Application
+Name[]=串口助手
+CanFastload=0

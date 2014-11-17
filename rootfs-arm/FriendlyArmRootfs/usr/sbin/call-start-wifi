@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm /var/run/start-wifi-finish -f
+( eval $@; echo "1" > /var/run/start-wifi-finish; )&
+

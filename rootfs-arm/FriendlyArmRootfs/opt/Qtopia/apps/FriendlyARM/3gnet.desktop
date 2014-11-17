@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=3gnet
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=3gnet
+Icon=3gnet
+Type=Application
+Name[]=3G拨号上网
+CanFastload=0

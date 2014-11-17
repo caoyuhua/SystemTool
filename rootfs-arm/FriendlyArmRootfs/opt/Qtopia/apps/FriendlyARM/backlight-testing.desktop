@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=backlight-testing
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=backlight-testing
+Icon=backlight-testing
+Type=Application
+Name[]=背光控制
+CanFastload=0

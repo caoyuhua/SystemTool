@@ -1,0 +1,9 @@
+[Translation]
+File=QtopiaApplications
+Context=cmos-camera
+Comment[Desktop Entry/Name]=tracer from FriendlyARM
+[Desktop Entry]
+Exec=cmos-camera
+Icon=cmos-camera
+Type=Application
+Name[]=CMOS摄像头

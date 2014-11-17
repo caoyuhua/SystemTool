@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=networksetting
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=networksetting
+Icon=networksetting
+Type=Application
+Name[]=网络设置
+CanFastload=0

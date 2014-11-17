@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=Launcher
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Type=Application
+Exec=launchersettings
+Icon=launcher
+Name[]=启动器
+CanFastload=0
