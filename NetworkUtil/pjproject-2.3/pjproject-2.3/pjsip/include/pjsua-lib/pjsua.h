@@ -1332,7 +1332,9 @@ typedef struct pjsua_callback
      */
     void (*on_acc_find_for_incoming)(const pjsip_rx_data *rdata,
 				     pjsua_acc_id* acc_id);
-
+    
+    pj_status_t (*on_handle_server_msg)(const pjsip_rx_data *rdata,
+				     pjsua_acc_id* acc_id, pj_str_t *pRspMsg);
 } pjsua_callback;
 
 

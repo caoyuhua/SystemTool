@@ -46,6 +46,32 @@ export PJSUA_EXE:=pjsua-$(TARGET_NAME)$(HOST_EXE)
 
 
 ###############################################################################
+# Defines for building PJSWCenter
+#
+export PJSWCENTER_SRCDIR = ../src/pjsua
+export PJSWCENTER_OBJS += $(OS_OBJS) $(M_OBJS) $(CC_OBJS) $(HOST_OBJS) \
+            swcenter.o pjsua_app.o pjsua_app_cli.o pjsua_app_common.o \
+            pjsua_app_config.o pjsua_app_legacy.o
+export PJSWCENTER_CFLAGS += $(PJ_CFLAGS) $(CFLAGS)
+export PJSWCENTER_CXXFLAGS += $(PJ_CXXFLAGS) $(CFLAGS)
+export PJSWCENTER_LDFLAGS += $(PJ_LDFLAGS) $(PJ_LDLIBS) $(LDFLAGS)
+export PJSWCENTER_EXE:=pjswcenter-$(TARGET_NAME)$(HOST_EXE)
+
+
+###############################################################################
+# Defines for building PJIMCenter
+#
+export PJIMCENTER_SRCDIR = ../src/pjsua
+export PJIMCENTER_OBJS += $(OS_OBJS) $(M_OBJS) $(CC_OBJS) $(HOST_OBJS) \
+            imcenter.o
+export PJIMCENTER_CFLAGS += $(PJ_CFLAGS) $(CFLAGS)
+export PJIMCENTER_CXXFLAGS += $(PJ_CXXFLAGS) $(CFLAGS)
+export PJIMCENTER_LDFLAGS += $(PJ_LDFLAGS) $(PJ_LDLIBS) $(LDFLAGS)
+export PJIMCENTER_EXE:=pjimcenter-$(TARGET_NAME)$(HOST_EXE)
+
+
+
+###############################################################################
 # Defines for building pjsystest
 #
 export PJSYSTEST_SRCDIR = ../src/pjsystest
@@ -59,7 +85,7 @@ export PJSYSTEST_EXE:=pjsystest-$(TARGET_NAME)$(HOST_EXE)
 
 export CC_OUT CC AR RANLIB HOST_MV HOST_RM HOST_RMDIR HOST_MKDIR OBJEXT LD LDOUT 
 
-TARGETS := $(PJSUA_EXE) $(PJSYSTEST_EXE) samples
+TARGETS := $(PJSUA_EXE) $(PJSWCENTER_EXE) $(PJIMCENTER_EXE) $(PJSYSTEST_EXE) samples
 
 all: $(TARGETS)
 
@@ -79,6 +105,14 @@ pjsua: $(PJSUA_EXE)
 $(PJSUA_EXE):
 	$(MAKE) -f $(RULES_MAK) APP=PJSUA app=pjsua $(subst /,$(HOST_PSEP),$(BINDIR)/$@)
 
+pjswcenter: $(PJSWCENTER_EXE)
+$(PJSWCENTER_EXE):
+	$(MAKE) -f $(RULES_MAK) APP=PJSWCENTER app=pjswcenter $(subst /,$(HOST_PSEP),$(BINDIR)/$@)
+
+pjimcenter: $(PJIMCENTER_EXE)
+$(PJIMCENTER_EXE):
+	$(MAKE) -f $(RULES_MAK) APP=PJIMCENTER app=pjimcenter $(subst /,$(HOST_PSEP),$(BINDIR)/$@)
+
 pjsystest: $(PJSYSTEST_EXE)
 $(PJSYSTEST_EXE):
 	$(MAKE) -f $(RULES_MAK) APP=PJSYSTEST app=pjsystest $(subst /,$(HOST_PSEP),$(BINDIR)/$@)
@@ -92,6 +126,8 @@ pjsua.ko:
 
 clean depend realclean:
 	$(MAKE) -f $(RULES_MAK) APP=PJSUA app=pjsua $@
+	$(MAKE) -f $(RULES_MAK) APP=PJSWCENTER app=pjswcenter $@
+	$(MAKE) -f $(RULES_MAK) APP=PJIMCENTER app=pjimcenter $@
 	$(MAKE) -f $(RULES_MAK) APP=PJSYSTEST app=pjsystest $@
 	$(MAKE) -f Samples.mak $@
 	@if test "$@" = "depend"; then \

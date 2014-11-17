@@ -265,6 +265,11 @@ void pjsua_im_process_pager(int call_id, const pj_str_t *from,
     }
 }
 
+static pj_str_t STR_MIME_TEXT	   = { "text", 4 };
+static pj_str_t STR_MIME_PLAIN	   = { "plain", 5 };
+
+
+
 
 /*
  * Handler to receive incoming MESSAGE
@@ -301,12 +306,27 @@ static pj_bool_t im_on_rx_request(pjsip_rx_data *rdata)
 				      &hdr_list, NULL);
 	return PJ_TRUE;
     }
-    
+	pjsip_msg_body *body = NULL;
+
+	
+	
+	if (pjsua_var.ua_cfg.cb.on_handle_server_msg) {
+		pj_str_t rspMsg;
+		char szRspMsg[1024] = {0};
+		rspMsg.ptr = szRspMsg;
+		if (PJ_SUCCESS == (*pjsua_var.ua_cfg.cb.on_handle_server_msg)(rdata, -1, &rspMsg) )
+		{
+			body = pjsip_msg_body_create(rdata->tp_info.pool, 
+					 &STR_MIME_TEXT, &STR_MIME_PLAIN, 
+					 &rspMsg);
+		}
+		PJ_LOG(3,(THIS_FILE, "pjsip_msg_body_create"));
+	}
     /* Respond with 200 first, so that remote doesn't retransmit in case
      * the UI takes too long to process the message. 
      */
     pjsip_endpt_respond( pjsua_var.endpt, NULL, rdata, 200, NULL,
-			 NULL, NULL, NULL);
+			 NULL, body, NULL);
 
     /* For the source URI, we use Contact header if present, since
      * Contact header contains the port number information. If this is
@@ -394,8 +414,9 @@ static void im_callback(void *token, pjsip_event *e)
 
 	if (tsx->status_code/100 == 2) {
 	    PJ_LOG(4,(THIS_FILE, 
-		      "Message \'%s\' delivered successfully",
-		      im_data->body.ptr));
+		      "Message \'%s\' delivered successfully, status rsp msg:%.*s",
+		      im_data->body.ptr, (int)tsx->status_text.slen,
+		      tsx->status_text.ptr));
 	} else {
 	    PJ_LOG(3,(THIS_FILE, 
 		      "Failed to deliver message \'%s\': %d/%.*s",

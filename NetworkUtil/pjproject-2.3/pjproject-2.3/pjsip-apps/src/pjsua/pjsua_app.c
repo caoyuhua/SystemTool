@@ -733,6 +733,9 @@ static void on_buddy_evsub_state(pjsua_buddy_id buddy_id,
 }
 
 
+
+
+
 /**
  * Incoming IM message (i.e. MESSAGE request)!
  */
@@ -745,11 +748,11 @@ static void on_pager(pjsua_call_id call_id, const pj_str_t *from,
     PJ_UNUSED_ARG(to);
     PJ_UNUSED_ARG(contact);
     PJ_UNUSED_ARG(mime_type);
-
-    PJ_LOG(3,(THIS_FILE,"MESSAGE from %.*s: %.*s (%.*s)",
+	PJ_LOG(3,(THIS_FILE,"-----------------MESSAGE from %.*s: %.*s (%.*s)",
 	      (int)from->slen, from->ptr,
 	      (int)text->slen, text->ptr,
 	      (int)mime_type->slen, mime_type->ptr));
+
 }
 
 
