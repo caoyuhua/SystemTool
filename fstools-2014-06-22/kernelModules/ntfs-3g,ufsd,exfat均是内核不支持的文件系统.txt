@@ -1,0 +1,5 @@
+ntfs-3g、ufsd及exfat均是内核不支持的文件系统：故执行命令mount -t ntfs-3g -o rw /dev/sda4 /mnt/sda4时会提示没有/dev/sda4这个设备。
+解决方法：内核代码树中也没有这三种文件系统的驱动，故需要去github或csdn.code或google.code搜索ntfs-3g、ufsd、exfat的驱动----->编译成ko模块并加载即可成功执行mount命令。
+
+
+exfat-r415.tar.gz压包方法：tar -zcvf xx.tar.gz xx，不同的包要使用不同的参数否则会提示错误(gz包 bz2包)。
