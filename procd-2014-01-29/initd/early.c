@@ -27,9 +27,8 @@
 static void
 early_mounts(void)
 {
-	mount("proc", "/proc", "proc", MS_NOATIME, 0);//内核proc设备；挂载到/proc目录下；文件系统类型为proc;挂载模式；文件系统权限及读写标志。
-	mount("sysfs", "/sys", "sysfs", MS_NOATIME, 0);
-
+	mount("proc", "/proc", "proc", MS_NOATIME, 0);//Now system's filesystem is READ_ONLY squashfs(In kernel:rootfs-->squashfs)
+	mount("sysfs", "/sys", "sysfs", MS_NOATIME, 0);//mount kernel縮 procfs tmpfs sysfs on squashfs's dirctory of/proc /sys...,so we can read_write in /tmp /proc..
 	mount("tmpfs", "/tmp", "tmpfs", MS_NOSUID | MS_NODEV | MS_NOATIME, NULL);
 	mkdir("/tmp/run", 0777);
 	mkdir("/tmp/lock", 0777);
@@ -40,7 +39,7 @@ early_mounts(void)
 	mkdir("/dev/shm", 0755);
 	mkdir("/dev/pts", 0755);
 	mount("devpts", "/dev/pts", "devpts", MS_NOATIME, "mode=600");
-}
+}//Next In /etc/preinit(/lib/preinit/*) and /etc/init.d/boot,we will call mount_root(fstools/mount_root.c) to do more operation about filesystem mounts.
 
 static void
 early_dev(void)

@@ -59,19 +59,19 @@ pivot(char *new, char *old)
 	char pivotdir[64];
 	int ret;
 
-	if (mount_move("", new, "/proc"))
+	if (mount_move("", new, "/proc"))//将/proc移动挂载到/mnt/proc
 		return -1;
 
 	snprintf(pivotdir, sizeof(pivotdir), "%s%s", new, old);
 
-	ret = pivot_root(new, pivotdir);
+	ret = pivot_root(new, pivotdir);//类似busybox pivot /mnt /mnt/rom命令:将当前文件系统挂载到/mnt/rom，并将/mnt设置为系统根文件系统.
 
 	if (ret < 0) {
 		fprintf(stderr, "pivot_root failed %s %s: %s\n", new, pivotdir, strerror(errno));
 		return -1;
 	}
 
-	mount_move(old, "", "/dev");
+	mount_move(old, "", "/dev");//将/rom/dev移动挂载到/dev
 	mount_move(old, "", "/tmp");
 	mount_move(old, "", "/sys");
 	mount_move(old, "", "/overlay");
@@ -92,12 +92,12 @@ fopivot(char *rw_root, char *ro_root)
 	snprintf(overlay, sizeof(overlay), "overlayfs:%s", rw_root);
 	snprintf(lowerdir, sizeof(lowerdir), "lowerdir=/,upperdir=%s", rw_root);
 
-	if (mount(overlay, "/mnt", "overlayfs", MS_NOATIME, lowerdir)) {
+	if (mount(overlay, "/mnt", "overlayfs", MS_NOATIME, lowerdir)) {//挂载overlay文件系统到/mnt
 		fprintf(stderr, "mount failed: %s\n", strerror(errno));
 		return -1;
 	}
 
-	return pivot("/mnt", ro_root);
+	return pivot("/mnt", ro_root);//类似busybox pivot /mnt /mnt/rom命令:将当前文件系统挂载到/mnt/rom，并将/mnt设置为系统根文件系统.
 }
 
 int

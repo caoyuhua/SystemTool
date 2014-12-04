@@ -54,7 +54,7 @@ foreachdir(const char *dir, int (*cb)(const char*))
 static int
 overlay_mount(struct volume *v, char *fs)
 {
-	if (mkdir("/tmp/overlay", 0755)) {
+	if (mkdir("/tmpi/overlay", 0755)) {
 		fprintf(stderr, "failed to mkdir /tmp/overlay: %s\n", strerror(errno));
 		return -1;
 	}
@@ -206,7 +206,7 @@ static int overlay_mount_fs(void)
 	struct volume *v;
 	char *fstype;
 
-	if (mkdir("/tmp/overlay", 0755)) {
+	if (mkdir("/tmp/overlay", 0755)) {//tmpfs文件系统挂载到squashfs的/tmp目录下，所以/tmp目录下可读写。
 		fprintf(stderr, "failed to mkdir /tmp/overlay: %s\n", strerror(errno));
 		return -1;
 	}
@@ -225,7 +225,7 @@ static int overlay_mount_fs(void)
 		break;
 	}
 
-	if (mount(v->blk, "/tmp/overlay", fstype, MS_NOATIME, NULL)) {
+	if (mount(v->blk, "/tmp/overlay", fstype, MS_NOATIME, NULL)) {//将rootfs_data分区挂载到/tmp/overlay:此时不但还可将/tmp/overlay挂载到其他目录，还可将/tmp/overlay目录下的/etc /data等目录挂载到其他目录(因为此时/tmp/overlay目录下的任一目录都成了设备文件了)
 		fprintf(stderr, "failed to mount -t %s %s /tmp/overlay: %s\n",
 				fstype, v->blk, strerror(errno));
 		return -1;
@@ -236,7 +236,8 @@ static int overlay_mount_fs(void)
 	return -1;
 }
 
-int mount_overlay(void)
+int mount_overlay(void)//called in mount_root.c：目前系统刚刚启动，系统的根文件系统为只读的squashfs文件系统(内核启
+动rootfs文件系统-->squashfs..).
 {
 	struct volume *v = volume_find("rootfs_data");;
 	char *mp;
@@ -250,7 +251,7 @@ int mount_overlay(void)
 		return -1;
 	}
 
-	overlay_mount_fs();
+	overlay_mount_fs();//将rootfs_data分区挂载到/tmp/overlay:此时不但可将/tmp/overlay挂载到其他目录，还可将/tmp/overlay目录下的/etc /data等目录挂载到其他目录(因为此时/tmp/overlay目录下的任一目录都成了设备文件了)
 
 	extroot_prefix = "/tmp/overlay";
 	if (!mount_extroot()) {
@@ -259,7 +260,7 @@ int mount_overlay(void)
 	}
 
 	fprintf(stderr, "switching to overlay\n");
-	if (mount_move("/tmp", "", "/overlay") || fopivot("/overlay", "/rom")) {
+	if (mount_move("/tmp", "", "/overlay") || fopivot("/overlay", "/rom")) {//将/tmp/overlay移动挂载到/overlay目录；挂载overlay文件系统到/mnt-->将当前系统根文件系统挂载到/mnt/rom并将/mnt设置为系统的根文件系统。
 		fprintf(stderr, "switching to jffs2 failed - fallback to ramoverlay\n");
 		return ramoverlay();
 	}

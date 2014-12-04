@@ -27,7 +27,7 @@ start(int argc, char *argv[1])
 		return -1;
 
 	if (!v) {
-		v = volume_find("rootfs");
+		v = volume_find("rootfs");//If find rootfs_data partion¿the next code will skip¿
 		volume_init(v);
 		fprintf(stderr, "mounting /dev/root\n");
 		mount("/dev/root", "/", NULL, MS_NOATIME | MS_REMOUNT, 0);
@@ -47,10 +47,10 @@ start(int argc, char *argv[1])
 
 	case FS_JFFS2:
 	case FS_UBIFS:
-		mount_overlay();//½«/dev/root¹ÒÔØµ½/ÏÂ£¬½«rootfs_data·ÖÇø¹ÒÔØµ½/overlayÏÂ¡£
+		mount_overlay();//If the filesystem of rootfs_data partion is JFFS2¿we will call mount_overlay().
 		break;
 
-	case FS_SNAPSHOT://snapshotÎÄ¼þÏµÍ³??
+	case FS_SNAPSHOT:
 		mount_snapshot();
 		break;
 	}
@@ -84,7 +84,7 @@ done(int argc, char *argv[1])
 	return 0;
 }
 
-int main(int argc, char **argv)
+int main(int argc, char **argv)//mount_root¿this CMD's main program.
 {
 	if (argc < 2)
 		return start(argc, argv);
