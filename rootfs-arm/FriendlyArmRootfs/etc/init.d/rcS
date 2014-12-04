@@ -9,6 +9,9 @@ export PATH runlevel prevlevel
 #
 #	Trap CTRL-C &c only in this shell so we can interrupt subprocesses.
 #
+
+#/etc/init.d/rcS：系统一系列各个应用的启动脚本。
+#/etc/inittab:只是定义开机关机时应该执行哪个程序(如开机时sysinit及askconsole动作，关机时shutdown动作应该执行哪个程序.)
 trap ":" INT QUIT TSTP
 /bin/hostname FriendlyARM
 

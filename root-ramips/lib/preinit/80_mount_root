@@ -2,9 +2,9 @@
 # Copyright (C) 2006 OpenWrt.org
 # Copyright (C) 2010 Vertical Communications
 
-do_mount_root() {
-	mount_root
-	boot_run_hook preinit_mount_root
+do_mount_root() {//called by /etc/preinit script
+	mount_root//fstools/mount_root.c
+	boot_run_hook preinit_mount_root//preinit_mount_root在/etc/preinit中定义：preinit_mount_root类脚本中无内容故此处什么也没执行。
 	[ -f /sysupgrade.tgz ] && {
 		echo "- config restore -"
 		cd /
@@ -15,4 +15,4 @@ do_mount_root() {
 	}
 }
 
-[ "$INITRAMFS" = "1" ] || boot_hook_add preinit_main do_mount_root
+[ "$INITRAMFS" = "1" ] || boot_hook_add preinit_main do_mount_root//将do_mount_root函数添加到preinit_main类中，preinit_main定义在/etc/preinit中.

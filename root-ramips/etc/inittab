@@ -1,4 +1,6 @@
+#inittab:由busybox或openwrt的procd解析，只是定义开机时sysinit关机时shutdown这些动作应该执行哪个应用程序。
 ::sysinit:/etc/init.d/rcS S boot
 ::shutdown:/etc/init.d/rcS K shutdown
+#/etc/init.d/rcS是系统各应用程序的启动脚本:openwrt无/etc/init.d/rcS启动脚本，通过在procd中依次执行/etc/init.d目录下各脚本.
 ::askconsole:/bin/ash --login
 #ttyS1::askfirst:/bin/ash --login
