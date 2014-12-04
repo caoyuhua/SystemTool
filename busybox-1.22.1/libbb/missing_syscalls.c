@@ -35,8 +35,8 @@ int adjtimex(struct timex *buf)
 	return syscall(__NR_adjtimex, buf);
 }
 
-int pivot_root(const char *new_root, const char *put_old)
+int pivot_root(const char *new_root, const char *put_old)//called by pivot_root_main
 {
-	return syscall(__NR_pivot_root, new_root, put_old);
+	return syscall(__NR_pivot_root, new_root, put_old);//busybox命令：pivot_root /mnt /mnt/rom,将系统根文件系统挂载到/mnt/rom并将/mnt切换为系统根文件系统。
 }
 #endif

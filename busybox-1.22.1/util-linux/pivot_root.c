@@ -20,12 +20,12 @@
 extern int pivot_root(const char * new_root,const char * put_old);
 
 int pivot_root_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
-int pivot_root_main(int argc, char **argv)
+int pivot_root_main(int argc, char **argv)//pivot_root命令主程序
 {
 	if (argc != 3)
 		bb_show_usage();
 
-	if (pivot_root(argv[1], argv[2]) < 0) {
+	if (pivot_root(argv[1], argv[2]) < 0) {//pivot_root(),defined in busybox/libbb/missing_syscalls.c
 		/* prints "pivot_root: <strerror text>" */
 		bb_perror_nomsg_and_die();
 	}
