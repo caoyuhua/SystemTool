@@ -160,7 +160,9 @@ v() {
 }
 
 rootfs_type() {
+#awk函数：处理每行数据的各个元素，{}为对处理数据的最终动作常用print
 	/bin/mount | awk '($3 ~ /^\/$/) && ($5 !~ /rootfs/) { print $5 }'
+#~为匹配正则表达式作用，~ /为匹配当前目录下，^为取内容：匹配第三个元素开头为/的内容.
 }
 
 get_image() { # <source> [ <command> ]
@@ -169,18 +171,22 @@ get_image() { # <source> [ <command> ]
 	local cmd
 
 	case "$from" in
+#此时$1可能为image文件路径或URL，若是url则先执行wget命令.
 		http://*|ftp://*) cmd="wget -O- -q";;
 		*) cmd="cat";;
 	esac
 	if [ -z "$conc" ]; then
+#cat获取升级文件内容后，执行dd命令拷贝count=1各块且块大小bs=2个字节，将输出的这两个字节用hexdump命令处理(-e指定输出格式，1/1表示格式化输出字符串一次)
 		local magic="$(eval $cmd $from 2>/dev/null | dd bs=2 count=1 2>/dev/null | hexdump -n 2 -e '1/1 "%02x"')"
 		case "$magic" in
+#zcat与bzcat用来查看压缩的文件，解压到stdout.
 			1f8b) conc="zcat";;
 			425a) conc="bzcat";;
 		esac
 	fi
 
 	eval "$cmd $from 2>/dev/null ${conc:+| $conc}"
+#{conc:+| $conc}----:+表示变量替换，若conc没有设置则...
 }
 
 get_magic_word() {
@@ -204,9 +210,11 @@ jffs2_copy_config() {
 default_do_upgrade() {
 	sync
 	if [ "$SAVE_CONFIG" -eq 1 ]; then
+#cat获取升级文件内容后直接调用mtd命令写入flash
 		get_image "$1" | mtd $MTD_CONFIG_ARGS -j "$CONF_TAR" write - "${PART_NAME:-image}"
 	else
 		get_image "$1" | mtd write - "${PART_NAME:-image}"
+#PART_NAME在本shell头部定义为"firmware",另mtd erase /dev/mtd6和mtd erase firmware(firmware分区)均可.
 	fi
 }
 

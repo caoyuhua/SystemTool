@@ -27,12 +27,15 @@ while [ -n "$1" ]; do
 		-d) export DELAY="$2"; shift;;
 		-v) export VERBOSE="$(($VERBOSE + 1))";;
 		-q) export VERBOSE="$(($VERBOSE - 1))";;
+#解析执行sysupgrade时输入的参数：默认环境变量SAVE_CONFIG=1		
 		-n) export SAVE_CONFIG=0;;
 		-c) export SAVE_OVERLAY=1;;
+#sysupgrade -b/-r/-d或-f参数时使用shift，shift后ARGC为0，ARGV为空。
 		-b|--create-backup) export CONF_BACKUP="$2" NEED_IMAGE=1; shift;;
 		-r|--restore-backup) export CONF_RESTORE="$2" NEED_IMAGE=1; shift;;
 		-l|--list-backup) export CONF_BACKUP_LIST=1; break;;
 		-f) export CONF_IMAGE="$2"; shift;;
+#默认环境变量FORCE=0
 		-F|--force) export FORCE=1;;
 		-T|--test) export TEST=1;;
 		-h|--help) export HELP=1; break;;
@@ -44,13 +47,15 @@ while [ -n "$1" ]; do
 	esac
 	shift;
 done
-
+#所有需要备份的文件列表
 export CONFFILES=/tmp/sysupgrade.conffiles
 export CONF_TAR=/tmp/sysupgrade.tgz
 
+#ARGC表示输入参数个数；ARGV表示输入参数列表。
 export ARGV="$*"
 export ARGC="$#"
 
+#只输入sysupgrade或sysupgrade --help时打印命令帮助信息--->sysupgrade后跟image文件路径或URL。
 [ -z "$ARGV" -a -z "$NEED_IMAGE" -o $HELP -gt 0 ] && {
 	cat <<EOF
 Usage: $0 [<upgrade-option>...] <image file or URL>
@@ -86,7 +91,7 @@ backup-command:
 EOF
 	exit 1
 }
-
+#输入-b或-r参数时NEED_IMAGE=1才会执行该段代码：该段代码用于检查ARGV是否为空，若不为空则输出如下错误提示。
 [ -n "$ARGV" -a -n "$NEED_IMAGE" ] && {
 	cat <<-EOF
 		-b|--create-backup and -r|--restore-backup do not perform a firmware upgrade.
@@ -99,15 +104,19 @@ EOF
 [ "$CONF_BACKUP" = "-" ] && export VERBOSE=0
 
 add_uci_conffiles() {
+#called by do_save_conffiles,查看调用处知$1为$CONFFILES即/tmp/sysupgrade.coffiles
 	local file="$1"
+#列出/etc/sysupgrade.conf中配置需要保存的配置文件或目录文件列表。
 	( find $(sed -ne '/^[[:space:]]*$/d; /^#/d; p' \
 		/etc/sysupgrade.conf /lib/upgrade/keep.d/* 2>/dev/null) \
 		-type f 2>/dev/null;
+#opkg list-changed-conffiles显示/etc/config目录下用户修改的文件列表-->将这两份需要保留的配置文件列表全部输出到/tmp/sysupgrade.conffiles
 	  opkg list-changed-conffiles ) | sort -u > "$file"
 	return 0
 }
 
 add_overlayfiles() {
+#called by do_save_conffiles,查看调用处知$1为$CONFFILES即/tmp/sysupgrade.conffiles
 	local file="$1"
 	find /overlay/etc/ -type f | sed \
 		-e 's,^/overlay/,/,' \
@@ -120,17 +129,18 @@ add_overlayfiles() {
 
 # hooks
 sysupgrade_image_check="platform_check_image"
+#带-c参数(SAVE_OVERLAY=1)且存在/overlay/etc这个目录时sysupgrade_init_conffiles="add_uci_conffiles"，否则等于add_overlayfiles
 [ $SAVE_OVERLAY = 0 -o ! -d /overlay/etc ] && \
 	sysupgrade_init_conffiles="add_uci_conffiles" || \
 	sysupgrade_init_conffiles="add_overlayfiles"
 
 include /lib/upgrade
-
+#若使用spi flash可不考虑这行，若使用nand则需sysupgrade nand xx.bin
 [ "$1" = "nand" ] && nand_upgrade_stage2 $@
 
 do_save_conffiles() {
 	local conf_tar="${1:-$CONF_TAR}"
-
+#1:- 表示若第一个参数CONF_TAR若定义就返回CONF_TAR，否则就返回空
 	[ -z "$(rootfs_type)" ] && {
 		echo "Cannot save config while running from ramdisk."
 		ask_bool 0 "Abort" && exit
@@ -148,12 +158,14 @@ do_save_conffiles() {
 
 if [ $CONF_BACKUP_LIST -eq 1 ]; then
 	add_uci_conffiles "$CONFFILES"
+#若带-l参数，则直接cat /tmp/sysupgrade.conf即可
 	cat "$CONFFILES"
 	rm -f "$CONFFILES"
 	exit 0
 fi
 
 if [ -n "$CONF_BACKUP" ]; then
+#若带-b参数，则执行do_save_conffiles将配置文件打包
 	do_save_conffiles "$CONF_BACKUP"
 	exit $?
 fi
@@ -163,6 +175,7 @@ if [ -n "$CONF_RESTORE" ]; then
 		echo "Backup archive '$CONF_RESTORE' not found."
 		exit 1
 	fi
+#若带-r参数，则相当于执行tar -xvzf /tmp/backup.tgz，将备份的/etc各配置文件解压到/etc目录下
 
 	[ "$VERBOSE" -gt 1 ] && TAR_V="v" || TAR_V=""
 	tar -C / -x${TAR_V}zf "$CONF_RESTORE"
@@ -174,6 +187,7 @@ type platform_check_image >/dev/null 2>/dev/null || {
 	exit 1
 }
 
+#sysupgrade_image_check=platform_check_image(该函数定义在/lib/upgrade/platform.sh，取bin文件头部检查magic)
 for check in $sysupgrade_image_check; do
 	( 
 	mkfwbin -d -i gw5110.bin -o gw5110.bin
@@ -187,7 +201,7 @@ for check in $sysupgrade_image_check; do
 		fi
 	}
 done
-
+#CONFIG_IMAGE为-f选项相关，可暂时不用管
 if [ -n "$CONF_IMAGE" ]; then
 	case "$(get_magic_word $CONF_IMAGE cat)" in
 		# .gz files
@@ -212,6 +226,7 @@ fi
 
 run_hooks "" $sysupgrade_pre_upgrade
 
+#用户kill掉系统remaining process：向系统remaining process发送KILL或TERM信号.
 ubus call system upgrade
 touch /tmp/sysupgrade
 
@@ -220,9 +235,10 @@ if [ ! -f /tmp/failsafe ] ; then
 	sleep 3
 	kill_remaining KILL
 fi
-
+#若rootfs_type不为空(即等于overlay?)时执行第一个逻辑：rootfs_type定义在/lib/upgrade/common.sh中。
 if [ -n "$(rootfs_type)" ]; then
 	v "Switching to ramdisk..."
+#run_ramfs在/tmp/root目录下安装一个临时ramdisk，最后再执行do_upgrade
 	run_ramfs '. /lib/functions.sh; include /lib/upgrade; do_upgrade'
 else
 	do_upgrade

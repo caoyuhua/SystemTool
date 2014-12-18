@@ -94,6 +94,7 @@ platform_check_image() {
 	x5 |\
 	x8)
 		[ "$magic" != "27051956" ] && {
+#若是上面列出的这几种单板，则bin升级文件的前4字节必是27051956
 			echo "Invalid image type."
 			return 1
 		}
@@ -122,9 +123,11 @@ platform_check_image() {
 }
 
 platform_do_upgrade() {
+#ramips_board_name函数定义在/lib/ramips.sh中，用于cat /tmp/sysinfo/board_name获取板名称ralink-soc--->/tmp/sysinfo/board_info文件在/lib/ramips.sh的board_detect函数中通过cat /proc/cpuinfo生成.
 	local board=$(ramips_board_name)
 
 	case "$board" in
+#用于列出各个case分支值，*）类似default表示其他值.
 	*)
 		default_do_upgrade "$ARGV"
 		;;
@@ -133,10 +136,11 @@ platform_do_upgrade() {
 
 disable_watchdog() {
 	killall watchdog
+#killall，busybox命令用于杀死某个进程(watchdog进程负责启动看门狗并喂狗，进程退出时同时禁用看门狗)
 	( ps | grep -v 'grep' | grep '/dev/watchdog' ) && {
 		echo 'Could not disable watchdog'
 		return 1
 	}
 }
-
+#append函数定义在/lib/functions.sh中.
 append sysupgrade_pre_upgrade disable_watchdog
