@@ -43,6 +43,7 @@ load_led() {
 		echo $trigger > /sys/class/leds/${sysfs}/trigger
 		case "$trigger" in
 		"netdev")
+##make /etc/config file effective by control /sys/class/.....   
 			[ -n "$dev" ] && {
 				echo $dev > /sys/class/leds/${sysfs}/device_name
 				echo $mode > /sys/class/leds/${sysfs}/mode
@@ -83,7 +84,8 @@ load_led() {
 		esac
 	}
 }
-
+#/etc/init.d<---->/etc/config                                                   
+#/etc/init.d makes the /etc/config file effective.
 start() {
 	[ -e /sys/class/leds/ ] && {
 		config_load system
