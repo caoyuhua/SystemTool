@@ -181,6 +181,7 @@ ramips_setup_interfaces()
 			ramips_setup_rt3x5x_vlans
 		else
 			ucidef_set_interfaces_lan_wan "eth0.1" "eth0.2"
+#在/etc/config/network配置文件中分别将eth0.1和eth0.2设置为lan口和wan口.
 		fi
 		;;
 	esac
@@ -194,6 +195,7 @@ ramips_setup_macs()
 
 	case $board in
 	br-6475nd)
+#mtd_get_mac_binary devdata：使用hexdump命令从flash的config分区中读取mac地址。
 		lan_mac=$(mtd_get_mac_binary devdata 13)
 		wan_mac=$(mtd_get_mac_binary devdata 7)
 		;;
@@ -255,7 +257,7 @@ ramips_setup_macs()
 		;;
 
 	esac
-
+#最终使用uci命令将上文获取的mac地址写入/etc/config/network配置文件中。
 	[ -n "$lan_mac" ] && ucidef_set_interface_macaddr lan $lan_mac
 	[ -n "$wan_mac" ] && ucidef_set_interface_macaddr wan $wan_mac
 }
