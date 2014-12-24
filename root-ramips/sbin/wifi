@@ -217,16 +217,20 @@ scan_wifi() {
 			;;
 		esac
 	}
+#config_load:加载/etc/config目录下配置文件，若不存在则创建之.
 	config_load "${cfgfile:-wireless}"
+#若cfgfile定义则创建/etc/config/$cfgfile，默认创建/etc/config/wireless文件.
 }
 
 DEVICES=
 DRIVERS=
 include /lib/wifi
+#执行/etc/init.d/boot wifi detect后先调用本脚本中的scan_wifi函数
 scan_wifi
 
 case "$1" in
 	down) wifi_updown "disable" "$2";;
+#wifi_detect函数定义在/lib/wifi目录下(rt2860v2.sh或mac80211.sh:前者是ralink厂商SDK提供的，后者是openwrt写的通用的脚本),用于修改/etc/config/wireless配置文件.
 	detect) wifi_detect "$2";;
 	status) ubus_wifi_cmd "status" "$2";;
 	reload) wifi_reload "$2";;

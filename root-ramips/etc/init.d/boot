@@ -39,7 +39,7 @@ boot() {//boot():procd解析/etc/initab后执行/etc/init.d/boot，即本函数
 
 	# allow wifi modules time to settle
 	sleep 1
-
+#生成wifi默认配置文件/etc/config/wireless
 	/sbin/wifi detect > /tmp/wireless.tmp
 	[ -s /tmp/wireless.tmp ] && {
 		cat /tmp/wireless.tmp >> /etc/config/wireless
