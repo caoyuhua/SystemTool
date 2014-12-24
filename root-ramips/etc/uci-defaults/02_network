@@ -3,6 +3,13 @@
 . /lib/functions.sh
 . /lib/ramips.sh
 . /lib/functions/uci-defaults.sh
+#eth0.1和eth0.2是netifd中根据vlan创建的虚拟设备。
+#br-lan是使用 brctl add br-lan命令创建的虚拟设备.
+
+#主芯片通过MII接口外接了个SWITCH芯片，共四个LAN端口，现在这四个端口同属一个interface(eth0)，如何把这四个端口分别赋予
+#eth0.1 eth0.2 eth0.3 eth0.4?
+#-->需要修改有线驱动ethernet driver，switch driver和kernel：switch driver中判断哪个端口进来的数据包,在数据包中某个字段插入端口
+#识别标志，同样在ethernet driver中也需要做判断.
 
 ramips_setup_rt3x5x_vlans()
 {
