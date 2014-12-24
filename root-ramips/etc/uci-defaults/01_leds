@@ -10,6 +10,7 @@ set_usb_led() {
 set_wifi_led() {
 	ucidef_set_led_netdev "wifi_led" "wifi" "$1" "wlan0"
 }
+#ucidef_set_led_netdev:调用uci set /etc/config/system.wifi_led.xx设置系统配置文件.
 
 board=$(ramips_board_name)
 
@@ -182,7 +183,7 @@ case $board in
 		ucidef_set_led_default "router" "router" "buffalo:green:router" "1"
 		;;
 esac
-
+#uci commit保存修改.
 ucidef_commit_leds
 
 exit 0
